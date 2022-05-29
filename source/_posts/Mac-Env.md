@@ -16,19 +16,25 @@ tags:
 于是敲定，就它了  
 ## Installation
 进入官网，有自动提示的安装指令
-` % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" `
-安装完毕后
-` % brew -v `
 ```
+% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+安装完毕后
+```
+% brew -v
 Homebrew 3.4.10
 ```
 说明安装成功  
 ## Wget
 既然包管理安装好了，作为测试，用它来装个wget罢  
-` % brew install wget `
+```
+% brew install wget
+```
 安装完毕后  
-` % wget -V `
-注意是大写哟  
+```
+% wget -V
+```
+注意是大写哟
 ```
 GNU Wget 1.21.3 built on darwin21.3.0
 blablabla
@@ -39,8 +45,8 @@ blablabla
 想能在Win和Mac不同设备上共同用hexo编辑自己的博客，那显然要给Mac也整上Git  
 ## Installation
 直接去Git官网，发现官网也推荐使用homebrew下载安装  
-` % brew install git `
 ```
+% brew install git
 matthew@Qs-MacBook-Pro ~ % brew install git
 Running `brew update --preinstall`...
 ==> Auto-updated Homebrew!
