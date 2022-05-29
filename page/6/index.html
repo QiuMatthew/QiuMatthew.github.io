@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+     马西欧
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
+
+  
+
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      
+<section class="cover">
+    
+  <div class="cover-frame">
+    <div class="bg-box">
+      <img src="/images/cover8.jpg" alt="image frame" />
+    </div>
+    <div class="cover-inner text-center text-white">
+      <h1><a href="/">马西欧</a></h1>
+      <div id="subtitle-box">
+        
+        <span id="subtitle"></span>
+        
+      </div>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="cover-learn-more">
+    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+
+<!-- Subtitle -->
+
+  <script>
+    try {
+      var typed = new Typed("#subtitle", {
+        strings: ['Proletarier aller Länder, vereinigt euch!', 'Workers of all nations, unite!', '万国の労働者よ、団結せよ！'],
+        startDelay: 0,
+        typeSpeed: 200,
+        loop: true,
+        backSpeed: 100,
+        showCursor: true
+      });
+    } catch (err) {
+      console.log(err)
+    }
+  </script>
+  
+<div id="main">
+  <section class="outer">
+  
+  
+  
+
+<div class="notice" style="margin-top:50px">
+    <i class="ri-heart-fill"></i>
+    <div class="notice-content" id="broad"></div>
+</div>
+<script type="text/javascript">
+    fetch('https://v1.hitokoto.cn')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("broad").innerHTML = data.hitokoto;
+        })
+        .catch(console.error)
+</script>
+
+<style>
+    .notice {
+        padding: 20px;
+        border: 1px dashed #e6e6e6;
+        color: #969696;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background: #fbfbfb50;
+        border-radius: 10px;
+    }
+
+    .notice i {
+        float: left;
+        color: #999;
+        font-size: 16px;
+        padding-right: 10px;
+        vertical-align: middle;
+        margin-top: -2px;
+    }
+
+    .notice-content {
+        display: initial;
+        vertical-align: middle;
+    }
+</style>
+  
+  <article class="articles">
+    
+    
+    
+    
+    <article
+  id="post-学习笔记2021-4-21-Ch1-数字计算入门"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/04/21/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-21-Ch1-%E6%95%B0%E5%AD%97%E8%AE%A1%E7%AE%97%E5%85%A5%E9%97%A8/"
+    >学习笔记2021-4-21-Ch1-数字计算入门</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/04/21/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-21-Ch1-%E6%95%B0%E5%AD%97%E8%AE%A1%E7%AE%97%E5%85%A5%E9%97%A8/" class="article-date">
+  <time datetime="2021-04-21T11:21:29.000Z" itemprop="datePublished">2021-04-21</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E4%B8%93%E4%B8%9A%E8%AF%BE/">专业课</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E4%B8%93%E4%B8%9A%E8%AF%BE/%E6%95%B0%E7%94%B5/">数电</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="1の補数と2の補数"><a href="#1の補数と2の補数" class="headerlink" title="1の補数と2の補数"></a>1の補数と2の補数</h2><h3 id="1の補数"><a href="#1の補数" class="headerlink" title="1の補数"></a>1の補数</h3><p>1の補数表示では，負の数 $ -x $ を表すのに $ 2^n - x - 1 $ を用いる。1の補数は，$ x $ の各桁の $ 1 $ と $ 0 $ を反転したものとなる。表現できる値の範囲は $ -2^{n - 1} + 1 \leq X \leq 2^{n - 1} - 1$ 。また，$ 0 $ の表現として，$ 0000 $ と $ 1111 $ の二種類が可能となる。</p>
+<h3 id="2の補数"><a href="#2の補数" class="headerlink" title="2の補数"></a>2の補数</h3><p>2の補数表示では，負の数 $ -x $ を表すのに $ 2^n - x $ を用いる。2の補数は，$ x $ の各桁の $ 1 $ と $ 0 $ を反転し，結果に $ 1 $ 加えたものとなる。表現できる値の範囲は $ -2^{n - 1} \leq X \leq 2^{n - 1} $。$ 0 $ の表現は，$ 0000 $ だけとなる。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B8%93%E4%B8%9A%E8%AF%BE/" rel="tag">专业课</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E7%94%B5/" rel="tag">数电</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-4-12~20-Ch6-微分方程式の解法"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/04/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-12~20-Ch6-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E8%A7%A3%E6%B3%95/"
+    >学习笔记2021-4-12~20-Ch6-微分方程式の解法</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/04/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-12~20-Ch6-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E8%A7%A3%E6%B3%95/" class="article-date">
+  <time datetime="2021-04-12T11:22:59.000Z" itemprop="datePublished">2021-04-12</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="Chapter-6-微分方程式の解法"><a href="#Chapter-6-微分方程式の解法" class="headerlink" title="Chapter 6 微分方程式の解法"></a>Chapter 6 微分方程式の解法</h2><h3 id="6-1-微分方程式とその解"><a href="#6-1-微分方程式とその解" class="headerlink" title="6.1 微分方程式とその解"></a>6.1 微分方程式とその解</h3><h4 id="6-1-1-解の種類"><a href="#6-1-1-解の種類" class="headerlink" title="6.1.1 解の種類"></a>6.1.1 解の種類</h4><p>一般解<br>特殊解<br>特異解</p>
+<h4 id="6-1-2-初期条件と境界条件"><a href="#6-1-2-初期条件と境界条件" class="headerlink" title="6.1.2 初期条件と境界条件"></a>6.1.2 初期条件と境界条件</h4><p>初期条件<br>$$ x = 0\ のとき\ y = 1, y’ = 3 $$<br>境界条件<br>$$ x = 0\ のとき\ y = 1; x = 1\ のとき\ y = 2 $$</p>
+<h4 id="6-1-3-常微分方程式の作成"><a href="#6-1-3-常微分方程式の作成" class="headerlink" title="6.1.3 常微分方程式の作成"></a>6.1.3 常微分方程式の作成</h4><p>任意定数がn個の時、n回微分して得られるn+1個の等式からすべての任意定数を消去するとn階常微分方程式が得られる。</p> 
+      <a class="article-more-link" href="/2021/04/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-12~20-Ch6-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E8%A7%A3%E6%B3%95/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" rel="tag">微积分</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-4-9-Ch5-重積分"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/04/09/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-9-Ch5-%E9%87%8D%E7%A9%8D%E5%88%86/"
+    >学习笔记2021-4-9-Ch5-重積分</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/04/09/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-9-Ch5-%E9%87%8D%E7%A9%8D%E5%88%86/" class="article-date">
+  <time datetime="2021-04-09T05:02:32.000Z" itemprop="datePublished">2021-04-09</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="多重積分より体積と曲面積の計算"><a href="#多重積分より体積と曲面積の計算" class="headerlink" title="多重積分より体積と曲面積の計算"></a>多重積分より体積と曲面積の計算</h2><h3 id="体積"><a href="#体積" class="headerlink" title="体積"></a>体積</h3><p>$$ V = \iint_{D} f(x, y) \mathrm{d}x \mathrm{d}y $$</p>
+<h3 id="曲面積"><a href="#曲面積" class="headerlink" title="曲面積"></a>曲面積</h3><p>直交座標<br>$$ S = \iint_{D} \sqrt{1 + f_x^2 + f_y^2} \mathrm{d}x \mathrm{d}y $$<br>極座標<br>$$ S = \iint_{D} \sqrt{r^2 + (r \frac{\partial z}{\partial r})^2 + (\frac{\partial z}{\partial \theta})^2} \mathrm{d}x \mathrm{d}y $$</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" rel="tag">微积分</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-4-8-Ch3-積分法とその応用"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/04/08/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-8-Ch3-%E7%A9%8D%E5%88%86%E6%B3%95%E3%81%A8%E3%81%9D%E3%81%AE%E5%BF%9C%E7%94%A8/"
+    >学习笔记2021-4-8-Ch3-積分法とその応用</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/04/08/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-8-Ch3-%E7%A9%8D%E5%88%86%E6%B3%95%E3%81%A8%E3%81%9D%E3%81%AE%E5%BF%9C%E7%94%A8/" class="article-date">
+  <time datetime="2021-04-08T05:07:57.000Z" itemprop="datePublished">2021-04-08</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="積分の基本公式"><a href="#積分の基本公式" class="headerlink" title="積分の基本公式"></a>積分の基本公式</h2><p>$$\int \frac{1}{\sqrt{a^2 - x^2}} \mathrm{d} x = \frac{1}{a} \sin^{-1} \frac{x}{a}$$<br>$$\int \frac{1}{\sqrt{x^2 + a}} \mathrm{d} x = \log \left | x + \sqrt{x^2 + a} \right |$$<br>$$\int \sqrt{a^2 - x^2} \mathrm{d} x = \frac{1}{2} ( x \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{x}{a} )$$<br>$$\int \sqrt{x^2 + a} \mathrm{d} x = \frac{1}{2} ( x \sqrt{x^2 + a} + a^2 \log \left | x + \sqrt{x^2 + a} \right | )$$</p>
+<h2 id="ベータ関数とガンマ関数"><a href="#ベータ関数とガンマ関数" class="headerlink" title="ベータ関数とガンマ関数"></a>ベータ関数とガンマ関数</h2><h3 id="ベータ関数"><a href="#ベータ関数" class="headerlink" title="ベータ関数"></a>ベータ関数</h3><p>定義<br>$$ B(p, q) = \int_{0}^{1} x^{p - 1} (1 - x)^{q - 1} \mathrm{d} x, \ (p &gt; 0, q &gt; 0) $$<br>性質<br>$$ B(p, q) = B(q, p) $$<br>$$ qB(p + 1, q) = pB(p, q + 1) $$<br>$$ B(m, n) = \frac{(m - 1)!(n - 1)!}{(m + n - 1)!} $$ ただし，m,nは自然数とする</p>
+<h3 id="ガンマ関数"><a href="#ガンマ関数" class="headerlink" title="ガンマ関数"></a>ガンマ関数</h3><p>定義<br>$$ \Gamma(p) = \int_{0}^{\infty} e^{-x} x^{p - 1} \mathrm{d} x, \ (p &gt; 0) $$<br>性質<br>$$ \Gamma(p + 1) = p \Gamma(p) \ (p &gt; 0) $$<br>$$ \Gamma(1) = 1, \ \Gamma(n + 1) = n! $$</p>
+<h3 id="ガンマ関数とベータ関数の関係"><a href="#ガンマ関数とベータ関数の関係" class="headerlink" title="ガンマ関数とベータ関数の関係"></a>ガンマ関数とベータ関数の関係</h3><p>$$ B(p, q) = \frac{\Gamma(p) \Gamma(q)}{\Gamma(p + q)}, \ (p &gt; 0, q &gt; 0) $$</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" rel="tag">微积分</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-4-1-Ch4-偏微分法"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/04/01/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-1-Ch4-%E5%81%8F%E5%BE%AE%E5%88%86%E6%B3%95/"
+    >学习笔记2021-4-1-Ch4-偏微分法</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/04/01/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-1-Ch4-%E5%81%8F%E5%BE%AE%E5%88%86%E6%B3%95/" class="article-date">
+  <time datetime="2021-04-01T10:16:31.000Z" itemprop="datePublished">2021-04-01</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="全微分可能性"><a href="#全微分可能性" class="headerlink" title="全微分可能性"></a>全微分可能性</h2><h3 id="全微分可能であることを証明するには"><a href="#全微分可能であることを証明するには" class="headerlink" title="全微分可能であることを証明するには"></a>全微分可能であることを証明するには</h3><p>偏微分可能で、$f_x, f_y$が連続 $\Rightarrow$ 全微分可能</p>
+<h3 id="全微分可能でないことを証明するには"><a href="#全微分可能でないことを証明するには" class="headerlink" title="全微分可能でないことを証明するには"></a>全微分可能でないことを証明するには</h3><p>定義より<br>$f(x + h, y + k) - f(x, y) = hf_x(x, y) + kf_y(x, y) + o(\rho) \quad (h \to 0, k \to 0, \rho = \sqrt{h^2 + k^2})$<br>$f(x + h, y + k) - f(x, y) = hf_x(x, y) + kf_y(x, y) + R(h, k)$　とすると<br>$\lim_{h \to 0, \ k \to 0} \frac{R}{\rho} \neq 0$　とならない時<br>全微分可能でない</p>
+<h2 id="接平面の方程式"><a href="#接平面の方程式" class="headerlink" title="接平面の方程式"></a>接平面の方程式</h2><p>$z - f(a, b) = (x - a)f_x(a, b) + (y - b)f_y(a, b)$</p>
+<h2 id="偏微分作用素"><a href="#偏微分作用素" class="headerlink" title="偏微分作用素"></a>偏微分作用素</h2><p>$h \frac{\partial}{\partial x} + k \frac{\partial}{\partial y}$を次のように定義する<br>$$(h \frac{\partial}{\partial x} + k \frac{\partial}{\partial y})f(x, y) = h \frac{\partial}{\partial x}f(x, y) + k \frac{\partial}{\partial y}f(x, y)$$<br>今、$z = f(x, y), x = ht + a, y = kt + b$で，$z = f(x, y)$が必要な回数だけ連続な偏導関数をもてば，合成関数の偏微分法より<br>$$\frac{\mathrm{d} z}{\mathrm{d} t} = \frac{\partial z}{\partial x}\frac{\mathrm{d} x}{\mathrm{d} t} + \frac{\partial z}{\partial y}\frac{\mathrm{d} y}{\mathrm{d} t} = (h\frac{\partial z}{\partial x} + k\frac{\partial z}{\partial y}) z$$<br>さらに，$$\frac{\mathrm{d}^n z}{\mathrm{d} t^n} = (h\frac{\partial z}{\partial x} + k\frac{\partial z}{\partial y})^n z$$</p>
+<h2 id="包絡線"><a href="#包絡線" class="headerlink" title="包絡線"></a>包絡線</h2><p>曲線群$f(x, y, \alpha) = 0$が特異点をもたないときには<br>$$f(x, y, \alpha) = 0, f_\alpha(x, y, \alpha) = 0$$<br>から$\alpha$を消去して得られる曲線がこの曲線群の包絡線である。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" rel="tag">微积分</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-张家界之旅"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/04/01/%E5%BC%A0%E5%AE%B6%E7%95%8C%E4%B9%8B%E6%97%85/"
+    >张家界之旅</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/04/01/%E5%BC%A0%E5%AE%B6%E7%95%8C%E4%B9%8B%E6%97%85/" class="article-date">
+  <time datetime="2021-04-01T10:04:02.000Z" itemprop="datePublished">2021-04-01</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%97%85%E8%A1%8C/">旅行</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="4月2日"><a href="#4月2日" class="headerlink" title="4月2日"></a>4月2日</h1><p>晚上十一点的车，巧的是骚九点多回石家庄，所以说好接站一波骚。结果九点半骚到了站，我还在新百广场（针不戳）。最后十点成功找到了位置，居然边恰东西边FF拿了彩蛋节兔子套装……<br>上了车就睡力，毕竟昨晚没睡觉光看导师信息了，很困（而且忘了带水上车渴死爷了）</p> 
+      <a class="article-more-link" href="/2021/04/01/%E5%BC%A0%E5%AE%B6%E7%95%8C%E4%B9%8B%E6%97%85/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%85%E8%A1%8C/" rel="tag">旅行</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-test"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/03/31/test/"
+    >Test</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/03/31/test/" class="article-date">
+  <time datetime="2021-03-31T10:48:11.000Z" itemprop="datePublished">2021-03-31</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%B5%8B%E8%AF%95/">测试</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>这个博客用于记录修考的点点滴滴。<br>当前博文仅用于测试系统是否正常运转。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+  </article>
+  
+
+  
+  <nav class="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/5/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span>
+  </nav>
+  
+</section>
+</div>
+
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2021-2022
+        <i class="ri-heart-fill heart_icon"></i> Matthew Qiu
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="马西欧"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://www.baidu.com">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/2021">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    Mac-Env |  马西欧
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
+
+  
+
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-Mac-Env"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Mac-Env
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/05/11/Mac-Env/" class="article-date">
+  <time datetime="2022-05-10T15:53:57.000Z" itemprop="datePublished">2022-05-11</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">3.8k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">20 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="Start-with-Mac"><a href="#Start-with-Mac" class="headerlink" title="Start with Mac"></a>Start with Mac</h1><p>第一次到实验室，拿到了实验室给准备的Mac<br>于是要开始配置Mac了</p>
+<h1 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h1><p>本科的时候听说Mac对开发者还挺友好的，而且Mac的terminal和Linux比较相似，那第一件事就是打开terminal<br>一番ls/cd等无意义操作后，觉得首要事情是弄个包管理工具，搜索后发现homebrew用的比较多，Jo Ting也如此建议，英文互联网和中文互联网都有推荐，空白也附议<br>于是敲定，就它了  </p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>进入官网，有自动提示的安装指令<br><code>% /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</code><br>安装完毕后<br><code>% brew -v</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Homebrew 3.4.10</span><br></pre></td></tr></table></figure>
+<p>说明安装成功  </p>
+<h2 id="Wget"><a href="#Wget" class="headerlink" title="Wget"></a>Wget</h2><p>既然包管理安装好了，作为测试，用它来装个wget罢<br><code>% brew install wget</code><br>安装完毕后<br><code>% wget -V</code><br>注意是大写哟  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">GNU Wget 1.21.3 built on darwin21.3.0</span><br><span class="line">blablabla</span><br></pre></td></tr></table></figure>
+<p>说明安装成功  </p>
+<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p>想能在Win和Mac不同设备上共同用hexo编辑自己的博客，那显然要给Mac也整上Git  </p>
+<h2 id="Installation-1"><a href="#Installation-1" class="headerlink" title="Installation"></a>Installation</h2><p>直接去Git官网，发现官网也推荐使用homebrew下载安装<br><code>% brew install git</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">matthew@Qs-MacBook-Pro ~ % brew install git</span><br><span class="line">Running &#96;brew update --preinstall&#96;...</span><br><span class="line">&#x3D;&#x3D;&gt; Auto-updated Homebrew!</span><br><span class="line">Updated 1 tap (homebrew&#x2F;core).</span><br><span class="line">&#x3D;&#x3D;&gt; Updated Formulae</span><br><span class="line">Updated 6 formulae.</span><br><span class="line"></span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;pcre2&#x2F;manifests&#x2F;10.40</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;pcre2&#x2F;blobs&#x2F;sha256:18b810bc5ddba9960505488662ad3b122c898ded44461e2dfb871ee32abbe0fb</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading from https:&#x2F;&#x2F;pkg-containers.githubusercontent.com&#x2F;ghcr1&#x2F;blobs&#x2F;sha256:18b810bc5ddba9960505488662ad3b122c898ded44461e2dfb871ee32abbe0fb?se&#x3D;2022-05-10T17%3A25%3A00Z&amp;sig&#x3D;1i5xgA0kBSpoqCBk9Rn3</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;git&#x2F;manifests&#x2F;2.36.1</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;git&#x2F;blobs&#x2F;sha256:5941a1eb703ac9814c2f8ae7c78ff31630aed04ad90a6a3073e45f4748f96e25</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading from https:&#x2F;&#x2F;pkg-containers.githubusercontent.com&#x2F;ghcr1&#x2F;blobs&#x2F;sha256:5941a1eb703ac9814c2f8ae7c78ff31630aed04ad90a6a3073e45f4748f96e25?se&#x3D;2022-05-10T17%3A25%3A00Z&amp;sig&#x3D;idLuPp1AvjC9ow40Bqpg</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Installing dependencies for git: pcre2</span><br><span class="line">&#x3D;&#x3D;&gt; Installing git dependency: pcre2</span><br><span class="line">&#x3D;&#x3D;&gt; Pouring pcre2--10.40.arm64_monterey.bottle.tar.gz</span><br><span class="line">🍺  &#x2F;opt&#x2F;homebrew&#x2F;Cellar&#x2F;pcre2&#x2F;10.40: 230 files, 6.1MB</span><br><span class="line">&#x3D;&#x3D;&gt; Installing git</span><br><span class="line">&#x3D;&#x3D;&gt; Pouring git--2.36.1.arm64_monterey.bottle.tar.gz</span><br><span class="line">&#x3D;&#x3D;&gt; Caveats</span><br><span class="line">The Tcl&#x2F;Tk GUIs (e.g. gitk, git-gui) are now in the &#96;git-gui&#96; formula.</span><br><span class="line">Subversion interoperability (git-svn) is now in the &#96;git-svn&#96; formula.</span><br><span class="line"></span><br><span class="line">zsh completions and functions have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;zsh&#x2F;site-functions</span><br><span class="line"></span><br><span class="line">Emacs Lisp files have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;emacs&#x2F;site-lisp&#x2F;git</span><br><span class="line">&#x3D;&#x3D;&gt; Summary</span><br><span class="line">🍺  &#x2F;opt&#x2F;homebrew&#x2F;Cellar&#x2F;git&#x2F;2.36.1: 1,545 files, 44.1MB</span><br><span class="line">&#x3D;&#x3D;&gt; Running &#96;brew cleanup git&#96;...</span><br><span class="line">Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.</span><br><span class="line">Hide these hints with HOMEBREW_NO_ENV_HINTS (see &#96;man brew&#96;).</span><br><span class="line">&#x3D;&#x3D;&gt; Caveats</span><br><span class="line">&#x3D;&#x3D;&gt; git</span><br><span class="line">The Tcl&#x2F;Tk GUIs (e.g. gitk, git-gui) are now in the &#96;git-gui&#96; formula.</span><br><span class="line">Subversion interoperability (git-svn) is now in the &#96;git-svn&#96; formula.</span><br><span class="line"></span><br><span class="line">zsh completions and functions have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;zsh&#x2F;site-functions</span><br><span class="line"></span><br><span class="line">Emacs Lisp files have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;emacs&#x2F;site-lisp&#x2F;git</span><br></pre></td></tr></table></figure>
+<h2 id="Generate-SSH-key"><a href="#Generate-SSH-key" class="headerlink" title="Generate SSH key"></a>Generate SSH key</h2><p>还是比较习惯用SSH方法登陆github而不是用账号密码，Mac和Linux实在是太一致了，几乎没什么需要修改的地方，指令都一模一样</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">matthew@dhcp82-160 ~ % ssh-keygen -t rsa</span><br><span class="line">Generating public&#x2F;private rsa key pair.</span><br><span class="line">Enter file in which to save the key (&#x2F;Users&#x2F;matthew&#x2F;.ssh&#x2F;id_rsa): </span><br><span class="line">Created directory &#39;&#x2F;Users&#x2F;matthew&#x2F;.ssh&#39;.</span><br><span class="line">Enter passphrase (empty for no passphrase): </span><br><span class="line">Enter same passphrase again: </span><br><span class="line">Your identification has been saved in &#x2F;Users&#x2F;matthew&#x2F;.ssh&#x2F;id_rsa</span><br><span class="line">Your public key has been saved in &#x2F;Users&#x2F;matthew&#x2F;.ssh&#x2F;id_rsa.pub</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:1f4I286yCydWUdM2U8FPQzXZwhqjw4znk1OqEHNKFLc matthew@dhcp82-160.vlab.nii.ac.jp</span><br><span class="line">The key&#39;s randomart image is:</span><br><span class="line">+---[RSA 3072]----+</span><br><span class="line">|      ...   ooo&#x3D;B|</span><br><span class="line">|      .. . oo.B++|</span><br><span class="line">|     .  E+o..&#x3D; &#x3D;o|</span><br><span class="line">|      + o.*oo   .|</span><br><span class="line">|     . &#x3D;Soo&#x3D;.    |</span><br><span class="line">|      o  .*+ o   |</span><br><span class="line">|       .+.ooo .  |</span><br><span class="line">|       ..+.o     |</span><br><span class="line">|          o+o    |</span><br><span class="line">+----[SHA256]-----+</span><br><span class="line"></span><br><span class="line">matthew@dhcp82-160 .ssh % cat id_rsa.pub </span><br><span class="line">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDVzjPimLgla3p8JGB9aTw0x1BSn&#x2F;rmTdvEUCW&#x2F;JzDK3DFDh210hcaFuumsoEcLSeAZHfvB3PCwzz3U3DwKjFdutf1vjhh0sVU7TV5rvVzAoZJp2fbz7J0ai6wa1+gceGSYuDi08MsGnThxRlPytl1+LOCi1nS4RG&#x2F;2YcmJc0y9wns2iaPcwsA4WCrM65ViJU10KK7G2z1+4LCn6xejjXAOIjMBcL8pSO7B1no+8LK6M44n&#x2F;+LeuNK+a8l4HRh3yy0TbXuVPDHkgpDxDF7MR1KfG99t2wgEQF6Wv28bUTnpMoip4hz0ngGCURiGNjvQ5iF04SXF4ME1fIWUBdchy1EHYtEc9PdPzVpLE0espFWz+a&#x2F;14tpsPPmd2TZHq1ufq2oh4PwsK8UBnkI8zC&#x2F;aPB6USw6INYadC89+lYdg+mjfX7mJTnDnOIQvNUDAzsM2yL7MR6Zm&#x2F;&#x2F;tZ0c1wKljGm6D8p1yCkUEpxPXenIzd6S4QJ7gUaiiNsMgB84EG16qmq68&#x3D; matthew@dhcp82-160.vlab.labname.ac.jp</span><br></pre></td></tr></table></figure>
+<p>发现这个最后是实验室的host，以防出问题重新生成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">matthew@dhcp82-160 .ssh % ssh-keygen -t rsa -C q_masio@outlook.com</span><br><span class="line">Generating public&#x2F;private rsa key pair.</span><br><span class="line">Enter file in which to save the key (&#x2F;Users&#x2F;matthew&#x2F;.ssh&#x2F;id_rsa): </span><br><span class="line">&#x2F;Users&#x2F;matthew&#x2F;.ssh&#x2F;id_rsa already exists.</span><br><span class="line">Overwrite (y&#x2F;n)? y</span><br><span class="line">Enter passphrase (empty for no passphrase): </span><br><span class="line">Enter same passphrase again: </span><br><span class="line">Your identification has been saved in &#x2F;Users&#x2F;matthew&#x2F;.ssh&#x2F;id_rsa</span><br><span class="line">Your public key has been saved in &#x2F;Users&#x2F;matthew&#x2F;.ssh&#x2F;id_rsa.pub</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:un4eTlP4UsdjywFpY4e8pfttM4GiIeP6qkXD0BsHIqo q_masio@outlook.com</span><br><span class="line">The key&#39;s randomart image is:</span><br><span class="line">+---[RSA 3072]----+</span><br><span class="line">|. . .            |</span><br><span class="line">|.. o .   . o     |</span><br><span class="line">|. . o .   O o    |</span><br><span class="line">|.  o +   + O     |</span><br><span class="line">|E   &#x3D;   S &#x3D; *.   |</span><br><span class="line">|   . .o..+.&#x3D;.+.  |</span><br><span class="line">|    ...o&#x3D;oo.o  . |</span><br><span class="line">|   .  .+o+ . .+  |</span><br><span class="line">|  ..o&#x3D;+oo   ...o |</span><br><span class="line">+----[SHA256]-----+</span><br><span class="line"></span><br><span class="line">matthew@dhcp82-160 .ssh % cat id_rsa.pub </span><br><span class="line">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCpYnZx&#x2F;WHi9DXUjk+by0RCmLDZTsER+kFf6T8UfkhxYu8prq9vAaQE4HIqiFQcDN+IB2Rjqu2jyUQ4Lcjsx8n2jz+JtAqzWB2QHum9IxCyo0VQsBwXlNl4Is4x0ExIr9X84+UrOJueSfmZ0vHMkZGvYfa1wzF&#x2F;3cR2Mvkk7TIxKQLq4FoVx66lsG5&#x2F;rmDD9wbQD3e+xxjMAJIheI5OLfvGKcYqqRoNrGxtyqmTiPne2ogeipVA3i29wPc2H9BqZPMCGgFjrhuGvNcV54g5PVh8OjsCQ+dSqJEVSznAuWIwfW0YyiThWZ7nIzpP8NNfx5eKosWub4KvZiAwEqbbxb5CG&#x2F;hltlzstWnRHeUfbpIRbdsjPwibzWqjU8yMc4NaEr43TWNKvhUsn0E3proWY0O4xRG3LDKBSh9R&#x2F;SxFfwnolRlyIxQYJNRZ9KemH9dOSl77mG7nEQZkghUrMsqdtjQz5gEA0sqskk7QfBKNDHoxD9viHiLzideiBWCc6fuimZM&#x3D; q_masio@outlook.com</span><br></pre></td></tr></table></figure>
+<p>验证是否正常运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">matthew@dhcp82-160 .ssh % ssh -T git@github.com </span><br><span class="line">The authenticity of host &#39;github.com (52.69.186.44)&#39; can&#39;t be established.</span><br><span class="line">ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF&#x2F;zLDA0zPMSvHdkr4UvCOqU.</span><br><span class="line">This key is not known by any other names</span><br><span class="line">Are you sure you want to continue connecting (yes&#x2F;no&#x2F;[fingerprint])? y</span><br><span class="line">Please type &#39;yes&#39;, &#39;no&#39; or the fingerprint: yes</span><br><span class="line">Warning: Permanently added &#39;github.com&#39; (ED25519) to the list of known hosts.</span><br><span class="line">Hi QiuMatthew! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<h2 id="Clone-a-repo-using-ssh-authentication"><a href="#Clone-a-repo-using-ssh-authentication" class="headerlink" title="Clone a repo using ssh authentication"></a>Clone a repo using ssh authentication</h2><p>用ssh方式clone的正确姿势，显然不能用直接复制网址到方式，因为那是https协议，我们要改成ssh协议，但有几个点要注意<br>只把https改成ssh是不行的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">matthew@dhcp82-160 Desktop % git clone ssh:&#x2F;&#x2F;github.com&#x2F;QiuMatthew&#x2F;FileShare</span><br><span class="line">Cloning into &#39;FileShare&#39;...</span><br><span class="line">matthew@github.com: Permission denied (publickey).</span><br><span class="line">fatal: Could not read from remote repository.</span><br></pre></td></tr></table></figure>
+<p>在最后加.git还不够</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">matthew@dhcp82-160 Desktop % git clone ssh:&#x2F;&#x2F;github.com&#x2F;QiuMatthew&#x2F;FileShare.git</span><br><span class="line">Cloning into &#39;FileShare&#39;...</span><br><span class="line">matthew@github.com: Permission denied (publickey).</span><br><span class="line">fatal: Could not read from remote repository.</span><br></pre></td></tr></table></figure>
+<p>在网址前面加git@，成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">matthew@dhcp82-160 Desktop % git clone ssh:&#x2F;&#x2F;git@github.com&#x2F;QiuMatthew&#x2F;FileShare.git</span><br><span class="line">Cloning into &#39;FileShare&#39;...</span><br><span class="line">remote: Enumerating objects: 3, done.</span><br><span class="line">remote: Counting objects: 100% (3&#x2F;3), done.</span><br><span class="line">remote: Compressing objects: 100% (2&#x2F;2), done.</span><br><span class="line">remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0</span><br><span class="line">Receiving objects: 100% (3&#x2F;3), done.</span><br></pre></td></tr></table></figure>
+<h2 id="Try-Git-Operations"><a href="#Try-Git-Operations" class="headerlink" title="Try Git Operations"></a>Try Git Operations</h2><p>尝试进行一些git操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">matthew@dhcp82-160 FileShare % git branch</span><br><span class="line">* master</span><br><span class="line">matthew@dhcp82-160 FileShare % mv ..&#x2F;README.md .&#x2F;</span><br><span class="line">matthew@dhcp82-160 FileShare % ls</span><br><span class="line">Mac-Env.md	README.md</span><br><span class="line">matthew@dhcp82-160 FileShare % git status</span><br><span class="line">On branch master</span><br><span class="line">Your branch is up to date with &#39;origin&#x2F;master&#39;.</span><br><span class="line"></span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">	README.md</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br><span class="line">matthew@dhcp82-160 FileShare % git add README.md </span><br><span class="line">matthew@dhcp82-160 FileShare % ls</span><br><span class="line">Mac-Env.md	README.md</span><br><span class="line">matthew@dhcp82-160 FileShare % git status</span><br><span class="line">On branch master</span><br><span class="line">Your branch is up to date with &#39;origin&#x2F;master&#39;.</span><br><span class="line"></span><br><span class="line">Changes to be committed:</span><br><span class="line">  (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)</span><br><span class="line">	new file:   README.md</span><br><span class="line"></span><br><span class="line">matthew@dhcp82-160 FileShare % git commit -m &#39;add README file&#39;</span><br><span class="line">[master f3ea1cf] add README file</span><br><span class="line"> Committer: Q &lt;matthew@Qs-MacBook-Pro.local&gt;</span><br><span class="line">Your name and email address were configured automatically based</span><br><span class="line">on your username and hostname. Please check that they are accurate.</span><br><span class="line">You can suppress this message by setting them explicitly. Run the</span><br><span class="line">following command and follow the instructions in your editor to edit</span><br><span class="line">your configuration file:</span><br><span class="line"></span><br><span class="line">    git config --global --edit</span><br><span class="line"></span><br><span class="line">After doing this, you may fix the identity used for this commit with:</span><br><span class="line"></span><br><span class="line">    git commit --amend --reset-author</span><br><span class="line"></span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"> create mode 100644 README.md</span><br><span class="line">matthew@dhcp82-160 FileShare % git push --set-upstream origin master</span><br><span class="line">Enumerating objects: 4, done.</span><br><span class="line">Counting objects: 100% (4&#x2F;4), done.</span><br><span class="line">Delta compression using up to 8 threads</span><br><span class="line">Compressing objects: 100% (2&#x2F;2), done.</span><br><span class="line">Writing objects: 100% (3&#x2F;3), 330 bytes | 82.00 KiB&#x2F;s, done.</span><br><span class="line">Total 3 (delta 0), reused 0 (delta 0), pack-reused 0</span><br><span class="line">To ssh:&#x2F;&#x2F;github.com&#x2F;QiuMatthew&#x2F;FileShare.git</span><br><span class="line">   86e6611..f3ea1cf  master -&gt; master</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Start-with-hexo"><a href="#Start-with-hexo" class="headerlink" title="Start with hexo"></a>Start with hexo</h1><h2 id="Start-with-Nodejs"><a href="#Start-with-Nodejs" class="headerlink" title="Start with Nodejs"></a>Start with Nodejs</h2><p>There are two ways to use nodejs, we can install it with homebrew. But I decided to use nodebrew for version control.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">matthew@Qs-MacBook-Pro FileShare % brew install nodebrew</span><br><span class="line">Running &#96;brew update --preinstall&#96;...</span><br><span class="line">&#x3D;&#x3D;&gt; Auto-updated Homebrew!</span><br><span class="line">Updated 1 tap (homebrew&#x2F;core).</span><br><span class="line">&#x3D;&#x3D;&gt; New Formulae</span><br><span class="line">dotdrop             libabw              octosql             xcode-kotlin</span><br><span class="line">glibc@2.13          lndir               release-it</span><br><span class="line">&#x3D;&#x3D;&gt; Updated Formulae</span><br><span class="line">Updated 501 formulae.</span><br><span class="line"></span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;nodebrew&#x2F;manifests&#x2F;1.2.0</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;nodebrew&#x2F;blobs&#x2F;sha256:eed2aeff4</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading from https:&#x2F;&#x2F;pkg-containers.githubusercontent.com&#x2F;ghcr1&#x2F;blobs&#x2F;sh</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Pouring nodebrew--1.2.0.all.bottle.tar.gz</span><br><span class="line">&#x3D;&#x3D;&gt; Caveats</span><br><span class="line">You need to manually run setup_dirs to create directories required by nodebrew:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;opt&#x2F;nodebrew&#x2F;bin&#x2F;nodebrew setup_dirs</span><br><span class="line"></span><br><span class="line">Add path:</span><br><span class="line">  export PATH&#x3D;$HOME&#x2F;.nodebrew&#x2F;current&#x2F;bin:$PATH</span><br><span class="line"></span><br><span class="line">To use Homebrew&#39;s directories rather than ~&#x2F;.nodebrew add to your profile:</span><br><span class="line">  export NODEBREW_ROOT&#x3D;&#x2F;opt&#x2F;homebrew&#x2F;var&#x2F;nodebrew</span><br><span class="line"></span><br><span class="line">zsh completions have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;zsh&#x2F;site-functions</span><br><span class="line">&#x3D;&#x3D;&gt; Summary</span><br><span class="line">🍺  &#x2F;opt&#x2F;homebrew&#x2F;Cellar&#x2F;nodebrew&#x2F;1.2.0: 8 files, 40.6KB</span><br><span class="line">&#x3D;&#x3D;&gt; Running &#96;brew cleanup nodebrew&#96;...</span><br><span class="line">Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.</span><br><span class="line">Hide these hints with HOMEBREW_NO_ENV_HINTS (see &#96;man brew&#96;).</span><br><span class="line">matthew@Qs-MacBook-Pro FileShare % nodebrew -v</span><br><span class="line">nodebrew 1.2.0</span><br><span class="line"></span><br><span class="line">Usage:</span><br><span class="line">    nodebrew help                         Show this message</span><br><span class="line">    nodebrew install &lt;version&gt;            Download and install &lt;version&gt; (from binary)</span><br><span class="line">    nodebrew compile &lt;version&gt;            Download and install &lt;version&gt; (from source)</span><br><span class="line">    nodebrew install-binary &lt;version&gt;     Alias of &#96;install&#96; (For backward compatibility)</span><br><span class="line">    nodebrew uninstall &lt;version&gt;          Uninstall &lt;version&gt;</span><br><span class="line">    nodebrew use &lt;version&gt;                Use &lt;version&gt;</span><br><span class="line">    nodebrew list                         List installed versions</span><br><span class="line">    nodebrew ls                           Alias for &#96;list&#96;</span><br><span class="line">    nodebrew ls-remote                    List remote versions</span><br><span class="line">    nodebrew ls-all                       List remote and installed versions</span><br><span class="line">    nodebrew alias &lt;key&gt; &lt;value&gt;          Set alias</span><br><span class="line">    nodebrew unalias &lt;key&gt;                Remove alias</span><br><span class="line">    nodebrew clean &lt;version&gt; | all        Remove source file</span><br><span class="line">    nodebrew selfupdate                   Update nodebrew</span><br><span class="line">    nodebrew migrate-package &lt;version&gt;    Install global NPM packages contained in &lt;version&gt; to current version</span><br><span class="line">    nodebrew exec &lt;version&gt; -- &lt;command&gt;  Execute &lt;command&gt; using specified &lt;version&gt;</span><br><span class="line">    nodebrew prune [--dry-run]            Uninstall old versions, keeping the latest version for each major version</span><br><span class="line"></span><br><span class="line">Example:</span><br><span class="line">    # install</span><br><span class="line">    nodebrew install v8.9.4</span><br><span class="line"></span><br><span class="line">    # use a specific version number</span><br><span class="line">    nodebrew use v8.9.4</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>nodebrew安装完成，试图用nodebrew安装最新版nodejs（v16.15.0）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">matthew@Qs-MacBook-Pro ~ % nodebrew install-binary v16.15.0</span><br><span class="line">Fetching: https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v16.15.0&#x2F;node-v16.15.0-darwin-arm64.tar.gz</span><br><span class="line">Warning: Failed to create the file </span><br><span class="line">Warning: &#x2F;Users&#x2F;matthew&#x2F;.nodebrew&#x2F;src&#x2F;v16.15.0&#x2F;node-v16.15.0-darwin-arm64.tar.g</span><br><span class="line">Warning: z: No such file or directory</span><br><span class="line">                                                                            0.0%curl: (23) Failure writing output to destination</span><br><span class="line"></span><br><span class="line">download failed: https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v16.15.0&#x2F;node-v16.15.0-darwin-arm64.tar.gz</span><br></pre></td></tr></table></figure>
+<p>去官网看了，明明是存在<code>https://nodejs.org/dist/v16.15.0/node-v16.15.0-darwin-arm64.tar.gz</code>这个文件的<br>怀疑是本地存储路径不存在</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">matthew@Qs-MacBook-Pro ~ % cd &#x2F;Users&#x2F;matthew </span><br><span class="line">matthew@Qs-MacBook-Pro ~ % ls</span><br><span class="line">Desktop		Documents	Downloads	Library		Movies		Music		OneDrive	Pictures	Public</span><br><span class="line">matthew@Qs-MacBook-Pro ~ % ll </span><br><span class="line">zsh: command not found: ll</span><br><span class="line">matthew@Qs-MacBook-Pro ~ % ls -a</span><br><span class="line">.			.DS_Store		.cisco			.ssh			.vscode			.zsh_sessions		Downloads		Music			Public</span><br><span class="line">..			.Trash			.cups			.swiftpm		.zprofile		Desktop			Library			OneDrive</span><br><span class="line">.CFUserTextEncoding	.anyconnect		.lesshst		.viminfo		.zsh_history		Documents		Movies			Pictures</span><br><span class="line">matthew@Qs-MacBook-Pro ~ % cd .nodebrew </span><br><span class="line">cd: no such file or directory: .nodebrew</span><br><span class="line">matthew@Qs-MacBook-Pro ~ % mkdir .nodebrew</span><br><span class="line">matthew@Qs-MacBook-Pro ~ % cd .nodebrew </span><br><span class="line">matthew@Qs-MacBook-Pro .nodebrew % ls</span><br><span class="line">matthew@Qs-MacBook-Pro .nodebrew % nodebrew install-binary v16.15.0</span><br><span class="line">Fetching: https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v16.15.0&#x2F;node-v16.15.0-darwin-arm64.tar.gz</span><br><span class="line">Warning: Failed to create the file </span><br><span class="line">Warning: &#x2F;Users&#x2F;matthew&#x2F;.nodebrew&#x2F;src&#x2F;v16.15.0&#x2F;node-v16.15.0-darwin-arm64.tar.g</span><br><span class="line">Warning: z: No such file or directory</span><br><span class="line">curl: (23) Failure writing output to destination</span><br><span class="line"></span><br><span class="line">download failed: https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v16.15.0&#x2F;node-v16.15.0-darwin-arm64.tar.gz</span><br><span class="line">matthew@Qs-MacBook-Pro .nodebrew % mkdir src                       </span><br><span class="line">matthew@Qs-MacBook-Pro .nodebrew % cd src </span><br><span class="line">matthew@Qs-MacBook-Pro src % nodebrew install-binary v16.15.0</span><br><span class="line">Fetching: https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v16.15.0&#x2F;node-v16.15.0-darwin-arm64.tar.gz</span><br><span class="line">######################################################################################################################################################################################################################################################### 100.0%</span><br><span class="line">Installed successfully</span><br></pre></td></tr></table></figure>
+<p>成功，检查是否正常安装，并开始使用刚刚安装的版本的node</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">matthew@Qs-MacBook-Pro ~ % nodebrew ls  </span><br><span class="line">v16.15.0</span><br><span class="line"></span><br><span class="line">current: none</span><br><span class="line">matthew@Qs-MacBook-Pro ~ % nodebrew use v16.15.0</span><br><span class="line">use v16.15.0</span><br></pre></td></tr></table></figure>
+<p>尝试确认</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">matthew@Qs-MacBook-Pro ~ % node -v  </span><br><span class="line">zsh: command not found: node</span><br><span class="line">matthew@Qs-MacBook-Pro ~ % npm -v</span><br><span class="line">zsh: command not found: npm</span><br></pre></td></tr></table></figure>
+<p>原因应该是没有加入PATH当中，先寻找nodejs安装在哪<br>我是用nodebrew安装的，所以应该在</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~&#x2F;.nodebrew&#x2F;current&#x2F;bin</span><br></pre></td></tr></table></figure>
+<p>因此添加这个路径到PATH当中，先判断自己是zsh还是bash</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% echo $SHELL</span><br><span class="line">&#x2F;bin&#x2F;zsh</span><br></pre></td></tr></table></figure>
+<p>我是zsh，因此要修改的文件是<code>~/.zshrc</code><br>先看看这个文件存不存在  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% ls -a ~ | grep zshrc</span><br></pre></td></tr></table></figure>
+<p>如果不存在就<code>touch</code>新建一下这个文件，然后在最后追加内容  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% echo &#39;export PATH&#x3D;$HOME&#x2F;.nodebrew&#x2F;current&#x2F;bin:$PATH&#39; &gt;&gt; ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure>
+<p>应用修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% exec $SHELL -l</span><br></pre></td></tr></table></figure>
+<p>验证是否修改成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% node --version</span><br><span class="line">v16.15.0</span><br></pre></td></tr></table></figure>
+<p>显示版本说明修改成功</p>
+<h2 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h2><p>有了git和nodejs，现在安装hexo，遵循hexo官网 <a target="_blank" rel="noopener" href="https://hexo.io/">https://hexo.io</a> 的操作  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">% npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line">added 60 packages, and audited 61 packages in 5s</span><br><span class="line"></span><br><span class="line">14 packages are looking for funding</span><br><span class="line">  run &#96;npm fund&#96; for details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line">npm notice </span><br><span class="line">npm notice New minor version of npm available! 8.5.5 -&gt; 8.11.0</span><br><span class="line">npm notice Changelog: https:&#x2F;&#x2F;github.com&#x2F;npm&#x2F;cli&#x2F;releases&#x2F;tag&#x2F;v8.11.0</span><br><span class="line">npm notice Run npm install -g npm@8.11.0 to update!</span><br><span class="line">npm notice </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>顺手更新一下npm</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">% npm install -g npm@8.11.0</span><br><span class="line"></span><br><span class="line">removed 6 packages, changed 74 packages, and audited 202 packages in 1s</span><br><span class="line"></span><br><span class="line">11 packages are looking for funding</span><br><span class="line">  run &#96;npm fund&#96; for details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br></pre></td></tr></table></figure>
+
+<h2 id="Get-source-codes"><a href="#Get-source-codes" class="headerlink" title="Get source codes"></a>Get source codes</h2><p>我们现在已经安装好了hexo，接下来要把windows的hexo源文件复制到mac上<br>之后为了方便同步源文件，统一使用git完成，每次无论在Windows还是在mac上，都先pull一下源文件，编辑过后再push和deploy<br>我们deploy的网页在github的main分支，源文件在github的hexo分支<br>首先是把win上的源文件提交到hexo分支  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"># 进入hexo博客文件夹</span><br><span class="line">$ cd &#x2F;mnt&#x2F;c&#x2F;Non-system&#x2F;GitRepositories&#x2F;HexoBlog</span><br><span class="line"># 这个文件夹hexo是不会帮我们建立成git仓库的，因此需要初始化本地仓库，但由于我clone过主题，因此需要先找到主题文件夹里面的 &#96;.git&#96; 文件夹，将其删除，否则就会仓库套仓库导致报错，这里假设已经删除完毕，初始化仓库并添加所有内容到仓库</span><br><span class="line">$ git init</span><br><span class="line">$ git add *</span><br><span class="line">$ git commit -m &#39;source code of blog&#39;</span><br><span class="line"># 和远程仓库建立连接，给远程仓库起名为origin</span><br><span class="line">$ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;QiuMatthew&#x2F;QiuMatthew.github.io.git</span><br><span class="line"># 查看远程连接和本地分支</span><br><span class="line">$ git remote -v</span><br><span class="line">$ git branch</span><br><span class="line"># 尝试push，将本地master分支push到远程的hexo分支</span><br><span class="line">$ git push --set-upstream origin master:hexo</span><br><span class="line"># 发现需要密码，想起来改用ssh放弃https</span><br><span class="line">$ git remote rm origin</span><br><span class="line">$ git remote add origin ssh:&#x2F;&#x2F;git@github.com&#x2F;QiuMatthew&#x2F;QiuMatthew.github.io.git</span><br><span class="line">$ git push --set-upstream origin master:hexo</span><br><span class="line"># 发现被远程仓库拒绝了，因为本地比远程版本落后，先pull</span><br><span class="line">$ git pull origin hexo:master</span><br><span class="line">$ git push origin master:hexo</span><br><span class="line"># 还是不行，commit对不上号，只好强制push</span><br><span class="line">$ git push -f origin hexo:master</span><br></pre></td></tr></table></figure>
+<p>成功提交，然后在mac里直接把整个repo克隆下来  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">% cd ~&#x2F;Hexo&#x2F;</span><br><span class="line">% git clone https:&#x2F;&#x2F;github.com&#x2F;QiuMatthew&#x2F;QiuMatthew.github.io</span><br><span class="line"># 进入并查看本地分支，发现是main，main是我们用来放网页的分支，hexo是我们用来存源文件的分支</span><br><span class="line">% cd QiuMatthew.github.io</span><br><span class="line">% git branch</span><br><span class="line">* main</span><br><span class="line"># 因此改成hexo分支</span><br><span class="line">% git checkout hexo</span><br></pre></td></tr></table></figure>
+
+<h2 id="Use-Hexo"><a href="#Use-Hexo" class="headerlink" title="Use Hexo"></a>Use Hexo</h2><p>在这个目录下，我们有了生成网页所需的源文件，接下来就需要用hexo了，先初始化  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">% hexo init</span><br><span class="line">ERROR Cannot find module &#39;hexo&#39; from &#39;&#x2F;Users&#x2F;matthew&#x2F;Hexo&#x2F;QiuMatthew.github.io&#39;</span><br><span class="line">ERROR Local hexo loading failed in ~&#x2F;Hexo&#x2F;QiuMatthew.github.io</span><br><span class="line">ERROR Try running: &#39;rm -rf node_modules &amp;&amp; npm install --force&#39;</span><br><span class="line">% npm install --force</span><br><span class="line">npm WARN using --force Recommended protections disabled.</span><br><span class="line">npm WARN old lockfile </span><br><span class="line">npm WARN old lockfile The package-lock.json file was created with an old version of npm,</span><br><span class="line">npm WARN old lockfile so supplemental metadata must be fetched from the registry.</span><br><span class="line">npm WARN old lockfile </span><br><span class="line">npm WARN old lockfile This is a one-time fix-up, please be patient...</span><br><span class="line">npm WARN old lockfile </span><br><span class="line">npm WARN deprecated source-map-url@0.4.1: See https:&#x2F;&#x2F;github.com&#x2F;lydell&#x2F;source-map-url#deprecated</span><br><span class="line">npm WARN deprecated source-map-resolve@0.5.3: See https:&#x2F;&#x2F;github.com&#x2F;lydell&#x2F;source-map-resolve#deprecated</span><br><span class="line">npm WARN deprecated urix@0.1.0: Please see https:&#x2F;&#x2F;github.com&#x2F;lydell&#x2F;urix#deprecated</span><br><span class="line">npm WARN deprecated resolve-url@0.2.1: https:&#x2F;&#x2F;github.com&#x2F;lydell&#x2F;resolve-url#deprecated</span><br><span class="line"></span><br><span class="line">added 198 packages, and audited 199 packages in 5s</span><br><span class="line"></span><br><span class="line">15 packages are looking for funding</span><br><span class="line">  run &#96;npm fund&#96; for details</span><br><span class="line"></span><br><span class="line">11 vulnerabilities (3 moderate, 5 high, 3 critical)</span><br><span class="line"></span><br><span class="line">To address issues that do not require attention, run:</span><br><span class="line">  npm audit fix</span><br><span class="line"></span><br><span class="line">To address all issues (including breaking changes), run:</span><br><span class="line">  npm audit fix --force</span><br><span class="line"></span><br><span class="line">Run &#96;npm audit&#96; for details.</span><br></pre></td></tr></table></figure>
+<p>好家伙一堆bug，姑且试试能不能用  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">% hexo clean</span><br><span class="line">% hexo g</span><br><span class="line">% hexo d</span><br></pre></td></tr></table></figure>
+<p>还真的能用，起飞！</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2022/05/11/Mac-Env/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2022/05/30/hello-world/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Hello World
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/03/03/Nodejs&Revealjs/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Nodejs and Revealjs</div>
+      </a>
+    
+  </nav>
+
+  
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2021-2022
+        <i class="ri-heart-fill heart_icon"></i> Matthew Qiu
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="马西欧"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://www.baidu.com">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/2021">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+  </div>
+</body>
+
+</html>

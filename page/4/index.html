@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+     马西欧
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
+
+  
+
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      
+<section class="cover">
+    
+  <div class="cover-frame">
+    <div class="bg-box">
+      <img src="/images/cover8.jpg" alt="image frame" />
+    </div>
+    <div class="cover-inner text-center text-white">
+      <h1><a href="/">马西欧</a></h1>
+      <div id="subtitle-box">
+        
+        <span id="subtitle"></span>
+        
+      </div>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="cover-learn-more">
+    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+
+<!-- Subtitle -->
+
+  <script>
+    try {
+      var typed = new Typed("#subtitle", {
+        strings: ['Proletarier aller Länder, vereinigt euch!', 'Workers of all nations, unite!', '万国の労働者よ、団結せよ！'],
+        startDelay: 0,
+        typeSpeed: 200,
+        loop: true,
+        backSpeed: 100,
+        showCursor: true
+      });
+    } catch (err) {
+      console.log(err)
+    }
+  </script>
+  
+<div id="main">
+  <section class="outer">
+  
+  
+  
+
+<div class="notice" style="margin-top:50px">
+    <i class="ri-heart-fill"></i>
+    <div class="notice-content" id="broad"></div>
+</div>
+<script type="text/javascript">
+    fetch('https://v1.hitokoto.cn')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("broad").innerHTML = data.hitokoto;
+        })
+        .catch(console.error)
+</script>
+
+<style>
+    .notice {
+        padding: 20px;
+        border: 1px dashed #e6e6e6;
+        color: #969696;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background: #fbfbfb50;
+        border-radius: 10px;
+    }
+
+    .notice i {
+        float: left;
+        color: #999;
+        font-size: 16px;
+        padding-right: 10px;
+        vertical-align: middle;
+        margin-top: -2px;
+    }
+
+    .notice-content {
+        display: initial;
+        vertical-align: middle;
+    }
+</style>
+  
+  <article class="articles">
+    
+    
+    
+    
+    <article
+  id="post-学习笔记2021-6-26-Ch2-確率空間とその基本概念"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/06/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-26-Ch2-%E7%A2%BA%E7%8E%87%E7%A9%BA%E9%96%93%E3%81%A8%E3%81%9D%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"
+    >学习笔记2021-6-26-Ch2-確率空間とその基本概念</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/06/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-26-Ch2-%E7%A2%BA%E7%8E%87%E7%A9%BA%E9%96%93%E3%81%A8%E3%81%9D%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="article-date">
+  <time datetime="2021-06-26T09:17:09.000Z" itemprop="datePublished">2021-06-26</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="Chapter-2-確率空間とその基本概念"><a href="#Chapter-2-確率空間とその基本概念" class="headerlink" title="Chapter 2 確率空間とその基本概念"></a>Chapter 2 確率空間とその基本概念</h2><h3 id="12-標本空間・事象・確率-Sample-Space-amp-Event-amp-Probability"><a href="#12-標本空間・事象・確率-Sample-Space-amp-Event-amp-Probability" class="headerlink" title="12 標本空間・事象・確率 Sample Space &amp; Event &amp; Probability"></a>12 標本空間・事象・確率 Sample Space &amp; Event &amp; Probability</h3><h4 id="確率空間とは"><a href="#確率空間とは" class="headerlink" title="確率空間とは"></a>確率空間とは</h4><p>$\Omega$ 標本空間<br>$F$ 事象（じしょう）全体<br>$P$ 根元事象の確率<br>からできている</p>
+<h4 id="全事象の確率"><a href="#全事象の確率" class="headerlink" title="全事象の確率"></a>全事象の確率</h4><p>$ P(\Omega) = 1 $</p>
+<h3 id="13-独立性・排反-Indepence-amp-Mutually-Exclusion"><a href="#13-独立性・排反-Indepence-amp-Mutually-Exclusion" class="headerlink" title="13 独立性・排反 Indepence &amp; Mutually Exclusion"></a>13 独立性・排反 Indepence &amp; Mutually Exclusion</h3><h4 id="条件付確率"><a href="#条件付確率" class="headerlink" title="条件付確率"></a>条件付確率</h4><p>$$ P(A|B) = \frac{P(A \cap B)}{P(B)} $$</p>
+<h4 id="独立"><a href="#独立" class="headerlink" title="独立"></a>独立</h4><p>独立であるとは $ P(A \cap B) = P(A)P(B) $<br>また，<br>$A$ と $B$ が独立 $\Leftrightarrow$ $ P(A|B) = P(A) $<br>つまり， $B$ が起こることが $A$ が起こることに影響を及ぼさない</p>
+<h4 id="排反"><a href="#排反" class="headerlink" title="排反"></a>排反</h4><p>排反であるとは $ A \cap B = \varnothing $<br>この時<br>$ P(A \cup B) = P(A) + P(B) $</p>
+<h4 id="排反でないときの和事象の確率"><a href="#排反でないときの和事象の確率" class="headerlink" title="排反でないときの和事象の確率"></a>排反でないときの和事象の確率</h4><p>$$ P(A \cup B) = P(A) + P(B) - P(A \cap B) $$<br>$$ P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(B \cap C) - P(A \cap C) + P(A \cap B \cap C) $$</p>
+<h4 id="3つの事象の独立性"><a href="#3つの事象の独立性" class="headerlink" title="3つの事象の独立性"></a>3つの事象の独立性</h4><p>A，B，Cが独立であるとは<br>$$ P(A \cap B) = P(A)P(B) $$<br>$$ P(B \cap C) = P(B)P(C) $$<br>$$ P(A \cap C) = P(A)P(C) $$<br>$$ P(A \cap B \cap C) = P(A)P(B)P(C) $$<br>が同時に満たされること<br>最後の式だけでは不十分なのである</p>
+<h3 id="14-確率変数と確率分布，その期待値-Random-Variable-amp-Probability-Distribution-Expected-Value"><a href="#14-確率変数と確率分布，その期待値-Random-Variable-amp-Probability-Distribution-Expected-Value" class="headerlink" title="14 確率変数と確率分布，その期待値 Random Variable &amp; Probability Distribution, Expected Value"></a>14 確率変数と確率分布，その期待値 Random Variable &amp; Probability Distribution, Expected Value</h3><p>$$ E(X) = \sum_{k} a_k P(X = a_k) $$</p>
+<h3 id="15-期待値の計算"><a href="#15-期待値の計算" class="headerlink" title="15 期待値の計算"></a>15 期待値の計算</h3><p>$ E(X + Y) = E(X) + E(Y) $ 無条件で成り立つ<br>$ E(XY) = E(X)E(Y) $ 独立とするときだけ</p>
+<h3 id="16-分散"><a href="#16-分散" class="headerlink" title="16 分散"></a>16 分散</h3><h4 id="分散と標準偏差-Variance-amp-Standard-Deviation"><a href="#分散と標準偏差-Variance-amp-Standard-Deviation" class="headerlink" title="分散と標準偏差 Variance &amp; Standard Deviation"></a>分散と標準偏差 Variance &amp; Standard Deviation</h4><p>$$ V(X) = E((X - E(X))^2) $$<br>$$ \sigma(X) = \sqrt{V(X)} $$</p>
+<h4 id="性質"><a href="#性質" class="headerlink" title="性質"></a>性質</h4><p>$$ V(X) = E(X^2) - (E(X))^2 $$<br>$ V(a + bX) = b^2 V(X) $<br>$ \sigma(a + bX) = |b| \sigma(X) $</p>
+<h3 id="17-同時（結合）確率分布と共分散"><a href="#17-同時（結合）確率分布と共分散" class="headerlink" title="17 同時（結合）確率分布と共分散"></a>17 同時（結合）確率分布と共分散</h3><h4 id="同時確率分布と周辺分布-Joint-Probability-Distribution-amp-Marginal-Distribution"><a href="#同時確率分布と周辺分布-Joint-Probability-Distribution-amp-Marginal-Distribution" class="headerlink" title="同時確率分布と周辺分布 Joint Probability Distribution &amp; Marginal Distribution"></a>同時確率分布と周辺分布 Joint Probability Distribution &amp; Marginal Distribution</h4><p>同時確率分布<br>$ P(X = i \cap Y = j) $<br>周辺分布<br>$ P(X = i) = \sum_j P(X = i \cap Y = j) $<br>$ P(Y = j) = \sum_i P(X = i \cap Y = j) $</p>
+<h4 id="共分散-Covariance"><a href="#共分散-Covariance" class="headerlink" title="共分散 Covariance"></a>共分散 Covariance</h4><p>$$ Cov(X, Y) = E((X - E(X))(Y - E(Y))) = E(XY) - E(X)E(Y) $$</p>
+<h4 id="相関係数-Correlation-Coefficient"><a href="#相関係数-Correlation-Coefficient" class="headerlink" title="相関係数 Correlation Coefficient"></a>相関係数 Correlation Coefficient</h4><p>$$ \rho(X, Y) = \frac{Cov(X, Y)}{\sigma(X)\sigma(Y)} = Cov(Xの標準化, Yの標準化) $$<br>注意：$ -1 \leq \rho \leq 1 $<br>正相関<br>負相関<br>零相関</p>
+<h3 id="18-離散確率分布に関する計算-Discrete-Probability-Distribution"><a href="#18-離散確率分布に関する計算-Discrete-Probability-Distribution" class="headerlink" title="18 離散確率分布に関する計算 Discrete Probability Distribution"></a>18 離散確率分布に関する計算 Discrete Probability Distribution</h3><h4 id="共分散の基本的な性質"><a href="#共分散の基本的な性質" class="headerlink" title="共分散の基本的な性質"></a>共分散の基本的な性質</h4><h5 id="性質一"><a href="#性質一" class="headerlink" title="性質一"></a>性質一</h5><p>$ Cov(X, Y) = E(XY) - E(X)E(Y) $<br>XとYが独立の時<br>$ Cov(X, Y) = 0 $</p>
+<h5 id="性質二"><a href="#性質二" class="headerlink" title="性質二"></a>性質二</h5><p>$ V(aX + bY) = a^2 V(X) + 2ab Cov(X, Y) + b^2 V(Y) $<br>XとYが独立の時<br>$ V(aX + bY) = a^2 V(X) + b^2 V(Y) $<br>特に<br>$ V(X \pm Y) = V(X) + V(Y) $</p>
+<h5 id="性質三"><a href="#性質三" class="headerlink" title="性質三"></a>性質三</h5><p>$ Cov(aX + bY, cZ + dW) = ac Cov(X, Z) + ad Cov(X, W) + bc Cov(Y, Z) + bd Cov(Y, W) $</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/" rel="tag">概率论</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-6-24-Ch1-確率・統計計算の基礎"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/06/24/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-24-Ch1-%E7%A2%BA%E7%8E%87%E3%83%BB%E7%B5%B1%E8%A8%88%E8%A8%88%E7%AE%97%E3%81%AE%E5%9F%BA%E7%A4%8E/"
+    >学习笔记2021-6-24-Ch1-確率・統計計算の基礎</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/06/24/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-24-Ch1-%E7%A2%BA%E7%8E%87%E3%83%BB%E7%B5%B1%E8%A8%88%E8%A8%88%E7%AE%97%E3%81%AE%E5%9F%BA%E7%A4%8E/" class="article-date">
+  <time datetime="2021-06-24T01:40:06.000Z" itemprop="datePublished">2021-06-24</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="Chapter-1-確率・統計計算の基礎"><a href="#Chapter-1-確率・統計計算の基礎" class="headerlink" title="Chapter 1 確率・統計計算の基礎"></a>Chapter 1 確率・統計計算の基礎</h2><h3 id="01-順列と組合せ-Permutation-and-Combination"><a href="#01-順列と組合せ-Permutation-and-Combination" class="headerlink" title="01 順列と組合せ Permutation and Combination"></a>01 順列と組合せ Permutation and Combination</h3><h3 id="02-重複順列と重複組み合わせ-Permutations-and-Combinations-with-Repetition"><a href="#02-重複順列と重複組み合わせ-Permutations-and-Combinations-with-Repetition" class="headerlink" title="02 重複順列と重複組み合わせ Permutations and Combinations with Repetition"></a>02 重複順列と重複組み合わせ Permutations and Combinations with Repetition</h3><p>插板or球涂色分组<br>$$ {3}H_{10} = {12}C_{2} $$<br>Slack variable: Transform an inequality constraint into an equality.</p>
+<h3 id="03-集合と写像-Set-and-Mapping"><a href="#03-集合と写像-Set-and-Mapping" class="headerlink" title="03 集合と写像 Set and Mapping"></a>03 集合と写像 Set and Mapping</h3><p>写像<br>1対1写像（単射）<br>上への写像（全射）<br>1対1上への写像（全単射，双射）<br>自然数の集合 $ \mathbb{N} $ が0を含まない</p>
+<h3 id="04-Σ計算"><a href="#04-Σ計算" class="headerlink" title="04 Σ計算"></a>04 Σ計算</h3><p>$$ \sum_{i = 1}^{n} i = \frac{n(n + 1)}{2} $$<br>$$ \sum_{i = 1}^{n} i^2 = \frac{n(n + 1)(2n + 1)}{6} $$<br>$$ \sum_{i = 1}^{n} i^3 = (\frac{n(n + 1)}{2})^2 $$</p>
+<h3 id="05-階差数列・望遠鏡公式-Sequence-of-Difference-amp-Telescoping-Formula"><a href="#05-階差数列・望遠鏡公式-Sequence-of-Difference-amp-Telescoping-Formula" class="headerlink" title="05 階差数列・望遠鏡公式 Sequence of Difference &amp; Telescoping Formula"></a>05 階差数列・望遠鏡公式 Sequence of Difference &amp; Telescoping Formula</h3><p>$$ \sum_{k = 1}^{n} {f(k + 1) - f(k)} = f(n + 1) - f(1) $$<br>例として，<br>$$ \sum_{k = 1}^{n} k(k - 1)(k - 2) = \frac{1}{4} \sum_{i = 1}^{n} (k + 1)k(k - 1)(k - 2) - k(k - 1)(k - 2)(k - 3) $$<br>$$ = \frac{1}{4} {(n + 1)n(n - 1)(n - 2) - 0} $$<br>$$ = \frac{1}{4} (n + 1)n(n - 1)(n - 2) $$</p>
+<h3 id="06-2項定理・2項展開-Binomial-Theorem-Binomial-Expansion"><a href="#06-2項定理・2項展開-Binomial-Theorem-Binomial-Expansion" class="headerlink" title="06 2項定理・2項展開 Binomial Theorem/Binomial Expansion"></a>06 2項定理・2項展開 Binomial Theorem/Binomial Expansion</h3><p>$$ 2項定理 (x + y)^n = \sum_{k = 0}^{n} \binom{n}{k} x^k y^{n - k} $$<br>$_nC_k$ を $\binom{n}{k}$ と書くのは，nが自然数でないときも考えたいからで，その場合は一般化2項係数と呼ぶ，その定義は<br>$$ \alpha \in \mathbb{R}, k \in \mathbb{N} \cup {0} \ に対して\  \binom{n}{k} = \frac{\alpha(\alpha - 1)(\alpha - 2)…(\alpha - k + 1)}{k!} $$</p>
+<h3 id="07-ガリレオのサイコロ"><a href="#07-ガリレオのサイコロ" class="headerlink" title="07 ガリレオのサイコロ"></a>07 ガリレオのサイコロ</h3><p>Equally likely</p>
+<h3 id="08-確率のやさしい問題"><a href="#08-確率のやさしい問題" class="headerlink" title="08 確率のやさしい問題"></a>08 確率のやさしい問題</h3><h3 id="09-確率と漸化式（ぜんかしき）-Recurrence-Relation"><a href="#09-確率と漸化式（ぜんかしき）-Recurrence-Relation" class="headerlink" title="09 確率と漸化式（ぜんかしき） Recurrence Relation"></a>09 確率と漸化式（ぜんかしき） Recurrence Relation</h3><p>隣接3項間の漸化式<br>$$ a_{n + 2} + Aa_{n + 1} + Ba_n = 0, a_0 = C, a_1 = D $$<br>解法：<br>特性方程式<br>$$ t^2 + At + B = 0 $$<br>の2解を $\alpha$，$\beta$ とすると<br>$$ a_n = K\alpha^n + L\beta^n $$<br>とおける<br>あとは $ a_0, a_1 $ を代入して $ K, L $ を解けばよい<br>また，重解 $\alpha$ の時は，<br>$$ a_n = (Kn + L)\alpha^n $$<br>とおける</p>
+<p>さらに，非同次の漸化式<br>$$ a_{n + 2} + Aa_{n + 1} + Ba_n = f(n), a_0 = C, a_1 = D $$<br>の場合は，特殊解を求め，の場合 $ f(n) = 0 $ に帰着させる</p>
+<h3 id="10-多項展開"><a href="#10-多項展開" class="headerlink" title="10 多項展開"></a>10 多項展開</h3><p>$$ (a + b + c)^n = \sum_{k, l \geq 0, k + l \leq n}^{n} \frac{n!}{k!l!(n - k - l)!} a^k b^l c^{n - k - l} $$</p>
+<h3 id="11-誕生日の問題"><a href="#11-誕生日の問題" class="headerlink" title="11 誕生日の問題"></a>11 誕生日の問題</h3><p>$$ e^{0.7} \approx 2 $$<br>近似を用いよう</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/" rel="tag">概率论</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-6-18-Ch6-实对称矩阵的对角化与二次型"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/06/17/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-18-Ch6-%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5%E7%9A%84%E5%AF%B9%E8%A7%92%E5%8C%96%E4%B8%8E%E4%BA%8C%E6%AC%A1%E5%9E%8B/"
+    >学习笔记2021-6-18-Ch6-实对称矩阵的对角化与二次型</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/06/17/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-18-Ch6-%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5%E7%9A%84%E5%AF%B9%E8%A7%92%E5%8C%96%E4%B8%8E%E4%BA%8C%E6%AC%A1%E5%9E%8B/" class="article-date">
+  <time datetime="2021-06-17T13:05:45.000Z" itemprop="datePublished">2021-06-17</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="実対称行列の対角化と主軸問題・2次形式"><a href="#実対称行列の対角化と主軸問題・2次形式" class="headerlink" title="実対称行列の対角化と主軸問題・2次形式"></a>実対称行列の対角化と主軸問題・2次形式</h2><h3 id="実対称行列の対角化"><a href="#実対称行列の対角化" class="headerlink" title="実対称行列の対角化"></a>実対称行列の対角化</h3><h4 id="直交行列と正規直交系-Orthogonal-Matrix-amp-Orthonormal-Set"><a href="#直交行列と正規直交系-Orthogonal-Matrix-amp-Orthonormal-Set" class="headerlink" title="直交行列と正規直交系 Orthogonal Matrix &amp; Orthonormal Set"></a>直交行列と正規直交系 Orthogonal Matrix &amp; Orthonormal Set</h4><p>Pが直交行列であるとは<br>Pが実正方行列で，<br>$$ P^T P = E \ or \ P P^T = E $$<br>を満たすこと</p>
+<p>正規直交系であるとは<br>n次の列ベクトル $ \vec{p_1} ~ \vec{p_n} $ が<br>$$ \vec{p_i^T} \vec{p_i} = 1, \vec{p_i^T} \vec{p_j} = 0 (i \neq j) $$<br>を満たすこと</p>
+<h4 id="グラム‐シュミットの直交化法-Gram-Schmidt-Orthogonalization"><a href="#グラム‐シュミットの直交化法-Gram-Schmidt-Orthogonalization" class="headerlink" title="グラム‐シュミットの直交化法 Gram-Schmidt Orthogonalization"></a>グラム‐シュミットの直交化法 Gram-Schmidt Orthogonalization</h4><h4 id="いくつの結論"><a href="#いくつの結論" class="headerlink" title="いくつの結論"></a>いくつの結論</h4><p>実正方行列の固有値がすべて実数であるならば，直交行列より三角化される</p>
+<p>実対称行列の固有値がすべて実数である<br>実対称行列の相異なる固有値に対する固有ベクトルは直交する<br>実正方行列Aが対称行列である $ \Leftrightarrow $ 実正方行列Aが直交行列によって対角化される<br>実対称行列が対角化される</p>
+<h4 id="実対称行列の対角化の手順"><a href="#実対称行列の対角化の手順" class="headerlink" title="実対称行列の対角化の手順"></a>実対称行列の対角化の手順</h4><p>Step 1 固有値<br>Step 2 固有ベクトル<br>Step 3 グラム‐シュミットで正規化する（固有値が一致する固有ベクトルの間ですればよい）*<br>Step 4 $ P = \left [ \vec{a_1}, \vec{a_2}, \vec{a_3}, \vec{a_4} \right ] $<br>*固有値が相異なる固有ベクトルはお互いに直交するから，操作不要</p>
+<h3 id="座標系とその変換"><a href="#座標系とその変換" class="headerlink" title="座標系とその変換"></a>座標系とその変換</h3><h4 id="回転角"><a href="#回転角" class="headerlink" title="回転角"></a>回転角</h4><p>$$<br>\begin{bmatrix}<br>cos\theta &amp; -sin\theta\<br>sin\theta &amp; cos\theta<br>\end{bmatrix}<br>$$</p>
+<h4 id="2次曲線の標準形への道"><a href="#2次曲線の標準形への道" class="headerlink" title="2次曲線の標準形への道"></a>2次曲線の標準形への道</h4><p>行列表示<br>固有値<br>直交行列P<br>回転<br>平行移動<br>座標変換の式</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag">线性代数</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-6-12-Ch5-特征值与标准型"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/06/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-12-Ch5-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E6%A0%87%E5%87%86%E5%9E%8B/"
+    >学习笔记2021-6-12-Ch5-特征值与标准型</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/06/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-12-Ch5-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E6%A0%87%E5%87%86%E5%9E%8B/" class="article-date">
+  <time datetime="2021-06-12T06:55:42.000Z" itemprop="datePublished">2021-06-12</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="正方行列の固有値と行列の標準形"><a href="#正方行列の固有値と行列の標準形" class="headerlink" title="正方行列の固有値と行列の標準形"></a>正方行列の固有値と行列の標準形</h2><h3 id="同値というのは"><a href="#同値というのは" class="headerlink" title="同値というのは"></a>同値というのは</h3><p>自反性 Reflexive 反射性<br>对称性 Symmetric 対称性<br>传递性 Transitive 推移性</p>
+<h3 id="固有多項式"><a href="#固有多項式" class="headerlink" title="固有多項式"></a>固有多項式</h3><p>3次正方行列Aの固有多項式<br>$$ \phi_A(t) = -t^3 +(a_{11} + a_{12} + a_{13}) t^2 - (A_{11} + A_{22} + A_{33})t + |A| $$</p>
+<h3 id="三角化定理"><a href="#三角化定理" class="headerlink" title="三角化定理"></a>三角化定理</h3><h3 id="哈密尔顿-凯莱定理-Hamilton-Cayley-Theorem-ハミルトン－ケーリーの定理"><a href="#哈密尔顿-凯莱定理-Hamilton-Cayley-Theorem-ハミルトン－ケーリーの定理" class="headerlink" title="哈密尔顿-凯莱定理 Hamilton-Cayley Theorem ハミルトン－ケーリーの定理"></a>哈密尔顿-凯莱定理 Hamilton-Cayley Theorem ハミルトン－ケーリーの定理</h3><p>$ n $ 次正方行列 $ A $ の固有多項式を<br>$$ \phi(\lambda) $$<br>とすると<br>$$ \phi(A) = O $$<br>である</p>
+<h3 id="弗罗贝尼乌斯定理-Frobenius-フロベニウスの定理"><a href="#弗罗贝尼乌斯定理-Frobenius-フロベニウスの定理" class="headerlink" title="弗罗贝尼乌斯定理 Frobenius フロベニウスの定理"></a>弗罗贝尼乌斯定理 Frobenius フロベニウスの定理</h3><p>$ n $ 次正方行列 $ A $ の固有値は $ \lambda_i $ とすると<br>$ f(A) $ の固有値は $ f(\lambda_i) $ である</p>
+<h3 id="固有値の特性の一つ"><a href="#固有値の特性の一つ" class="headerlink" title="固有値の特性の一つ"></a>固有値の特性の一つ</h3><p>$ AB $ と $ BA $ の固有値は同じ</p>
+<h3 id="対角化される条件"><a href="#対角化される条件" class="headerlink" title="対角化される条件"></a>対角化される条件</h3><p>$ n $ 次正方行列 $ A $ の固有値は $ \lambda_i $<br>$ \lambda_i $ に対する固有ベクトル $ x_i $ 同次連立方程式 $ (A - \lambda_i E) x_i $ の解である<br>$ m_i $ は固有値 $ \lambda_i $ の重複度<br>$ n_i $ は $ (A - \lambda_i E) x_i $ の基本解の個数，$ n_i = n - rank(A - \lambda_i E) $<br>$ n $ 次正方行列 $ A $ が対角化される十分必要条件は<br>すべての $ \lambda_i $ に対して，$ n_i = m_i $</p>
+<h3 id="最小多項式の特色"><a href="#最小多項式の特色" class="headerlink" title="最小多項式の特色"></a>最小多項式の特色</h3><p>定義：最高次の係数が1で，f(A) = Oとなる多項式の中で，次数が最小となるもの</p>
+<h3 id="Jordan-Standard-Form"><a href="#Jordan-Standard-Form" class="headerlink" title="Jordan Standard Form"></a>Jordan Standard Form</h3><p>Jordan Cell</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag">线性代数</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-ResearchPlan"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/05/31/ResearchPlan/"
+    >Research Plan</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/05/31/ResearchPlan/" class="article-date">
+  <time datetime="2021-05-31T08:03:35.000Z" itemprop="datePublished">2021-05-31</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E4%B9%A6%E7%B1%BB/">书类</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="Research-Plan"><a href="#Research-Plan" class="headerlink" title="Research Plan"></a><center>Research Plan</center></h2><h3 id="0-Contents"><a href="#0-Contents" class="headerlink" title="0. Contents"></a>0. Contents</h3><h5 id="1-Research-Theme-and-Applicant-Name"><a href="#1-Research-Theme-and-Applicant-Name" class="headerlink" title="1. Research Theme and Applicant Name"></a>1. Research Theme and Applicant Name</h5><h5 id="2-Background"><a href="#2-Background" class="headerlink" title="2. Background"></a>2. Background</h5><h5 id="3-Related-Works"><a href="#3-Related-Works" class="headerlink" title="3. Related Works"></a>3. Related Works</h5><h5 id="4-Research-Goals"><a href="#4-Research-Goals" class="headerlink" title="4. Research Goals"></a>4. Research Goals</h5><h5 id="5-Research-Plan"><a href="#5-Research-Plan" class="headerlink" title="5. Research Plan"></a>5. Research Plan</h5><h5 id="6-Expected-Results"><a href="#6-Expected-Results" class="headerlink" title="6. Expected Results"></a>6. Expected Results</h5><h5 id="7-References"><a href="#7-References" class="headerlink" title="7. References"></a>7. References</h5><h5 id="8-Reasons-for-my-Choices"><a href="#8-Reasons-for-my-Choices" class="headerlink" title="8. Reasons for my Choices"></a>8. Reasons for my Choices</h5><h3 id="1-Research-Theme-and-Applicant-Name-1"><a href="#1-Research-Theme-and-Applicant-Name-1" class="headerlink" title="1. Research Theme and Applicant Name"></a>1. Research Theme and Applicant Name</h3><ul>
+<li>Theme: Efficient and Noise-resistant Collusion-Secure Digital Fingerprinting System</li>
+<li>Keywords: digital fingerprint, collusion attack, copyright protection</li>
+<li>Applicant Name: Uzen Kyu</li>
+</ul>
+<h3 id="2-Background-1"><a href="#2-Background-1" class="headerlink" title="2. Background"></a>2. Background</h3><p>&nbsp;&nbsp;With rapid development of multimedia and peer-to-peer technology, it has provided convenient and private methods to send and receive multimedia data. But subsequently, illegal distribution of digital content is also becoming a serious problem. To deal with this problem, digital fingerprint technology is put forward. Digital data producers embed some unique information (fingerprint, can be generated by one-way hash function, also known as message digest algorithm) into every copy of the digital content. If an illegal copy appears, the producer can extract that information from that copy and thus can trace back to the individual who illegally distributed it.<br>&nbsp;&nbsp;Digital fingerprint technology has great potential and is an indispensable part of copyright and confidential information protection.<br>Nevertheless, the pirates can still avoid being found by comparing multiple copies and alter the different parts, this is called collusion attack. So, it is obvious that developing collusion-resistant digital fingerprint system is of great importance.<br>&nbsp;&nbsp;Yet, most of current studies are focusing on the accuracy of the scheme and do not care about computational costs. At the same time, the influence of noise during transmission process is not much investigated.</p>
+<h3 id="3-Related-Works-1"><a href="#3-Related-Works-1" class="headerlink" title="3. Related Works"></a>3. Related Works</h3><p>&nbsp;&nbsp;The idea that we can protect digital products by digital fingerprint is proposed by N.R.Wagner<a href="#refer-anchor"><sup>[1]</sup></a>. He expanded the meaning of “fingerprint” and he believe that we can and we should attach a “fingerprint” to all digital objects as long as there is a possibility of illegal use, so that we can find the owner of the misused object. The threat of collusion attack in digital fingerprint system is firstly pointed out by Blakley, et al<a href="#refer-anchor"><sup>[2]</sup></a>. He said that the pirate can compare multiple copies trying to wipe out the “fingerprint” to avoid being found.<br>&nbsp;&nbsp;In 1995, D.Boneh and J.Shaw proposed the first collusion-secure digital fingerprint scheme<a href="#refer-anchor"><sup>[3]</sup></a>. In this scheme, they proposed a coding system (k-secure code) with the code length of $O(k^4log(\frac{n}{\epsilon})log(\frac{1}{\epsilon}))$, where $n$ is the total number of users, $\epsilon$ is the error posibility, $k$ is the maximum number of colluding users. But the code length of the scheme is too long, especially when k is a bit large.<br>&nbsp;&nbsp;In 1998, D.Boneh and J.Shaw proposed a coding scheme called c-secure code(or BS code)<a href="#refer-anchor"><sup>[4]</sup></a>. His scheme is highly probable to trace back to at least one colluding user. However, if the number of colluding users surpassed 3, this scheme will fail. Although there are many improved models of BS code, they all based on “marking assumption”, which means that colluders can only manipulate invisible bits. There are opinions says that error codes caused by noise during the transmission process might be recognized as the result of a collusion attack. Later, some researcher introduced orthogonal code, which reduced computational cost of fingerprint detection.<br>&nbsp;&nbsp;In 2008, Tardos<a href="#refer-anchor"><sup>[5]</sup></a> proposed a fingerprinting scheme based on probability theory, His scheme not only achieved high encoding efficiency, but also vastly shortened the code length. His collusion-secure code length is theoretically shortest ($O(c^2log\frac{n}{\epsilon}$), $c$ is the number of colluding users. But it still has some problems, for instance, we have to generate and save the codeword for every user in advance. Tardos code has the characteristic of high generating efficiency, huge computational cost and huge saving cost. From then on, probabilistic fingerprinting codes have become a hot topic among researchers. Tardos code is based on continuous Gaussian distribution. However, Nuida, et al<a href="#refer-anchor"><sup>[6]</sup></a> used discrete Gauss-Legendre distribution in replace of continuous Guassian distribution without affect the code length. Nuida’s scheme is a fingerprinting code for a fixed number of colluders.<br>&nbsp;&nbsp;In the probabilistic fingerprinting system, we need a detector to find colluders using the pirated codeword and users’ codewords. Furon, et al<a href="#refer-anchor"><sup>[7]</sup></a> proposed an optimal detector utilizing the information of colluding strategy and number of colluders. However, getting these parameters is not an easy task. Therefore, researchers <a href="#refer-anchor"><sup>[8]</sup></a> <a href="#refer-anchor"><sup>[9]</sup></a> <a href="#refer-anchor"><sup>[10]</sup></a> <a href="#refer-anchor"><sup>[11]</sup></a> are trying to get close to the performance of the optimal detector. In 2018, Yasui, et al<a href="#refer-anchor"><sup>[12]</sup></a> proposed an estimator of the parameters using Collusion Strategy Characteristic Vector.</p>
+<h3 id="4-Research-Goals-1"><a href="#4-Research-Goals-1" class="headerlink" title="4. Research Goals"></a>4. Research Goals</h3><ul>
+<li>Find the influence of different noises to the decoding process.</li>
+<li>Propose a noise-resistant defense strategy for fingerprinting code system.</li>
+<li>Compare the computational cost of current schemes.</li>
+<li>Propose a scheme with least computational cost while at the same time be accurate enough.</li>
+</ul>
+<h3 id="5-Research-Plan-1"><a href="#5-Research-Plan-1" class="headerlink" title="5. Research Plan"></a>5. Research Plan</h3><ul>
+<li>Study about the fundamental principles of relevant collusion-secure fingerprinting schemes.</li>
+<li>Investigate more related works about collusion-secure fingerprint encoding schemes.</li>
+<li>Do experiments to find how different kind of noise can affect the fingerprinting code system.</li>
+<li>Try to propose a noise-resistant defense strategy for fingerprinting code system using customized filters or other method.</li>
+<li>Theoretically analyze and do experiments to find out computational costs of current schemes.</li>
+<li>Try to reduce computational costs without losing too much accuracy.</li>
+</ul>
+<h3 id="6-Expected-Results-1"><a href="#6-Expected-Results-1" class="headerlink" title="6. Expected Results"></a>6. Expected Results</h3><p>&nbsp;&nbsp;The most significant drawbacks of probabilistic fingerprinting code are large detecting cost and saving cost. And recent studies often ignored the influence of noise. By making progress in these aspects, collusion-secure fingerprinting system is more suitable for practical use. This will be useful for furthur studies of this topic. In addition, as a technology for copyright protection, fingerprint technology can benefit all the content producers and therefore encourage artistic creation.</p>
+<div id="refer-anchor"></div>
+
+<h3 id="7-References-1"><a href="#7-References-1" class="headerlink" title="7. References"></a>7. References</h3><p>[1] N. R. Wagner, “Fingerprinting,” 1983 IEEE Symposium on Security and Privacy, Oakland, CA, USA, 1983, pp. 18-18, doi: 10.1109/SP.1983.10018.<br>[2] Blakley, G.R., Meadows, C., &amp; Purdy, G. (1985). Fingerprinting Long Forgiving Messages. CRYPTO.<br>[3] Boneh D, Shaw J. Collusion-Secure Fingerprinting for digital data. In: Proceedings of the 15th Annual International Cryptology Conference. Santa Barbara, California. USA, 1995, 452-465<br>[4] Boneh D, Shaw J, Collusion-Secure fingerprinting for digital data. Journal of Information Theory, 1998, 44(5): 1897-1905<br>[5] Gábor Tardos. 2003. Optimal probabilistic fingerprint codes. In Proceedings of the thirty-fifth annual ACM symposium on Theory of computing (STOC ‘03). Association for Computing Machinery, New York, NY, USA, 116–125. DOI:<a target="_blank" rel="noopener" href="https://doi.org/10.1145/780542.780561">https://doi.org/10.1145/780542.780561</a><br>[6] K. Nuida, M. Hagiwara, H. Watanabe, and H. Imai, “Optimization of<br>Tardos’s fingerprinting codes in a viewpoint of memory amount,” Proc.<br>IH 2007, LNCS, vol.4567, pp.279–293, Springer, Heidelberg, 2008.<br>[7] Teddy Furon, Luis Pérez-Freire. EM Decoding of Tardos Traitor Tracing Codes. ACM Multimediaand Security, Sep 2009, Princeton, United States. inria-00505875<br>[8] P. Meerwald and T. Furon, “Toward Practical Joint Decoding of Binary Tardos Fingerprinting Codes,” in IEEE Transactions on Information Forensics and Security, vol. 7, no. 4, pp. 1168-1180, Aug. 2012, doi: 10.1109/TIFS.2012.2195655.<br>[9] M. Desoubeaux, C. Herzet, W. Puech and G. Le Guelvouit, “Enhanced blind decoding of tardos codes with new MAP-based functions,” 2013 IEEE 15th International Workshop on Multimedia Signal Processing (MMSP), Pula, 2013, pp. 283-288, doi: 10.1109/MMSP.2013.6659302.<br>[10] J. Oosterwijk, B. Škorić and J. Doumen, “A Capacity-Achieving Simple Decoder for Bias-Based Traitor Tracing Schemes,” in IEEE Transactions on Information Theory, vol. 61, no. 7, pp. 3882-3900, July 2015, doi: 10.1109/TIT.2015.2428250.<br>[11] T. Laarhoven, “Capacities and capacity-achieving decoders for various fingerprinting games”, Proc. 2nd ACM Workshop Inf. Hiding Multimedia Secur., pp. 123-134, 2014.<br>[12] T. Yasui, M. Kuribayashi, N. Funabiki and I. Echizen, “Estimation of collusion attack in bias-based binary fingerprinting code”, Proc. Asia–Pacific Signal Inf. Process. Assoc. Annu. Summit Conf. (APSIPA ASC), pp. 1550-1555, Nov. 2018.</p>
+<h3 id="8-Reasons-for-my-Choices-1"><a href="#8-Reasons-for-my-Choices-1" class="headerlink" title="8. Reasons for my Choices"></a>8. Reasons for my Choices</h3><p>Seen all the changes brought by information technology like face authentication and different kinds of computer attack via the internet, I noticed the importance of information security. After my undergraduate study, I have been attracted by the charm of attack and defense in the information realm, it is a kind of art for me. So I am deeply longing to study and make my own effort on the subject of information security. Artificial intellegence is an interesting topic these days and is widely used in various area, I also wanted to see its developement, especially security aspects. Also, I went to NII for a visit in 2019 and was moved by the research environment. I hope the above reasons explains my choices for research themes and professors.</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B9%A6%E7%B1%BB/" rel="tag">书类</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A0%94%E7%A9%B6%E8%AE%A1%E5%88%92%E4%B9%A6/" rel="tag">研究计划书</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-5-30-Ch4-空间向量"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/05/30/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-30-Ch4-%E7%A9%BA%E9%97%B4%E5%90%91%E9%87%8F/"
+    >学习笔记2021-5-30-Ch4-空间向量</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/05/30/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-30-Ch4-%E7%A9%BA%E9%97%B4%E5%90%91%E9%87%8F/" class="article-date">
+  <time datetime="2021-05-30T05:29:51.000Z" itemprop="datePublished">2021-05-30</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="Vectors"><a href="#Vectors" class="headerlink" title="Vectors"></a>Vectors</h2><h3 id="ベクトルが同一平面上"><a href="#ベクトルが同一平面上" class="headerlink" title="ベクトルが同一平面上"></a>ベクトルが同一平面上</h3><p>3次ベクトルが同一平面上 &lt;=&gt; 線形従属 &lt;=&gt; 行列式 = 0  &lt;=&gt; rank &lt;= 2</p>
+<h3 id="ねじれの位置"><a href="#ねじれの位置" class="headerlink" title="ねじれの位置"></a>ねじれの位置</h3><p>共有点をもたない<br>平行でない</p>
+<h3 id="直線のなす角"><a href="#直線のなす角" class="headerlink" title="直線のなす角"></a>直線のなす角</h3><p>いつも鋭角</p>
+<h2 id="Vectors-1"><a href="#Vectors-1" class="headerlink" title="Vectors"></a>Vectors</h2><h3 id="Gramian-Gram-Determinant-グラム行列式"><a href="#Gramian-Gram-Determinant-グラム行列式" class="headerlink" title="Gramian/Gram Determinant　グラム行列式"></a>Gramian/Gram Determinant　グラム行列式</h3> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag">线性代数</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-5-29-Ch4-空间向量"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/05/29/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-29-Ch4-%E7%A9%BA%E9%97%B4%E5%90%91%E9%87%8F/"
+    >学习笔记2021-5-29-Ch4-空间向量</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/05/29/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-29-Ch4-%E7%A9%BA%E9%97%B4%E5%90%91%E9%87%8F/" class="article-date">
+  <time datetime="2021-05-29T06:27:35.000Z" itemprop="datePublished">2021-05-29</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="Vectors"><a href="#Vectors" class="headerlink" title="Vectors"></a>Vectors</h2><h3 id="重心"><a href="#重心" class="headerlink" title="重心"></a>重心</h3><p>$$ \overrightarrow{OG} = \frac{1}{3} ( \overrightarrow{OA} + \overrightarrow{OB} + \overrightarrow{OC} ) $$</p>
+<h3 id="零ベクトルは任意のベクトルと垂直（すいちょく）"><a href="#零ベクトルは任意のベクトルと垂直（すいちょく）" class="headerlink" title="零ベクトルは任意のベクトルと垂直（すいちょく）"></a>零ベクトルは任意のベクトルと垂直（すいちょく）</h3><h3 id="方向余弦"><a href="#方向余弦" class="headerlink" title="方向余弦"></a>方向余弦</h3> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag">线性代数</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-5-26-Ch3-线性方程组"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/05/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-26-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"
+    >学习笔记2021-5-26-Ch3-线性方程组</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/05/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-26-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="article-date">
+  <time datetime="2021-05-26T06:18:19.000Z" itemprop="datePublished">2021-05-26</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><p>線形従属（じゅうぞく）<br>線形独立<br>線形結合（けつごう）<br>消去した式</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag">线性代数</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-5-25-Ch3-线性方程组"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/05/25/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-25-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"
+    >学习笔记2021-5-25-Ch3-线性方程组</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/05/25/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-25-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="article-date">
+  <time datetime="2021-05-25T08:25:52.000Z" itemprop="datePublished">2021-05-25</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="1次連立方程式の解の数"><a href="#1次連立方程式の解の数" class="headerlink" title="1次連立方程式の解の数"></a>1次連立方程式の解の数</h2><p>$ n $ は未知数の数<br>$ rank A = rank A|b = n $ ならば解は1組<br>$ rank A = rank A|b &lt; n $ ならば解は無数<br>$ rank A &lt; rank A|b $ ならば解なし</p>
+<h2 id="自明解"><a href="#自明解" class="headerlink" title="自明解"></a>自明解</h2><p>线性齐次方程的零解</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag">线性代数</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-学习笔记2021-5-24-Ch3-线性方程组"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/05/24/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-24-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/"
+    >学习笔记2021-5-24-Ch3-线性方程组</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/05/24/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-24-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="article-date">
+  <time datetime="2021-05-24T10:03:15.000Z" itemprop="datePublished">2021-05-24</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/">修考</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/">数学</a> / <a class="article-category-link" href="/categories/%E4%BF%AE%E8%80%83/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="クラメールの公式-Cramer’s-Rule-克拉默法则"><a href="#クラメールの公式-Cramer’s-Rule-克拉默法则" class="headerlink" title="クラメールの公式 Cramer’s Rule 克拉默法则"></a>クラメールの公式 Cramer’s Rule 克拉默法则</h2><p>$ |A| \neq 0 $の時<br>n元1次方程式の解は<br>$$ x_i = \frac{|b_1…d…b_n|}{|A|} $$</p>
+<h2 id="Vandermonde-Determinant"><a href="#Vandermonde-Determinant" class="headerlink" title="Vandermonde Determinant"></a>Vandermonde Determinant</h2> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%AE%E8%80%83/" rel="tag">修考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag">线性代数</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+  </article>
+  
+
+  
+  <nav class="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/3/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/">下一页</a>
+  </nav>
+  
+</section>
+</div>
+
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2021-2022
+        <i class="ri-heart-fill heart_icon"></i> Matthew Qiu
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="马西欧"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://www.baidu.com">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/2021">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+  </div>
+</body>
+
+</html>
