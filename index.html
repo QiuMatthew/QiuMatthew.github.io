@@ -162,7 +162,93 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-   
+  <p>This is a memo for lab GPU cluster usage  </p>
+<h2 id="Self-intro"><a href="#Self-intro" class="headerlink" title="Self-intro"></a>Self-intro</h2><p>Yamagishi Junichi<br>Xin Wang<br>Jian Wang</p>
+<h2 id="Guidance"><a href="#Guidance" class="headerlink" title="Guidance"></a>Guidance</h2><ul>
+<li>Two link in the description of the slack channel<ul>
+<li>One is for IT issues</li>
+<li>The other is a manual</li>
+</ul>
+</li>
+<li>Network Organization<ul>
+<li>Four Layers<ul>
+<li>Internet (home, eduroam)</li>
+<li>NII Network<ul>
+<li>nii-auth wifi</li>
+<li>devices like printer</li>
+</ul>
+</li>
+<li>Lab Network<ul>
+<li>devices like Apple TV etc.</li>
+<li>LAN cable</li>
+<li>Two location, Jinbocho and Kashiwa</li>
+<li>136.187.?.?</li>
+</ul>
+</li>
+<li>Cluster Network<ul>
+<li>Head Node 136.187.108.7<ul>
+<li>All work shall be submitted to this</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Hardware<ul>
+<li>Head node <ul>
+<li>Ubuntu 18.04</li>
+<li>no heavy jobs</li>
+<li><code>$ show_res.sh</code></li>
+</ul>
+</li>
+<li>Network attached storage (NAS)<ul>
+<li>for file management</li>
+<li><code>$ df -h | grep nas</code></li>
+<li>/local/ works as cache</li>
+<li>/home/smg</li>
+</ul>
+</li>
+<li>Software<ul>
+<li>Bright cluster manager</li>
+<li>Slurm</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="SSH-key-generate"><a href="#SSH-key-generate" class="headerlink" title="SSH key generate"></a>SSH key generate</h2><pre><code>generate ssh key and send to Mr.yousuke kosuda
+</code></pre>
+<h2 id="Slurm-commands"><a href="#Slurm-commands" class="headerlink" title="Slurm commands"></a>Slurm commands</h2><ul>
+<li>login_private.sh</li>
+<li>sbatch -p qgpu</li>
+</ul>
+<h2 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h2><ul>
+<li>Do not need GPUs<ul>
+<li>Use CPU Nodes!</li>
+</ul>
+</li>
+<li>Need GPUs<ul>
+<li>Stable Code<ul>
+<li>Submit with sbatch through the head node</li>
+</ul>
+</li>
+<li>Work in progress<ul>
+<li>Test before submit<ul>
+<li>Shortly use public node</li>
+</ul>
+</li>
+<li>Developing<ul>
+<li>Use a private node</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Login-Method"><a href="#Login-Method" class="headerlink" title="Login Method"></a>Login Method</h2><h3 id="sbatch"><a href="#sbatch" class="headerlink" title="sbatch"></a>sbatch</h3><h3 id="public"><a href="#public" class="headerlink" title="public"></a>public</h3><h3 id="private"><a href="#private" class="headerlink" title="private"></a>private</h3> 
       <!-- reward -->
       
     </div>
