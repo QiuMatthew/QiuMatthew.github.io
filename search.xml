@@ -30,26 +30,30 @@
       </tags>
   </entry>
   <entry>
-    <title>Cpp-Primer-Plus-Ch2-Start-up</title>
-    <url>/2021/11/19/Cpp-Primer-Plus-Ch2-Start-up/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Cpp-Vector</title>
-    <url>/2021/12/27/Cpp-Vector/</url>
-    <content><![CDATA[<h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &lt;vector&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;int&gt; vec;</span><br></pre></td></tr></table></figure>
-
-<h2 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;vector&lt;int&gt;&gt; vec;</span><br><span class="line">vector&lt;int&gt; vec(N);</span><br></pre></td></tr></table></figure>]]></content>
+    <title>Cpp-Primer-Plus-Ch1-Preliminaries</title>
+    <url>/2021/11/19/Cpp-Primer-Plus-Ch1-Preliminaries/</url>
+    <content><![CDATA[<h2 id="1-4-2-编译和链接"><a href="#1-4-2-编译和链接" class="headerlink" title="1.4.2 编译和链接"></a>1.4.2 编译和链接</h2><h3 id="2-Linux编译和链接"><a href="#2-Linux编译和链接" class="headerlink" title="2 Linux编译和链接"></a>2 Linux编译和链接</h3><p>Linux最常用的编译器：g++<br>下面的命令将生成可执行文件<code>a.out</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">g++ spiffy.cpp</span><br></pre></td></tr></table></figure>
+<p>要编译多个源文件，只需将他们全部放到命令行中即可：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">g++ my.cxx precious.cxx</span><br></pre></td></tr></table></figure>
+<p>这将生成一个名为<code>a.out</code>的可执行文件和两个目标代码文件<code>my.o</code>和<code>precious.o</code><br>如果接下来修改了某个源代码文件，如<code>my.cxx</code>，则可使用<code>my.cxx</code>和<code>precious.o</code>来重新编译:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">g++ my.cxx precious.o</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
-        <category>Technol</category>
+        <category>技术</category>
         <category>C++</category>
-        <category>STL</category>
+        <category>C++ Primer Plus</category>
       </categories>
       <tags>
         <tag>技术</tag>
         <tag>C++</tag>
+        <tag>C++ Primer Plus</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Cpp-Primer-Plus-Ch2-Start-up</title>
+    <url>/2021/11/19/Cpp-Primer-Plus-Ch2-Start-up/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Install-PyTorch-Tensorflow</title>
@@ -101,63 +105,20 @@
       </tags>
   </entry>
   <entry>
-    <title>Cpp-Primer-Plus-Ch1-Preliminaries</title>
-    <url>/2021/11/19/Cpp-Primer-Plus-Ch1-Preliminaries/</url>
-    <content><![CDATA[<h2 id="1-4-2-编译和链接"><a href="#1-4-2-编译和链接" class="headerlink" title="1.4.2 编译和链接"></a>1.4.2 编译和链接</h2><h3 id="2-Linux编译和链接"><a href="#2-Linux编译和链接" class="headerlink" title="2 Linux编译和链接"></a>2 Linux编译和链接</h3><p>Linux最常用的编译器：g++<br>下面的命令将生成可执行文件<code>a.out</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">g++ spiffy.cpp</span><br></pre></td></tr></table></figure>
-<p>要编译多个源文件，只需将他们全部放到命令行中即可：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">g++ my.cxx precious.cxx</span><br></pre></td></tr></table></figure>
-<p>这将生成一个名为<code>a.out</code>的可执行文件和两个目标代码文件<code>my.o</code>和<code>precious.o</code><br>如果接下来修改了某个源代码文件，如<code>my.cxx</code>，则可使用<code>my.cxx</code>和<code>precious.o</code>来重新编译:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">g++ my.cxx precious.o</span><br></pre></td></tr></table></figure>
-]]></content>
+    <title>Cpp-Vector</title>
+    <url>/2021/12/27/Cpp-Vector/</url>
+    <content><![CDATA[<h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &lt;vector&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;int&gt; vec;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;vector&lt;int&gt;&gt; vec;</span><br><span class="line">vector&lt;int&gt; vec(N);</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>技术</category>
+        <category>Technol</category>
         <category>C++</category>
-        <category>C++ Primer Plus</category>
+        <category>STL</category>
       </categories>
       <tags>
         <tag>技术</tag>
         <tag>C++</tag>
-        <tag>C++ Primer Plus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MissingSemester-1-TheShell</title>
-    <url>/2021/08/28/MissingSemester-1-TheShell/</url>
-    <content><![CDATA[<h3 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; date</span></span><br><span class="line">Wed Sep 15 17:57:06 CST 2021</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> hello</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> Hello\ World</span></span><br><span class="line">Hello World</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$PATH</span></span></span><br><span class="line">/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Non-system/Node.js/:/mnt/c/Non-system/Git/cmd:/mnt/c/Users/Q_Mas/AppData/Local/Microsoft/WindowsApps:/mnt/c/Non-system/Microsoft VS Code/bin:/mnt/c/Users/Q_Mas/AppData/Roaming/npm:/snap/bin</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">which</span> <span class="built_in">echo</span></span></span><br><span class="line">/usr/bin/echo </span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /home</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ..</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ./home</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ./home</span></span><br><span class="line">-bash: cd: ./home: No such file or directory</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /mnt/c/Users/Q_Mas/Desktop/missing-semester/</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ../../../../../../bin/<span class="built_in">echo</span> world</span></span><br><span class="line">world</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> <span class="built_in">test</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls ..</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ..</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ~</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home/matthew</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> -</span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls --<span class="built_in">help</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -a</span></span><br><span class="line">.  ..  1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l</span></span><br><span class="line">total 0</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34 1-overview.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34 2-shell.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:35 3-vim.md</span><br><span class="line">drwxrwxrwx 1 matthew matthew 4096 Sep 15 23:35 test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mv 3-vim.md 3-vim-renamed.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim-renamed.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mv 3-vim-renamed.md 3-vim.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cp 3-vim.md ./<span class="built_in">test</span>/3-vim-copy.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls ./<span class="built_in">test</span></span></span><br><span class="line">3-vim-copy.md</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rm ./3-vim-copy.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; touch ./<span class="built_in">test</span>/1</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rmdir <span class="built_in">test</span></span></span><br><span class="line">rmdir: failed to remove &#x27;test&#x27;: Directory not empty</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rm -r <span class="built_in">test</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mkdir <span class="string">&quot;My Photos&quot;</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; man ls</span></span><br></pre></td></tr></table></figure>
-<p>For a directory rather than a file,<br>read means you can list stuffs inside it<br>write means you can change the file name, make a new file or remove one<br>execute means you can get into the directory</p>
-<span id="more"></span>
-
-<h3 id="Combining-different-programs"><a href="#Combining-different-programs" class="headerlink" title="Combining different programs"></a>Combining different programs</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> hello &gt; hello.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt &gt; hello2.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello2.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt &gt;&gt; hello2.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello2.txt</span></span><br><span class="line">hello</span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; tail -n1 hello2.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l</span></span><br><span class="line">total 0</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34  1-overview.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34  2-shell.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:35  3-vim.md</span><br><span class="line">drwxrwxrwx 1 matthew matthew 4096 Sep 15 23:53 &#x27;My Photos&#x27;</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    6 Sep 15 23:57  hello.txt</span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59  hello2.txt</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l | tail -n1</span></span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59 hello2.txt</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l | tail -n2 &gt; ls.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat ls.txt</span></span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59 hello2.txt</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 16 00:03 ls.txt</span><br></pre></td></tr></table></figure>
-
-<h3 id="Root-User"><a href="#Root-User" class="headerlink" title="Root User"></a>Root User</h3><p>User ID is 0</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line">-bash: brightness: Permission denied</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; sudo <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line">-bash: brightness: Permission denied</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; sudo su</span></span><br><span class="line">[sudo] password for matthew:</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">exit</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 1060 | sudo tee brightness</span></span><br><span class="line">1060</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /sys/class/leds/input4\:\:scrolllock</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat brightness</span></span><br><span class="line">0</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 1 | sudo tee brightness</span></span><br><span class="line">1</span><br></pre></td></tr></table></figure>
-
-<h3 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; xdg-open lectures.html</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>技术</category>
-        <category>Missing Semester</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Missing Semester</tag>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux-Commands</title>
-    <url>/2021/11/11/Linux-Commands/</url>
-    <content><![CDATA[<h2 id="Find-command"><a href="#Find-command" class="headerlink" title="Find command"></a>Find command</h2><h3 id="Find-files-with-modified-time"><a href="#Find-files-with-modified-time" class="headerlink" title="Find files with modified time"></a>Find files with modified time</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; find ./Unclassified/ -newermt <span class="string">&#x27;2015-3-1&#x27;</span> ! -newermt <span class="string">&#x27;2015-4-1&#x27;</span> -<span class="built_in">exec</span> mv &#123;&#125; ./2015-3/ \;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Variable"><a href="#Variable" class="headerlink" title="Variable"></a>Variable</h2><h3 id="Cut-strings"><a href="#Cut-strings" class="headerlink" title="Cut strings"></a>Cut strings</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; var=20210515.png</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$var</span></span></span><br><span class="line">20210515.png</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$&#123;var#*.&#125;</span></span></span><br><span class="line">png</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$&#123;var##*1&#125;</span></span></span><br><span class="line">5.png</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$&#123;var%.*&#125;</span></span></span><br><span class="line">20210515</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$&#123;var%%1*&#125;</span></span></span><br><span class="line">202</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>技术</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -165,15 +126,21 @@
     <url>/2022/05/11/Mac-Env/</url>
     <content><![CDATA[<h1 id="Start-with-Mac"><a href="#Start-with-Mac" class="headerlink" title="Start with Mac"></a>Start with Mac</h1><p>第一次到实验室，拿到了实验室给准备的Mac<br>于是要开始配置Mac了</p>
 <h1 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h1><p>本科的时候听说Mac对开发者还挺友好的，而且Mac的terminal和Linux比较相似，那第一件事就是打开terminal<br>一番ls/cd等无意义操作后，觉得首要事情是弄个包管理工具，搜索后发现homebrew用的比较多，Jo Ting也如此建议，英文互联网和中文互联网都有推荐，空白也附议<br>于是敲定，就它了  </p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>进入官网，有自动提示的安装指令<br><code>% /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</code><br>安装完毕后<br><code>% brew -v</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Homebrew 3.4.10</span><br></pre></td></tr></table></figure>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>进入官网，有自动提示的安装指令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">% &#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;install.sh)&quot;</span><br></pre></td></tr></table></figure>
+<p>安装完毕后</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">% brew -v</span><br><span class="line">Homebrew 3.4.10</span><br></pre></td></tr></table></figure>
 <p>说明安装成功  </p>
-<h2 id="Wget"><a href="#Wget" class="headerlink" title="Wget"></a>Wget</h2><p>既然包管理安装好了，作为测试，用它来装个wget罢<br><code>% brew install wget</code><br>安装完毕后<br><code>% wget -V</code><br>注意是大写哟  </p>
+<h2 id="Wget"><a href="#Wget" class="headerlink" title="Wget"></a>Wget</h2><p>既然包管理安装好了，作为测试，用它来装个wget罢  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">% brew install wget</span><br></pre></td></tr></table></figure>
+<p>安装完毕后  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">% wget -V</span><br></pre></td></tr></table></figure>
+<p>注意是大写哟</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">GNU Wget 1.21.3 built on darwin21.3.0</span><br><span class="line">blablabla</span><br></pre></td></tr></table></figure>
 <p>说明安装成功  </p>
 <h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p>想能在Win和Mac不同设备上共同用hexo编辑自己的博客，那显然要给Mac也整上Git  </p>
-<h2 id="Installation-1"><a href="#Installation-1" class="headerlink" title="Installation"></a>Installation</h2><p>直接去Git官网，发现官网也推荐使用homebrew下载安装<br><code>% brew install git</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">matthew@Qs-MacBook-Pro ~ % brew install git</span><br><span class="line">Running &#96;brew update --preinstall&#96;...</span><br><span class="line">&#x3D;&#x3D;&gt; Auto-updated Homebrew!</span><br><span class="line">Updated 1 tap (homebrew&#x2F;core).</span><br><span class="line">&#x3D;&#x3D;&gt; Updated Formulae</span><br><span class="line">Updated 6 formulae.</span><br><span class="line"></span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;pcre2&#x2F;manifests&#x2F;10.40</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;pcre2&#x2F;blobs&#x2F;sha256:18b810bc5ddba9960505488662ad3b122c898ded44461e2dfb871ee32abbe0fb</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading from https:&#x2F;&#x2F;pkg-containers.githubusercontent.com&#x2F;ghcr1&#x2F;blobs&#x2F;sha256:18b810bc5ddba9960505488662ad3b122c898ded44461e2dfb871ee32abbe0fb?se&#x3D;2022-05-10T17%3A25%3A00Z&amp;sig&#x3D;1i5xgA0kBSpoqCBk9Rn3</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;git&#x2F;manifests&#x2F;2.36.1</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;git&#x2F;blobs&#x2F;sha256:5941a1eb703ac9814c2f8ae7c78ff31630aed04ad90a6a3073e45f4748f96e25</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading from https:&#x2F;&#x2F;pkg-containers.githubusercontent.com&#x2F;ghcr1&#x2F;blobs&#x2F;sha256:5941a1eb703ac9814c2f8ae7c78ff31630aed04ad90a6a3073e45f4748f96e25?se&#x3D;2022-05-10T17%3A25%3A00Z&amp;sig&#x3D;idLuPp1AvjC9ow40Bqpg</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Installing dependencies for git: pcre2</span><br><span class="line">&#x3D;&#x3D;&gt; Installing git dependency: pcre2</span><br><span class="line">&#x3D;&#x3D;&gt; Pouring pcre2--10.40.arm64_monterey.bottle.tar.gz</span><br><span class="line">🍺  &#x2F;opt&#x2F;homebrew&#x2F;Cellar&#x2F;pcre2&#x2F;10.40: 230 files, 6.1MB</span><br><span class="line">&#x3D;&#x3D;&gt; Installing git</span><br><span class="line">&#x3D;&#x3D;&gt; Pouring git--2.36.1.arm64_monterey.bottle.tar.gz</span><br><span class="line">&#x3D;&#x3D;&gt; Caveats</span><br><span class="line">The Tcl&#x2F;Tk GUIs (e.g. gitk, git-gui) are now in the &#96;git-gui&#96; formula.</span><br><span class="line">Subversion interoperability (git-svn) is now in the &#96;git-svn&#96; formula.</span><br><span class="line"></span><br><span class="line">zsh completions and functions have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;zsh&#x2F;site-functions</span><br><span class="line"></span><br><span class="line">Emacs Lisp files have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;emacs&#x2F;site-lisp&#x2F;git</span><br><span class="line">&#x3D;&#x3D;&gt; Summary</span><br><span class="line">🍺  &#x2F;opt&#x2F;homebrew&#x2F;Cellar&#x2F;git&#x2F;2.36.1: 1,545 files, 44.1MB</span><br><span class="line">&#x3D;&#x3D;&gt; Running &#96;brew cleanup git&#96;...</span><br><span class="line">Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.</span><br><span class="line">Hide these hints with HOMEBREW_NO_ENV_HINTS (see &#96;man brew&#96;).</span><br><span class="line">&#x3D;&#x3D;&gt; Caveats</span><br><span class="line">&#x3D;&#x3D;&gt; git</span><br><span class="line">The Tcl&#x2F;Tk GUIs (e.g. gitk, git-gui) are now in the &#96;git-gui&#96; formula.</span><br><span class="line">Subversion interoperability (git-svn) is now in the &#96;git-svn&#96; formula.</span><br><span class="line"></span><br><span class="line">zsh completions and functions have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;zsh&#x2F;site-functions</span><br><span class="line"></span><br><span class="line">Emacs Lisp files have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;emacs&#x2F;site-lisp&#x2F;git</span><br></pre></td></tr></table></figure>
+<h2 id="Installation-1"><a href="#Installation-1" class="headerlink" title="Installation"></a>Installation</h2><p>直接去Git官网，发现官网也推荐使用homebrew下载安装  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">% brew install git</span><br><span class="line">matthew@Qs-MacBook-Pro ~ % brew install git</span><br><span class="line">Running &#96;brew update --preinstall&#96;...</span><br><span class="line">&#x3D;&#x3D;&gt; Auto-updated Homebrew!</span><br><span class="line">Updated 1 tap (homebrew&#x2F;core).</span><br><span class="line">&#x3D;&#x3D;&gt; Updated Formulae</span><br><span class="line">Updated 6 formulae.</span><br><span class="line"></span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;pcre2&#x2F;manifests&#x2F;10.40</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;pcre2&#x2F;blobs&#x2F;sha256:18b810bc5ddba9960505488662ad3b122c898ded44461e2dfb871ee32abbe0fb</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading from https:&#x2F;&#x2F;pkg-containers.githubusercontent.com&#x2F;ghcr1&#x2F;blobs&#x2F;sha256:18b810bc5ddba9960505488662ad3b122c898ded44461e2dfb871ee32abbe0fb?se&#x3D;2022-05-10T17%3A25%3A00Z&amp;sig&#x3D;1i5xgA0kBSpoqCBk9Rn3</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;git&#x2F;manifests&#x2F;2.36.1</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading https:&#x2F;&#x2F;ghcr.io&#x2F;v2&#x2F;homebrew&#x2F;core&#x2F;git&#x2F;blobs&#x2F;sha256:5941a1eb703ac9814c2f8ae7c78ff31630aed04ad90a6a3073e45f4748f96e25</span><br><span class="line">&#x3D;&#x3D;&gt; Downloading from https:&#x2F;&#x2F;pkg-containers.githubusercontent.com&#x2F;ghcr1&#x2F;blobs&#x2F;sha256:5941a1eb703ac9814c2f8ae7c78ff31630aed04ad90a6a3073e45f4748f96e25?se&#x3D;2022-05-10T17%3A25%3A00Z&amp;sig&#x3D;idLuPp1AvjC9ow40Bqpg</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">&#x3D;&#x3D;&gt; Installing dependencies for git: pcre2</span><br><span class="line">&#x3D;&#x3D;&gt; Installing git dependency: pcre2</span><br><span class="line">&#x3D;&#x3D;&gt; Pouring pcre2--10.40.arm64_monterey.bottle.tar.gz</span><br><span class="line">🍺  &#x2F;opt&#x2F;homebrew&#x2F;Cellar&#x2F;pcre2&#x2F;10.40: 230 files, 6.1MB</span><br><span class="line">&#x3D;&#x3D;&gt; Installing git</span><br><span class="line">&#x3D;&#x3D;&gt; Pouring git--2.36.1.arm64_monterey.bottle.tar.gz</span><br><span class="line">&#x3D;&#x3D;&gt; Caveats</span><br><span class="line">The Tcl&#x2F;Tk GUIs (e.g. gitk, git-gui) are now in the &#96;git-gui&#96; formula.</span><br><span class="line">Subversion interoperability (git-svn) is now in the &#96;git-svn&#96; formula.</span><br><span class="line"></span><br><span class="line">zsh completions and functions have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;zsh&#x2F;site-functions</span><br><span class="line"></span><br><span class="line">Emacs Lisp files have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;emacs&#x2F;site-lisp&#x2F;git</span><br><span class="line">&#x3D;&#x3D;&gt; Summary</span><br><span class="line">🍺  &#x2F;opt&#x2F;homebrew&#x2F;Cellar&#x2F;git&#x2F;2.36.1: 1,545 files, 44.1MB</span><br><span class="line">&#x3D;&#x3D;&gt; Running &#96;brew cleanup git&#96;...</span><br><span class="line">Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.</span><br><span class="line">Hide these hints with HOMEBREW_NO_ENV_HINTS (see &#96;man brew&#96;).</span><br><span class="line">&#x3D;&#x3D;&gt; Caveats</span><br><span class="line">&#x3D;&#x3D;&gt; git</span><br><span class="line">The Tcl&#x2F;Tk GUIs (e.g. gitk, git-gui) are now in the &#96;git-gui&#96; formula.</span><br><span class="line">Subversion interoperability (git-svn) is now in the &#96;git-svn&#96; formula.</span><br><span class="line"></span><br><span class="line">zsh completions and functions have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;zsh&#x2F;site-functions</span><br><span class="line"></span><br><span class="line">Emacs Lisp files have been installed to:</span><br><span class="line">  &#x2F;opt&#x2F;homebrew&#x2F;share&#x2F;emacs&#x2F;site-lisp&#x2F;git</span><br></pre></td></tr></table></figure>
 <h2 id="Generate-SSH-key"><a href="#Generate-SSH-key" class="headerlink" title="Generate SSH key"></a>Generate SSH key</h2><p>还是比较习惯用SSH方法登陆github而不是用账号密码，Mac和Linux实在是太一致了，几乎没什么需要修改的地方，指令都一模一样</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">matthew@dhcp82-160 ~ % ssh-keygen -t rsa</span><br><span class="line">Generating public&#x2F;private rsa key pair.</span><br><span class="line">Enter file in which to save the key (&#x2F;Users&#x2F;matthew&#x2F;.ssh&#x2F;id_rsa): </span><br><span class="line">Created directory &#39;&#x2F;Users&#x2F;matthew&#x2F;.ssh&#39;.</span><br><span class="line">Enter passphrase (empty for no passphrase): </span><br><span class="line">Enter same passphrase again: </span><br><span class="line">Your identification has been saved in &#x2F;Users&#x2F;matthew&#x2F;.ssh&#x2F;id_rsa</span><br><span class="line">Your public key has been saved in &#x2F;Users&#x2F;matthew&#x2F;.ssh&#x2F;id_rsa.pub</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:1f4I286yCydWUdM2U8FPQzXZwhqjw4znk1OqEHNKFLc matthew@dhcp82-160.vlab.nii.ac.jp</span><br><span class="line">The key&#39;s randomart image is:</span><br><span class="line">+---[RSA 3072]----+</span><br><span class="line">|      ...   ooo&#x3D;B|</span><br><span class="line">|      .. . oo.B++|</span><br><span class="line">|     .  E+o..&#x3D; &#x3D;o|</span><br><span class="line">|      + o.*oo   .|</span><br><span class="line">|     . &#x3D;Soo&#x3D;.    |</span><br><span class="line">|      o  .*+ o   |</span><br><span class="line">|       .+.ooo .  |</span><br><span class="line">|       ..+.o     |</span><br><span class="line">|          o+o    |</span><br><span class="line">+----[SHA256]-----+</span><br><span class="line"></span><br><span class="line">matthew@dhcp82-160 .ssh % cat id_rsa.pub </span><br><span class="line">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDVzjPimLgla3p8JGB9aTw0x1BSn&#x2F;rmTdvEUCW&#x2F;JzDK3DFDh210hcaFuumsoEcLSeAZHfvB3PCwzz3U3DwKjFdutf1vjhh0sVU7TV5rvVzAoZJp2fbz7J0ai6wa1+gceGSYuDi08MsGnThxRlPytl1+LOCi1nS4RG&#x2F;2YcmJc0y9wns2iaPcwsA4WCrM65ViJU10KK7G2z1+4LCn6xejjXAOIjMBcL8pSO7B1no+8LK6M44n&#x2F;+LeuNK+a8l4HRh3yy0TbXuVPDHkgpDxDF7MR1KfG99t2wgEQF6Wv28bUTnpMoip4hz0ngGCURiGNjvQ5iF04SXF4ME1fIWUBdchy1EHYtEc9PdPzVpLE0espFWz+a&#x2F;14tpsPPmd2TZHq1ufq2oh4PwsK8UBnkI8zC&#x2F;aPB6USw6INYadC89+lYdg+mjfX7mJTnDnOIQvNUDAzsM2yL7MR6Zm&#x2F;&#x2F;tZ0c1wKljGm6D8p1yCkUEpxPXenIzd6S4QJ7gUaiiNsMgB84EG16qmq68&#x3D; matthew@dhcp82-160.vlab.labname.ac.jp</span><br></pre></td></tr></table></figure>
 <p>发现这个最后是实验室的host，以防出问题重新生成</p>
@@ -228,6 +195,22 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">% hexo clean</span><br><span class="line">% hexo g</span><br><span class="line">% hexo d</span><br></pre></td></tr></table></figure>
 <p>还真的能用，起飞！</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Linux-Commands</title>
+    <url>/2021/11/11/Linux-Commands/</url>
+    <content><![CDATA[<h2 id="Find-command"><a href="#Find-command" class="headerlink" title="Find command"></a>Find command</h2><h3 id="Find-files-with-modified-time"><a href="#Find-files-with-modified-time" class="headerlink" title="Find files with modified time"></a>Find files with modified time</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; find ./Unclassified/ -newermt <span class="string">&#x27;2015-3-1&#x27;</span> ! -newermt <span class="string">&#x27;2015-4-1&#x27;</span> -<span class="built_in">exec</span> mv &#123;&#125; ./2015-3/ \;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Variable"><a href="#Variable" class="headerlink" title="Variable"></a>Variable</h2><h3 id="Cut-strings"><a href="#Cut-strings" class="headerlink" title="Cut strings"></a>Cut strings</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; var=20210515.png</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$var</span></span></span><br><span class="line">20210515.png</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$&#123;var#*.&#125;</span></span></span><br><span class="line">png</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$&#123;var##*1&#125;</span></span></span><br><span class="line">5.png</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$&#123;var%.*&#125;</span></span></span><br><span class="line">20210515</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$&#123;var%%1*&#125;</span></span></span><br><span class="line">202</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Linux</tag>
+      </tags>
   </entry>
   <entry>
     <title>MissingSemester-2-ShellTools&amp;Scripting</title>
@@ -360,9 +343,37 @@
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>Missing Semester</tag>
         <tag>Linux</tag>
+        <tag>Missing Semester</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>MissingSemester-1-TheShell</title>
+    <url>/2021/08/28/MissingSemester-1-TheShell/</url>
+    <content><![CDATA[<h3 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; date</span></span><br><span class="line">Wed Sep 15 17:57:06 CST 2021</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> hello</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> Hello\ World</span></span><br><span class="line">Hello World</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$PATH</span></span></span><br><span class="line">/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Non-system/Node.js/:/mnt/c/Non-system/Git/cmd:/mnt/c/Users/Q_Mas/AppData/Local/Microsoft/WindowsApps:/mnt/c/Non-system/Microsoft VS Code/bin:/mnt/c/Users/Q_Mas/AppData/Roaming/npm:/snap/bin</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">which</span> <span class="built_in">echo</span></span></span><br><span class="line">/usr/bin/echo </span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /home</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ..</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ./home</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ./home</span></span><br><span class="line">-bash: cd: ./home: No such file or directory</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /mnt/c/Users/Q_Mas/Desktop/missing-semester/</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ../../../../../../bin/<span class="built_in">echo</span> world</span></span><br><span class="line">world</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> <span class="built_in">test</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls ..</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ..</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ~</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home/matthew</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> -</span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls --<span class="built_in">help</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -a</span></span><br><span class="line">.  ..  1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l</span></span><br><span class="line">total 0</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34 1-overview.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34 2-shell.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:35 3-vim.md</span><br><span class="line">drwxrwxrwx 1 matthew matthew 4096 Sep 15 23:35 test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mv 3-vim.md 3-vim-renamed.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim-renamed.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mv 3-vim-renamed.md 3-vim.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cp 3-vim.md ./<span class="built_in">test</span>/3-vim-copy.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls ./<span class="built_in">test</span></span></span><br><span class="line">3-vim-copy.md</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rm ./3-vim-copy.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; touch ./<span class="built_in">test</span>/1</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rmdir <span class="built_in">test</span></span></span><br><span class="line">rmdir: failed to remove &#x27;test&#x27;: Directory not empty</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rm -r <span class="built_in">test</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mkdir <span class="string">&quot;My Photos&quot;</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; man ls</span></span><br></pre></td></tr></table></figure>
+<p>For a directory rather than a file,<br>read means you can list stuffs inside it<br>write means you can change the file name, make a new file or remove one<br>execute means you can get into the directory</p>
+<span id="more"></span>
+
+<h3 id="Combining-different-programs"><a href="#Combining-different-programs" class="headerlink" title="Combining different programs"></a>Combining different programs</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> hello &gt; hello.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt &gt; hello2.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello2.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt &gt;&gt; hello2.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello2.txt</span></span><br><span class="line">hello</span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; tail -n1 hello2.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l</span></span><br><span class="line">total 0</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34  1-overview.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34  2-shell.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:35  3-vim.md</span><br><span class="line">drwxrwxrwx 1 matthew matthew 4096 Sep 15 23:53 &#x27;My Photos&#x27;</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    6 Sep 15 23:57  hello.txt</span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59  hello2.txt</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l | tail -n1</span></span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59 hello2.txt</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l | tail -n2 &gt; ls.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat ls.txt</span></span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59 hello2.txt</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 16 00:03 ls.txt</span><br></pre></td></tr></table></figure>
+
+<h3 id="Root-User"><a href="#Root-User" class="headerlink" title="Root User"></a>Root User</h3><p>User ID is 0</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line">-bash: brightness: Permission denied</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; sudo <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line">-bash: brightness: Permission denied</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; sudo su</span></span><br><span class="line">[sudo] password for matthew:</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">exit</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 1060 | sudo tee brightness</span></span><br><span class="line">1060</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /sys/class/leds/input4\:\:scrolllock</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat brightness</span></span><br><span class="line">0</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 1 | sudo tee brightness</span></span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h3 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; xdg-open lectures.html</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Missing Semester</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Linux</tag>
+        <tag>Missing Semester</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mscoco-Dataset</title>
+    <url>/2021/11/30/Mscoco-Dataset/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>MissingSemester-3-Vim</title>
@@ -728,11 +739,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Mscoco-Dataset</title>
-    <url>/2021/11/30/Mscoco-Dataset/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Overwatch-Deutsch</title>
     <url>/2021/12/09/Overwatch-Deutsch/</url>
     <content><![CDATA[<h2 id="D-VA"><a href="#D-VA" class="headerlink" title="D.VA"></a>D.VA</h2><h3 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h3><table>
@@ -939,31 +945,6 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/05/30/cs231n-Lecture1/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/05/30/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Research Plan</title>
     <url>/2021/05/31/ResearchPlan/</url>
     <content><![CDATA[<h2 id="Research-Plan"><a href="#Research-Plan" class="headerlink" title="Research Plan"></a><center>Research Plan</center></h2><h3 id="0-Contents"><a href="#0-Contents" class="headerlink" title="0. Contents"></a>0. Contents</h3><h5 id="1-Research-Theme-and-Applicant-Name"><a href="#1-Research-Theme-and-Applicant-Name" class="headerlink" title="1. Research Theme and Applicant Name"></a>1. Research Theme and Applicant Name</h5><h5 id="2-Background"><a href="#2-Background" class="headerlink" title="2. Background"></a>2. Background</h5><h5 id="3-Related-Works"><a href="#3-Related-Works" class="headerlink" title="3. Related Works"></a>3. Related Works</h5><h5 id="4-Research-Goals"><a href="#4-Research-Goals" class="headerlink" title="4. Research Goals"></a>4. Research Goals</h5><h5 id="5-Research-Plan"><a href="#5-Research-Plan" class="headerlink" title="5. Research Plan"></a>5. Research Plan</h5><h5 id="6-Expected-Results"><a href="#6-Expected-Results" class="headerlink" title="6. Expected Results"></a>6. Expected Results</h5><h5 id="7-References"><a href="#7-References" class="headerlink" title="7. References"></a>7. References</h5><h5 id="8-Reasons-for-my-Choices"><a href="#8-Reasons-for-my-Choices" class="headerlink" title="8. Reasons for my Choices"></a>8. Reasons for my Choices</h5><h3 id="1-Research-Theme-and-Applicant-Name-1"><a href="#1-Research-Theme-and-Applicant-Name-1" class="headerlink" title="1. Research Theme and Applicant Name"></a>1. Research Theme and Applicant Name</h3><ul>
@@ -1016,13 +997,35 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-4-1-Ch4-偏微分法</title>
-    <url>/2021/04/01/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-1-Ch4-%E5%81%8F%E5%BE%AE%E5%88%86%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="全微分可能性"><a href="#全微分可能性" class="headerlink" title="全微分可能性"></a>全微分可能性</h2><h3 id="全微分可能であることを証明するには"><a href="#全微分可能であることを証明するには" class="headerlink" title="全微分可能であることを証明するには"></a>全微分可能であることを証明するには</h3><p>偏微分可能で、$f_x, f_y$が連続 $\Rightarrow$ 全微分可能</p>
-<h3 id="全微分可能でないことを証明するには"><a href="#全微分可能でないことを証明するには" class="headerlink" title="全微分可能でないことを証明するには"></a>全微分可能でないことを証明するには</h3><p>定義より<br>$f(x + h, y + k) - f(x, y) = hf_x(x, y) + kf_y(x, y) + o(\rho) \quad (h \to 0, k \to 0, \rho = \sqrt{h^2 + k^2})$<br>$f(x + h, y + k) - f(x, y) = hf_x(x, y) + kf_y(x, y) + R(h, k)$　とすると<br>$\lim_{h \to 0, \ k \to 0} \frac{R}{\rho} \neq 0$　とならない時<br>全微分可能でない</p>
-<h2 id="接平面の方程式"><a href="#接平面の方程式" class="headerlink" title="接平面の方程式"></a>接平面の方程式</h2><p>$z - f(a, b) = (x - a)f_x(a, b) + (y - b)f_y(a, b)$</p>
-<h2 id="偏微分作用素"><a href="#偏微分作用素" class="headerlink" title="偏微分作用素"></a>偏微分作用素</h2><p>$h \frac{\partial}{\partial x} + k \frac{\partial}{\partial y}$を次のように定義する<br>$$(h \frac{\partial}{\partial x} + k \frac{\partial}{\partial y})f(x, y) = h \frac{\partial}{\partial x}f(x, y) + k \frac{\partial}{\partial y}f(x, y)$$<br>今、$z = f(x, y), x = ht + a, y = kt + b$で，$z = f(x, y)$が必要な回数だけ連続な偏導関数をもてば，合成関数の偏微分法より<br>$$\frac{\mathrm{d} z}{\mathrm{d} t} = \frac{\partial z}{\partial x}\frac{\mathrm{d} x}{\mathrm{d} t} + \frac{\partial z}{\partial y}\frac{\mathrm{d} y}{\mathrm{d} t} = (h\frac{\partial z}{\partial x} + k\frac{\partial z}{\partial y}) z$$<br>さらに，$$\frac{\mathrm{d}^n z}{\mathrm{d} t^n} = (h\frac{\partial z}{\partial x} + k\frac{\partial z}{\partial y})^n z$$</p>
-<h2 id="包絡線"><a href="#包絡線" class="headerlink" title="包絡線"></a>包絡線</h2><p>曲線群$f(x, y, \alpha) = 0$が特異点をもたないときには<br>$$f(x, y, \alpha) = 0, f_\alpha(x, y, \alpha) = 0$$<br>から$\alpha$を消去して得られる曲線がこの曲線群の包絡線である。</p>
+    <title></title>
+    <url>/2022/05/30/cs231n-Lecture1/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>学习笔记2021-4-12~20-Ch6-微分方程式の解法</title>
+    <url>/2021/04/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-12~20-Ch6-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E8%A7%A3%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="Chapter-6-微分方程式の解法"><a href="#Chapter-6-微分方程式の解法" class="headerlink" title="Chapter 6 微分方程式の解法"></a>Chapter 6 微分方程式の解法</h2><h3 id="6-1-微分方程式とその解"><a href="#6-1-微分方程式とその解" class="headerlink" title="6.1 微分方程式とその解"></a>6.1 微分方程式とその解</h3><h4 id="6-1-1-解の種類"><a href="#6-1-1-解の種類" class="headerlink" title="6.1.1 解の種類"></a>6.1.1 解の種類</h4><p>一般解<br>特殊解<br>特異解</p>
+<h4 id="6-1-2-初期条件と境界条件"><a href="#6-1-2-初期条件と境界条件" class="headerlink" title="6.1.2 初期条件と境界条件"></a>6.1.2 初期条件と境界条件</h4><p>初期条件<br>$$ x = 0\ のとき\ y = 1, y’ = 3 $$<br>境界条件<br>$$ x = 0\ のとき\ y = 1; x = 1\ のとき\ y = 2 $$</p>
+<h4 id="6-1-3-常微分方程式の作成"><a href="#6-1-3-常微分方程式の作成" class="headerlink" title="6.1.3 常微分方程式の作成"></a>6.1.3 常微分方程式の作成</h4><p>任意定数がn個の時、n回微分して得られるn+1個の等式からすべての任意定数を消去するとn階常微分方程式が得られる。</p>
+<span id="more"></span>
+
+<h3 id="6-2-1階常微分方程式"><a href="#6-2-1階常微分方程式" class="headerlink" title="6.2 1階常微分方程式"></a>6.2 1階常微分方程式</h3><h4 id="6-2-1-変数分離形"><a href="#6-2-1-変数分離形" class="headerlink" title="6.2.1 変数分離形"></a>6.2.1 変数分離形</h4><p>$$ \frac{dy}{dx} = f(x)g(y) $$<br>特殊解 $ g(y) = 0 $ に注意</p>
+<h4 id="6-2-2-同次形1"><a href="#6-2-2-同次形1" class="headerlink" title="6.2.2 同次形1"></a>6.2.2 同次形1</h4><p>$$ \frac{dy}{dx} = f(\frac{y}{x}) $$<br>変数変換 $$ u = \frac{y}{x} $$</p>
+<h4 id="6-2-3-同次形2"><a href="#6-2-3-同次形2" class="headerlink" title="6.2.3 同次形2"></a>6.2.3 同次形2</h4><p>$$ \frac{dy}{dx} = \frac{ax + by + c}{px + qy + r} $$<br>二つの状況について考査する<br>状況一<br>$$ \frac{a}{p} = \frac{b}{q} $$<br>変数変換<br>$$ u = px + qy $$<br>状況二<br>$$ \frac{a}{p} \neq \frac{b}{q} $$<br>連立方程式<br>$$ ax + by + c = 0 $$<br>$$ px + qy + r = 0 $$<br>の解は<br>$$ x = X $$<br>$$ y = Y $$<br>である<br>変数変換<br>$$ u = x - X,\ v = y - Y $$</p>
+<h4 id="6-2-3-1階線形微分方程式"><a href="#6-2-3-1階線形微分方程式" class="headerlink" title="6.2.3 1階線形微分方程式"></a>6.2.3 1階線形微分方程式</h4><p>$$ \frac{dy}{dx} = P(x)y + Q(x) $$<br>その解は<br>$$ y = e^{\int P(x)dx} (\int Q(x) e^{-\int P(x)dx} dx + C) $$</p>
+<h4 id="6-2-4-ベルヌーイの微分方程式"><a href="#6-2-4-ベルヌーイの微分方程式" class="headerlink" title="6.2.4 ベルヌーイの微分方程式"></a>6.2.4 ベルヌーイの微分方程式</h4><p>$$ \frac{dy}{dx} = P(x)y + Q(x)y^n $$<br>変数変換<br>$$ u = y^{1 - n} $$</p>
+<h4 id="6-2-5-クレローの微分方程式"><a href="#6-2-5-クレローの微分方程式" class="headerlink" title="6.2.5 クレローの微分方程式"></a>6.2.5 クレローの微分方程式</h4><p>$$ y = xy’ + f(y’) $$<br>一般解は<br>$$ y = Cx + f(C) $$<br>特異解は連立方程式<br>$$ y = Cx + f(C),\ 0 = x + f’(C) $$<br>から $ C $ を消去して $ x, y $ の関係式を求める<br>特異解は一般解の直線群の包絡線になっている</p>
+<h4 id="6-2-6-完全微分形"><a href="#6-2-6-完全微分形" class="headerlink" title="6.2.6 完全微分形"></a>6.2.6 完全微分形</h4><p>微分方程式<br>$$ p(x, y)dx + q(x, y)dy = 0 $$<br>において<br>$$ \frac{\partial p}{\partial y} = \frac{\partial q}{\partial x} $$<br>を満たすとき、完全微分形であるという<br>完全微分形については<br>$$ v(x, y) = \int p(x, y) dx $$<br>$$ u(x, y) = v(x, y) + \int q(x, y) - \frac{\partial v}{\partial y} dy $$<br>とおくと<br>一般解は<br>$$ u(x, y) = C $$</p>
+<h4 id="6-2-7-積分因子"><a href="#6-2-7-積分因子" class="headerlink" title="6.2.7 積分因子"></a>6.2.7 積分因子</h4><p>$ p(x, y)dx + q(x, y)dy = 0$ は完全微分形ではないが，適当な関数 $ \mu(x, y) $ をかけて<br>$$ \mu(x, y)p(x, y)dx + \mu(x, y)q(x, y)dy = 0 $$<br>が完全微分形となるとき， $ \mu(x, y) $ を積分因子という<br>$ \mu $が積分因子となる必要十分条件は<br>$$ \frac{\partial(\mu p)}{\partial y} = \frac{\partial(\mu q)}{\partial x} $$<br>すなわち<br>$$ q\frac{\partial \mu}{\partial x} - p\frac{\partial \mu}{\partial y} = (\frac{\partial p}{\partial y} - \frac{\partial q}{\partial x})\mu $$</p>
+<h5 id="6-2-7-1積分因子がxだけの関数"><a href="#6-2-7-1積分因子がxだけの関数" class="headerlink" title="6.2.7.1積分因子がxだけの関数"></a>6.2.7.1積分因子がxだけの関数</h5><p>$ \mu $ は $ x $ だけの関数であるから<br>$$ \frac{\partial \mu}{\partial y} = 0 $$<br>故に<br>$$ \frac{1}{\mu} \frac{\partial \mu}{\partial x} = \frac{ \frac{\partial p}{\partial y} - \frac{\partial q}{\partial x} }{q} $$<br>その右側は $ x $ だけの関数である時<br>$$ \varphi(x) = \frac{ \frac{\partial p}{\partial y} - \frac{\partial q}{\partial x} }{q} $$<br>ある積分因子が求められる<br>$$ \mu = e^{\int \varphi(x)dx} $$</p>
+<h5 id="6-2-7-2積分因子がyだけの関数"><a href="#6-2-7-2積分因子がyだけの関数" class="headerlink" title="6.2.7.2積分因子がyだけの関数"></a>6.2.7.2積分因子がyだけの関数</h5><p>同じように<br>$$ \psi(y) = \frac{ \frac{\partial p}{\partial y} - \frac{\partial q}{\partial x} }{-p} $$<br>ある積分因子が求められる<br>$$ \mu = e^{\int \psi(y)dx} $$</p>
+<h3 id="6-3-2階線形微分方程式"><a href="#6-3-2階線形微分方程式" class="headerlink" title="6.3 2階線形微分方程式"></a>6.3 2階線形微分方程式</h3><h4 id="6-3-1-定数係数の同次線形微分方程式"><a href="#6-3-1-定数係数の同次線形微分方程式" class="headerlink" title="6.3.1 定数係数の同次線形微分方程式"></a>6.3.1 定数係数の同次線形微分方程式</h4><p>$$ y’’ + ay’ + by = 0 $$</p>
+<h4 id="6-3-2-定数係数の非同次線形微分方程式"><a href="#6-3-2-定数係数の非同次線形微分方程式" class="headerlink" title="6.3.2 定数係数の非同次線形微分方程式"></a>6.3.2 定数係数の非同次線形微分方程式</h4><p>$$ y’’ + ay’ + by = f(x) $$<br>これは対応する同次方程式の同伴方程式とも呼ばれる</p>
+<h5 id="未定係数法"><a href="#未定係数法" class="headerlink" title="未定係数法"></a>未定係数法</h5><p>特殊解と形が $ f(x) $ より推測される，未定係数法を用いて特殊解の係数を求めれば，同伴方程式の特性解と加えれば非同次方程式の一般解が作れる</p>
+<h5 id="定数変化法"><a href="#定数変化法" class="headerlink" title="定数変化法"></a>定数変化法</h5><p>特殊解を直観的に予想することは困難な時は，定数変化法より特殊解を求めることができる<br>ここでは結論だけを述べる<br>同伴方程式の特性解を $ y1, y2 $ とし，非同次方程式の特殊解を $ Y_0 $ とすると<br>$$ u_1 = \int \frac{-y_2 f(x)}{y_1 y’_2 - y_2 y’_1} dx $$<br>$$ u_2 = \int \frac{y_1 f(x)}{y_1 y’_2 - y_2 y’_1} dx $$<br>ここで<br>$$ Y_0 = u_1 y_1 + u_2 y_2 $$<br>が非同次方程式の1つの特殊解である<br>故に非同次方程式の一般解は<br>$$ y = C_1 y_1 + C_2 y_2 + Y_0 $$</p>
+<h4 id="6-3-3-定数係数でない線形微分方程式"><a href="#6-3-3-定数係数でない線形微分方程式" class="headerlink" title="6.3.3 定数係数でない線形微分方程式"></a>6.3.3 定数係数でない線形微分方程式</h4><p>$$ y’’ + p(x)y’ + q(x)y = f(x) $$</p>
+<h5 id="1つの特殊解がわかったとき-need-refinement"><a href="#1つの特殊解がわかったとき-need-refinement" class="headerlink" title="1つの特殊解がわかったとき*need refinement"></a>1つの特殊解がわかったとき*need refinement</h5><p>わかった特殊解が $ v $ とした場合<br>一般解は<br>$$ y = uv $$<br>として考える<br>$$ y’ = uv’ + u’v $$<br>$$ y’’ = uv’’ + 2u’v’ + u’’v $$<br>これらを<br>$$ y’’ + p(x)y’ + q(x)y = f(x) $$<br>に代入して，<br>$$ v’’ + p(x)v’ + q(x)v = 0 $$<br>を使って整理すると<br>$$ u’’ + (\frac{2v’}{v} + p) u’ = \frac{f}{v} $$<br>ここで<br>$$ u’ = w $$<br>と置けば，一階線形微分方程式に帰着される</p>
+<h5 id="2つの線形独立な特殊解がわかったとき"><a href="#2つの線形独立な特殊解がわかったとき" class="headerlink" title="2つの線形独立な特殊解がわかったとき"></a>2つの線形独立な特殊解がわかったとき</h5><p>わかった特殊解が $ y_1, y_2 $ とした場合<br>6.3.2の定数変化法が用いられる<br>一般解は<br>$$ y = C_1 y_1 + C_2 y_2 + u_1 y_1 + u_2 y_2 $$<br>となる</p>
 ]]></content>
       <categories>
         <category>修考</category>
@@ -1930,20 +1933,32 @@
 </ul>
 <h6 id="二、关于过程的要求：危险现实化为实害结果"><a href="#二、关于过程的要求：危险现实化为实害结果" class="headerlink" title="二、关于过程的要求：危险现实化为实害结果"></a>二、关于过程的要求：危险现实化为实害结果</h6><ul>
 <li>故意的作为犯<ul>
-<li>重叠的因果关系</li>
-<li>双重的因果关系（择一的竞合）</li>
+<li>重叠的因果关系<ul>
+<li>例：各投毒5mg，10mg致命</li>
 </ul>
 </li>
-<li>不作为犯与过失犯——结果避免可能性</li>
+<li>双重的因果关系（择一的竞合）<ul>
+<li>例：各开一枪，均中心脏</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>不作为犯与过失犯——结果避免可能性<ul>
+<li>不作为犯需要这个作为义务有意义，如果即使履行义务也无法避免结果发生，则认为结果与不作为没有因果关系<ul>
+<li>甲超速，轧到路面散落的井盖，车辆失控撞死骑自行车的乙，事后查明，不超速也会车辆失控导致相同结果，则甲不构成交通肇事罪</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h6 id="三、关于结果的要求：结果符合一定价值评价的要求"><a href="#三、关于结果的要求：结果符合一定价值评价的要求" class="headerlink" title="三、关于结果的要求：结果符合一定价值评价的要求"></a>三、关于结果的要求：结果符合一定价值评价的要求</h6><ul>
-<li>现实发生的结果</li>
-<li>规范保护范围内的结果<ul>
+<li>必须是现实发生的结果</li>
+<li>必须是规范保护范围内的结果<ul>
 <li>具体罪名的罪状规范</li>
 <li>过失犯罪的注意义务规范</li>
 </ul>
 </li>
-<li>管辖范围内的结果</li>
+<li>必须是行为人管辖范围内的结果</li>
 </ul>
 <h5 id="第三节-存在介入因素的案件"><a href="#第三节-存在介入因素的案件" class="headerlink" title="第三节 存在介入因素的案件"></a>第三节 存在介入因素的案件</h5><h6 id="一、官方立场"><a href="#一、官方立场" class="headerlink" title="一、官方立场"></a>一、官方立场</h6><ul>
 <li>条件说的不足</li>
@@ -1956,17 +1971,32 @@
 <h6 id="三、介入因素的种类"><a href="#三、介入因素的种类" class="headerlink" title="三、介入因素的种类"></a>三、介入因素的种类</h6><ul>
 <li>被害人的特殊体质</li>
 <li>被害人自身的行为</li>
-<li>第三人的行为</li>
+<li>第三人的行为<ul>
+<li>阻断救助行为<ul>
+<li>责任归属于阻断救助行为而非先前行为<ul>
+<li>甲推乙下水，丙扔救生圈施救，丁与甲无共谋捞走救生圈，死亡结果归属于丁</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h5 id="第四节-无法查明的案件"><a href="#第四节-无法查明的案件" class="headerlink" title="第四节 无法查明的案件"></a>第四节 无法查明的案件</h5><h6 id="一、行为人是一个人"><a href="#一、行为人是一个人" class="headerlink" title="一、行为人是一个人"></a>一、行为人是一个人</h6><ul>
 <li>一个人实施一个行为</li>
 <li>一个人实施两个行为</li>
 </ul>
 <h6 id="二、行为人是两个人"><a href="#二、行为人是两个人" class="headerlink" title="二、行为人是两个人"></a>二、行为人是两个人</h6><ul>
-<li>两个人构成共同犯罪</li>
-<li>两个人不构成共同犯罪</li>
+<li>两个人构成共同犯罪<ul>
+<li><font color=royalblue>部分实行，全部负责</font>，两人均有因果关系</li>
 </ul>
-<h4 id="第七讲-（客观）违法阻却事由"><a href="#第七讲-（客观）违法阻却事由" class="headerlink" title="第七讲 （客观）违法阻却事由"></a>第七讲 （客观）违法阻却事由</h4><h5 id="第一节-正当防卫"><a href="#第一节-正当防卫" class="headerlink" title="第一节 正当防卫"></a>第一节 正当防卫</h5><h5 id="第二节-紧急避险"><a href="#第二节-紧急避险" class="headerlink" title="第二节 紧急避险"></a>第二节 紧急避险</h5><h5 id="第三节-被害人承诺"><a href="#第三节-被害人承诺" class="headerlink" title="第三节 被害人承诺"></a>第三节 被害人承诺</h5><h4 id="第八讲-主观要件"><a href="#第八讲-主观要件" class="headerlink" title="第八讲 主观要件"></a>第八讲 主观要件</h4><h5 id="第一节-犯罪故意"><a href="#第一节-犯罪故意" class="headerlink" title="第一节 犯罪故意"></a>第一节 犯罪故意</h5><h5 id="第二节-罪过形式的区分"><a href="#第二节-罪过形式的区分" class="headerlink" title="第二节 罪过形式的区分"></a>第二节 罪过形式的区分</h5><h5 id="第三节-事实认识错误"><a href="#第三节-事实认识错误" class="headerlink" title="第三节 事实认识错误"></a>第三节 事实认识错误</h5><h4 id="第九讲-（主观）责任阻却事由"><a href="#第九讲-（主观）责任阻却事由" class="headerlink" title="第九讲 （主观）责任阻却事由"></a>第九讲 （主观）责任阻却事由</h4><h5 id="第一节-责任年龄"><a href="#第一节-责任年龄" class="headerlink" title="第一节 责任年龄"></a>第一节 责任年龄</h5><h5 id="第二节-责任能力"><a href="#第二节-责任能力" class="headerlink" title="第二节 责任能力"></a>第二节 责任能力</h5><h5 id="第三节-法律认识错误"><a href="#第三节-法律认识错误" class="headerlink" title="第三节 法律认识错误"></a>第三节 法律认识错误</h5><h5 id="第四节-期待可能性"><a href="#第四节-期待可能性" class="headerlink" title="第四节 期待可能性"></a>第四节 期待可能性</h5><h4 id="第十讲-犯罪形态"><a href="#第十讲-犯罪形态" class="headerlink" title="第十讲 犯罪形态"></a>第十讲 犯罪形态</h4><h5 id="第一节-犯罪预备"><a href="#第一节-犯罪预备" class="headerlink" title="第一节 犯罪预备"></a>第一节 犯罪预备</h5><h5 id="第二节-犯罪未遂"><a href="#第二节-犯罪未遂" class="headerlink" title="第二节 犯罪未遂"></a>第二节 犯罪未遂</h5><h5 id="第三节-犯罪中止"><a href="#第三节-犯罪中止" class="headerlink" title="第三节 犯罪中止"></a>第三节 犯罪中止</h5><h5 id="第四节-犯罪既遂"><a href="#第四节-犯罪既遂" class="headerlink" title="第四节 犯罪既遂"></a>第四节 犯罪既遂</h5><h4 id="第十一讲-共同犯罪"><a href="#第十一讲-共同犯罪" class="headerlink" title="第十一讲 共同犯罪"></a>第十一讲 共同犯罪</h4><h5 id="第一节-基本原理-1"><a href="#第一节-基本原理-1" class="headerlink" title="第一节 基本原理"></a>第一节 基本原理</h5><h5 id="第二节-共同正犯"><a href="#第二节-共同正犯" class="headerlink" title="第二节 共同正犯"></a>第二节 共同正犯</h5><h5 id="第三节-间接正犯"><a href="#第三节-间接正犯" class="headerlink" title="第三节 间接正犯"></a>第三节 间接正犯</h5><h5 id="第四节-正犯与共犯的关系"><a href="#第四节-正犯与共犯的关系" class="headerlink" title="第四节 正犯与共犯的关系"></a>第四节 正犯与共犯的关系</h5><h5 id="第五节-教唆犯"><a href="#第五节-教唆犯" class="headerlink" title="第五节 教唆犯"></a>第五节 教唆犯</h5><h5 id="第六节-帮助犯"><a href="#第六节-帮助犯" class="headerlink" title="第六节 帮助犯"></a>第六节 帮助犯</h5><h5 id="第七节-共同犯罪的特殊形式"><a href="#第七节-共同犯罪的特殊形式" class="headerlink" title="第七节 共同犯罪的特殊形式"></a>第七节 共同犯罪的特殊形式</h5><h5 id="第八节-共同犯罪的结合问题"><a href="#第八节-共同犯罪的结合问题" class="headerlink" title="第八节 共同犯罪的结合问题"></a>第八节 共同犯罪的结合问题</h5><h5 id="第九节-共同犯罪的处罚规定"><a href="#第九节-共同犯罪的处罚规定" class="headerlink" title="第九节 共同犯罪的处罚规定"></a>第九节 共同犯罪的处罚规定</h5><h4 id="第十二讲-罪数"><a href="#第十二讲-罪数" class="headerlink" title="第十二讲 罪数"></a>第十二讲 罪数</h4><h5 id="第一节-一个行为"><a href="#第一节-一个行为" class="headerlink" title="第一节 一个行为"></a>第一节 一个行为</h5><h5 id="第二节-两个行为"><a href="#第二节-两个行为" class="headerlink" title="第二节 两个行为"></a>第二节 两个行为</h5><h4 id="第十三讲-刑罚的体系"><a href="#第十三讲-刑罚的体系" class="headerlink" title="第十三讲 刑罚的体系"></a>第十三讲 刑罚的体系</h4><h5 id="第一节-主刑"><a href="#第一节-主刑" class="headerlink" title="第一节 主刑"></a>第一节 主刑</h5><h5 id="第二节-附加刑"><a href="#第二节-附加刑" class="headerlink" title="第二节 附加刑"></a>第二节 附加刑</h5><h5 id="第三节-非刑罚处罚措施"><a href="#第三节-非刑罚处罚措施" class="headerlink" title="第三节 非刑罚处罚措施"></a>第三节 非刑罚处罚措施</h5><h4 id="第十四讲-刑罚的裁量"><a href="#第十四讲-刑罚的裁量" class="headerlink" title="第十四讲 刑罚的裁量"></a>第十四讲 刑罚的裁量</h4><h5 id="第一节-量刑情节"><a href="#第一节-量刑情节" class="headerlink" title="第一节 量刑情节"></a>第一节 量刑情节</h5><h5 id="第二节-累犯"><a href="#第二节-累犯" class="headerlink" title="第二节 累犯"></a>第二节 累犯</h5><h5 id="第三节-自首"><a href="#第三节-自首" class="headerlink" title="第三节 自首"></a>第三节 自首</h5><h5 id="第四节-立功"><a href="#第四节-立功" class="headerlink" title="第四节 立功"></a>第四节 立功</h5><h5 id="第五节-数罪并罚"><a href="#第五节-数罪并罚" class="headerlink" title="第五节 数罪并罚"></a>第五节 数罪并罚</h5><h5 id="缓刑"><a href="#缓刑" class="headerlink" title="缓刑"></a>缓刑</h5><h4 id="第十五讲-刑罚的执行与消灭"><a href="#第十五讲-刑罚的执行与消灭" class="headerlink" title="第十五讲 刑罚的执行与消灭"></a>第十五讲 刑罚的执行与消灭</h4><h5 id="第一节-减刑"><a href="#第一节-减刑" class="headerlink" title="第一节 减刑"></a>第一节 减刑</h5><h5 id="第二节-假释"><a href="#第二节-假释" class="headerlink" title="第二节 假释"></a>第二节 假释</h5><h5 id="第三节-刑罚的消灭与追诉时效"><a href="#第三节-刑罚的消灭与追诉时效" class="headerlink" title="第三节 刑罚的消灭与追诉时效"></a>第三节 刑罚的消灭与追诉时效</h5><h3 id="分论"><a href="#分论" class="headerlink" title="分论"></a>分论</h3><h4 id="第十六讲-分论概说"><a href="#第十六讲-分论概说" class="headerlink" title="第十六讲 分论概说"></a>第十六讲 分论概说</h4><h5 id="第一节-罪名"><a href="#第一节-罪名" class="headerlink" title="第一节 罪名"></a>第一节 罪名</h5><h5 id="第二节-注意规定与法律拟制"><a href="#第二节-注意规定与法律拟制" class="headerlink" title="第二节 注意规定与法律拟制"></a>第二节 注意规定与法律拟制</h5><h4 id="第十七节-人身犯罪"><a href="#第十七节-人身犯罪" class="headerlink" title="第十七节 人身犯罪"></a>第十七节 人身犯罪</h4><h5 id="第一节-侵犯生命、身体的犯罪"><a href="#第一节-侵犯生命、身体的犯罪" class="headerlink" title="第一节 侵犯生命、身体的犯罪"></a>第一节 侵犯生命、身体的犯罪</h5><h5 id="第二节-侵犯性权力的犯罪"><a href="#第二节-侵犯性权力的犯罪" class="headerlink" title="第二节 侵犯性权力的犯罪"></a>第二节 侵犯性权力的犯罪</h5><h5 id="第三节-侵犯人身自由的犯罪"><a href="#第三节-侵犯人身自由的犯罪" class="headerlink" title="第三节 侵犯人身自由的犯罪"></a>第三节 侵犯人身自由的犯罪</h5><h5 id="第四节-侵犯名誉权、人身权的犯罪"><a href="#第四节-侵犯名誉权、人身权的犯罪" class="headerlink" title="第四节 侵犯名誉权、人身权的犯罪"></a>第四节 侵犯名誉权、人身权的犯罪</h5><h5 id="第五节-侵犯婚姻家庭的犯罪"><a href="#第五节-侵犯婚姻家庭的犯罪" class="headerlink" title="第五节 侵犯婚姻家庭的犯罪"></a>第五节 侵犯婚姻家庭的犯罪</h5><h5 id="第六节-普通罪名"><a href="#第六节-普通罪名" class="headerlink" title="第六节 普通罪名"></a>第六节 普通罪名</h5><h4 id="第十八节-财产犯罪"><a href="#第十八节-财产犯罪" class="headerlink" title="第十八节 财产犯罪"></a>第十八节 财产犯罪</h4><h5 id="第一节-基本原理-2"><a href="#第一节-基本原理-2" class="headerlink" title="第一节 基本原理"></a>第一节 基本原理</h5><h5 id="第二节-侵占罪"><a href="#第二节-侵占罪" class="headerlink" title="第二节 侵占罪"></a>第二节 侵占罪</h5><h5 id="第三节-盗窃罪"><a href="#第三节-盗窃罪" class="headerlink" title="第三节 盗窃罪"></a>第三节 盗窃罪</h5><h5 id="第四节-抢夺罪"><a href="#第四节-抢夺罪" class="headerlink" title="第四节 抢夺罪"></a>第四节 抢夺罪</h5><h5 id="第五节-抢劫罪"><a href="#第五节-抢劫罪" class="headerlink" title="第五节 抢劫罪"></a>第五节 抢劫罪</h5><h5 id="第六节-敲诈勒索罪"><a href="#第六节-敲诈勒索罪" class="headerlink" title="第六节 敲诈勒索罪"></a>第六节 敲诈勒索罪</h5><h5 id="第七节-诈骗罪"><a href="#第七节-诈骗罪" class="headerlink" title="第七节 诈骗罪"></a>第七节 诈骗罪</h5><h5 id="第八节-职务侵占罪"><a href="#第八节-职务侵占罪" class="headerlink" title="第八节 职务侵占罪"></a>第八节 职务侵占罪</h5><h5 id="第九节-普通罪名"><a href="#第九节-普通罪名" class="headerlink" title="第九节 普通罪名"></a>第九节 普通罪名</h5><h4 id="第十九节-危害公共安全罪"><a href="#第十九节-危害公共安全罪" class="headerlink" title="第十九节 危害公共安全罪"></a>第十九节 危害公共安全罪</h4><h5 id="第一节-危险方法型犯罪"><a href="#第一节-危险方法型犯罪" class="headerlink" title="第一节 危险方法型犯罪"></a>第一节 危险方法型犯罪</h5><h5 id="第二节-破坏型犯罪"><a href="#第二节-破坏型犯罪" class="headerlink" title="第二节 破坏型犯罪"></a>第二节 破坏型犯罪</h5><h5 id="第三节-交通型犯罪"><a href="#第三节-交通型犯罪" class="headerlink" title="第三节 交通型犯罪"></a>第三节 交通型犯罪</h5><h5 id="第四节-恐怖型犯罪"><a href="#第四节-恐怖型犯罪" class="headerlink" title="第四节 恐怖型犯罪"></a>第四节 恐怖型犯罪</h5><h5 id="第五节-枪支类犯罪"><a href="#第五节-枪支类犯罪" class="headerlink" title="第五节 枪支类犯罪"></a>第五节 枪支类犯罪</h5><h5 id="第六节-安全生产领域犯罪"><a href="#第六节-安全生产领域犯罪" class="headerlink" title="第六节 安全生产领域犯罪"></a>第六节 安全生产领域犯罪</h5><h4 id="第二十节-经济犯罪"><a href="#第二十节-经济犯罪" class="headerlink" title="第二十节 经济犯罪"></a>第二十节 经济犯罪</h4><h5 id="第一节-生产、销售伪劣商品罪"><a href="#第一节-生产、销售伪劣商品罪" class="headerlink" title="第一节 生产、销售伪劣商品罪"></a>第一节 生产、销售伪劣商品罪</h5><h5 id="第二节-走私犯罪"><a href="#第二节-走私犯罪" class="headerlink" title="第二节 走私犯罪"></a>第二节 走私犯罪</h5><h5 id="第三节-妨害对公司、企业的管理秩序罪"><a href="#第三节-妨害对公司、企业的管理秩序罪" class="headerlink" title="第三节 妨害对公司、企业的管理秩序罪"></a>第三节 妨害对公司、企业的管理秩序罪</h5><h5 id="第四节-破坏金融管理秩序罪"><a href="#第四节-破坏金融管理秩序罪" class="headerlink" title="第四节 破坏金融管理秩序罪"></a>第四节 破坏金融管理秩序罪</h5><h5 id="第五节-金融诈骗罪"><a href="#第五节-金融诈骗罪" class="headerlink" title="第五节 金融诈骗罪"></a>第五节 金融诈骗罪</h5><h5 id="第六节-危害税收征管罪"><a href="#第六节-危害税收征管罪" class="headerlink" title="第六节 危害税收征管罪"></a>第六节 危害税收征管罪</h5><h5 id="第七节-侵犯知识产权罪"><a href="#第七节-侵犯知识产权罪" class="headerlink" title="第七节 侵犯知识产权罪"></a>第七节 侵犯知识产权罪</h5><h5 id="第八节-扰乱市场秩序罪"><a href="#第八节-扰乱市场秩序罪" class="headerlink" title="第八节 扰乱市场秩序罪"></a>第八节 扰乱市场秩序罪</h5><h4 id="第二十一节-社会秩序犯罪"><a href="#第二十一节-社会秩序犯罪" class="headerlink" title="第二十一节 社会秩序犯罪"></a>第二十一节 社会秩序犯罪</h4><h5 id="第一节-扰乱公共秩序罪"><a href="#第一节-扰乱公共秩序罪" class="headerlink" title="第一节 扰乱公共秩序罪"></a>第一节 扰乱公共秩序罪</h5><h5 id="第二节-妨害司法罪"><a href="#第二节-妨害司法罪" class="headerlink" title="第二节 妨害司法罪"></a>第二节 妨害司法罪</h5><h5 id="第三节-妨害文物管理罪"><a href="#第三节-妨害文物管理罪" class="headerlink" title="第三节 妨害文物管理罪"></a>第三节 妨害文物管理罪</h5><h5 id="第四节-危害公共卫生罪"><a href="#第四节-危害公共卫生罪" class="headerlink" title="第四节 危害公共卫生罪"></a>第四节 危害公共卫生罪</h5><h5 id="第五节-环境犯罪"><a href="#第五节-环境犯罪" class="headerlink" title="第五节 环境犯罪"></a>第五节 环境犯罪</h5><h5 id="第六节-毒品犯罪"><a href="#第六节-毒品犯罪" class="headerlink" title="第六节 毒品犯罪"></a>第六节 毒品犯罪</h5><h5 id="第七节-卖淫类犯罪"><a href="#第七节-卖淫类犯罪" class="headerlink" title="第七节 卖淫类犯罪"></a>第七节 卖淫类犯罪</h5><h5 id="第八节-关于淫秽物品的犯罪"><a href="#第八节-关于淫秽物品的犯罪" class="headerlink" title="第八节 关于淫秽物品的犯罪"></a>第八节 关于淫秽物品的犯罪</h5><h4 id="第二十二节-贪污贿赂罪"><a href="#第二十二节-贪污贿赂罪" class="headerlink" title="第二十二节 贪污贿赂罪"></a>第二十二节 贪污贿赂罪</h4><h5 id="第一节-贪污罪"><a href="#第一节-贪污罪" class="headerlink" title="第一节 贪污罪"></a>第一节 贪污罪</h5><h5 id="第二节-挪用公款罪"><a href="#第二节-挪用公款罪" class="headerlink" title="第二节 挪用公款罪"></a>第二节 挪用公款罪</h5><h5 id="第三节-受贿罪"><a href="#第三节-受贿罪" class="headerlink" title="第三节 受贿罪"></a>第三节 受贿罪</h5><h5 id="第四节-行贿罪"><a href="#第四节-行贿罪" class="headerlink" title="第四节 行贿罪"></a>第四节 行贿罪</h5><h5 id="第五节-斡旋受贿"><a href="#第五节-斡旋受贿" class="headerlink" title="第五节 斡旋受贿"></a>第五节 斡旋受贿</h5><h5 id="第六节-利用影响力受贿罪"><a href="#第六节-利用影响力受贿罪" class="headerlink" title="第六节 利用影响力受贿罪"></a>第六节 利用影响力受贿罪</h5><h4 id="第二十三节-渎职罪"><a href="#第二十三节-渎职罪" class="headerlink" title="第二十三节 渎职罪"></a>第二十三节 渎职罪</h4><h5 id="第一节-重点罪名"><a href="#第一节-重点罪名" class="headerlink" title="第一节 重点罪名"></a>第一节 重点罪名</h5><h5 id="第二节-普通罪名"><a href="#第二节-普通罪名" class="headerlink" title="第二节 普通罪名"></a>第二节 普通罪名</h5><h4 id="第二十四讲-危害国家安全罪"><a href="#第二十四讲-危害国家安全罪" class="headerlink" title="第二十四讲 危害国家安全罪"></a>第二十四讲 危害国家安全罪</h4>]]></content>
+</li>
+<li>两个人不构成共同犯罪<ul>
+<li>独立分析每个人，找出可能的情形，然后<font color=royalblue>存疑时有利于被告</font></li>
+</ul>
+</li>
+</ul>
+<h4 id="第七讲-（客观）违法阻却事由"><a href="#第七讲-（客观）违法阻却事由" class="headerlink" title="第七讲 （客观）违法阻却事由"></a>第七讲 （客观）违法阻却事由</h4><h5 id="第一节-正当防卫"><a href="#第一节-正当防卫" class="headerlink" title="第一节 正当防卫"></a>第一节 正当防卫</h5><h5 id="第二节-紧急避险"><a href="#第二节-紧急避险" class="headerlink" title="第二节 紧急避险"></a>第二节 紧急避险</h5><h5 id="第三节-被害人承诺"><a href="#第三节-被害人承诺" class="headerlink" title="第三节 被害人承诺"></a>第三节 被害人承诺</h5><h4 id="第八讲-主观要件"><a href="#第八讲-主观要件" class="headerlink" title="第八讲 主观要件"></a>第八讲 主观要件</h4><h5 id="第一节-犯罪故意"><a href="#第一节-犯罪故意" class="headerlink" title="第一节 犯罪故意"></a>第一节 犯罪故意</h5><h5 id="第二节-罪过形式的区分"><a href="#第二节-罪过形式的区分" class="headerlink" title="第二节 罪过形式的区分"></a>第二节 罪过形式的区分</h5><h5 id="第三节-事实认识错误"><a href="#第三节-事实认识错误" class="headerlink" title="第三节 事实认识错误"></a>第三节 事实认识错误</h5><h4 id="第九讲-（主观）责任阻却事由"><a href="#第九讲-（主观）责任阻却事由" class="headerlink" title="第九讲 （主观）责任阻却事由"></a>第九讲 （主观）责任阻却事由</h4><h5 id="第一节-责任年龄"><a href="#第一节-责任年龄" class="headerlink" title="第一节 责任年龄"></a>第一节 责任年龄</h5><h5 id="第二节-责任能力"><a href="#第二节-责任能力" class="headerlink" title="第二节 责任能力"></a>第二节 责任能力</h5><h5 id="第三节-法律认识错误"><a href="#第三节-法律认识错误" class="headerlink" title="第三节 法律认识错误"></a>第三节 法律认识错误</h5><h5 id="第四节-期待可能性"><a href="#第四节-期待可能性" class="headerlink" title="第四节 期待可能性"></a>第四节 期待可能性</h5><h4 id="第十讲-犯罪形态"><a href="#第十讲-犯罪形态" class="headerlink" title="第十讲 犯罪形态"></a>第十讲 犯罪形态</h4><h5 id="第一节-犯罪预备"><a href="#第一节-犯罪预备" class="headerlink" title="第一节 犯罪预备"></a>第一节 犯罪预备</h5><h5 id="第二节-犯罪未遂"><a href="#第二节-犯罪未遂" class="headerlink" title="第二节 犯罪未遂"></a>第二节 犯罪未遂</h5><h5 id="第三节-犯罪中止"><a href="#第三节-犯罪中止" class="headerlink" title="第三节 犯罪中止"></a>第三节 犯罪中止</h5><h5 id="第四节-犯罪既遂"><a href="#第四节-犯罪既遂" class="headerlink" title="第四节 犯罪既遂"></a>第四节 犯罪既遂</h5><h4 id="第十一讲-共同犯罪"><a href="#第十一讲-共同犯罪" class="headerlink" title="第十一讲 共同犯罪"></a>第十一讲 共同犯罪</h4><h5 id="第一节-基本原理-1"><a href="#第一节-基本原理-1" class="headerlink" title="第一节 基本原理"></a>第一节 基本原理</h5><h5 id="第二节-共同正犯"><a href="#第二节-共同正犯" class="headerlink" title="第二节 共同正犯"></a>第二节 共同正犯</h5><h5 id="第三节-间接正犯"><a href="#第三节-间接正犯" class="headerlink" title="第三节 间接正犯"></a>第三节 间接正犯</h5><h5 id="第四节-正犯与共犯的关系"><a href="#第四节-正犯与共犯的关系" class="headerlink" title="第四节 正犯与共犯的关系"></a>第四节 正犯与共犯的关系</h5><h5 id="第五节-教唆犯"><a href="#第五节-教唆犯" class="headerlink" title="第五节 教唆犯"></a>第五节 教唆犯</h5><h5 id="第六节-帮助犯"><a href="#第六节-帮助犯" class="headerlink" title="第六节 帮助犯"></a>第六节 帮助犯</h5><h5 id="第七节-共同犯罪的特殊形式"><a href="#第七节-共同犯罪的特殊形式" class="headerlink" title="第七节 共同犯罪的特殊形式"></a>第七节 共同犯罪的特殊形式</h5><h5 id="第八节-共同犯罪的结合问题"><a href="#第八节-共同犯罪的结合问题" class="headerlink" title="第八节 共同犯罪的结合问题"></a>第八节 共同犯罪的结合问题</h5><h5 id="第九节-共同犯罪的处罚规定"><a href="#第九节-共同犯罪的处罚规定" class="headerlink" title="第九节 共同犯罪的处罚规定"></a>第九节 共同犯罪的处罚规定</h5><h4 id="第十二讲-罪数"><a href="#第十二讲-罪数" class="headerlink" title="第十二讲 罪数"></a>第十二讲 罪数</h4><h5 id="第一节-一个行为"><a href="#第一节-一个行为" class="headerlink" title="第一节 一个行为"></a>第一节 一个行为</h5><h5 id="第二节-两个行为"><a href="#第二节-两个行为" class="headerlink" title="第二节 两个行为"></a>第二节 两个行为</h5><h4 id="第十三讲-刑罚的体系"><a href="#第十三讲-刑罚的体系" class="headerlink" title="第十三讲 刑罚的体系"></a>第十三讲 刑罚的体系</h4><h5 id="第一节-主刑"><a href="#第一节-主刑" class="headerlink" title="第一节 主刑"></a>第一节 主刑</h5><h5 id="第二节-附加刑"><a href="#第二节-附加刑" class="headerlink" title="第二节 附加刑"></a>第二节 附加刑</h5><h5 id="第三节-非刑罚处罚措施"><a href="#第三节-非刑罚处罚措施" class="headerlink" title="第三节 非刑罚处罚措施"></a>第三节 非刑罚处罚措施</h5><h4 id="第十四讲-刑罚的裁量"><a href="#第十四讲-刑罚的裁量" class="headerlink" title="第十四讲 刑罚的裁量"></a>第十四讲 刑罚的裁量</h4><h5 id="第一节-量刑情节"><a href="#第一节-量刑情节" class="headerlink" title="第一节 量刑情节"></a>第一节 量刑情节</h5><h5 id="第二节-累犯"><a href="#第二节-累犯" class="headerlink" title="第二节 累犯"></a>第二节 累犯</h5><h5 id="第三节-自首"><a href="#第三节-自首" class="headerlink" title="第三节 自首"></a>第三节 自首</h5><h5 id="第四节-立功"><a href="#第四节-立功" class="headerlink" title="第四节 立功"></a>第四节 立功</h5><h5 id="第五节-数罪并罚"><a href="#第五节-数罪并罚" class="headerlink" title="第五节 数罪并罚"></a>第五节 数罪并罚</h5><h5 id="缓刑"><a href="#缓刑" class="headerlink" title="缓刑"></a>缓刑</h5><h4 id="第十五讲-刑罚的执行与消灭"><a href="#第十五讲-刑罚的执行与消灭" class="headerlink" title="第十五讲 刑罚的执行与消灭"></a>第十五讲 刑罚的执行与消灭</h4><h5 id="第一节-减刑"><a href="#第一节-减刑" class="headerlink" title="第一节 减刑"></a>第一节 减刑</h5><h5 id="第二节-假释"><a href="#第二节-假释" class="headerlink" title="第二节 假释"></a>第二节 假释</h5><h5 id="第三节-刑罚的消灭与追诉时效"><a href="#第三节-刑罚的消灭与追诉时效" class="headerlink" title="第三节 刑罚的消灭与追诉时效"></a>第三节 刑罚的消灭与追诉时效</h5><h3 id="分论"><a href="#分论" class="headerlink" title="分论"></a>分论</h3><h4 id="第十六讲-分论概说"><a href="#第十六讲-分论概说" class="headerlink" title="第十六讲 分论概说"></a>第十六讲 分论概说</h4><h5 id="第一节-罪名"><a href="#第一节-罪名" class="headerlink" title="第一节 罪名"></a>第一节 罪名</h5><h5 id="第二节-注意规定与法律拟制"><a href="#第二节-注意规定与法律拟制" class="headerlink" title="第二节 注意规定与法律拟制"></a>第二节 注意规定与法律拟制</h5><h4 id="第十七讲-人身犯罪"><a href="#第十七讲-人身犯罪" class="headerlink" title="第十七讲 人身犯罪"></a>第十七讲 人身犯罪</h4><h5 id="第一节-侵犯生命、身体的犯罪"><a href="#第一节-侵犯生命、身体的犯罪" class="headerlink" title="第一节 侵犯生命、身体的犯罪"></a>第一节 侵犯生命、身体的犯罪</h5><h5 id="第二节-侵犯性权力的犯罪"><a href="#第二节-侵犯性权力的犯罪" class="headerlink" title="第二节 侵犯性权力的犯罪"></a>第二节 侵犯性权力的犯罪</h5><h5 id="第三节-侵犯人身自由的犯罪"><a href="#第三节-侵犯人身自由的犯罪" class="headerlink" title="第三节 侵犯人身自由的犯罪"></a>第三节 侵犯人身自由的犯罪</h5><h5 id="第四节-侵犯名誉权、人身权的犯罪"><a href="#第四节-侵犯名誉权、人身权的犯罪" class="headerlink" title="第四节 侵犯名誉权、人身权的犯罪"></a>第四节 侵犯名誉权、人身权的犯罪</h5><h5 id="第五节-侵犯婚姻家庭的犯罪"><a href="#第五节-侵犯婚姻家庭的犯罪" class="headerlink" title="第五节 侵犯婚姻家庭的犯罪"></a>第五节 侵犯婚姻家庭的犯罪</h5><h5 id="第六节-普通罪名"><a href="#第六节-普通罪名" class="headerlink" title="第六节 普通罪名"></a>第六节 普通罪名</h5><h4 id="第十八讲-财产犯罪"><a href="#第十八讲-财产犯罪" class="headerlink" title="第十八讲 财产犯罪"></a>第十八讲 财产犯罪</h4><h5 id="第一节-基本原理-2"><a href="#第一节-基本原理-2" class="headerlink" title="第一节 基本原理"></a>第一节 基本原理</h5><h5 id="第二节-侵占罪"><a href="#第二节-侵占罪" class="headerlink" title="第二节 侵占罪"></a>第二节 侵占罪</h5><h5 id="第三节-盗窃罪"><a href="#第三节-盗窃罪" class="headerlink" title="第三节 盗窃罪"></a>第三节 盗窃罪</h5><h5 id="第四节-抢夺罪"><a href="#第四节-抢夺罪" class="headerlink" title="第四节 抢夺罪"></a>第四节 抢夺罪</h5><h5 id="第五节-抢劫罪"><a href="#第五节-抢劫罪" class="headerlink" title="第五节 抢劫罪"></a>第五节 抢劫罪</h5><h5 id="第六节-敲诈勒索罪"><a href="#第六节-敲诈勒索罪" class="headerlink" title="第六节 敲诈勒索罪"></a>第六节 敲诈勒索罪</h5><h5 id="第七节-诈骗罪"><a href="#第七节-诈骗罪" class="headerlink" title="第七节 诈骗罪"></a>第七节 诈骗罪</h5><h5 id="第八节-职务侵占罪"><a href="#第八节-职务侵占罪" class="headerlink" title="第八节 职务侵占罪"></a>第八节 职务侵占罪</h5><h5 id="第九节-普通罪名"><a href="#第九节-普通罪名" class="headerlink" title="第九节 普通罪名"></a>第九节 普通罪名</h5><h4 id="第十九讲-危害公共安全罪"><a href="#第十九讲-危害公共安全罪" class="headerlink" title="第十九讲 危害公共安全罪"></a>第十九讲 危害公共安全罪</h4><h5 id="第一节-危险方法型犯罪"><a href="#第一节-危险方法型犯罪" class="headerlink" title="第一节 危险方法型犯罪"></a>第一节 危险方法型犯罪</h5><h5 id="第二节-破坏型犯罪"><a href="#第二节-破坏型犯罪" class="headerlink" title="第二节 破坏型犯罪"></a>第二节 破坏型犯罪</h5><h5 id="第三节-交通型犯罪"><a href="#第三节-交通型犯罪" class="headerlink" title="第三节 交通型犯罪"></a>第三节 交通型犯罪</h5><h5 id="第四节-恐怖型犯罪"><a href="#第四节-恐怖型犯罪" class="headerlink" title="第四节 恐怖型犯罪"></a>第四节 恐怖型犯罪</h5><h5 id="第五节-枪支类犯罪"><a href="#第五节-枪支类犯罪" class="headerlink" title="第五节 枪支类犯罪"></a>第五节 枪支类犯罪</h5><h5 id="第六节-安全生产领域犯罪"><a href="#第六节-安全生产领域犯罪" class="headerlink" title="第六节 安全生产领域犯罪"></a>第六节 安全生产领域犯罪</h5><h4 id="第二十讲-经济犯罪"><a href="#第二十讲-经济犯罪" class="headerlink" title="第二十讲 经济犯罪"></a>第二十讲 经济犯罪</h4><h5 id="第一节-生产、销售伪劣商品罪"><a href="#第一节-生产、销售伪劣商品罪" class="headerlink" title="第一节 生产、销售伪劣商品罪"></a>第一节 生产、销售伪劣商品罪</h5><h5 id="第二节-走私犯罪"><a href="#第二节-走私犯罪" class="headerlink" title="第二节 走私犯罪"></a>第二节 走私犯罪</h5><h5 id="第三节-妨害对公司、企业的管理秩序罪"><a href="#第三节-妨害对公司、企业的管理秩序罪" class="headerlink" title="第三节 妨害对公司、企业的管理秩序罪"></a>第三节 妨害对公司、企业的管理秩序罪</h5><h5 id="第四节-破坏金融管理秩序罪"><a href="#第四节-破坏金融管理秩序罪" class="headerlink" title="第四节 破坏金融管理秩序罪"></a>第四节 破坏金融管理秩序罪</h5><h5 id="第五节-金融诈骗罪"><a href="#第五节-金融诈骗罪" class="headerlink" title="第五节 金融诈骗罪"></a>第五节 金融诈骗罪</h5><h5 id="第六节-危害税收征管罪"><a href="#第六节-危害税收征管罪" class="headerlink" title="第六节 危害税收征管罪"></a>第六节 危害税收征管罪</h5><h5 id="第七节-侵犯知识产权罪"><a href="#第七节-侵犯知识产权罪" class="headerlink" title="第七节 侵犯知识产权罪"></a>第七节 侵犯知识产权罪</h5><h5 id="第八节-扰乱市场秩序罪"><a href="#第八节-扰乱市场秩序罪" class="headerlink" title="第八节 扰乱市场秩序罪"></a>第八节 扰乱市场秩序罪</h5><h4 id="第二十一讲-社会秩序犯罪"><a href="#第二十一讲-社会秩序犯罪" class="headerlink" title="第二十一讲 社会秩序犯罪"></a>第二十一讲 社会秩序犯罪</h4><h5 id="第一节-扰乱公共秩序罪"><a href="#第一节-扰乱公共秩序罪" class="headerlink" title="第一节 扰乱公共秩序罪"></a>第一节 扰乱公共秩序罪</h5><h5 id="第二节-妨害司法罪"><a href="#第二节-妨害司法罪" class="headerlink" title="第二节 妨害司法罪"></a>第二节 妨害司法罪</h5><h5 id="第三节-妨害文物管理罪"><a href="#第三节-妨害文物管理罪" class="headerlink" title="第三节 妨害文物管理罪"></a>第三节 妨害文物管理罪</h5><h5 id="第四节-危害公共卫生罪"><a href="#第四节-危害公共卫生罪" class="headerlink" title="第四节 危害公共卫生罪"></a>第四节 危害公共卫生罪</h5><h5 id="第五节-环境犯罪"><a href="#第五节-环境犯罪" class="headerlink" title="第五节 环境犯罪"></a>第五节 环境犯罪</h5><h5 id="第六节-毒品犯罪"><a href="#第六节-毒品犯罪" class="headerlink" title="第六节 毒品犯罪"></a>第六节 毒品犯罪</h5><h5 id="第七节-卖淫类犯罪"><a href="#第七节-卖淫类犯罪" class="headerlink" title="第七节 卖淫类犯罪"></a>第七节 卖淫类犯罪</h5><h5 id="第八节-关于淫秽物品的犯罪"><a href="#第八节-关于淫秽物品的犯罪" class="headerlink" title="第八节 关于淫秽物品的犯罪"></a>第八节 关于淫秽物品的犯罪</h5><h4 id="第二十二讲-贪污贿赂罪"><a href="#第二十二讲-贪污贿赂罪" class="headerlink" title="第二十二讲 贪污贿赂罪"></a>第二十二讲 贪污贿赂罪</h4><h5 id="第一节-贪污罪"><a href="#第一节-贪污罪" class="headerlink" title="第一节 贪污罪"></a>第一节 贪污罪</h5><h5 id="第二节-挪用公款罪"><a href="#第二节-挪用公款罪" class="headerlink" title="第二节 挪用公款罪"></a>第二节 挪用公款罪</h5><h5 id="第三节-受贿罪"><a href="#第三节-受贿罪" class="headerlink" title="第三节 受贿罪"></a>第三节 受贿罪</h5><h5 id="第四节-行贿罪"><a href="#第四节-行贿罪" class="headerlink" title="第四节 行贿罪"></a>第四节 行贿罪</h5><h5 id="第五节-斡旋受贿"><a href="#第五节-斡旋受贿" class="headerlink" title="第五节 斡旋受贿"></a>第五节 斡旋受贿</h5><h5 id="第六节-利用影响力受贿罪"><a href="#第六节-利用影响力受贿罪" class="headerlink" title="第六节 利用影响力受贿罪"></a>第六节 利用影响力受贿罪</h5><h4 id="第二十三讲-渎职罪"><a href="#第二十三讲-渎职罪" class="headerlink" title="第二十三讲 渎职罪"></a>第二十三讲 渎职罪</h4><h5 id="第一节-重点罪名"><a href="#第一节-重点罪名" class="headerlink" title="第一节 重点罪名"></a>第一节 重点罪名</h5><h5 id="第二节-普通罪名"><a href="#第二节-普通罪名" class="headerlink" title="第二节 普通罪名"></a>第二节 普通罪名</h5><h4 id="第二十四讲-危害国家安全罪"><a href="#第二十四讲-危害国家安全罪" class="headerlink" title="第二十四讲 危害国家安全罪"></a>第二十四讲 危害国家安全罪</h4>]]></content>
       <categories>
         <category>法律</category>
         <category>刑法</category>
@@ -1974,45 +2004,6 @@
       <tags>
         <tag>法律</tag>
         <tag>刑法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习笔记2021-4-12~20-Ch6-微分方程式の解法</title>
-    <url>/2021/04/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-12~20-Ch6-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E8%A7%A3%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="Chapter-6-微分方程式の解法"><a href="#Chapter-6-微分方程式の解法" class="headerlink" title="Chapter 6 微分方程式の解法"></a>Chapter 6 微分方程式の解法</h2><h3 id="6-1-微分方程式とその解"><a href="#6-1-微分方程式とその解" class="headerlink" title="6.1 微分方程式とその解"></a>6.1 微分方程式とその解</h3><h4 id="6-1-1-解の種類"><a href="#6-1-1-解の種類" class="headerlink" title="6.1.1 解の種類"></a>6.1.1 解の種類</h4><p>一般解<br>特殊解<br>特異解</p>
-<h4 id="6-1-2-初期条件と境界条件"><a href="#6-1-2-初期条件と境界条件" class="headerlink" title="6.1.2 初期条件と境界条件"></a>6.1.2 初期条件と境界条件</h4><p>初期条件<br>$$ x = 0\ のとき\ y = 1, y’ = 3 $$<br>境界条件<br>$$ x = 0\ のとき\ y = 1; x = 1\ のとき\ y = 2 $$</p>
-<h4 id="6-1-3-常微分方程式の作成"><a href="#6-1-3-常微分方程式の作成" class="headerlink" title="6.1.3 常微分方程式の作成"></a>6.1.3 常微分方程式の作成</h4><p>任意定数がn個の時、n回微分して得られるn+1個の等式からすべての任意定数を消去するとn階常微分方程式が得られる。</p>
-<span id="more"></span>
-
-<h3 id="6-2-1階常微分方程式"><a href="#6-2-1階常微分方程式" class="headerlink" title="6.2 1階常微分方程式"></a>6.2 1階常微分方程式</h3><h4 id="6-2-1-変数分離形"><a href="#6-2-1-変数分離形" class="headerlink" title="6.2.1 変数分離形"></a>6.2.1 変数分離形</h4><p>$$ \frac{dy}{dx} = f(x)g(y) $$<br>特殊解 $ g(y) = 0 $ に注意</p>
-<h4 id="6-2-2-同次形1"><a href="#6-2-2-同次形1" class="headerlink" title="6.2.2 同次形1"></a>6.2.2 同次形1</h4><p>$$ \frac{dy}{dx} = f(\frac{y}{x}) $$<br>変数変換 $$ u = \frac{y}{x} $$</p>
-<h4 id="6-2-3-同次形2"><a href="#6-2-3-同次形2" class="headerlink" title="6.2.3 同次形2"></a>6.2.3 同次形2</h4><p>$$ \frac{dy}{dx} = \frac{ax + by + c}{px + qy + r} $$<br>二つの状況について考査する<br>状況一<br>$$ \frac{a}{p} = \frac{b}{q} $$<br>変数変換<br>$$ u = px + qy $$<br>状況二<br>$$ \frac{a}{p} \neq \frac{b}{q} $$<br>連立方程式<br>$$ ax + by + c = 0 $$<br>$$ px + qy + r = 0 $$<br>の解は<br>$$ x = X $$<br>$$ y = Y $$<br>である<br>変数変換<br>$$ u = x - X,\ v = y - Y $$</p>
-<h4 id="6-2-3-1階線形微分方程式"><a href="#6-2-3-1階線形微分方程式" class="headerlink" title="6.2.3 1階線形微分方程式"></a>6.2.3 1階線形微分方程式</h4><p>$$ \frac{dy}{dx} = P(x)y + Q(x) $$<br>その解は<br>$$ y = e^{\int P(x)dx} (\int Q(x) e^{-\int P(x)dx} dx + C) $$</p>
-<h4 id="6-2-4-ベルヌーイの微分方程式"><a href="#6-2-4-ベルヌーイの微分方程式" class="headerlink" title="6.2.4 ベルヌーイの微分方程式"></a>6.2.4 ベルヌーイの微分方程式</h4><p>$$ \frac{dy}{dx} = P(x)y + Q(x)y^n $$<br>変数変換<br>$$ u = y^{1 - n} $$</p>
-<h4 id="6-2-5-クレローの微分方程式"><a href="#6-2-5-クレローの微分方程式" class="headerlink" title="6.2.5 クレローの微分方程式"></a>6.2.5 クレローの微分方程式</h4><p>$$ y = xy’ + f(y’) $$<br>一般解は<br>$$ y = Cx + f(C) $$<br>特異解は連立方程式<br>$$ y = Cx + f(C),\ 0 = x + f’(C) $$<br>から $ C $ を消去して $ x, y $ の関係式を求める<br>特異解は一般解の直線群の包絡線になっている</p>
-<h4 id="6-2-6-完全微分形"><a href="#6-2-6-完全微分形" class="headerlink" title="6.2.6 完全微分形"></a>6.2.6 完全微分形</h4><p>微分方程式<br>$$ p(x, y)dx + q(x, y)dy = 0 $$<br>において<br>$$ \frac{\partial p}{\partial y} = \frac{\partial q}{\partial x} $$<br>を満たすとき、完全微分形であるという<br>完全微分形については<br>$$ v(x, y) = \int p(x, y) dx $$<br>$$ u(x, y) = v(x, y) + \int q(x, y) - \frac{\partial v}{\partial y} dy $$<br>とおくと<br>一般解は<br>$$ u(x, y) = C $$</p>
-<h4 id="6-2-7-積分因子"><a href="#6-2-7-積分因子" class="headerlink" title="6.2.7 積分因子"></a>6.2.7 積分因子</h4><p>$ p(x, y)dx + q(x, y)dy = 0$ は完全微分形ではないが，適当な関数 $ \mu(x, y) $ をかけて<br>$$ \mu(x, y)p(x, y)dx + \mu(x, y)q(x, y)dy = 0 $$<br>が完全微分形となるとき， $ \mu(x, y) $ を積分因子という<br>$ \mu $が積分因子となる必要十分条件は<br>$$ \frac{\partial(\mu p)}{\partial y} = \frac{\partial(\mu q)}{\partial x} $$<br>すなわち<br>$$ q\frac{\partial \mu}{\partial x} - p\frac{\partial \mu}{\partial y} = (\frac{\partial p}{\partial y} - \frac{\partial q}{\partial x})\mu $$</p>
-<h5 id="6-2-7-1積分因子がxだけの関数"><a href="#6-2-7-1積分因子がxだけの関数" class="headerlink" title="6.2.7.1積分因子がxだけの関数"></a>6.2.7.1積分因子がxだけの関数</h5><p>$ \mu $ は $ x $ だけの関数であるから<br>$$ \frac{\partial \mu}{\partial y} = 0 $$<br>故に<br>$$ \frac{1}{\mu} \frac{\partial \mu}{\partial x} = \frac{ \frac{\partial p}{\partial y} - \frac{\partial q}{\partial x} }{q} $$<br>その右側は $ x $ だけの関数である時<br>$$ \varphi(x) = \frac{ \frac{\partial p}{\partial y} - \frac{\partial q}{\partial x} }{q} $$<br>ある積分因子が求められる<br>$$ \mu = e^{\int \varphi(x)dx} $$</p>
-<h5 id="6-2-7-2積分因子がyだけの関数"><a href="#6-2-7-2積分因子がyだけの関数" class="headerlink" title="6.2.7.2積分因子がyだけの関数"></a>6.2.7.2積分因子がyだけの関数</h5><p>同じように<br>$$ \psi(y) = \frac{ \frac{\partial p}{\partial y} - \frac{\partial q}{\partial x} }{-p} $$<br>ある積分因子が求められる<br>$$ \mu = e^{\int \psi(y)dx} $$</p>
-<h3 id="6-3-2階線形微分方程式"><a href="#6-3-2階線形微分方程式" class="headerlink" title="6.3 2階線形微分方程式"></a>6.3 2階線形微分方程式</h3><h4 id="6-3-1-定数係数の同次線形微分方程式"><a href="#6-3-1-定数係数の同次線形微分方程式" class="headerlink" title="6.3.1 定数係数の同次線形微分方程式"></a>6.3.1 定数係数の同次線形微分方程式</h4><p>$$ y’’ + ay’ + by = 0 $$</p>
-<h4 id="6-3-2-定数係数の非同次線形微分方程式"><a href="#6-3-2-定数係数の非同次線形微分方程式" class="headerlink" title="6.3.2 定数係数の非同次線形微分方程式"></a>6.3.2 定数係数の非同次線形微分方程式</h4><p>$$ y’’ + ay’ + by = f(x) $$<br>これは対応する同次方程式の同伴方程式とも呼ばれる</p>
-<h5 id="未定係数法"><a href="#未定係数法" class="headerlink" title="未定係数法"></a>未定係数法</h5><p>特殊解と形が $ f(x) $ より推測される，未定係数法を用いて特殊解の係数を求めれば，同伴方程式の特性解と加えれば非同次方程式の一般解が作れる</p>
-<h5 id="定数変化法"><a href="#定数変化法" class="headerlink" title="定数変化法"></a>定数変化法</h5><p>特殊解を直観的に予想することは困難な時は，定数変化法より特殊解を求めることができる<br>ここでは結論だけを述べる<br>同伴方程式の特性解を $ y1, y2 $ とし，非同次方程式の特殊解を $ Y_0 $ とすると<br>$$ u_1 = \int \frac{-y_2 f(x)}{y_1 y’_2 - y_2 y’_1} dx $$<br>$$ u_2 = \int \frac{y_1 f(x)}{y_1 y’_2 - y_2 y’_1} dx $$<br>ここで<br>$$ Y_0 = u_1 y_1 + u_2 y_2 $$<br>が非同次方程式の1つの特殊解である<br>故に非同次方程式の一般解は<br>$$ y = C_1 y_1 + C_2 y_2 + Y_0 $$</p>
-<h4 id="6-3-3-定数係数でない線形微分方程式"><a href="#6-3-3-定数係数でない線形微分方程式" class="headerlink" title="6.3.3 定数係数でない線形微分方程式"></a>6.3.3 定数係数でない線形微分方程式</h4><p>$$ y’’ + p(x)y’ + q(x)y = f(x) $$</p>
-<h5 id="1つの特殊解がわかったとき-need-refinement"><a href="#1つの特殊解がわかったとき-need-refinement" class="headerlink" title="1つの特殊解がわかったとき*need refinement"></a>1つの特殊解がわかったとき*need refinement</h5><p>わかった特殊解が $ v $ とした場合<br>一般解は<br>$$ y = uv $$<br>として考える<br>$$ y’ = uv’ + u’v $$<br>$$ y’’ = uv’’ + 2u’v’ + u’’v $$<br>これらを<br>$$ y’’ + p(x)y’ + q(x)y = f(x) $$<br>に代入して，<br>$$ v’’ + p(x)v’ + q(x)v = 0 $$<br>を使って整理すると<br>$$ u’’ + (\frac{2v’}{v} + p) u’ = \frac{f}{v} $$<br>ここで<br>$$ u’ = w $$<br>と置けば，一階線形微分方程式に帰着される</p>
-<h5 id="2つの線形独立な特殊解がわかったとき"><a href="#2つの線形独立な特殊解がわかったとき" class="headerlink" title="2つの線形独立な特殊解がわかったとき"></a>2つの線形独立な特殊解がわかったとき</h5><p>わかった特殊解が $ y_1, y_2 $ とした場合<br>6.3.2の定数変化法が用いられる<br>一般解は<br>$$ y = C_1 y_1 + C_2 y_2 + u_1 y_1 + u_2 y_2 $$<br>となる</p>
-]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>数学</category>
-        <category>微积分</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>数学</tag>
-        <tag>微积分</tag>
       </tags>
   </entry>
   <entry>
@@ -2032,6 +2023,28 @@
         <tag>学习</tag>
         <tag>专业课</tag>
         <tag>数电</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习笔记2021-4-1-Ch4-偏微分法</title>
+    <url>/2021/04/01/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-1-Ch4-%E5%81%8F%E5%BE%AE%E5%88%86%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="全微分可能性"><a href="#全微分可能性" class="headerlink" title="全微分可能性"></a>全微分可能性</h2><h3 id="全微分可能であることを証明するには"><a href="#全微分可能であることを証明するには" class="headerlink" title="全微分可能であることを証明するには"></a>全微分可能であることを証明するには</h3><p>偏微分可能で、$f_x, f_y$が連続 $\Rightarrow$ 全微分可能</p>
+<h3 id="全微分可能でないことを証明するには"><a href="#全微分可能でないことを証明するには" class="headerlink" title="全微分可能でないことを証明するには"></a>全微分可能でないことを証明するには</h3><p>定義より<br>$f(x + h, y + k) - f(x, y) = hf_x(x, y) + kf_y(x, y) + o(\rho) \quad (h \to 0, k \to 0, \rho = \sqrt{h^2 + k^2})$<br>$f(x + h, y + k) - f(x, y) = hf_x(x, y) + kf_y(x, y) + R(h, k)$　とすると<br>$\lim_{h \to 0, \ k \to 0} \frac{R}{\rho} \neq 0$　とならない時<br>全微分可能でない</p>
+<h2 id="接平面の方程式"><a href="#接平面の方程式" class="headerlink" title="接平面の方程式"></a>接平面の方程式</h2><p>$z - f(a, b) = (x - a)f_x(a, b) + (y - b)f_y(a, b)$</p>
+<h2 id="偏微分作用素"><a href="#偏微分作用素" class="headerlink" title="偏微分作用素"></a>偏微分作用素</h2><p>$h \frac{\partial}{\partial x} + k \frac{\partial}{\partial y}$を次のように定義する<br>$$(h \frac{\partial}{\partial x} + k \frac{\partial}{\partial y})f(x, y) = h \frac{\partial}{\partial x}f(x, y) + k \frac{\partial}{\partial y}f(x, y)$$<br>今、$z = f(x, y), x = ht + a, y = kt + b$で，$z = f(x, y)$が必要な回数だけ連続な偏導関数をもてば，合成関数の偏微分法より<br>$$\frac{\mathrm{d} z}{\mathrm{d} t} = \frac{\partial z}{\partial x}\frac{\mathrm{d} x}{\mathrm{d} t} + \frac{\partial z}{\partial y}\frac{\mathrm{d} y}{\mathrm{d} t} = (h\frac{\partial z}{\partial x} + k\frac{\partial z}{\partial y}) z$$<br>さらに，$$\frac{\mathrm{d}^n z}{\mathrm{d} t^n} = (h\frac{\partial z}{\partial x} + k\frac{\partial z}{\partial y})^n z$$</p>
+<h2 id="包絡線"><a href="#包絡線" class="headerlink" title="包絡線"></a>包絡線</h2><p>曲線群$f(x, y, \alpha) = 0$が特異点をもたないときには<br>$$f(x, y, \alpha) = 0, f_\alpha(x, y, \alpha) = 0$$<br>から$\alpha$を消去して得られる曲線がこの曲線群の包絡線である。</p>
+]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>数学</category>
+        <category>微积分</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>数学</tag>
+        <tag>微积分</tag>
       </tags>
   </entry>
   <entry>
@@ -2174,6 +2187,24 @@
       </tags>
   </entry>
   <entry>
+    <title>学习笔记2021-5-19-Ch1-矩阵的代数运算</title>
+    <url>/2021/05/19/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-18-Ch1-%E7%9F%A9%E9%98%B5%E7%9A%84%E4%BB%A3%E6%95%B0%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><p>零因子<br>冪等行列<br>冪零行列<br>対角行列</p>
+]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>数学</category>
+        <category>线性代数</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>数学</tag>
+        <tag>线性代数</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习笔记2021-5-13-MIT线代</title>
     <url>/2021/05/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-13-MIT%E7%BA%BF%E4%BB%A3/</url>
     <content><![CDATA[<h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><p>转置 transpose 転置<br>方阵 squre matrix 正方行列<br>可逆矩阵 invertible matrix 可逆行列<br>非退化矩阵 non-degenerate matrix 正則行列<br>非奇异矩阵 non-singular matrix 非特異行列<br>增广矩阵 augmented matrix 拡大行列<br>秩 rank 階数<br>主元 pivot </p>
@@ -2215,24 +2246,6 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-5-19-Ch1-矩阵的代数运算</title>
-    <url>/2021/05/19/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-18-Ch1-%E7%9F%A9%E9%98%B5%E7%9A%84%E4%BB%A3%E6%95%B0%E8%BF%90%E7%AE%97/</url>
-    <content><![CDATA[<h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><p>零因子<br>冪等行列<br>冪零行列<br>対角行列</p>
-]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>数学</category>
-        <category>线性代数</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>数学</tag>
-        <tag>线性代数</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学习笔记2021-5-20-Ch2-行列式</title>
     <url>/2021/05/20/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-20-Ch2-%E8%A1%8C%E5%88%97%E5%BC%8F/</url>
     <content><![CDATA[<h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><p>二項定理 Binomial Theorem<br>上三角行列<br>下三角行列<br>小行列式 Cominor 余子式<br>余因子・余因数 Algebraic cofactor 代数余子式</p>
@@ -2255,6 +2268,25 @@
     <url>/2021/05/24/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-24-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/</url>
     <content><![CDATA[<h2 id="クラメールの公式-Cramer’s-Rule-克拉默法则"><a href="#クラメールの公式-Cramer’s-Rule-克拉默法则" class="headerlink" title="クラメールの公式 Cramer’s Rule 克拉默法则"></a>クラメールの公式 Cramer’s Rule 克拉默法则</h2><p>$ |A| \neq 0 $の時<br>n元1次方程式の解は<br>$$ x_i = \frac{|b_1…d…b_n|}{|A|} $$</p>
 <h2 id="Vandermonde-Determinant"><a href="#Vandermonde-Determinant" class="headerlink" title="Vandermonde Determinant"></a>Vandermonde Determinant</h2>]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>数学</category>
+        <category>线性代数</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>数学</tag>
+        <tag>线性代数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习笔记2021-5-25-Ch3-线性方程组</title>
+    <url>/2021/05/25/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-25-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/</url>
+    <content><![CDATA[<h2 id="1次連立方程式の解の数"><a href="#1次連立方程式の解の数" class="headerlink" title="1次連立方程式の解の数"></a>1次連立方程式の解の数</h2><p>$ n $ は未知数の数<br>$ rank A = rank A|b = n $ ならば解は1組<br>$ rank A = rank A|b &lt; n $ ならば解は無数<br>$ rank A &lt; rank A|b $ ならば解なし</p>
+<h2 id="自明解"><a href="#自明解" class="headerlink" title="自明解"></a>自明解</h2><p>线性齐次方程的零解</p>
+]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
@@ -2330,25 +2362,6 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-5-25-Ch3-线性方程组</title>
-    <url>/2021/05/25/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-25-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/</url>
-    <content><![CDATA[<h2 id="1次連立方程式の解の数"><a href="#1次連立方程式の解の数" class="headerlink" title="1次連立方程式の解の数"></a>1次連立方程式の解の数</h2><p>$ n $ は未知数の数<br>$ rank A = rank A|b = n $ ならば解は1組<br>$ rank A = rank A|b &lt; n $ ならば解は無数<br>$ rank A &lt; rank A|b $ ならば解なし</p>
-<h2 id="自明解"><a href="#自明解" class="headerlink" title="自明解"></a>自明解</h2><p>线性齐次方程的零解</p>
-]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>数学</category>
-        <category>线性代数</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>数学</tag>
-        <tag>线性代数</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学习笔记2021-5-30-Ch4-空间向量</title>
     <url>/2021/05/30/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-30-Ch4-%E7%A9%BA%E9%97%B4%E5%90%91%E9%87%8F/</url>
     <content><![CDATA[<h2 id="Vectors"><a href="#Vectors" class="headerlink" title="Vectors"></a>Vectors</h2><h3 id="ベクトルが同一平面上"><a href="#ベクトルが同一平面上" class="headerlink" title="ベクトルが同一平面上"></a>ベクトルが同一平面上</h3><p>3次ベクトルが同一平面上 &lt;=&gt; 線形従属 &lt;=&gt; 行列式 = 0  &lt;=&gt; rank &lt;= 2</p>
@@ -2394,16 +2407,15 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-6-12-Ch5-特征值与标准型</title>
-    <url>/2021/06/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-12-Ch5-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E6%A0%87%E5%87%86%E5%9E%8B/</url>
-    <content><![CDATA[<h2 id="正方行列の固有値と行列の標準形"><a href="#正方行列の固有値と行列の標準形" class="headerlink" title="正方行列の固有値と行列の標準形"></a>正方行列の固有値と行列の標準形</h2><h3 id="同値というのは"><a href="#同値というのは" class="headerlink" title="同値というのは"></a>同値というのは</h3><p>自反性 Reflexive 反射性<br>对称性 Symmetric 対称性<br>传递性 Transitive 推移性</p>
-<h3 id="固有多項式"><a href="#固有多項式" class="headerlink" title="固有多項式"></a>固有多項式</h3><p>3次正方行列Aの固有多項式<br>$$ \phi_A(t) = -t^3 +(a_{11} + a_{12} + a_{13}) t^2 - (A_{11} + A_{22} + A_{33})t + |A| $$</p>
-<h3 id="三角化定理"><a href="#三角化定理" class="headerlink" title="三角化定理"></a>三角化定理</h3><h3 id="哈密尔顿-凯莱定理-Hamilton-Cayley-Theorem-ハミルトン－ケーリーの定理"><a href="#哈密尔顿-凯莱定理-Hamilton-Cayley-Theorem-ハミルトン－ケーリーの定理" class="headerlink" title="哈密尔顿-凯莱定理 Hamilton-Cayley Theorem ハミルトン－ケーリーの定理"></a>哈密尔顿-凯莱定理 Hamilton-Cayley Theorem ハミルトン－ケーリーの定理</h3><p>$ n $ 次正方行列 $ A $ の固有多項式を<br>$$ \phi(\lambda) $$<br>とすると<br>$$ \phi(A) = O $$<br>である</p>
-<h3 id="弗罗贝尼乌斯定理-Frobenius-フロベニウスの定理"><a href="#弗罗贝尼乌斯定理-Frobenius-フロベニウスの定理" class="headerlink" title="弗罗贝尼乌斯定理 Frobenius フロベニウスの定理"></a>弗罗贝尼乌斯定理 Frobenius フロベニウスの定理</h3><p>$ n $ 次正方行列 $ A $ の固有値は $ \lambda_i $ とすると<br>$ f(A) $ の固有値は $ f(\lambda_i) $ である</p>
-<h3 id="固有値の特性の一つ"><a href="#固有値の特性の一つ" class="headerlink" title="固有値の特性の一つ"></a>固有値の特性の一つ</h3><p>$ AB $ と $ BA $ の固有値は同じ</p>
-<h3 id="対角化される条件"><a href="#対角化される条件" class="headerlink" title="対角化される条件"></a>対角化される条件</h3><p>$ n $ 次正方行列 $ A $ の固有値は $ \lambda_i $<br>$ \lambda_i $ に対する固有ベクトル $ x_i $ 同次連立方程式 $ (A - \lambda_i E) x_i $ の解である<br>$ m_i $ は固有値 $ \lambda_i $ の重複度<br>$ n_i $ は $ (A - \lambda_i E) x_i $ の基本解の個数，$ n_i = n - rank(A - \lambda_i E) $<br>$ n $ 次正方行列 $ A $ が対角化される十分必要条件は<br>すべての $ \lambda_i $ に対して，$ n_i = m_i $</p>
-<h3 id="最小多項式の特色"><a href="#最小多項式の特色" class="headerlink" title="最小多項式の特色"></a>最小多項式の特色</h3><p>定義：最高次の係数が1で，f(A) = Oとなる多項式の中で，次数が最小となるもの</p>
-<h3 id="Jordan-Standard-Form"><a href="#Jordan-Standard-Form" class="headerlink" title="Jordan Standard Form"></a>Jordan Standard Form</h3><p>Jordan Cell</p>
+    <title>学习笔记2021-6-18-Ch6-实对称矩阵的对角化与二次型</title>
+    <url>/2021/06/17/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-18-Ch6-%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5%E7%9A%84%E5%AF%B9%E8%A7%92%E5%8C%96%E4%B8%8E%E4%BA%8C%E6%AC%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h2 id="実対称行列の対角化と主軸問題・2次形式"><a href="#実対称行列の対角化と主軸問題・2次形式" class="headerlink" title="実対称行列の対角化と主軸問題・2次形式"></a>実対称行列の対角化と主軸問題・2次形式</h2><h3 id="実対称行列の対角化"><a href="#実対称行列の対角化" class="headerlink" title="実対称行列の対角化"></a>実対称行列の対角化</h3><h4 id="直交行列と正規直交系-Orthogonal-Matrix-amp-Orthonormal-Set"><a href="#直交行列と正規直交系-Orthogonal-Matrix-amp-Orthonormal-Set" class="headerlink" title="直交行列と正規直交系 Orthogonal Matrix &amp; Orthonormal Set"></a>直交行列と正規直交系 Orthogonal Matrix &amp; Orthonormal Set</h4><p>Pが直交行列であるとは<br>Pが実正方行列で，<br>$$ P^T P = E \ or \ P P^T = E $$<br>を満たすこと</p>
+<p>正規直交系であるとは<br>n次の列ベクトル $ \vec{p_1} ~ \vec{p_n} $ が<br>$$ \vec{p_i^T} \vec{p_i} = 1, \vec{p_i^T} \vec{p_j} = 0 (i \neq j) $$<br>を満たすこと</p>
+<h4 id="グラム‐シュミットの直交化法-Gram-Schmidt-Orthogonalization"><a href="#グラム‐シュミットの直交化法-Gram-Schmidt-Orthogonalization" class="headerlink" title="グラム‐シュミットの直交化法 Gram-Schmidt Orthogonalization"></a>グラム‐シュミットの直交化法 Gram-Schmidt Orthogonalization</h4><h4 id="いくつの結論"><a href="#いくつの結論" class="headerlink" title="いくつの結論"></a>いくつの結論</h4><p>実正方行列の固有値がすべて実数であるならば，直交行列より三角化される</p>
+<p>実対称行列の固有値がすべて実数である<br>実対称行列の相異なる固有値に対する固有ベクトルは直交する<br>実正方行列Aが対称行列である $ \Leftrightarrow $ 実正方行列Aが直交行列によって対角化される<br>実対称行列が対角化される</p>
+<h4 id="実対称行列の対角化の手順"><a href="#実対称行列の対角化の手順" class="headerlink" title="実対称行列の対角化の手順"></a>実対称行列の対角化の手順</h4><p>Step 1 固有値<br>Step 2 固有ベクトル<br>Step 3 グラム‐シュミットで正規化する（固有値が一致する固有ベクトルの間ですればよい）*<br>Step 4 $ P = \left [ \vec{a_1}, \vec{a_2}, \vec{a_3}, \vec{a_4} \right ] $<br>*固有値が相異なる固有ベクトルはお互いに直交するから，操作不要</p>
+<h3 id="座標系とその変換"><a href="#座標系とその変換" class="headerlink" title="座標系とその変換"></a>座標系とその変換</h3><h4 id="回転角"><a href="#回転角" class="headerlink" title="回転角"></a>回転角</h4><p>$$<br>\begin{bmatrix}<br>cos\theta &amp; -sin\theta\<br>sin\theta &amp; cos\theta<br>\end{bmatrix}<br>$$</p>
+<h4 id="2次曲線の標準形への道"><a href="#2次曲線の標準形への道" class="headerlink" title="2次曲線の標準形への道"></a>2次曲線の標準形への道</h4><p>行列表示<br>固有値<br>直交行列P<br>回転<br>平行移動<br>座標変換の式</p>
 ]]></content>
       <categories>
         <category>修考</category>
@@ -2419,15 +2431,16 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-6-18-Ch6-实对称矩阵的对角化与二次型</title>
-    <url>/2021/06/17/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-18-Ch6-%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5%E7%9A%84%E5%AF%B9%E8%A7%92%E5%8C%96%E4%B8%8E%E4%BA%8C%E6%AC%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h2 id="実対称行列の対角化と主軸問題・2次形式"><a href="#実対称行列の対角化と主軸問題・2次形式" class="headerlink" title="実対称行列の対角化と主軸問題・2次形式"></a>実対称行列の対角化と主軸問題・2次形式</h2><h3 id="実対称行列の対角化"><a href="#実対称行列の対角化" class="headerlink" title="実対称行列の対角化"></a>実対称行列の対角化</h3><h4 id="直交行列と正規直交系-Orthogonal-Matrix-amp-Orthonormal-Set"><a href="#直交行列と正規直交系-Orthogonal-Matrix-amp-Orthonormal-Set" class="headerlink" title="直交行列と正規直交系 Orthogonal Matrix &amp; Orthonormal Set"></a>直交行列と正規直交系 Orthogonal Matrix &amp; Orthonormal Set</h4><p>Pが直交行列であるとは<br>Pが実正方行列で，<br>$$ P^T P = E \ or \ P P^T = E $$<br>を満たすこと</p>
-<p>正規直交系であるとは<br>n次の列ベクトル $ \vec{p_1} ~ \vec{p_n} $ が<br>$$ \vec{p_i^T} \vec{p_i} = 1, \vec{p_i^T} \vec{p_j} = 0 (i \neq j) $$<br>を満たすこと</p>
-<h4 id="グラム‐シュミットの直交化法-Gram-Schmidt-Orthogonalization"><a href="#グラム‐シュミットの直交化法-Gram-Schmidt-Orthogonalization" class="headerlink" title="グラム‐シュミットの直交化法 Gram-Schmidt Orthogonalization"></a>グラム‐シュミットの直交化法 Gram-Schmidt Orthogonalization</h4><h4 id="いくつの結論"><a href="#いくつの結論" class="headerlink" title="いくつの結論"></a>いくつの結論</h4><p>実正方行列の固有値がすべて実数であるならば，直交行列より三角化される</p>
-<p>実対称行列の固有値がすべて実数である<br>実対称行列の相異なる固有値に対する固有ベクトルは直交する<br>実正方行列Aが対称行列である $ \Leftrightarrow $ 実正方行列Aが直交行列によって対角化される<br>実対称行列が対角化される</p>
-<h4 id="実対称行列の対角化の手順"><a href="#実対称行列の対角化の手順" class="headerlink" title="実対称行列の対角化の手順"></a>実対称行列の対角化の手順</h4><p>Step 1 固有値<br>Step 2 固有ベクトル<br>Step 3 グラム‐シュミットで正規化する（固有値が一致する固有ベクトルの間ですればよい）*<br>Step 4 $ P = \left [ \vec{a_1}, \vec{a_2}, \vec{a_3}, \vec{a_4} \right ] $<br>*固有値が相異なる固有ベクトルはお互いに直交するから，操作不要</p>
-<h3 id="座標系とその変換"><a href="#座標系とその変換" class="headerlink" title="座標系とその変換"></a>座標系とその変換</h3><h4 id="回転角"><a href="#回転角" class="headerlink" title="回転角"></a>回転角</h4><p>$$<br>\begin{bmatrix}<br>cos\theta &amp; -sin\theta\<br>sin\theta &amp; cos\theta<br>\end{bmatrix}<br>$$</p>
-<h4 id="2次曲線の標準形への道"><a href="#2次曲線の標準形への道" class="headerlink" title="2次曲線の標準形への道"></a>2次曲線の標準形への道</h4><p>行列表示<br>固有値<br>直交行列P<br>回転<br>平行移動<br>座標変換の式</p>
+    <title>学习笔记2021-6-12-Ch5-特征值与标准型</title>
+    <url>/2021/06/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-12-Ch5-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E6%A0%87%E5%87%86%E5%9E%8B/</url>
+    <content><![CDATA[<h2 id="正方行列の固有値と行列の標準形"><a href="#正方行列の固有値と行列の標準形" class="headerlink" title="正方行列の固有値と行列の標準形"></a>正方行列の固有値と行列の標準形</h2><h3 id="同値というのは"><a href="#同値というのは" class="headerlink" title="同値というのは"></a>同値というのは</h3><p>自反性 Reflexive 反射性<br>对称性 Symmetric 対称性<br>传递性 Transitive 推移性</p>
+<h3 id="固有多項式"><a href="#固有多項式" class="headerlink" title="固有多項式"></a>固有多項式</h3><p>3次正方行列Aの固有多項式<br>$$ \phi_A(t) = -t^3 +(a_{11} + a_{12} + a_{13}) t^2 - (A_{11} + A_{22} + A_{33})t + |A| $$</p>
+<h3 id="三角化定理"><a href="#三角化定理" class="headerlink" title="三角化定理"></a>三角化定理</h3><h3 id="哈密尔顿-凯莱定理-Hamilton-Cayley-Theorem-ハミルトン－ケーリーの定理"><a href="#哈密尔顿-凯莱定理-Hamilton-Cayley-Theorem-ハミルトン－ケーリーの定理" class="headerlink" title="哈密尔顿-凯莱定理 Hamilton-Cayley Theorem ハミルトン－ケーリーの定理"></a>哈密尔顿-凯莱定理 Hamilton-Cayley Theorem ハミルトン－ケーリーの定理</h3><p>$ n $ 次正方行列 $ A $ の固有多項式を<br>$$ \phi(\lambda) $$<br>とすると<br>$$ \phi(A) = O $$<br>である</p>
+<h3 id="弗罗贝尼乌斯定理-Frobenius-フロベニウスの定理"><a href="#弗罗贝尼乌斯定理-Frobenius-フロベニウスの定理" class="headerlink" title="弗罗贝尼乌斯定理 Frobenius フロベニウスの定理"></a>弗罗贝尼乌斯定理 Frobenius フロベニウスの定理</h3><p>$ n $ 次正方行列 $ A $ の固有値は $ \lambda_i $ とすると<br>$ f(A) $ の固有値は $ f(\lambda_i) $ である</p>
+<h3 id="固有値の特性の一つ"><a href="#固有値の特性の一つ" class="headerlink" title="固有値の特性の一つ"></a>固有値の特性の一つ</h3><p>$ AB $ と $ BA $ の固有値は同じ</p>
+<h3 id="対角化される条件"><a href="#対角化される条件" class="headerlink" title="対角化される条件"></a>対角化される条件</h3><p>$ n $ 次正方行列 $ A $ の固有値は $ \lambda_i $<br>$ \lambda_i $ に対する固有ベクトル $ x_i $ 同次連立方程式 $ (A - \lambda_i E) x_i $ の解である<br>$ m_i $ は固有値 $ \lambda_i $ の重複度<br>$ n_i $ は $ (A - \lambda_i E) x_i $ の基本解の個数，$ n_i = n - rank(A - \lambda_i E) $<br>$ n $ 次正方行列 $ A $ が対角化される十分必要条件は<br>すべての $ \lambda_i $ に対して，$ n_i = m_i $</p>
+<h3 id="最小多項式の特色"><a href="#最小多項式の特色" class="headerlink" title="最小多項式の特色"></a>最小多項式の特色</h3><p>定義：最高次の係数が1で，f(A) = Oとなる多項式の中で，次数が最小となるもの</p>
+<h3 id="Jordan-Standard-Form"><a href="#Jordan-Standard-Form" class="headerlink" title="Jordan Standard Form"></a>Jordan Standard Form</h3><p>Jordan Cell</p>
 ]]></content>
       <categories>
         <category>修考</category>
@@ -2456,6 +2469,23 @@
 <h3 id="10-多項展開"><a href="#10-多項展開" class="headerlink" title="10 多項展開"></a>10 多項展開</h3><p>$$ (a + b + c)^n = \sum_{k, l \geq 0, k + l \leq n}^{n} \frac{n!}{k!l!(n - k - l)!} a^k b^l c^{n - k - l} $$</p>
 <h3 id="11-誕生日の問題"><a href="#11-誕生日の問題" class="headerlink" title="11 誕生日の問題"></a>11 誕生日の問題</h3><p>$$ e^{0.7} \approx 2 $$<br>近似を用いよう</p>
 ]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>数学</category>
+        <category>概率论</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>数学</tag>
+        <tag>概率论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习笔记2021-7-10-Ch5-多元概率分布</title>
+    <url>/2021/07/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-10-Ch5-%E5%A4%9A%E5%85%83%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83/</url>
+    <content><![CDATA[<h2 id="Chapter-5-多次元確率分布"><a href="#Chapter-5-多次元確率分布" class="headerlink" title="Chapter 5 多次元確率分布"></a>Chapter 5 多次元確率分布</h2>]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
@@ -2529,23 +2559,6 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-7-10-Ch5-多元概率分布</title>
-    <url>/2021/07/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-10-Ch5-%E5%A4%9A%E5%85%83%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83/</url>
-    <content><![CDATA[<h2 id="Chapter-5-多次元確率分布"><a href="#Chapter-5-多次元確率分布" class="headerlink" title="Chapter 5 多次元確率分布"></a>Chapter 5 多次元確率分布</h2>]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>数学</category>
-        <category>概率论</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>数学</tag>
-        <tag>概率论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学习笔记2021-7-11-Ch6-統計</title>
     <url>/2021/07/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-11-Ch6-%E7%B5%B1%E8%A8%88/</url>
     <content><![CDATA[<h2 id="Chapter-6-統計"><a href="#Chapter-6-統計" class="headerlink" title="Chapter 6 統計"></a>Chapter 6 統計</h2><h3 id="64-統計量Ⅰ"><a href="#64-統計量Ⅰ" class="headerlink" title="64 統計量Ⅰ"></a>64 統計量Ⅰ</h3><h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><p>全数調査<br>母集団<br>部分<br>統計量<br>推定量<br>標本平均<br>母平均<br>母分散<br>不偏推定量<br>標本平均は母平均の不偏推定量 $ E(\bar{X}) = \frac{E(X_1) + E(X_2) + … + E(X_n)}{n} = frac{n\mu}{n} = \mu $<br>不偏標本分散 $ \hat(S)^2 = frac{1}{n - 1} \sum_{i = 1}^{n} (X_i - \bar{X})^2 $</p>
@@ -2578,32 +2591,6 @@
         <tag>学习</tag>
         <tag>数学</tag>
         <tag>概率论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习笔记2021-7-21-Ch1-数列と級数</title>
-    <url>/2021/07/21/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-21-Ch1-%E6%95%B0%E5%88%97%E3%81%A8%E7%B4%9A%E6%95%B0/</url>
-    <content><![CDATA[<h2 id="Chapter-1-数列と級数"><a href="#Chapter-1-数列と級数" class="headerlink" title="Chapter 1 数列と級数"></a>Chapter 1 数列と級数</h2><h3 id="1-1-数列"><a href="#1-1-数列" class="headerlink" title="1.1 数列"></a>1.1 数列</h3><h5 id="有界単調数列の収束性"><a href="#有界単調数列の収束性" class="headerlink" title="有界単調数列の収束性"></a>有界単調数列の収束性</h5><h5 id="はさみうちの定理"><a href="#はさみうちの定理" class="headerlink" title="はさみうちの定理"></a>はさみうちの定理</h5><h3 id="1-2-級数"><a href="#1-2-級数" class="headerlink" title="1.2 級数"></a>1.2 級数</h3><h4 id="1-2-1-正項級数"><a href="#1-2-1-正項級数" class="headerlink" title="1.2.1 正項級数"></a>1.2.1 正項級数</h4><h5 id="比較判定法"><a href="#比較判定法" class="headerlink" title="比較判定法"></a>比較判定法</h5><p>すべてのnに対して，<br>$ a_n \leq b_n $<br>であるとき<br>$ \sum b_n $ が収束 $\Rightarrow \sum a_n $ が収束<br>$ \sum a_n $ が発散 $\Rightarrow \sum b_n $ が発散</p>
-<h5 id="コーシーの判定法"><a href="#コーシーの判定法" class="headerlink" title="コーシーの判定法"></a>コーシーの判定法</h5><p>$$ lim_{n \to \infty} \sqrt[n]{a_n} = r $$<br>$ \sum a_n $ は $ r &lt; 1 $ のとき収束， $ r &gt; 1 $ のとき発散， $ r = 1 $ のときはわからない</p>
-<h5 id="ダランベールの判定法"><a href="#ダランベールの判定法" class="headerlink" title="ダランベールの判定法"></a>ダランベールの判定法</h5><p>$$ lim_{n \to \infty} \frac{a_{n + 1}}{a_n} = r $$<br>$ \sum a_n $ は $ r &lt; 1 $ のとき収束， $ r &gt; 1 $ のとき発散， $ r = 1 $ のときはわからない</p>
-<h5 id="積分判定法"><a href="#積分判定法" class="headerlink" title="積分判定法"></a>積分判定法</h5><p>$ a_1 \geq a_2 \geq … \geq a_n \geq … &gt; 0 $ とする</p>
-<h3 id="1-3-交項級数・絶対収束・条件収束・整級数"><a href="#1-3-交項級数・絶対収束・条件収束・整級数" class="headerlink" title="1.3 交項級数・絶対収束・条件収束・整級数"></a>1.3 交項級数・絶対収束・条件収束・整級数</h3><h4 id="1-3-1-交項級数"><a href="#1-3-1-交項級数" class="headerlink" title="1.3.1 交項級数"></a>1.3.1 交項級数</h4><p>$ a_1 \geq a_2 \geq … \geq a_n \geq … &gt; 0 $ で $ a_n \to 0 $ ならば，収束する</p>
-<h4 id="1-3-2-絶対収束・条件収束"><a href="#1-3-2-絶対収束・条件収束" class="headerlink" title="1.3.2 絶対収束・条件収束"></a>1.3.2 絶対収束・条件収束</h4><p>絶対収束ならば収束する</p>
-<h4 id="1-3-3-整級数-べき級数"><a href="#1-3-3-整級数-べき級数" class="headerlink" title="1.3.3 整級数/べき級数"></a>1.3.3 整級数/べき級数</h4><h5 id="整級数の定義"><a href="#整級数の定義" class="headerlink" title="整級数の定義"></a>整級数の定義</h5><p>$$ \sum_{n = 0}^{\infty} = a_0 + a_1 x + a_2 x^2 + … + a_n x^n + … $$</p>
-<h5 id="整級数の性質"><a href="#整級数の性質" class="headerlink" title="整級数の性質"></a>整級数の性質</h5><p>$ x_0 $ で収束すれば，$ |x| &lt; |x_0| $ であるすべての |x| について絶対収束する<br>$ x_0 $ で発散すれば，$ |x| &gt; |x_0| $ であるすべての |x| について発散する</p>
-<h5 id="整級数の収束半径"><a href="#整級数の収束半径" class="headerlink" title="整級数の収束半径"></a>整級数の収束半径</h5><p>$$ lim_{n \to \infty} \sqrt[n]{|a_n|} = r $$<br>または<br>$$ lim_{n \to \infty} | \frac{a_{n + 1}}{a_n} | = r $$<br>ならば<br>収束半径 $ \rho $ は $ \rho = \frac{1}{r} $ で与えられる</p>
-]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>数学</category>
-        <category>微积分</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>数学</tag>
-        <tag>微积分</tag>
       </tags>
   </entry>
   <entry>
@@ -2654,28 +2641,29 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-7-8-Ch3-離散確率分布</title>
-    <url>/2021/07/08/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-8-Ch3-%E9%9B%A2%E6%95%A3%E7%A2%BA%E7%8E%87%E5%88%86%E5%B8%83/</url>
-    <content><![CDATA[<h2 id="Chapter-3-離散確率分布"><a href="#Chapter-3-離散確率分布" class="headerlink" title="Chapter 3 離散確率分布"></a>Chapter 3 離散確率分布</h2><h3 id="19-ベルヌーイ分布-Bernoulli-Distribution-Be-p"><a href="#19-ベルヌーイ分布-Bernoulli-Distribution-Be-p" class="headerlink" title="19 ベルヌーイ分布 Bernoulli Distribution Be(p)"></a>19 ベルヌーイ分布 Bernoulli Distribution Be(p)</h3><p>$ X \sim Be(p) $<br>確率分布<br>$$ P(X = 1) = p $$<br>$$ P(X = 0) = 1 - p $$<br>期待値<br>$$ E(X) = p $$<br>分散<br>$$ V(X) = p(1 - p) $$</p>
-<h3 id="20-二項分布-Binomial-Distribution-B-n-p"><a href="#20-二項分布-Binomial-Distribution-B-n-p" class="headerlink" title="20 二項分布 Binomial Distribution B(n, p)"></a>20 二項分布 Binomial Distribution B(n, p)</h3><p>$ X \sim B(n, p) $<br>確率分布<br>$$ P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k} $$<br>期待値<br>$$ E(X) = np $$<br>分散<br>$$ V(X) = np(1 - p) $$<br>特性<br>独立なベルヌーイ分布の和が二項分布</p>
-<h3 id="21-22-幾何分布・ファストアクセス分布-Geometic-Distribution-amp-First-Access-Distribution-Ge-p-Fs-p"><a href="#21-22-幾何分布・ファストアクセス分布-Geometic-Distribution-amp-First-Access-Distribution-Ge-p-Fs-p" class="headerlink" title="21/22 幾何分布・ファストアクセス分布 Geometic Distribution &amp; First Access Distribution Ge(p) Fs(p)"></a>21/22 幾何分布・ファストアクセス分布 Geometic Distribution &amp; First Access Distribution Ge(p) Fs(p)</h3><p>$ X \sim Ge(p) $<br>確率分布<br>$$ P(X = k) = p(1 - p)^k $$<br>期待値<br>$$ E(X) = \frac{1 - p}{p} $$<br>分散<br>$$ V(X) = \frac{1 - p}{p^2} $$<br>特性<br>無記憶性<br>$$ P(X &gt; k|X &gt; l) = P(X &gt; k - l) $$</p>
-<h3 id="23-負の二項分布-NB-n-p"><a href="#23-負の二項分布-NB-n-p" class="headerlink" title="23 負の二項分布 NB(n, p)"></a>23 負の二項分布 NB(n, p)</h3><p>$ X \sim NB(n, p) $<br>確率分布<br>$$ P(X = k) = \binom{n + k - 1}{k} p^n (1 - p)^k = \binom{-n}{k} p^n (-(1 - p))^k $$<br>期待値<br>$$ E(X) = \frac{n(1 - p)}{p} $$<br>分散<br>$$ V(X) = \frac{n(1 - p)}{p^2} $$<br>特性<br>独立な幾何分布の和が負の二項分布<br>再生性<br>$$ NB(m, p) + NB(n, p) \sim NB(m + n, p) $$<br>注意<br>$$ \sum_{k = 0}^{\infty} \binom{n - k + 1}{k} x^k = \sum_{k = 0}^{\infty} \binom{-n}{k} (-x)^k = (1 - x)^{-n} $$</p>
-<h3 id="24-離散一様分布-Discrete-Uniform-Distribution-DU-1-2-…-n"><a href="#24-離散一様分布-Discrete-Uniform-Distribution-DU-1-2-…-n" class="headerlink" title="24 離散一様分布 Discrete Uniform Distribution DU{1, 2, …, n}"></a>24 離散一様分布 Discrete Uniform Distribution DU{1, 2, …, n}</h3><p>$ X \sim DU{1, 2, …, N} $<br>確率分布<br>$$ P(X = k) = \frac{1}{N} $$<br>期待値<br>$$ E(X) = \frac{N + 1}{2} $$<br>分散<br>$$ V(X) = \frac{(N - 1)(N + 1)}{12} $$<br>特性<br>なし<br>注意<br>なし</p>
-<h3 id="25-26-ポアソン分布-Poisson-Distribution-Po-lambda"><a href="#25-26-ポアソン分布-Poisson-Distribution-Po-lambda" class="headerlink" title="25/26 ポアソン分布 Poisson Distribution $Po(\lambda)$"></a>25/26 ポアソン分布 Poisson Distribution $Po(\lambda)$</h3><p>$ X \sim Po(\lambda) $<br>確率分布<br>$$ P(X = k) = \frac{\lambda^k}{k!} e^{-\lambda} $$<br>期待値<br>$$ E(X) = \lambda $$<br>分散<br>$$ V(X) = \lambda $$<br>特性<br>再生性<br>$$ Po(\lambda_1) + Po(\lambda_2) \sim Po(\lambda_1 + \lambda_2) $$<br>注意<br>なし</p>
-<h3 id="27-超幾何分布-Hyper-Geometrc-Distribution"><a href="#27-超幾何分布-Hyper-Geometrc-Distribution" class="headerlink" title="27 超幾何分布 Hyper Geometrc Distribution"></a>27 超幾何分布 Hyper Geometrc Distribution</h3><p>非復元抽出<br>$ X \sim HG(N, m, n) $<br>確率分布<br>$$ P(X = k) = \frac{\binom{m}{k} \binom{N - m}{n - k}}{\binom{N}{n}} (0 \leq k \leq min(m, n)) $$<br>期待値<br>$$ E(X) = \frac{mn}{N} $$<br>特性<br>一回ごとの試行が独立なら，$ B(n, \frac{m}{N}) $ に近似する<br>注意<br>なし</p>
-<h3 id="28-幾何分布，離散一様分布の発展問題"><a href="#28-幾何分布，離散一様分布の発展問題" class="headerlink" title="28 幾何分布，離散一様分布の発展問題"></a>28 幾何分布，離散一様分布の発展問題</h3><h3 id="29-確率変数の分解の問題"><a href="#29-確率変数の分解の問題" class="headerlink" title="29 確率変数の分解の問題"></a>29 確率変数の分解の問題</h3><h3 id="30-二項分布，幾何分布の復習問題"><a href="#30-二項分布，幾何分布の復習問題" class="headerlink" title="30 二項分布，幾何分布の復習問題"></a>30 二項分布，幾何分布の復習問題</h3><h3 id="31-総合問題"><a href="#31-総合問題" class="headerlink" title="31 総合問題"></a>31 総合問題</h3><p>ポスター集めの問題</p>
+    <title>学习笔记2021-7-21-Ch1-数列と級数</title>
+    <url>/2021/07/21/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-21-Ch1-%E6%95%B0%E5%88%97%E3%81%A8%E7%B4%9A%E6%95%B0/</url>
+    <content><![CDATA[<h2 id="Chapter-1-数列と級数"><a href="#Chapter-1-数列と級数" class="headerlink" title="Chapter 1 数列と級数"></a>Chapter 1 数列と級数</h2><h3 id="1-1-数列"><a href="#1-1-数列" class="headerlink" title="1.1 数列"></a>1.1 数列</h3><h5 id="有界単調数列の収束性"><a href="#有界単調数列の収束性" class="headerlink" title="有界単調数列の収束性"></a>有界単調数列の収束性</h5><h5 id="はさみうちの定理"><a href="#はさみうちの定理" class="headerlink" title="はさみうちの定理"></a>はさみうちの定理</h5><h3 id="1-2-級数"><a href="#1-2-級数" class="headerlink" title="1.2 級数"></a>1.2 級数</h3><h4 id="1-2-1-正項級数"><a href="#1-2-1-正項級数" class="headerlink" title="1.2.1 正項級数"></a>1.2.1 正項級数</h4><h5 id="比較判定法"><a href="#比較判定法" class="headerlink" title="比較判定法"></a>比較判定法</h5><p>すべてのnに対して，<br>$ a_n \leq b_n $<br>であるとき<br>$ \sum b_n $ が収束 $\Rightarrow \sum a_n $ が収束<br>$ \sum a_n $ が発散 $\Rightarrow \sum b_n $ が発散</p>
+<h5 id="コーシーの判定法"><a href="#コーシーの判定法" class="headerlink" title="コーシーの判定法"></a>コーシーの判定法</h5><p>$$ lim_{n \to \infty} \sqrt[n]{a_n} = r $$<br>$ \sum a_n $ は $ r &lt; 1 $ のとき収束， $ r &gt; 1 $ のとき発散， $ r = 1 $ のときはわからない</p>
+<h5 id="ダランベールの判定法"><a href="#ダランベールの判定法" class="headerlink" title="ダランベールの判定法"></a>ダランベールの判定法</h5><p>$$ lim_{n \to \infty} \frac{a_{n + 1}}{a_n} = r $$<br>$ \sum a_n $ は $ r &lt; 1 $ のとき収束， $ r &gt; 1 $ のとき発散， $ r = 1 $ のときはわからない</p>
+<h5 id="積分判定法"><a href="#積分判定法" class="headerlink" title="積分判定法"></a>積分判定法</h5><p>$ a_1 \geq a_2 \geq … \geq a_n \geq … &gt; 0 $ とする</p>
+<h3 id="1-3-交項級数・絶対収束・条件収束・整級数"><a href="#1-3-交項級数・絶対収束・条件収束・整級数" class="headerlink" title="1.3 交項級数・絶対収束・条件収束・整級数"></a>1.3 交項級数・絶対収束・条件収束・整級数</h3><h4 id="1-3-1-交項級数"><a href="#1-3-1-交項級数" class="headerlink" title="1.3.1 交項級数"></a>1.3.1 交項級数</h4><p>$ a_1 \geq a_2 \geq … \geq a_n \geq … &gt; 0 $ で $ a_n \to 0 $ ならば，収束する</p>
+<h4 id="1-3-2-絶対収束・条件収束"><a href="#1-3-2-絶対収束・条件収束" class="headerlink" title="1.3.2 絶対収束・条件収束"></a>1.3.2 絶対収束・条件収束</h4><p>絶対収束ならば収束する</p>
+<h4 id="1-3-3-整級数-べき級数"><a href="#1-3-3-整級数-べき級数" class="headerlink" title="1.3.3 整級数/べき級数"></a>1.3.3 整級数/べき級数</h4><h5 id="整級数の定義"><a href="#整級数の定義" class="headerlink" title="整級数の定義"></a>整級数の定義</h5><p>$$ \sum_{n = 0}^{\infty} = a_0 + a_1 x + a_2 x^2 + … + a_n x^n + … $$</p>
+<h5 id="整級数の性質"><a href="#整級数の性質" class="headerlink" title="整級数の性質"></a>整級数の性質</h5><p>$ x_0 $ で収束すれば，$ |x| &lt; |x_0| $ であるすべての |x| について絶対収束する<br>$ x_0 $ で発散すれば，$ |x| &gt; |x_0| $ であるすべての |x| について発散する</p>
+<h5 id="整級数の収束半径"><a href="#整級数の収束半径" class="headerlink" title="整級数の収束半径"></a>整級数の収束半径</h5><p>$$ lim_{n \to \infty} \sqrt[n]{|a_n|} = r $$<br>または<br>$$ lim_{n \to \infty} | \frac{a_{n + 1}}{a_n} | = r $$<br>ならば<br>収束半径 $ \rho $ は $ \rho = \frac{1}{r} $ で与えられる</p>
 ]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
         <category>数学</category>
-        <category>概率论</category>
+        <category>微积分</category>
       </categories>
       <tags>
         <tag>修考</tag>
         <tag>学习</tag>
         <tag>数学</tag>
-        <tag>概率论</tag>
+        <tag>微积分</tag>
       </tags>
   </entry>
   <entry>
@@ -2709,6 +2697,31 @@
         <tag>学习</tag>
         <tag>数学</tag>
         <tag>微积分</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习笔记2021-7-8-Ch3-離散確率分布</title>
+    <url>/2021/07/08/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-8-Ch3-%E9%9B%A2%E6%95%A3%E7%A2%BA%E7%8E%87%E5%88%86%E5%B8%83/</url>
+    <content><![CDATA[<h2 id="Chapter-3-離散確率分布"><a href="#Chapter-3-離散確率分布" class="headerlink" title="Chapter 3 離散確率分布"></a>Chapter 3 離散確率分布</h2><h3 id="19-ベルヌーイ分布-Bernoulli-Distribution-Be-p"><a href="#19-ベルヌーイ分布-Bernoulli-Distribution-Be-p" class="headerlink" title="19 ベルヌーイ分布 Bernoulli Distribution Be(p)"></a>19 ベルヌーイ分布 Bernoulli Distribution Be(p)</h3><p>$ X \sim Be(p) $<br>確率分布<br>$$ P(X = 1) = p $$<br>$$ P(X = 0) = 1 - p $$<br>期待値<br>$$ E(X) = p $$<br>分散<br>$$ V(X) = p(1 - p) $$</p>
+<h3 id="20-二項分布-Binomial-Distribution-B-n-p"><a href="#20-二項分布-Binomial-Distribution-B-n-p" class="headerlink" title="20 二項分布 Binomial Distribution B(n, p)"></a>20 二項分布 Binomial Distribution B(n, p)</h3><p>$ X \sim B(n, p) $<br>確率分布<br>$$ P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k} $$<br>期待値<br>$$ E(X) = np $$<br>分散<br>$$ V(X) = np(1 - p) $$<br>特性<br>独立なベルヌーイ分布の和が二項分布</p>
+<h3 id="21-22-幾何分布・ファストアクセス分布-Geometic-Distribution-amp-First-Access-Distribution-Ge-p-Fs-p"><a href="#21-22-幾何分布・ファストアクセス分布-Geometic-Distribution-amp-First-Access-Distribution-Ge-p-Fs-p" class="headerlink" title="21/22 幾何分布・ファストアクセス分布 Geometic Distribution &amp; First Access Distribution Ge(p) Fs(p)"></a>21/22 幾何分布・ファストアクセス分布 Geometic Distribution &amp; First Access Distribution Ge(p) Fs(p)</h3><p>$ X \sim Ge(p) $<br>確率分布<br>$$ P(X = k) = p(1 - p)^k $$<br>期待値<br>$$ E(X) = \frac{1 - p}{p} $$<br>分散<br>$$ V(X) = \frac{1 - p}{p^2} $$<br>特性<br>無記憶性<br>$$ P(X &gt; k|X &gt; l) = P(X &gt; k - l) $$</p>
+<h3 id="23-負の二項分布-NB-n-p"><a href="#23-負の二項分布-NB-n-p" class="headerlink" title="23 負の二項分布 NB(n, p)"></a>23 負の二項分布 NB(n, p)</h3><p>$ X \sim NB(n, p) $<br>確率分布<br>$$ P(X = k) = \binom{n + k - 1}{k} p^n (1 - p)^k = \binom{-n}{k} p^n (-(1 - p))^k $$<br>期待値<br>$$ E(X) = \frac{n(1 - p)}{p} $$<br>分散<br>$$ V(X) = \frac{n(1 - p)}{p^2} $$<br>特性<br>独立な幾何分布の和が負の二項分布<br>再生性<br>$$ NB(m, p) + NB(n, p) \sim NB(m + n, p) $$<br>注意<br>$$ \sum_{k = 0}^{\infty} \binom{n - k + 1}{k} x^k = \sum_{k = 0}^{\infty} \binom{-n}{k} (-x)^k = (1 - x)^{-n} $$</p>
+<h3 id="24-離散一様分布-Discrete-Uniform-Distribution-DU-1-2-…-n"><a href="#24-離散一様分布-Discrete-Uniform-Distribution-DU-1-2-…-n" class="headerlink" title="24 離散一様分布 Discrete Uniform Distribution DU{1, 2, …, n}"></a>24 離散一様分布 Discrete Uniform Distribution DU{1, 2, …, n}</h3><p>$ X \sim DU{1, 2, …, N} $<br>確率分布<br>$$ P(X = k) = \frac{1}{N} $$<br>期待値<br>$$ E(X) = \frac{N + 1}{2} $$<br>分散<br>$$ V(X) = \frac{(N - 1)(N + 1)}{12} $$<br>特性<br>なし<br>注意<br>なし</p>
+<h3 id="25-26-ポアソン分布-Poisson-Distribution-Po-lambda"><a href="#25-26-ポアソン分布-Poisson-Distribution-Po-lambda" class="headerlink" title="25/26 ポアソン分布 Poisson Distribution $Po(\lambda)$"></a>25/26 ポアソン分布 Poisson Distribution $Po(\lambda)$</h3><p>$ X \sim Po(\lambda) $<br>確率分布<br>$$ P(X = k) = \frac{\lambda^k}{k!} e^{-\lambda} $$<br>期待値<br>$$ E(X) = \lambda $$<br>分散<br>$$ V(X) = \lambda $$<br>特性<br>再生性<br>$$ Po(\lambda_1) + Po(\lambda_2) \sim Po(\lambda_1 + \lambda_2) $$<br>注意<br>なし</p>
+<h3 id="27-超幾何分布-Hyper-Geometrc-Distribution"><a href="#27-超幾何分布-Hyper-Geometrc-Distribution" class="headerlink" title="27 超幾何分布 Hyper Geometrc Distribution"></a>27 超幾何分布 Hyper Geometrc Distribution</h3><p>非復元抽出<br>$ X \sim HG(N, m, n) $<br>確率分布<br>$$ P(X = k) = \frac{\binom{m}{k} \binom{N - m}{n - k}}{\binom{N}{n}} (0 \leq k \leq min(m, n)) $$<br>期待値<br>$$ E(X) = \frac{mn}{N} $$<br>特性<br>一回ごとの試行が独立なら，$ B(n, \frac{m}{N}) $ に近似する<br>注意<br>なし</p>
+<h3 id="28-幾何分布，離散一様分布の発展問題"><a href="#28-幾何分布，離散一様分布の発展問題" class="headerlink" title="28 幾何分布，離散一様分布の発展問題"></a>28 幾何分布，離散一様分布の発展問題</h3><h3 id="29-確率変数の分解の問題"><a href="#29-確率変数の分解の問題" class="headerlink" title="29 確率変数の分解の問題"></a>29 確率変数の分解の問題</h3><h3 id="30-二項分布，幾何分布の復習問題"><a href="#30-二項分布，幾何分布の復習問題" class="headerlink" title="30 二項分布，幾何分布の復習問題"></a>30 二項分布，幾何分布の復習問題</h3><h3 id="31-総合問題"><a href="#31-総合問題" class="headerlink" title="31 総合問題"></a>31 総合問題</h3><p>ポスター集めの問題</p>
+]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>数学</category>
+        <category>概率论</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>数学</tag>
+        <tag>概率论</tag>
       </tags>
   </entry>
   <entry>
@@ -2783,29 +2796,6 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-8-9-Ch3-Signals and systems Part II</title>
-    <url>/2021/08/09/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-8-9-Ch3-Signals%20and%20systems%20Part%20II/</url>
-    <content><![CDATA[<h2 id="Chapter-3-Signals-and-systems-Part-II"><a href="#Chapter-3-Signals-and-systems-Part-II" class="headerlink" title="Chapter 3 Signals and systems Part II"></a>Chapter 3 Signals and systems Part II</h2><h3 id="Properties-of-systems"><a href="#Properties-of-systems" class="headerlink" title="Properties of systems"></a>Properties of systems</h3><h4 id="Memoryless"><a href="#Memoryless" class="headerlink" title="Memoryless"></a>Memoryless</h4><p>The output at any time only depends on the input at that time</p>
-<h4 id="Invertability"><a href="#Invertability" class="headerlink" title="Invertability"></a>Invertability</h4><p>For any output, there’s only one input that can cause this output</p>
-<h4 id="Causality"><a href="#Causality" class="headerlink" title="Causality"></a>Causality</h4><p>The output at any time only depends on the input at past and present, namely, the system cannot anticipate the future input<br>If x1(t) = x2(t) when t &lt;= t0<br>Then y1(t0) = y2(t0)<br>The impulse response h(t) is 0 when t &lt; 0<br>The Region of Convergence of H(s) is at the right side of the right most pole</p>
-<h4 id="Stability"><a href="#Stability" class="headerlink" title="Stability"></a>Stability</h4><p>If the input is bounded, the output is also bounded<br>The impulse response h(t) is absolute integrable.<br>The Region of Convergence of H(s) must include the jw-axis</p>
-<h4 id="Time-invariance"><a href="#Time-invariance" class="headerlink" title="Time invariance"></a>Time invariance</h4><p>If x(t) -&gt; x(t - t0)<br>Then y(t) -&gt; y(t - t0)</p>
-<h4 id="Linearity"><a href="#Linearity" class="headerlink" title="Linearity"></a>Linearity</h4><p>If x(t) -&gt; ax1(t) + bx2(t)<br>Then y(t) -&gt; ay1(t) + by2(t)</p>
-]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>专业课</category>
-        <category>信号与系统</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>专业课</tag>
-        <tag>信号与系统</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>张家界之旅</title>
     <url>/2021/04/01/%E5%BC%A0%E5%AE%B6%E7%95%8C%E4%B9%8B%E6%97%85/</url>
     <content><![CDATA[<h1 id="4月2日"><a href="#4月2日" class="headerlink" title="4月2日"></a>4月2日</h1><p>晚上十一点的车，巧的是骚九点多回石家庄，所以说好接站一波骚。结果九点半骚到了站，我还在新百广场（针不戳）。最后十点成功找到了位置，居然边恰东西边FF拿了彩蛋节兔子套装……<br>上了车就睡力，毕竟昨晚没睡觉光看导师信息了，很困（而且忘了带水上车渴死爷了）</p>
@@ -2833,6 +2823,90 @@
       </categories>
       <tags>
         <tag>旅行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习笔记2021-8-9-Ch3-Signals and systems Part II</title>
+    <url>/2021/08/09/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-8-9-Ch3-Signals%20and%20systems%20Part%20II/</url>
+    <content><![CDATA[<h2 id="Chapter-3-Signals-and-systems-Part-II"><a href="#Chapter-3-Signals-and-systems-Part-II" class="headerlink" title="Chapter 3 Signals and systems Part II"></a>Chapter 3 Signals and systems Part II</h2><h3 id="Properties-of-systems"><a href="#Properties-of-systems" class="headerlink" title="Properties of systems"></a>Properties of systems</h3><h4 id="Memoryless"><a href="#Memoryless" class="headerlink" title="Memoryless"></a>Memoryless</h4><p>The output at any time only depends on the input at that time</p>
+<h4 id="Invertability"><a href="#Invertability" class="headerlink" title="Invertability"></a>Invertability</h4><p>For any output, there’s only one input that can cause this output</p>
+<h4 id="Causality"><a href="#Causality" class="headerlink" title="Causality"></a>Causality</h4><p>The output at any time only depends on the input at past and present, namely, the system cannot anticipate the future input<br>If x1(t) = x2(t) when t &lt;= t0<br>Then y1(t0) = y2(t0)<br>The impulse response h(t) is 0 when t &lt; 0<br>The Region of Convergence of H(s) is at the right side of the right most pole</p>
+<h4 id="Stability"><a href="#Stability" class="headerlink" title="Stability"></a>Stability</h4><p>If the input is bounded, the output is also bounded<br>The impulse response h(t) is absolute integrable.<br>The Region of Convergence of H(s) must include the jw-axis</p>
+<h4 id="Time-invariance"><a href="#Time-invariance" class="headerlink" title="Time invariance"></a>Time invariance</h4><p>If x(t) -&gt; x(t - t0)<br>Then y(t) -&gt; y(t - t0)</p>
+<h4 id="Linearity"><a href="#Linearity" class="headerlink" title="Linearity"></a>Linearity</h4><p>If x(t) -&gt; ax1(t) + bx2(t)<br>Then y(t) -&gt; ay1(t) + by2(t)</p>
+]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>专业课</category>
+        <category>信号与系统</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>专业课</tag>
+        <tag>信号与系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>红烧排骨</title>
+    <url>/2022/06/04/%E7%BA%A2%E7%83%A7%E6%8E%92%E9%AA%A8/</url>
+    <content><![CDATA[<h2 id="材料准备"><a href="#材料准备" class="headerlink" title="材料准备"></a>材料准备</h2><ul>
+<li>切好的排骨</li>
+<li>想吃的蔬菜</li>
+<li>大葱</li>
+<li>生姜</li>
+<li>花椒</li>
+<li>大料</li>
+<li>桂皮</li>
+<li>胡椒粉</li>
+<li>老抽</li>
+<li>酱油</li>
+<li>料酒</li>
+<li>盐</li>
+<li>糖</li>
+</ul>
+<h2 id="泡水"><a href="#泡水" class="headerlink" title="泡水"></a>泡水</h2><ul>
+<li>排骨放水里，加入少量料酒，静置1h</li>
+<li>泡出血水即可，等不及时间短点也行</li>
+</ul>
+<h2 id="焯水"><a href="#焯水" class="headerlink" title="焯水"></a>焯水</h2><ul>
+<li>排骨<font color = red>冷水</font>下锅</li>
+<li>放入两截葱段，少量料酒，少量花椒，一颗大料</li>
+<li>煮开火，撇去浮沫</li>
+<li>取出排骨，热水清洗</li>
+<li>准备好热水</li>
+</ul>
+<h2 id="炒料，上色"><a href="#炒料，上色" class="headerlink" title="炒料，上色"></a>炒料，上色</h2><ul>
+<li>热锅凉油，少放油（排骨出油）</li>
+<li>生姜，葱段，花椒，大料，桂皮</li>
+<li>炒香，放入排骨</li>
+<li>加入老抽，酱油，料酒，糖</li>
+<li>炒，上色</li>
+<li>加热水</li>
+<li>大火烧开10min</li>
+<li>胡椒，少量盐，糖</li>
+</ul>
+<h2 id="开炖"><a href="#开炖" class="headerlink" title="开炖"></a>开炖</h2><ul>
+<li>有高压锅换高压锅，没有高压锅盖盖子换小火</li>
+<li>智能高压锅25min，老式高压锅10min，小火90~120min</li>
+<li>蒸上米饭</li>
+</ul>
+<h2 id="收汁"><a href="#收汁" class="headerlink" title="收汁"></a>收汁</h2><ul>
+<li>用高压锅的放回原锅，没有高压锅的直接转大火</li>
+<li>把姜挑出来</li>
+<li>加盐，加糖提味，也可以再加老抽上色定味</li>
+<li>加想吃的蔬菜，萝卜、豆腐等</li>
+<li>出锅！</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生活</category>
+        <category>做饭</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>做饭</tag>
       </tags>
   </entry>
 </search>
