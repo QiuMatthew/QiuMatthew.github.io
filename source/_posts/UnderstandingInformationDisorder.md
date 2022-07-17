@@ -1,0 +1,31 @@
+---
+title: UnderstandingInformationDisorder
+auther: yuran
+date: 2022-07-17 19:17:40
+categories:
+tags:
+---
+
+This file is to summarize the article https://firstdraftnews.org/long-form-article/understanding-information-disorder/
+
+## Compressed article
+### Introduction
+Our information ecosystem is dividing rather than connecting us.  
+Imposter websites, sock puppet account, click farms, conspiracy communities are harming the ecosystem of information.  
+This kind of information is neither "fake" nor "news".  
+The term "fake news" has been used by politicians. This, together with fact that the term fails to discribe real world, are the two reason we abandon this term.  
+Agents of disinformation have learned that using genuine content — reframed in new and misleading ways — is less likely to get picked up by AI systems.  
+Use accurate terms. Propaganda, lies, conspiracies, rumors, hoaxes, hyper-partisan content, falsehoods or manipulated media. Disinformation, misinformation or malinformation. Collectively, INFORMATION DISORDER.  
+Misinformation: FALSE
+Maliinformaliton: HARM
+Disinformation: BOTH
+Disinfromation is created to make money or have political influence etc.  
+Disinformation turns to misinformation when shared by an individual who does not realize the falseness of the piece of information.  
+People share misinformation to satisfy their need to feel connected with their tribe.  
+Malinformation is something genuine but intent to harm, such as the email leak from Hillary Clinton's.  
+Warped and reframed genuine content is successful in terms of persuading and engaging people.  
+This evolution in malinformation is useful to avoid fact check, and this is partly a response to the policy of social media companies.  
+Conclusion: The threat mainly comes from malinformation.  
+There are 7 types of mis-/disinformation: Satire or Parody, False Connection, Misleading Content, False Context, Imposter Content, Manipulated Content, Fabricated Content. This is first published by First Draft in Feb 2017, and it helps people understand the ecosystem.  
+We will go through the 7 types one by one.  
+### Satire or Parody
