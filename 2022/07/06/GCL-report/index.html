@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    归档 |  马西欧
+    GCL-report |  马西欧
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -39,246 +39,168 @@
       
     <main class="content on">
       <section class="outer">
-  
-  
-  <article class="articles">
+  <article
+  id="post-GCL-report"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
     
-    
-    <h1 class="page-type-title">归档</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2021" class="archive-year">2021</a>
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  GCL-report
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/07/06/GCL-report/" class="article-date">
+  <time datetime="2022-07-06T07:22:27.000Z" itemprop="datePublished">2022-07-06</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">361</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">2 分钟</span>
+        </span>
+    </span>
+</div>
+ 
     </div>
-    <div class="archives">
       
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/11/30/Mscoco-Dataset/" class="archive-article-date">
-  <time datetime="2021-11-30T12:58:11.000Z" itemprop="datePublished">11/30</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/11/30/Mscoco-Dataset/"
-    >Mscoco-Dataset</a> 
-</h2>
- 
 
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/11/30/Powershell-Commands/" class="archive-article-date">
-  <time datetime="2021-11-30T12:37:53.000Z" itemprop="datePublished">11/30</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/11/30/Powershell-Commands/"
-    >Powershell-Commands</a> 
-</h2>
- 
 
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/11/19/Cpp-Primer-Plus-Ch2-Start-up/" class="archive-article-date">
-  <time datetime="2021-11-19T13:26:05.000Z" itemprop="datePublished">11/19</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/11/19/Cpp-Primer-Plus-Ch2-Start-up/"
-    >Cpp-Primer-Plus-Ch2-Start-up</a> 
-</h2>
- 
 
-    </header>
-    
-    
-  </div>
-</article>
-      
   
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/11/19/Cpp-Primer-Plus-Ch1-Preliminaries/" class="archive-article-date">
-  <time datetime="2021-11-19T12:30:02.000Z" itemprop="datePublished">11/19</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/11/19/Cpp-Primer-Plus-Ch1-Preliminaries/"
-    >Cpp-Primer-Plus-Ch1-Preliminaries</a> 
-</h2>
+  <p>Hello everyone. Today I would like to give a brief introduction to mahjong AI. My name is Yuran QIU.</p>
+<p>Here is the content for today.<br>Let’s get started with the first, mahjong as a game.</p>
+<p>So, most of us here today might have heard of this game, mahjong is a mind-sport with 3 or 4 players.</p>
+<p>In game theory, there are two sorts of games. Complete info games and incomplete info ones.<br>Complete information games are those in which everything in the game is common knowledge.<br>While inversely, in an incomplete info ones, players may possess private information.</p>
+<p>It is clear that chess, Go, etc., are complete info games, AI already toped these games.<br>Then incomplete info games like mahjong and starcraft become a challenge.<br>In this case bayesian equilibrium is useful.</p>
+<p>But why do we choose mahjong?<br>First, it is an incomplete info game.<br>Second, as we can see in the chart, its state space is quite large.<br>Third, the reward machanism is fairly complex.</p>
+<p>The first AI method I would like to introduce is bakuuchi.</p>
+<p>It is developed by UTokyo, and have several achievements listed here.</p>
+<p>It used pretty simple algorithms, which is nice. However there are too many details to be refined, and its strategy is too simple.</p>
+<p>The second I would like to introduce is Microsoft Suphx.</p>
+<p>It is the best mahjong AI for now, developed by MSRA.<br>It solve the problem by deep reinforcement learning.</p>
+<p>Here is the working flow of Suphx.<br>We can see it have different models for winning, kong, etc.</p>
+<p>And the model structure is shown here.</p>
+<p>The result is here, we can see that Suphx reached an extremely high stable rank, than any other methods, including top humans.</p>
+<p>Let’s get to the summary.<br>Mahjong is an incomplete info game, which is a challenge.<br>Deep reinforcement learning is applied in suphx and reached better performance than most of human players<br>We can foresee that mahjong AI can teach players brand new strategy.<br>Sometimes AI take weird choices, which need further explanation, but time is limited, I will not dive deep into this.</p>
+<p>That’s all for me today, thanks for listening.</p>
  
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/11/11/Linux-Commands/" class="archive-article-date">
-  <time datetime="2021-11-11T07:38:17.000Z" itemprop="datePublished">11/11</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/11/11/Linux-Commands/"
-    >Linux-Commands</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/10/06/Install-PyTorch-Tensorflow/" class="archive-article-date">
-  <time datetime="2021-10-06T11:06:27.000Z" itemprop="datePublished">10/06</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/10/06/Install-PyTorch-Tensorflow/"
-    >Install-PyTorch-Tensorflow</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/10/02/Conda/" class="archive-article-date">
-  <time datetime="2021-10-02T04:54:41.000Z" itemprop="datePublished">10/02</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/10/02/Conda/"
-    >Conda</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/09/16/MissingSemester-3-Vim/" class="archive-article-date">
-  <time datetime="2021-09-16T06:05:09.000Z" itemprop="datePublished">09/16</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/09/16/MissingSemester-3-Vim/"
-    >MissingSemester-3-Vim</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/09/11/MissingSemester-2-ShellTools-Scripting/" class="archive-article-date">
-  <time datetime="2021-09-11T09:09:59.000Z" itemprop="datePublished">09/11</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/09/11/MissingSemester-2-ShellTools-Scripting/"
-    >MissingSemester-2-ShellTools&amp;Scripting</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/08/28/MissingSemester-1-TheShell/" class="archive-article-date">
-  <time datetime="2021-08-28T11:24:19.000Z" itemprop="datePublished">08/28</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/08/28/MissingSemester-1-TheShell/"
-    >MissingSemester-1-TheShell</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
+      <!-- reward -->
       
     </div>
-  </div>
-  
-  
-
-  
-  <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/archives/">上一页</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="page-number" href="/archives/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/6/">6</a><a class="extend next" rel="next" href="/archives/page/3/">下一页</a>
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2022/07/06/GCL-report/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2022/07/17/UnderstandingInformationDisorder/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            UnderstandingInformationDisorder
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/06/15/Server-Usage/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Server-Usage</div>
+      </a>
+    
   </nav>
+
   
+   
+     
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -440,6 +362,23 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">

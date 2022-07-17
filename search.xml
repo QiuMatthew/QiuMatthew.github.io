@@ -6,6 +6,52 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>Conda</title>
+    <url>/2021/10/02/Conda/</url>
+    <content><![CDATA[<h2 id="Anaconda-amp-Miniconda"><a href="#Anaconda-amp-Miniconda" class="headerlink" title="Anaconda &amp; Miniconda"></a>Anaconda &amp; Miniconda</h2><p>Anaconda is conda with some frequently used(although I disagree) preinstalled packages<br>Miniconda is conda with only base modules, and we have to install every dependencies we need</p>
+<p>I prefer Miniconda</p>
+<span id="more"></span>
+
+<h2 id="Installing"><a href="#Installing" class="headerlink" title="Installing"></a>Installing</h2><h3 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; wget https:&#x2F;&#x2F;repo.anaconda.com&#x2F;miniconda&#x2F;Miniconda3-latest-Linux-x86_64.sh</span><br></pre></td></tr></table></figure>
+<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; .&#x2F;Miniconda3-latest-Linux-x86_64.sh</span><br></pre></td></tr></table></figure>
+<p>初始化可以选yes（会修改环境变量）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Do you wish the installer to initialize Miniconda3</span><br><span class="line">by running conda init? [yes|no]</span><br><span class="line">[no] &gt;&gt;&gt; yes</span><br></pre></td></tr></table></figure>
+<p>重启后即可</p>
+<h2 id="Using"><a href="#Using" class="headerlink" title="Using"></a>Using</h2><h3 id="Create-Environment"><a href="#Create-Environment" class="headerlink" title="Create Environment"></a>Create Environment</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; conda create --name env-for-torch python&#x3D;3.9</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Collecting package metadata (current_repodata.json): done</span><br><span class="line">Solving environment: done</span><br><span class="line"></span><br><span class="line">## Package Plan ##</span><br><span class="line"></span><br><span class="line">  environment location: &#x2F;home&#x2F;matthew&#x2F;miniconda3&#x2F;envs&#x2F;env-for-torch</span><br><span class="line"></span><br><span class="line">  added &#x2F; updated specs:</span><br><span class="line">    - python&#x3D;3.9</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">The following NEW packages will be INSTALLED:</span><br><span class="line"></span><br><span class="line">  _libgcc_mutex      pkgs&#x2F;main&#x2F;linux-64::_libgcc_mutex-0.1-main</span><br><span class="line">  _openmp_mutex      pkgs&#x2F;main&#x2F;linux-64::_openmp_mutex-4.5-1_gnu</span><br><span class="line">  ca-certificates    pkgs&#x2F;main&#x2F;linux-64::ca-certificates-2021.7.5-h06a4308_1</span><br><span class="line">  certifi            pkgs&#x2F;main&#x2F;linux-64::certifi-2021.5.30-py39h06a4308_0</span><br><span class="line">  ld_impl_linux-64   pkgs&#x2F;main&#x2F;linux-64::ld_impl_linux-64-2.35.1-h7274673_9</span><br><span class="line">  libffi             pkgs&#x2F;main&#x2F;linux-64::libffi-3.3-he6710b0_2</span><br><span class="line">  libgcc-ng          pkgs&#x2F;main&#x2F;linux-64::libgcc-ng-9.3.0-h5101ec6_17</span><br><span class="line">  libgomp            pkgs&#x2F;main&#x2F;linux-64::libgomp-9.3.0-h5101ec6_17</span><br><span class="line">  libstdcxx-ng       pkgs&#x2F;main&#x2F;linux-64::libstdcxx-ng-9.3.0-hd4cf53a_17</span><br><span class="line">  ncurses            pkgs&#x2F;main&#x2F;linux-64::ncurses-6.2-he6710b0_1</span><br><span class="line">  openssl            pkgs&#x2F;main&#x2F;linux-64::openssl-1.1.1l-h7f8727e_0</span><br><span class="line">  pip                pkgs&#x2F;main&#x2F;linux-64::pip-21.2.4-py37h06a4308_0</span><br><span class="line">  python             pkgs&#x2F;main&#x2F;linux-64::python-3.9.7-h12debd9_1</span><br><span class="line">  readline           pkgs&#x2F;main&#x2F;linux-64::readline-8.1-h27cfd23_0</span><br><span class="line">  setuptools         pkgs&#x2F;main&#x2F;linux-64::setuptools-58.0.4-py39h06a4308_0</span><br><span class="line">  sqlite             pkgs&#x2F;main&#x2F;linux-64::sqlite-3.36.0-hc218d9a_0</span><br><span class="line">  tk                 pkgs&#x2F;main&#x2F;linux-64::tk-8.6.11-h1ccaba5_0</span><br><span class="line">  tzdata             pkgs&#x2F;main&#x2F;noarch::tzdata-2021a-h5d7bf9c_0</span><br><span class="line">  wheel              pkgs&#x2F;main&#x2F;noarch::wheel-0.37.0-pyhd3eb1b0_1</span><br><span class="line">  xz                 pkgs&#x2F;main&#x2F;linux-64::xz-5.2.5-h7b6447c_0</span><br><span class="line">  zlib               pkgs&#x2F;main&#x2F;linux-64::zlib-1.2.11-h7b6447c_3</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Proceed ([y]&#x2F;n)? y</span><br><span class="line"></span><br><span class="line">Preparing transaction: done</span><br><span class="line">Verifying transaction: done</span><br><span class="line">Executing transaction: done</span><br><span class="line">#</span><br><span class="line"># To activate this environment, use</span><br><span class="line">#</span><br><span class="line">#     $ conda activate env-for-torch</span><br><span class="line">#</span><br><span class="line"># To deactivate an active environment, use</span><br><span class="line">#</span><br><span class="line">#     $ conda deactivate</span><br></pre></td></tr></table></figure>
+
+<h3 id="Activate-amp-Deactivate"><a href="#Activate-amp-Deactivate" class="headerlink" title="Activate &amp; Deactivate"></a>Activate &amp; Deactivate</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; conda activate env-for-torch</span><br><span class="line">&gt;&gt;&gt; conda deactivate</span><br></pre></td></tr></table></figure>
+
+<h3 id="Check-existing-environment"><a href="#Check-existing-environment" class="headerlink" title="Check existing environment"></a>Check existing environment</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; conda env list</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># conda environments:</span><br><span class="line">#</span><br><span class="line">base                  *  &#x2F;home&#x2F;matthew&#x2F;miniconda3</span><br><span class="line">env-for-tf               &#x2F;home&#x2F;matthew&#x2F;miniconda3&#x2F;envs&#x2F;env-for-tf</span><br><span class="line">env-for-torch            &#x2F;home&#x2F;matthew&#x2F;miniconda3&#x2F;envs&#x2F;env-for-torch</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Conda</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Conda</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cpp-Vector</title>
+    <url>/2021/12/27/Cpp-Vector/</url>
+    <content><![CDATA[<h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &lt;vector&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;int&gt; vec;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;vector&lt;int&gt;&gt; vec;</span><br><span class="line">vector&lt;int&gt; vec(N);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Technol</category>
+        <category>C++</category>
+        <category>STL</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cpp-Primer-Plus-Ch1-Preliminaries</title>
     <url>/2021/11/19/Cpp-Primer-Plus-Ch1-Preliminaries/</url>
     <content><![CDATA[<h2 id="1-4-2-编译和链接"><a href="#1-4-2-编译和链接" class="headerlink" title="1.4.2 编译和链接"></a>1.4.2 编译和链接</h2><h3 id="2-Linux编译和链接"><a href="#2-Linux编译和链接" class="headerlink" title="2 Linux编译和链接"></a>2 Linux编译和链接</h3><p>Linux最常用的编译器：g++<br>下面的命令将生成可执行文件<code>a.out</code></p>
@@ -27,21 +73,25 @@
       </tags>
   </entry>
   <entry>
-    <title>Cpp-Vector</title>
-    <url>/2021/12/27/Cpp-Vector/</url>
-    <content><![CDATA[<h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &lt;vector&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;int&gt; vec;</span><br></pre></td></tr></table></figure>
-
-<h2 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;vector&lt;int&gt;&gt; vec;</span><br><span class="line">vector&lt;int&gt; vec(N);</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Technol</category>
-        <category>C++</category>
-        <category>STL</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
-      </tags>
+    <title>GCL-report</title>
+    <url>/2022/07/06/GCL-report/</url>
+    <content><![CDATA[<p>Hello everyone. Today I would like to give a brief introduction to mahjong AI. My name is Yuran QIU.</p>
+<p>Here is the content for today.<br>Let’s get started with the first, mahjong as a game.</p>
+<p>So, most of us here today might have heard of this game, mahjong is a mind-sport with 3 or 4 players.</p>
+<p>In game theory, there are two sorts of games. Complete info games and incomplete info ones.<br>Complete information games are those in which everything in the game is common knowledge.<br>While inversely, in an incomplete info ones, players may possess private information.</p>
+<p>It is clear that chess, Go, etc., are complete info games, AI already toped these games.<br>Then incomplete info games like mahjong and starcraft become a challenge.<br>In this case bayesian equilibrium is useful.</p>
+<p>But why do we choose mahjong?<br>First, it is an incomplete info game.<br>Second, as we can see in the chart, its state space is quite large.<br>Third, the reward machanism is fairly complex.</p>
+<p>The first AI method I would like to introduce is bakuuchi.</p>
+<p>It is developed by UTokyo, and have several achievements listed here.</p>
+<p>It used pretty simple algorithms, which is nice. However there are too many details to be refined, and its strategy is too simple.</p>
+<p>The second I would like to introduce is Microsoft Suphx.</p>
+<p>It is the best mahjong AI for now, developed by MSRA.<br>It solve the problem by deep reinforcement learning.</p>
+<p>Here is the working flow of Suphx.<br>We can see it have different models for winning, kong, etc.</p>
+<p>And the model structure is shown here.</p>
+<p>The result is here, we can see that Suphx reached an extremely high stable rank, than any other methods, including top humans.</p>
+<p>Let’s get to the summary.<br>Mahjong is an incomplete info game, which is a challenge.<br>Deep reinforcement learning is applied in suphx and reached better performance than most of human players<br>We can foresee that mahjong AI can teach players brand new strategy.<br>Sometimes AI take weird choices, which need further explanation, but time is limited, I will not dive deep into this.</p>
+<p>That’s all for me today, thanks for listening.</p>
+]]></content>
   </entry>
   <entry>
     <title>Install-PyTorch-Tensorflow</title>
@@ -90,35 +140,6 @@
         <tag>技术</tag>
         <tag>PyTorch</tag>
         <tag>Tensorflow</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Conda</title>
-    <url>/2021/10/02/Conda/</url>
-    <content><![CDATA[<h2 id="Anaconda-amp-Miniconda"><a href="#Anaconda-amp-Miniconda" class="headerlink" title="Anaconda &amp; Miniconda"></a>Anaconda &amp; Miniconda</h2><p>Anaconda is conda with some frequently used(although I disagree) preinstalled packages<br>Miniconda is conda with only base modules, and we have to install every dependencies we need</p>
-<p>I prefer Miniconda</p>
-<span id="more"></span>
-
-<h2 id="Installing"><a href="#Installing" class="headerlink" title="Installing"></a>Installing</h2><h3 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; wget https:&#x2F;&#x2F;repo.anaconda.com&#x2F;miniconda&#x2F;Miniconda3-latest-Linux-x86_64.sh</span><br></pre></td></tr></table></figure>
-<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; .&#x2F;Miniconda3-latest-Linux-x86_64.sh</span><br></pre></td></tr></table></figure>
-<p>初始化可以选yes（会修改环境变量）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Do you wish the installer to initialize Miniconda3</span><br><span class="line">by running conda init? [yes|no]</span><br><span class="line">[no] &gt;&gt;&gt; yes</span><br></pre></td></tr></table></figure>
-<p>重启后即可</p>
-<h2 id="Using"><a href="#Using" class="headerlink" title="Using"></a>Using</h2><h3 id="Create-Environment"><a href="#Create-Environment" class="headerlink" title="Create Environment"></a>Create Environment</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; conda create --name env-for-torch python&#x3D;3.9</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Collecting package metadata (current_repodata.json): done</span><br><span class="line">Solving environment: done</span><br><span class="line"></span><br><span class="line">## Package Plan ##</span><br><span class="line"></span><br><span class="line">  environment location: &#x2F;home&#x2F;matthew&#x2F;miniconda3&#x2F;envs&#x2F;env-for-torch</span><br><span class="line"></span><br><span class="line">  added &#x2F; updated specs:</span><br><span class="line">    - python&#x3D;3.9</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">The following NEW packages will be INSTALLED:</span><br><span class="line"></span><br><span class="line">  _libgcc_mutex      pkgs&#x2F;main&#x2F;linux-64::_libgcc_mutex-0.1-main</span><br><span class="line">  _openmp_mutex      pkgs&#x2F;main&#x2F;linux-64::_openmp_mutex-4.5-1_gnu</span><br><span class="line">  ca-certificates    pkgs&#x2F;main&#x2F;linux-64::ca-certificates-2021.7.5-h06a4308_1</span><br><span class="line">  certifi            pkgs&#x2F;main&#x2F;linux-64::certifi-2021.5.30-py39h06a4308_0</span><br><span class="line">  ld_impl_linux-64   pkgs&#x2F;main&#x2F;linux-64::ld_impl_linux-64-2.35.1-h7274673_9</span><br><span class="line">  libffi             pkgs&#x2F;main&#x2F;linux-64::libffi-3.3-he6710b0_2</span><br><span class="line">  libgcc-ng          pkgs&#x2F;main&#x2F;linux-64::libgcc-ng-9.3.0-h5101ec6_17</span><br><span class="line">  libgomp            pkgs&#x2F;main&#x2F;linux-64::libgomp-9.3.0-h5101ec6_17</span><br><span class="line">  libstdcxx-ng       pkgs&#x2F;main&#x2F;linux-64::libstdcxx-ng-9.3.0-hd4cf53a_17</span><br><span class="line">  ncurses            pkgs&#x2F;main&#x2F;linux-64::ncurses-6.2-he6710b0_1</span><br><span class="line">  openssl            pkgs&#x2F;main&#x2F;linux-64::openssl-1.1.1l-h7f8727e_0</span><br><span class="line">  pip                pkgs&#x2F;main&#x2F;linux-64::pip-21.2.4-py37h06a4308_0</span><br><span class="line">  python             pkgs&#x2F;main&#x2F;linux-64::python-3.9.7-h12debd9_1</span><br><span class="line">  readline           pkgs&#x2F;main&#x2F;linux-64::readline-8.1-h27cfd23_0</span><br><span class="line">  setuptools         pkgs&#x2F;main&#x2F;linux-64::setuptools-58.0.4-py39h06a4308_0</span><br><span class="line">  sqlite             pkgs&#x2F;main&#x2F;linux-64::sqlite-3.36.0-hc218d9a_0</span><br><span class="line">  tk                 pkgs&#x2F;main&#x2F;linux-64::tk-8.6.11-h1ccaba5_0</span><br><span class="line">  tzdata             pkgs&#x2F;main&#x2F;noarch::tzdata-2021a-h5d7bf9c_0</span><br><span class="line">  wheel              pkgs&#x2F;main&#x2F;noarch::wheel-0.37.0-pyhd3eb1b0_1</span><br><span class="line">  xz                 pkgs&#x2F;main&#x2F;linux-64::xz-5.2.5-h7b6447c_0</span><br><span class="line">  zlib               pkgs&#x2F;main&#x2F;linux-64::zlib-1.2.11-h7b6447c_3</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Proceed ([y]&#x2F;n)? y</span><br><span class="line"></span><br><span class="line">Preparing transaction: done</span><br><span class="line">Verifying transaction: done</span><br><span class="line">Executing transaction: done</span><br><span class="line">#</span><br><span class="line"># To activate this environment, use</span><br><span class="line">#</span><br><span class="line">#     $ conda activate env-for-torch</span><br><span class="line">#</span><br><span class="line"># To deactivate an active environment, use</span><br><span class="line">#</span><br><span class="line">#     $ conda deactivate</span><br></pre></td></tr></table></figure>
-
-<h3 id="Activate-amp-Deactivate"><a href="#Activate-amp-Deactivate" class="headerlink" title="Activate &amp; Deactivate"></a>Activate &amp; Deactivate</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; conda activate env-for-torch</span><br><span class="line">&gt;&gt;&gt; conda deactivate</span><br></pre></td></tr></table></figure>
-
-<h3 id="Check-existing-environment"><a href="#Check-existing-environment" class="headerlink" title="Check existing environment"></a>Check existing environment</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; conda env list</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># conda environments:</span><br><span class="line">#</span><br><span class="line">base                  *  &#x2F;home&#x2F;matthew&#x2F;miniconda3</span><br><span class="line">env-for-tf               &#x2F;home&#x2F;matthew&#x2F;miniconda3&#x2F;envs&#x2F;env-for-tf</span><br><span class="line">env-for-torch            &#x2F;home&#x2F;matthew&#x2F;miniconda3&#x2F;envs&#x2F;env-for-torch</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>技术</category>
-        <category>Conda</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Conda</tag>
       </tags>
   </entry>
   <entry>
@@ -211,29 +232,6 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">% hexo clean</span><br><span class="line">% hexo g</span><br><span class="line">% hexo d</span><br></pre></td></tr></table></figure>
 <p>还真的能用，起飞！</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>MissingSemester-1-TheShell</title>
-    <url>/2021/08/28/MissingSemester-1-TheShell/</url>
-    <content><![CDATA[<h3 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; date</span></span><br><span class="line">Wed Sep 15 17:57:06 CST 2021</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> hello</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> Hello\ World</span></span><br><span class="line">Hello World</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$PATH</span></span></span><br><span class="line">/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Non-system/Node.js/:/mnt/c/Non-system/Git/cmd:/mnt/c/Users/Q_Mas/AppData/Local/Microsoft/WindowsApps:/mnt/c/Non-system/Microsoft VS Code/bin:/mnt/c/Users/Q_Mas/AppData/Roaming/npm:/snap/bin</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">which</span> <span class="built_in">echo</span></span></span><br><span class="line">/usr/bin/echo </span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /home</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ..</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ./home</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ./home</span></span><br><span class="line">-bash: cd: ./home: No such file or directory</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /mnt/c/Users/Q_Mas/Desktop/missing-semester/</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ../../../../../../bin/<span class="built_in">echo</span> world</span></span><br><span class="line">world</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> <span class="built_in">test</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls ..</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ..</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ~</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home/matthew</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> -</span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls --<span class="built_in">help</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -a</span></span><br><span class="line">.  ..  1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l</span></span><br><span class="line">total 0</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34 1-overview.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34 2-shell.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:35 3-vim.md</span><br><span class="line">drwxrwxrwx 1 matthew matthew 4096 Sep 15 23:35 test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mv 3-vim.md 3-vim-renamed.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim-renamed.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mv 3-vim-renamed.md 3-vim.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cp 3-vim.md ./<span class="built_in">test</span>/3-vim-copy.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls ./<span class="built_in">test</span></span></span><br><span class="line">3-vim-copy.md</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rm ./3-vim-copy.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; touch ./<span class="built_in">test</span>/1</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rmdir <span class="built_in">test</span></span></span><br><span class="line">rmdir: failed to remove &#x27;test&#x27;: Directory not empty</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rm -r <span class="built_in">test</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mkdir <span class="string">&quot;My Photos&quot;</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; man ls</span></span><br></pre></td></tr></table></figure>
-<p>For a directory rather than a file,<br>read means you can list stuffs inside it<br>write means you can change the file name, make a new file or remove one<br>execute means you can get into the directory</p>
-<span id="more"></span>
-
-<h3 id="Combining-different-programs"><a href="#Combining-different-programs" class="headerlink" title="Combining different programs"></a>Combining different programs</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> hello &gt; hello.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt &gt; hello2.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello2.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt &gt;&gt; hello2.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello2.txt</span></span><br><span class="line">hello</span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; tail -n1 hello2.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l</span></span><br><span class="line">total 0</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34  1-overview.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34  2-shell.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:35  3-vim.md</span><br><span class="line">drwxrwxrwx 1 matthew matthew 4096 Sep 15 23:53 &#x27;My Photos&#x27;</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    6 Sep 15 23:57  hello.txt</span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59  hello2.txt</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l | tail -n1</span></span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59 hello2.txt</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l | tail -n2 &gt; ls.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat ls.txt</span></span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59 hello2.txt</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 16 00:03 ls.txt</span><br></pre></td></tr></table></figure>
-
-<h3 id="Root-User"><a href="#Root-User" class="headerlink" title="Root User"></a>Root User</h3><p>User ID is 0</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line">-bash: brightness: Permission denied</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; sudo <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line">-bash: brightness: Permission denied</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; sudo su</span></span><br><span class="line">[sudo] password for matthew:</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">exit</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 1060 | sudo tee brightness</span></span><br><span class="line">1060</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /sys/class/leds/input4\:\:scrolllock</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat brightness</span></span><br><span class="line">0</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 1 | sudo tee brightness</span></span><br><span class="line">1</span><br></pre></td></tr></table></figure>
-
-<h3 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; xdg-open lectures.html</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>技术</category>
-        <category>Missing Semester</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Linux</tag>
-        <tag>Missing Semester</tag>
-      </tags>
   </entry>
   <entry>
     <title>MissingSemester-2-ShellTools&amp;Scripting</title>
@@ -360,6 +358,29 @@
 
 
 <h3 id="File-structure"><a href="#File-structure" class="headerlink" title="File structure"></a>File structure</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -R</span></span><br><span class="line">.:</span><br><span class="line">2-shell.md  bar  fo  foo  foo1  foo10  foo2  image.png  mcd.sh  project1  project2  project42  script.py  test</span><br><span class="line"></span><br><span class="line">./bar:</span><br><span class="line">a  b  c  d  e  f  g  h  i  j  y</span><br><span class="line"></span><br><span class="line">./fo:</span><br><span class="line">a  b  c  d  e  f  g  h  i  j  x</span><br><span class="line"></span><br><span class="line">./project1:</span><br><span class="line">src</span><br><span class="line"></span><br><span class="line">./project1/src:</span><br><span class="line">test1.tmp  test2.tmp  test3.tmp</span><br><span class="line"></span><br><span class="line">./project2:</span><br><span class="line">src</span><br><span class="line"></span><br><span class="line">./project2/src:</span><br><span class="line">test1.py  test1.tmp  test2.py  test2.tmp  test3.py  test3.tmp</span><br><span class="line"></span><br><span class="line">./project42:</span><br><span class="line"></span><br><span class="line">./test:</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; tree</span></span><br><span class="line">.</span><br><span class="line">├── 2-shell.md</span><br><span class="line">├── bar</span><br><span class="line">│   ├── a</span><br><span class="line">│   ├── b</span><br><span class="line">│   ├── c</span><br><span class="line">│   ├── d</span><br><span class="line">│   ├── e</span><br><span class="line">│   ├── f</span><br><span class="line">│   ├── g</span><br><span class="line">│   ├── h</span><br><span class="line">│   ├── i</span><br><span class="line">│   ├── j</span><br><span class="line">│   └── y</span><br><span class="line">├── fo</span><br><span class="line">│   ├── a</span><br><span class="line">│   ├── b</span><br><span class="line">│   ├── c</span><br><span class="line">│   ├── d</span><br><span class="line">│   ├── e</span><br><span class="line">│   ├── f</span><br><span class="line">│   ├── g</span><br><span class="line">│   ├── h</span><br><span class="line">│   ├── i</span><br><span class="line">│   ├── j</span><br><span class="line">│   └── x</span><br><span class="line">├── foo</span><br><span class="line">├── foo1</span><br><span class="line">├── foo10</span><br><span class="line">├── foo2</span><br><span class="line">├── image.png</span><br><span class="line">├── mcd.sh</span><br><span class="line">├── project1</span><br><span class="line">│   └── src</span><br><span class="line">│       ├── test1.tmp</span><br><span class="line">│       ├── test2.tmp</span><br><span class="line">│       └── test3.tmp</span><br><span class="line">├── project2</span><br><span class="line">│   └── src</span><br><span class="line">│       ├── test1.py</span><br><span class="line">│       ├── test1.tmp</span><br><span class="line">│       ├── test2.py</span><br><span class="line">│       ├── test2.tmp</span><br><span class="line">│       ├── test3.py</span><br><span class="line">│       └── test3.tmp</span><br><span class="line">├── project42</span><br><span class="line">├── script.py</span><br><span class="line">└── test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; broot</span></span><br><span class="line">need rust environment</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; nnn</span></span><br><span class="line">something having interactive input using navigation arrows like File Explorer in Windows</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Missing Semester</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Linux</tag>
+        <tag>Missing Semester</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MissingSemester-1-TheShell</title>
+    <url>/2021/08/28/MissingSemester-1-TheShell/</url>
+    <content><![CDATA[<h3 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; date</span></span><br><span class="line">Wed Sep 15 17:57:06 CST 2021</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> hello</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> Hello\ World</span></span><br><span class="line">Hello World</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> <span class="variable">$PATH</span></span></span><br><span class="line">/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Non-system/Node.js/:/mnt/c/Non-system/Git/cmd:/mnt/c/Users/Q_Mas/AppData/Local/Microsoft/WindowsApps:/mnt/c/Non-system/Microsoft VS Code/bin:/mnt/c/Users/Q_Mas/AppData/Roaming/npm:/snap/bin</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">which</span> <span class="built_in">echo</span></span></span><br><span class="line">/usr/bin/echo </span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /home</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ..</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ./home</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ./home</span></span><br><span class="line">-bash: cd: ./home: No such file or directory</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /mnt/c/Users/Q_Mas/Desktop/missing-semester/</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ../../../../../../bin/<span class="built_in">echo</span> world</span></span><br><span class="line">world</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> <span class="built_in">test</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls ..</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ..</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> ~</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">pwd</span></span></span><br><span class="line">/home/matthew</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> -</span></span><br><span class="line">/mnt/c/Users/Q_Mas/Desktop/missing-semester</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls --<span class="built_in">help</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -a</span></span><br><span class="line">.  ..  1-overview.md  2-shell.md  3-vim.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l</span></span><br><span class="line">total 0</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34 1-overview.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34 2-shell.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:35 3-vim.md</span><br><span class="line">drwxrwxrwx 1 matthew matthew 4096 Sep 15 23:35 test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mv 3-vim.md 3-vim-renamed.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim-renamed.md  test</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mv 3-vim-renamed.md 3-vim.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cp 3-vim.md ./<span class="built_in">test</span>/3-vim-copy.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls ./<span class="built_in">test</span></span></span><br><span class="line">3-vim-copy.md</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rm ./3-vim-copy.md</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; touch ./<span class="built_in">test</span>/1</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rmdir <span class="built_in">test</span></span></span><br><span class="line">rmdir: failed to remove &#x27;test&#x27;: Directory not empty</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; rm -r <span class="built_in">test</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls</span></span><br><span class="line">1-overview.md  2-shell.md  3-vim.md</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; mkdir <span class="string">&quot;My Photos&quot;</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; man ls</span></span><br></pre></td></tr></table></figure>
+<p>For a directory rather than a file,<br>read means you can list stuffs inside it<br>write means you can change the file name, make a new file or remove one<br>execute means you can get into the directory</p>
+<span id="more"></span>
+
+<h3 id="Combining-different-programs"><a href="#Combining-different-programs" class="headerlink" title="Combining different programs"></a>Combining different programs</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> hello &gt; hello.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt &gt; hello2.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello2.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat &lt; hello.txt &gt;&gt; hello2.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat hello2.txt</span></span><br><span class="line">hello</span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; tail -n1 hello2.txt</span></span><br><span class="line">hello</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l</span></span><br><span class="line">total 0</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34  1-overview.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:34  2-shell.md</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 15 23:35  3-vim.md</span><br><span class="line">drwxrwxrwx 1 matthew matthew 4096 Sep 15 23:53 &#x27;My Photos&#x27;</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    6 Sep 15 23:57  hello.txt</span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59  hello2.txt</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l | tail -n1</span></span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59 hello2.txt</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; ls -l | tail -n2 &gt; ls.txt</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat ls.txt</span></span><br><span class="line">-rwxrwxrwx 1 matthew matthew   12 Sep 15 23:59 hello2.txt</span><br><span class="line">-rwxrwxrwx 1 matthew matthew    0 Sep 16 00:03 ls.txt</span><br></pre></td></tr></table></figure>
+
+<h3 id="Root-User"><a href="#Root-User" class="headerlink" title="Root User"></a>Root User</h3><p>User ID is 0</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line">-bash: brightness: Permission denied</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; sudo <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line">-bash: brightness: Permission denied</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; sudo su</span></span><br><span class="line">[sudo] password for matthew:</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">echo</span> 500 &gt; /sys/class/backlight/intel_backlight/brightness</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">exit</span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 1060 | sudo tee brightness</span></span><br><span class="line">1060</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">cd</span> /sys/class/leds/input4\:\:scrolllock</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; cat brightness</span></span><br><span class="line">0</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; <span class="built_in">echo</span> 1 | sudo tee brightness</span></span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h3 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt; xdg-open lectures.html</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>技术</category>
         <category>Missing Semester</category>
@@ -696,6 +717,11 @@
       </tags>
   </entry>
   <entry>
+    <title>Mscoco-Dataset</title>
+    <url>/2021/11/30/Mscoco-Dataset/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Nodejs and Revealjs</title>
     <url>/2022/03/03/Nodejs&amp;Revealjs/</url>
     <content><![CDATA[<h2 id="Install-Node-js"><a href="#Install-Node-js" class="headerlink" title="Install Node.js"></a>Install Node.js</h2><ul>
@@ -732,11 +758,6 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm start -- --port&#x3D;8001</span><br></pre></td></tr></table></figure></li>
 </ul>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Mscoco-Dataset</title>
-    <url>/2021/11/30/Mscoco-Dataset/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Overwatch-Deutsch</title>
@@ -985,6 +1006,13 @@
       </tags>
   </entry>
   <entry>
+    <title>UnderstandingInformationDisorder</title>
+    <url>/2022/07/17/UnderstandingInformationDisorder/</url>
+    <content><![CDATA[<p>This file is to summarize the article <a href="https://firstdraftnews.org/long-form-article/understanding-information-disorder/">https://firstdraftnews.org/long-form-article/understanding-information-disorder/</a></p>
+<h2 id="Compressed-article"><a href="#Compressed-article" class="headerlink" title="Compressed article"></a>Compressed article</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>Our information ecosystem is dividing rather than connecting us.<br>Imposter websites, sock puppet account, click farms, conspiracy communities are harming the ecosystem of information.<br>This kind of information is neither “fake” nor “news”.<br>The term “fake news” has been used by politicians. This, together with fact that the term fails to discribe real world, are the two reason we abandon this term.<br>Agents of disinformation have learned that using genuine content — reframed in new and misleading ways — is less likely to get picked up by AI systems.<br>Use accurate terms. Propaganda, lies, conspiracies, rumors, hoaxes, hyper-partisan content, falsehoods or manipulated media. Disinformation, misinformation or malinformation. Collectively, INFORMATION DISORDER.<br>Misinformation: FALSE<br>Maliinformaliton: HARM<br>Disinformation: BOTH<br>Disinfromation is created to make money or have political influence etc.<br>Disinformation turns to misinformation when shared by an individual who does not realize the falseness of the piece of information.<br>People share misinformation to satisfy their need to feel connected with their tribe.<br>Malinformation is something genuine but intent to harm, such as the email leak from Hillary Clinton’s.<br>Warped and reframed genuine content is successful in terms of persuading and engaging people.<br>This evolution in malinformation is useful to avoid fact check, and this is partly a response to the policy of social media companies.<br>Conclusion: The threat mainly comes from malinformation.<br>There are 7 types of mis-/disinformation: Satire or Parody, False Connection, Misleading Content, False Context, Imposter Content, Manipulated Content, Fabricated Content. This is first published by First Draft in Feb 2017, and it helps people understand the ecosystem.<br>We will go through the 7 types one by one.  </p>
+<h3 id="Satire-or-Parody"><a href="#Satire-or-Parody" class="headerlink" title="Satire or Parody"></a>Satire or Parody</h3>]]></content>
+  </entry>
+  <entry>
     <title>Test</title>
     <url>/2021/03/31/test/</url>
     <content><![CDATA[<p>这个博客用于记录修考的点点滴滴。<br>当前博文仅用于测试系统是否正常运转。</p>
@@ -997,179 +1025,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Server-Usage</title>
-    <url>/2022/06/15/Server-Usage/</url>
-    <content><![CDATA[<p>This is a memo for lab GPU cluster usage  </p>
-<h2 id="Self-intro"><a href="#Self-intro" class="headerlink" title="Self-intro"></a>Self-intro</h2><p>Yamagishi Junichi<br>Xin Wang<br>Jian Wang</p>
-<h2 id="Guidance"><a href="#Guidance" class="headerlink" title="Guidance"></a>Guidance</h2><ul>
-<li>Two link in the description of the slack channel<ul>
-<li>One is for IT issues</li>
-<li>The other is a manual</li>
-</ul>
-</li>
-<li>Network Organization<ul>
-<li>Four Layers<ul>
-<li>Internet (home, eduroam)</li>
-<li>NII Network<ul>
-<li>nii-auth wifi</li>
-<li>devices like printer</li>
-</ul>
-</li>
-<li>Lab Network<ul>
-<li>devices like Apple TV etc.</li>
-<li>LAN cable</li>
-<li>Two location, Jinbocho and Kashiwa</li>
-<li>136.187.?.?</li>
-</ul>
-</li>
-<li>Cluster Network<ul>
-<li>Head Node 136.187.108.7<ul>
-<li>All work shall be submitted to this</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Hardware<ul>
-<li>Head node <ul>
-<li>Ubuntu 18.04</li>
-<li>no heavy jobs</li>
-<li><code>$ show_res.sh</code></li>
-</ul>
-</li>
-<li>Network attached storage (NAS)<ul>
-<li>for file management</li>
-<li><code>$ df -h | grep nas</code></li>
-<li>/local/ works as cache</li>
-<li>/home/smg</li>
-</ul>
-</li>
-<li>Software<ul>
-<li>Bright cluster manager</li>
-<li>Slurm</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="SSH-key-generate"><a href="#SSH-key-generate" class="headerlink" title="SSH key generate"></a>SSH key generate</h2><pre><code>generate ssh key and send to Mr.yousuke kosuda
-</code></pre>
-<h2 id="Slurm-commands"><a href="#Slurm-commands" class="headerlink" title="Slurm commands"></a>Slurm commands</h2><ul>
-<li>login_private.sh</li>
-<li>sbatch -p qgpu</li>
-</ul>
-<h2 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h2><ul>
-<li>Do not need GPUs<ul>
-<li>Use CPU Nodes!</li>
-</ul>
-</li>
-<li>Need GPUs<ul>
-<li>Stable Code<ul>
-<li>Submit with sbatch through the head node</li>
-</ul>
-</li>
-<li>Work in progress<ul>
-<li>Test before submit<ul>
-<li>Shortly use public node</li>
-</ul>
-</li>
-<li>Developing<ul>
-<li>Use a private node</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="Login-Method"><a href="#Login-Method" class="headerlink" title="Login Method"></a>Login Method</h2><h3 id="sbatch"><a href="#sbatch" class="headerlink" title="sbatch"></a>sbatch</h3><h3 id="public"><a href="#public" class="headerlink" title="public"></a>public</h3><h3 id="private"><a href="#private" class="headerlink" title="private"></a>private</h3>]]></content>
-  </entry>
-  <entry>
     <title></title>
     <url>/2022/05/30/cs231n-Lecture1/</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>学习笔记2021-4-21-Ch1-数字计算入门</title>
-    <url>/2021/04/21/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-21-Ch1-%E6%95%B0%E5%AD%97%E8%AE%A1%E7%AE%97%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[<h2 id="1の補数と2の補数"><a href="#1の補数と2の補数" class="headerlink" title="1の補数と2の補数"></a>1の補数と2の補数</h2><h3 id="1の補数"><a href="#1の補数" class="headerlink" title="1の補数"></a>1の補数</h3><p>1の補数表示では，負の数 $ -x $ を表すのに $ 2^n - x - 1 $ を用いる。1の補数は，$ x $ の各桁の $ 1 $ と $ 0 $ を反転したものとなる。表現できる値の範囲は $ -2^{n - 1} + 1 \leq X \leq 2^{n - 1} - 1$ 。また，$ 0 $ の表現として，$ 0000 $ と $ 1111 $ の二種類が可能となる。</p>
-<h3 id="2の補数"><a href="#2の補数" class="headerlink" title="2の補数"></a>2の補数</h3><p>2の補数表示では，負の数 $ -x $ を表すのに $ 2^n - x $ を用いる。2の補数は，$ x $ の各桁の $ 1 $ と $ 0 $ を反転し，結果に $ 1 $ 加えたものとなる。表現できる値の範囲は $ -2^{n - 1} \leq X \leq 2^{n - 1} $。$ 0 $ の表現は，$ 0000 $ だけとなる。</p>
-]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>专业课</category>
-        <category>数电</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>专业课</tag>
-        <tag>数电</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习笔记2021-4-22-Ch2-逻辑运算</title>
-    <url>/2021/04/22/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-22-Ch2-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/</url>
-    <content><![CDATA[<h2 id="多入力素子"><a href="#多入力素子" class="headerlink" title="多入力素子"></a>多入力素子</h2><p>N入力XORは，入力のうちで1の数が奇数個の時1，偶数個の時に0となる。N入力EQは，入力のうちで0の数が偶数個の時に1，奇数個の時に0となる。<br>2入力XORと2入力EQはお互いに否定の関係である，3入力XORと3入力EQは同じ演算。</p>
-]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>专业课</category>
-        <category>数电</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>专业课</tag>
-        <tag>数电</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习笔记2021-4-24-Ch3-组合电路设计</title>
-    <url>/2021/04/24/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-24-Ch3-%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/</url>
-    <content><![CDATA[<h2 id="組合せ回路設計の一般論"><a href="#組合せ回路設計の一般論" class="headerlink" title="組合せ回路設計の一般論"></a>組合せ回路設計の一般論</h2><h3 id="1-定式化"><a href="#1-定式化" class="headerlink" title="1.定式化"></a>1.定式化</h3><p>入力、出力、真理値表を書く</p>
-<h3 id="2-加法標準形"><a href="#2-加法標準形" class="headerlink" title="2.加法標準形"></a>2.加法標準形</h3><p>真理値表から，加法標準形の形の論理関数を得る</p>
-<h3 id="3-簡単化"><a href="#3-簡単化" class="headerlink" title="3.簡単化"></a>3.簡単化</h3><p>論理関数を簡単化する</p>
-<h3 id="4-回路記述"><a href="#4-回路記述" class="headerlink" title="4.回路記述"></a>4.回路記述</h3><p>回路をMIL記号で記述する</p>
-<span id="more"></span>
-
-<h2 id="組合せ回路の簡単化"><a href="#組合せ回路の簡単化" class="headerlink" title="組合せ回路の簡単化"></a>組合せ回路の簡単化</h2><h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><p>回路の遅延時間を短くすること<br>回路の総量を小さくすること</p>
-<h3 id="手段"><a href="#手段" class="headerlink" title="手段"></a>手段</h3><p>各AND素子の入力数を減らすこと<br>AND素子の数を減らすこと</p>
-<h3 id="方法一：カルノー図-Karnaugh-Map-による簡単化"><a href="#方法一：カルノー図-Karnaugh-Map-による簡単化" class="headerlink" title="方法一：カルノー図(Karnaugh Map)による簡単化"></a>方法一：カルノー図(Karnaugh Map)による簡単化</h3><h3 id="方法二：クワイン・マクラスキー法-Quine-McCluskey-Method-による簡単化"><a href="#方法二：クワイン・マクラスキー法-Quine-McCluskey-Method-による簡単化" class="headerlink" title="方法二：クワイン・マクラスキー法(Quine-McCluskey Method)による簡単化"></a>方法二：クワイン・マクラスキー法(Quine-McCluskey Method)による簡単化</h3><h4 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h4><p>論理関数を加法標準形にし，最小項が二進数で表現しておく。</p>
-<h4 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h4><p>最小項を，含まれる1の数によってグループ分けする。</p>
-<h4 id="Step-3"><a href="#Step-3" class="headerlink" title="Step 3"></a>Step 3</h4><p>論理的隣接性があるものをペアとして。隣のグループにペアが見つかった要素に$印をつけておく。</p>
-<h4 id="Step-4"><a href="#Step-4" class="headerlink" title="Step 4"></a>Step 4</h4><p>ペアで生成した要素も1の数によってグループ分けする。</p>
-<h4 id="Step-5"><a href="#Step-5" class="headerlink" title="Step 5"></a>Step 5</h4><p>Step 3とStep 4をペアが発見できなくなるまで繰り返す。そのあと$印がつかない項が主項となる。</p>
-<h4 id="Step-6"><a href="#Step-6" class="headerlink" title="Step 6"></a>Step 6</h4><p>主項は行に，最小項は列にとった表を作り，各主項が最小項を含む箇所に＞印をつける。</p>
-<h4 id="Step-7"><a href="#Step-7" class="headerlink" title="Step 7"></a>Step 7</h4><p>＞が一つしか含まない列の＞印が◎印に変える。対応する主項は必須項と呼ぶ。◎のついた行の＞印はすべて〇に変える。</p>
-<h4 id="Step-8"><a href="#Step-8" class="headerlink" title="Step 8"></a>Step 8</h4><p>◎と〇のついた行と列を削除する，新たな表を作る。</p>
-<h4 id="Step-9"><a href="#Step-9" class="headerlink" title="Step 9"></a>Step 9</h4><p>Step 8で作った表の各列に少なくともひとつの＞がある前提で，できるだけ簡単な主項の組合せを選ぶ。</p>
-<h4 id="Step-10"><a href="#Step-10" class="headerlink" title="Step 10"></a>Step 10</h4><p>Step 7の必須項とStep 9の主項の論理和をとったものは求める組合せ論理の式である。</p>
-<h3 id="複数の出力があるときの簡単化"><a href="#複数の出力があるときの簡単化" class="headerlink" title="複数の出力があるときの簡単化"></a>複数の出力があるときの簡単化</h3><p>多出力論理関数の簡単化を，出力関数間のAND素子の共有によって，全体の素子数を減らすことで行う。</p>
-<h4 id="Step-1-1"><a href="#Step-1-1" class="headerlink" title="Step 1"></a>Step 1</h4><p>出力論理関数とその積関数の主項を求める。例えば，三出力PQRの時，P、Q、R、P・Q、Q・R、P・R、P・Q・Rの主項を求める。複数の関数に属する主項は，最大の数の積をとったものの主項として扱う。</p>
-<h4 id="Step-2-1"><a href="#Step-2-1" class="headerlink" title="Step 2"></a>Step 2</h4><p>主項を行に，最小項を列にとった表を作り，各関数が関係する主項が最小項を含む箇所に＞印をつける。</p>
-<h4 id="Step-3-1"><a href="#Step-3-1" class="headerlink" title="Step 3"></a>Step 3</h4><p>＞が一つしか含まない列の＞印が◎印に変える。対応する主項は必須項と呼ぶ。◎のついた行の＞印はすべて〇に変える。</p>
-<h4 id="Step-4-1"><a href="#Step-4-1" class="headerlink" title="Step 4"></a>Step 4</h4><p>◎と〇のついた行と列を削除する，新たな表を作る。</p>
-<h4 id="Step-5-1"><a href="#Step-5-1" class="headerlink" title="Step 5"></a>Step 5</h4><p>残った表について，最も簡単な主項の組合せを，各列に少なくとも一個の＞があるように選ぶ。</p>
-<h4 id="Step-6-1"><a href="#Step-6-1" class="headerlink" title="Step 6"></a>Step 6</h4><p>Step 3の必須項とStep 5の主項の論理和をとったものは求める組合せ論理の式である。</p>
-]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>专业课</category>
-        <category>数电</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>专业课</tag>
-        <tag>数电</tag>
-      </tags>
   </entry>
   <entry>
     <title>刑法-精讲卷-柏浪涛</title>
@@ -2138,24 +1996,6 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-4-27-Ch4-常见的组合电路</title>
-    <url>/2021/04/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-27-Ch4-%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF/</url>
-    <content><![CDATA[<h2 id="Nビット加減算器"><a href="#Nビット加減算器" class="headerlink" title="Nビット加減算器"></a>Nビット加減算器</h2><h2 id="ALU-Arithmatic-Logic-Unit，算術論理演算ユニット"><a href="#ALU-Arithmatic-Logic-Unit，算術論理演算ユニット" class="headerlink" title="ALU(Arithmatic Logic Unit，算術論理演算ユニット)"></a>ALU(Arithmatic Logic Unit，算術論理演算ユニット)</h2><h2 id="デコーダ-Decoder，復号器"><a href="#デコーダ-Decoder，復号器" class="headerlink" title="デコーダ(Decoder，復号器)"></a>デコーダ(Decoder，復号器)</h2><h2 id="エンコーダ-Encoder，符号化器"><a href="#エンコーダ-Encoder，符号化器" class="headerlink" title="エンコーダ(Encoder，符号化器)"></a>エンコーダ(Encoder，符号化器)</h2><p>優先度つきエンコーダ</p>
-<h2 id="マルチプレクサ-Multiplexer，Data-Selector"><a href="#マルチプレクサ-Multiplexer，Data-Selector" class="headerlink" title="マルチプレクサ(Multiplexer，Data Selector)"></a>マルチプレクサ(Multiplexer，Data Selector)</h2><h2 id="デマルチプレクサ-Demultiplexer"><a href="#デマルチプレクサ-Demultiplexer" class="headerlink" title="デマルチプレクサ(Demultiplexer)"></a>デマルチプレクサ(Demultiplexer)</h2><h2 id="コンパレータ-Comparator"><a href="#コンパレータ-Comparator" class="headerlink" title="コンパレータ(Comparator)"></a>コンパレータ(Comparator)</h2><h2 id="パリティ生成器とパリティチェッカ"><a href="#パリティ生成器とパリティチェッカ" class="headerlink" title="パリティ生成器とパリティチェッカ"></a>パリティ生成器とパリティチェッカ</h2>]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>专业课</category>
-        <category>数电</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>专业课</tag>
-        <tag>数电</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学习笔记2021-4-1-Ch4-偏微分法</title>
     <url>/2021/04/01/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-1-Ch4-%E5%81%8F%E5%BE%AE%E5%88%86%E6%B3%95/</url>
     <content><![CDATA[<h2 id="全微分可能性"><a href="#全微分可能性" class="headerlink" title="全微分可能性"></a>全微分可能性</h2><h3 id="全微分可能であることを証明するには"><a href="#全微分可能であることを証明するには" class="headerlink" title="全微分可能であることを証明するには"></a>全微分可能であることを証明するには</h3><p>偏微分可能で、$f_x, f_y$が連続 $\Rightarrow$ 全微分可能</p>
@@ -2175,27 +2015,6 @@
         <tag>学习</tag>
         <tag>数学</tag>
         <tag>微积分</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习笔记2021-4-26-Ch4-常见的组合电路</title>
-    <url>/2021/04/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-26-Ch4-%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF/</url>
-    <content><![CDATA[<h2 id="加算器"><a href="#加算器" class="headerlink" title="加算器"></a>加算器</h2><h3 id="半加算器と全加算器"><a href="#半加算器と全加算器" class="headerlink" title="半加算器と全加算器"></a>半加算器と全加算器</h3><p>半加算器：桁上がり入力のない加算器<br>全加算器：桁上がり入力のある加算器</p>
-<span id="more"></span>
-<h3 id="リプルキャリ型加算器とキャリルックアヘッド型加算器"><a href="#リプルキャリ型加算器とキャリルックアヘッド型加算器" class="headerlink" title="リプルキャリ型加算器とキャリルックアヘッド型加算器"></a>リプルキャリ型加算器とキャリルックアヘッド型加算器</h3><p>リプルキャリ型加算器 ripple carry adder<br>$ N $ に比例した計算時間<br>キャリルックアヘッド型加算器 carry look ahead adder<br>$ log N $ に比例した計算時間</p>
-<h2 id="減算器"><a href="#減算器" class="headerlink" title="減算器"></a>減算器</h2><p>三つの作り方<br>1　2N入力，N+1出力の組合せ回路として設計する<br>2　加算器同様1ビット全減算器を作り，これをNビット分つなげる<br>3　Nビットの加算器を用意し，被減算数はそのまま，減算数は2の補数をとってこれに入力する</p>
-]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>专业课</category>
-        <category>数电</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>专业课</tag>
-        <tag>数电</tag>
       </tags>
   </entry>
   <entry>
@@ -2238,25 +2057,213 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-4-8-Ch3-積分法とその応用</title>
-    <url>/2021/04/08/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-8-Ch3-%E7%A9%8D%E5%88%86%E6%B3%95%E3%81%A8%E3%81%9D%E3%81%AE%E5%BF%9C%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="積分の基本公式"><a href="#積分の基本公式" class="headerlink" title="積分の基本公式"></a>積分の基本公式</h2><p>$$\int \frac{1}{\sqrt{a^2 - x^2}} \mathrm{d} x = \frac{1}{a} \sin^{-1} \frac{x}{a}$$<br>$$\int \frac{1}{\sqrt{x^2 + a}} \mathrm{d} x = \log \left | x + \sqrt{x^2 + a} \right |$$<br>$$\int \sqrt{a^2 - x^2} \mathrm{d} x = \frac{1}{2} ( x \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{x}{a} )$$<br>$$\int \sqrt{x^2 + a} \mathrm{d} x = \frac{1}{2} ( x \sqrt{x^2 + a} + a^2 \log \left | x + \sqrt{x^2 + a} \right | )$$</p>
-<h2 id="ベータ関数とガンマ関数"><a href="#ベータ関数とガンマ関数" class="headerlink" title="ベータ関数とガンマ関数"></a>ベータ関数とガンマ関数</h2><h3 id="ベータ関数"><a href="#ベータ関数" class="headerlink" title="ベータ関数"></a>ベータ関数</h3><p>定義<br>$$ B(p, q) = \int_{0}^{1} x^{p - 1} (1 - x)^{q - 1} \mathrm{d} x, \ (p &gt; 0, q &gt; 0) $$<br>性質<br>$$ B(p, q) = B(q, p) $$<br>$$ qB(p + 1, q) = pB(p, q + 1) $$<br>$$ B(m, n) = \frac{(m - 1)!(n - 1)!}{(m + n - 1)!} $$ ただし，m,nは自然数とする</p>
-<h3 id="ガンマ関数"><a href="#ガンマ関数" class="headerlink" title="ガンマ関数"></a>ガンマ関数</h3><p>定義<br>$$ \Gamma(p) = \int_{0}^{\infty} e^{-x} x^{p - 1} \mathrm{d} x, \ (p &gt; 0) $$<br>性質<br>$$ \Gamma(p + 1) = p \Gamma(p) \ (p &gt; 0) $$<br>$$ \Gamma(1) = 1, \ \Gamma(n + 1) = n! $$</p>
-<h3 id="ガンマ関数とベータ関数の関係"><a href="#ガンマ関数とベータ関数の関係" class="headerlink" title="ガンマ関数とベータ関数の関係"></a>ガンマ関数とベータ関数の関係</h3><p>$$ B(p, q) = \frac{\Gamma(p) \Gamma(q)}{\Gamma(p + q)}, \ (p &gt; 0, q &gt; 0) $$</p>
+    <title>学习笔记2021-4-21-Ch1-数字计算入门</title>
+    <url>/2021/04/21/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-21-Ch1-%E6%95%B0%E5%AD%97%E8%AE%A1%E7%AE%97%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<h2 id="1の補数と2の補数"><a href="#1の補数と2の補数" class="headerlink" title="1の補数と2の補数"></a>1の補数と2の補数</h2><h3 id="1の補数"><a href="#1の補数" class="headerlink" title="1の補数"></a>1の補数</h3><p>1の補数表示では，負の数 $ -x $ を表すのに $ 2^n - x - 1 $ を用いる。1の補数は，$ x $ の各桁の $ 1 $ と $ 0 $ を反転したものとなる。表現できる値の範囲は $ -2^{n - 1} + 1 \leq X \leq 2^{n - 1} - 1$ 。また，$ 0 $ の表現として，$ 0000 $ と $ 1111 $ の二種類が可能となる。</p>
+<h3 id="2の補数"><a href="#2の補数" class="headerlink" title="2の補数"></a>2の補数</h3><p>2の補数表示では，負の数 $ -x $ を表すのに $ 2^n - x $ を用いる。2の補数は，$ x $ の各桁の $ 1 $ と $ 0 $ を反転し，結果に $ 1 $ 加えたものとなる。表現できる値の範囲は $ -2^{n - 1} \leq X \leq 2^{n - 1} $。$ 0 $ の表現は，$ 0000 $ だけとなる。</p>
 ]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
-        <category>数学</category>
-        <category>微积分</category>
+        <category>专业课</category>
+        <category>数电</category>
       </categories>
       <tags>
         <tag>修考</tag>
         <tag>学习</tag>
-        <tag>数学</tag>
-        <tag>微积分</tag>
+        <tag>专业课</tag>
+        <tag>数电</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>学习笔记2021-4-22-Ch2-逻辑运算</title>
+    <url>/2021/04/22/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-22-Ch2-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="多入力素子"><a href="#多入力素子" class="headerlink" title="多入力素子"></a>多入力素子</h2><p>N入力XORは，入力のうちで1の数が奇数個の時1，偶数個の時に0となる。N入力EQは，入力のうちで0の数が偶数個の時に1，奇数個の時に0となる。<br>2入力XORと2入力EQはお互いに否定の関係である，3入力XORと3入力EQは同じ演算。</p>
+]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>专业课</category>
+        <category>数电</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>专业课</tag>
+        <tag>数电</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习笔记2021-4-24-Ch3-组合电路设计</title>
+    <url>/2021/04/24/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-24-Ch3-%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<h2 id="組合せ回路設計の一般論"><a href="#組合せ回路設計の一般論" class="headerlink" title="組合せ回路設計の一般論"></a>組合せ回路設計の一般論</h2><h3 id="1-定式化"><a href="#1-定式化" class="headerlink" title="1.定式化"></a>1.定式化</h3><p>入力、出力、真理値表を書く</p>
+<h3 id="2-加法標準形"><a href="#2-加法標準形" class="headerlink" title="2.加法標準形"></a>2.加法標準形</h3><p>真理値表から，加法標準形の形の論理関数を得る</p>
+<h3 id="3-簡単化"><a href="#3-簡単化" class="headerlink" title="3.簡単化"></a>3.簡単化</h3><p>論理関数を簡単化する</p>
+<h3 id="4-回路記述"><a href="#4-回路記述" class="headerlink" title="4.回路記述"></a>4.回路記述</h3><p>回路をMIL記号で記述する</p>
+<span id="more"></span>
+
+<h2 id="組合せ回路の簡単化"><a href="#組合せ回路の簡単化" class="headerlink" title="組合せ回路の簡単化"></a>組合せ回路の簡単化</h2><h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><p>回路の遅延時間を短くすること<br>回路の総量を小さくすること</p>
+<h3 id="手段"><a href="#手段" class="headerlink" title="手段"></a>手段</h3><p>各AND素子の入力数を減らすこと<br>AND素子の数を減らすこと</p>
+<h3 id="方法一：カルノー図-Karnaugh-Map-による簡単化"><a href="#方法一：カルノー図-Karnaugh-Map-による簡単化" class="headerlink" title="方法一：カルノー図(Karnaugh Map)による簡単化"></a>方法一：カルノー図(Karnaugh Map)による簡単化</h3><h3 id="方法二：クワイン・マクラスキー法-Quine-McCluskey-Method-による簡単化"><a href="#方法二：クワイン・マクラスキー法-Quine-McCluskey-Method-による簡単化" class="headerlink" title="方法二：クワイン・マクラスキー法(Quine-McCluskey Method)による簡単化"></a>方法二：クワイン・マクラスキー法(Quine-McCluskey Method)による簡単化</h3><h4 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h4><p>論理関数を加法標準形にし，最小項が二進数で表現しておく。</p>
+<h4 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h4><p>最小項を，含まれる1の数によってグループ分けする。</p>
+<h4 id="Step-3"><a href="#Step-3" class="headerlink" title="Step 3"></a>Step 3</h4><p>論理的隣接性があるものをペアとして。隣のグループにペアが見つかった要素に$印をつけておく。</p>
+<h4 id="Step-4"><a href="#Step-4" class="headerlink" title="Step 4"></a>Step 4</h4><p>ペアで生成した要素も1の数によってグループ分けする。</p>
+<h4 id="Step-5"><a href="#Step-5" class="headerlink" title="Step 5"></a>Step 5</h4><p>Step 3とStep 4をペアが発見できなくなるまで繰り返す。そのあと$印がつかない項が主項となる。</p>
+<h4 id="Step-6"><a href="#Step-6" class="headerlink" title="Step 6"></a>Step 6</h4><p>主項は行に，最小項は列にとった表を作り，各主項が最小項を含む箇所に＞印をつける。</p>
+<h4 id="Step-7"><a href="#Step-7" class="headerlink" title="Step 7"></a>Step 7</h4><p>＞が一つしか含まない列の＞印が◎印に変える。対応する主項は必須項と呼ぶ。◎のついた行の＞印はすべて〇に変える。</p>
+<h4 id="Step-8"><a href="#Step-8" class="headerlink" title="Step 8"></a>Step 8</h4><p>◎と〇のついた行と列を削除する，新たな表を作る。</p>
+<h4 id="Step-9"><a href="#Step-9" class="headerlink" title="Step 9"></a>Step 9</h4><p>Step 8で作った表の各列に少なくともひとつの＞がある前提で，できるだけ簡単な主項の組合せを選ぶ。</p>
+<h4 id="Step-10"><a href="#Step-10" class="headerlink" title="Step 10"></a>Step 10</h4><p>Step 7の必須項とStep 9の主項の論理和をとったものは求める組合せ論理の式である。</p>
+<h3 id="複数の出力があるときの簡単化"><a href="#複数の出力があるときの簡単化" class="headerlink" title="複数の出力があるときの簡単化"></a>複数の出力があるときの簡単化</h3><p>多出力論理関数の簡単化を，出力関数間のAND素子の共有によって，全体の素子数を減らすことで行う。</p>
+<h4 id="Step-1-1"><a href="#Step-1-1" class="headerlink" title="Step 1"></a>Step 1</h4><p>出力論理関数とその積関数の主項を求める。例えば，三出力PQRの時，P、Q、R、P・Q、Q・R、P・R、P・Q・Rの主項を求める。複数の関数に属する主項は，最大の数の積をとったものの主項として扱う。</p>
+<h4 id="Step-2-1"><a href="#Step-2-1" class="headerlink" title="Step 2"></a>Step 2</h4><p>主項を行に，最小項を列にとった表を作り，各関数が関係する主項が最小項を含む箇所に＞印をつける。</p>
+<h4 id="Step-3-1"><a href="#Step-3-1" class="headerlink" title="Step 3"></a>Step 3</h4><p>＞が一つしか含まない列の＞印が◎印に変える。対応する主項は必須項と呼ぶ。◎のついた行の＞印はすべて〇に変える。</p>
+<h4 id="Step-4-1"><a href="#Step-4-1" class="headerlink" title="Step 4"></a>Step 4</h4><p>◎と〇のついた行と列を削除する，新たな表を作る。</p>
+<h4 id="Step-5-1"><a href="#Step-5-1" class="headerlink" title="Step 5"></a>Step 5</h4><p>残った表について，最も簡単な主項の組合せを，各列に少なくとも一個の＞があるように選ぶ。</p>
+<h4 id="Step-6-1"><a href="#Step-6-1" class="headerlink" title="Step 6"></a>Step 6</h4><p>Step 3の必須項とStep 5の主項の論理和をとったものは求める組合せ論理の式である。</p>
+]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>专业课</category>
+        <category>数电</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>专业课</tag>
+        <tag>数电</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习笔记2021-4-26-Ch4-常见的组合电路</title>
+    <url>/2021/04/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-26-Ch4-%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF/</url>
+    <content><![CDATA[<h2 id="加算器"><a href="#加算器" class="headerlink" title="加算器"></a>加算器</h2><h3 id="半加算器と全加算器"><a href="#半加算器と全加算器" class="headerlink" title="半加算器と全加算器"></a>半加算器と全加算器</h3><p>半加算器：桁上がり入力のない加算器<br>全加算器：桁上がり入力のある加算器</p>
+<span id="more"></span>
+<h3 id="リプルキャリ型加算器とキャリルックアヘッド型加算器"><a href="#リプルキャリ型加算器とキャリルックアヘッド型加算器" class="headerlink" title="リプルキャリ型加算器とキャリルックアヘッド型加算器"></a>リプルキャリ型加算器とキャリルックアヘッド型加算器</h3><p>リプルキャリ型加算器 ripple carry adder<br>$ N $ に比例した計算時間<br>キャリルックアヘッド型加算器 carry look ahead adder<br>$ log N $ に比例した計算時間</p>
+<h2 id="減算器"><a href="#減算器" class="headerlink" title="減算器"></a>減算器</h2><p>三つの作り方<br>1　2N入力，N+1出力の組合せ回路として設計する<br>2　加算器同様1ビット全減算器を作り，これをNビット分つなげる<br>3　Nビットの加算器を用意し，被減算数はそのまま，減算数は2の補数をとってこれに入力する</p>
+]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>专业课</category>
+        <category>数电</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>专业课</tag>
+        <tag>数电</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习笔记2021-4-27-Ch4-常见的组合电路</title>
+    <url>/2021/04/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-27-Ch4-%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF/</url>
+    <content><![CDATA[<h2 id="Nビット加減算器"><a href="#Nビット加減算器" class="headerlink" title="Nビット加減算器"></a>Nビット加減算器</h2><h2 id="ALU-Arithmatic-Logic-Unit，算術論理演算ユニット"><a href="#ALU-Arithmatic-Logic-Unit，算術論理演算ユニット" class="headerlink" title="ALU(Arithmatic Logic Unit，算術論理演算ユニット)"></a>ALU(Arithmatic Logic Unit，算術論理演算ユニット)</h2><h2 id="デコーダ-Decoder，復号器"><a href="#デコーダ-Decoder，復号器" class="headerlink" title="デコーダ(Decoder，復号器)"></a>デコーダ(Decoder，復号器)</h2><h2 id="エンコーダ-Encoder，符号化器"><a href="#エンコーダ-Encoder，符号化器" class="headerlink" title="エンコーダ(Encoder，符号化器)"></a>エンコーダ(Encoder，符号化器)</h2><p>優先度つきエンコーダ</p>
+<h2 id="マルチプレクサ-Multiplexer，Data-Selector"><a href="#マルチプレクサ-Multiplexer，Data-Selector" class="headerlink" title="マルチプレクサ(Multiplexer，Data Selector)"></a>マルチプレクサ(Multiplexer，Data Selector)</h2><h2 id="デマルチプレクサ-Demultiplexer"><a href="#デマルチプレクサ-Demultiplexer" class="headerlink" title="デマルチプレクサ(Demultiplexer)"></a>デマルチプレクサ(Demultiplexer)</h2><h2 id="コンパレータ-Comparator"><a href="#コンパレータ-Comparator" class="headerlink" title="コンパレータ(Comparator)"></a>コンパレータ(Comparator)</h2><h2 id="パリティ生成器とパリティチェッカ"><a href="#パリティ生成器とパリティチェッカ" class="headerlink" title="パリティ生成器とパリティチェッカ"></a>パリティ生成器とパリティチェッカ</h2>]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>专业课</category>
+        <category>数电</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>专业课</tag>
+        <tag>数电</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Server-Usage</title>
+    <url>/2022/06/15/Server-Usage/</url>
+    <content><![CDATA[<p>This is a memo for lab GPU cluster usage  </p>
+<h2 id="Self-intro"><a href="#Self-intro" class="headerlink" title="Self-intro"></a>Self-intro</h2><p>Yamagishi Junichi<br>Xin Wang<br>Jian Wang</p>
+<h2 id="Guidance"><a href="#Guidance" class="headerlink" title="Guidance"></a>Guidance</h2><ul>
+<li>Two link in the description of the slack channel<ul>
+<li>One is for IT issues</li>
+<li>The other is a manual</li>
+</ul>
+</li>
+<li>Network Organization<ul>
+<li>Four Layers<ul>
+<li>Internet (home, eduroam)</li>
+<li>NII Network<ul>
+<li>nii-auth wifi</li>
+<li>devices like printer</li>
+</ul>
+</li>
+<li>Lab Network<ul>
+<li>devices like Apple TV etc.</li>
+<li>LAN cable</li>
+<li>Two location, Jinbocho and Kashiwa</li>
+<li>136.187.?.?</li>
+</ul>
+</li>
+<li>Cluster Network<ul>
+<li>Head Node 136.187.108.7<ul>
+<li>All work shall be submitted to this</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Hardware<ul>
+<li>Head node <ul>
+<li>Ubuntu 18.04</li>
+<li>no heavy jobs</li>
+<li><code>$ show_res.sh</code></li>
+</ul>
+</li>
+<li>Network attached storage (NAS)<ul>
+<li>for file management</li>
+<li><code>$ df -h | grep nas</code></li>
+<li>/local/ works as cache</li>
+<li>/home/smg</li>
+</ul>
+</li>
+<li>Software<ul>
+<li>Bright cluster manager</li>
+<li>Slurm</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="SSH-key-generate"><a href="#SSH-key-generate" class="headerlink" title="SSH key generate"></a>SSH key generate</h2><pre><code>generate ssh key and send to Mr.yousuke kosuda
+</code></pre>
+<h2 id="Slurm-commands"><a href="#Slurm-commands" class="headerlink" title="Slurm commands"></a>Slurm commands</h2><ul>
+<li>login_private.sh</li>
+<li>sbatch -p qgpu</li>
+</ul>
+<h2 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h2><ul>
+<li>Do not need GPUs<ul>
+<li>Use CPU Nodes!</li>
+</ul>
+</li>
+<li>Need GPUs<ul>
+<li>Stable Code<ul>
+<li>Submit with sbatch through the head node</li>
+</ul>
+</li>
+<li>Work in progress<ul>
+<li>Test before submit<ul>
+<li>Shortly use public node</li>
+</ul>
+</li>
+<li>Developing<ul>
+<li>Use a private node</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Login-Method"><a href="#Login-Method" class="headerlink" title="Login Method"></a>Login Method</h2><h3 id="sbatch"><a href="#sbatch" class="headerlink" title="sbatch"></a>sbatch</h3><h3 id="public"><a href="#public" class="headerlink" title="public"></a>public</h3><h3 id="private"><a href="#private" class="headerlink" title="private"></a>private</h3>]]></content>
   </entry>
   <entry>
     <title>学习笔记2021-4-9-Ch5-重積分</title>
@@ -2278,13 +2285,31 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-5-14-MIT线代</title>
-    <url>/2021/05/14/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-14-MIT%E7%BA%BF%E4%BB%A3/</url>
-    <content><![CDATA[<h2 id="Lecture-3-Multiplication-amp-Inverse-matrices"><a href="#Lecture-3-Multiplication-amp-Inverse-matrices" class="headerlink" title="Lecture 3: Multiplication &amp; Inverse matrices"></a>Lecture 3: Multiplication &amp; Inverse matrices</h2><p>Gauss-Jordan Elimination</p>
-<h2 id="Transposes-Permutations-Space-mathbb-R-n"><a href="#Transposes-Permutations-Space-mathbb-R-n" class="headerlink" title="Transposes, Permutations, Space $ \mathbb{R}^n $"></a>Transposes, Permutations, Space $ \mathbb{R}^n $</h2><h3 id="置换-Permutation-順列"><a href="#置换-Permutation-順列" class="headerlink" title="置换 Permutation 順列"></a>置换 Permutation 順列</h3><p>$ P^{-1} = P^T $</p>
-<h3 id="转置-Transpose-転置"><a href="#转置-Transpose-転置" class="headerlink" title="转置 Transpose 転置"></a>转置 Transpose 転置</h3><p>对称矩阵（対称行列） $ A^T = A $<br>任意矩阵$ R $，$ R^TR $一定是对称阵</p>
-<h3 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h3><p>必包含0向量</p>
-<h2 id="Lecture-9-Independence-basis-and-dimention"><a href="#Lecture-9-Independence-basis-and-dimention" class="headerlink" title="Lecture 9: Independence, basis and dimention"></a>Lecture 9: Independence, basis and dimention</h2>]]></content>
+    <title>学习笔记2021-4-8-Ch3-積分法とその応用</title>
+    <url>/2021/04/08/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-8-Ch3-%E7%A9%8D%E5%88%86%E6%B3%95%E3%81%A8%E3%81%9D%E3%81%AE%E5%BF%9C%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="積分の基本公式"><a href="#積分の基本公式" class="headerlink" title="積分の基本公式"></a>積分の基本公式</h2><p>$$\int \frac{1}{\sqrt{a^2 - x^2}} \mathrm{d} x = \frac{1}{a} \sin^{-1} \frac{x}{a}$$<br>$$\int \frac{1}{\sqrt{x^2 + a}} \mathrm{d} x = \log \left | x + \sqrt{x^2 + a} \right |$$<br>$$\int \sqrt{a^2 - x^2} \mathrm{d} x = \frac{1}{2} ( x \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{x}{a} )$$<br>$$\int \sqrt{x^2 + a} \mathrm{d} x = \frac{1}{2} ( x \sqrt{x^2 + a} + a^2 \log \left | x + \sqrt{x^2 + a} \right | )$$</p>
+<h2 id="ベータ関数とガンマ関数"><a href="#ベータ関数とガンマ関数" class="headerlink" title="ベータ関数とガンマ関数"></a>ベータ関数とガンマ関数</h2><h3 id="ベータ関数"><a href="#ベータ関数" class="headerlink" title="ベータ関数"></a>ベータ関数</h3><p>定義<br>$$ B(p, q) = \int_{0}^{1} x^{p - 1} (1 - x)^{q - 1} \mathrm{d} x, \ (p &gt; 0, q &gt; 0) $$<br>性質<br>$$ B(p, q) = B(q, p) $$<br>$$ qB(p + 1, q) = pB(p, q + 1) $$<br>$$ B(m, n) = \frac{(m - 1)!(n - 1)!}{(m + n - 1)!} $$ ただし，m,nは自然数とする</p>
+<h3 id="ガンマ関数"><a href="#ガンマ関数" class="headerlink" title="ガンマ関数"></a>ガンマ関数</h3><p>定義<br>$$ \Gamma(p) = \int_{0}^{\infty} e^{-x} x^{p - 1} \mathrm{d} x, \ (p &gt; 0) $$<br>性質<br>$$ \Gamma(p + 1) = p \Gamma(p) \ (p &gt; 0) $$<br>$$ \Gamma(1) = 1, \ \Gamma(n + 1) = n! $$</p>
+<h3 id="ガンマ関数とベータ関数の関係"><a href="#ガンマ関数とベータ関数の関係" class="headerlink" title="ガンマ関数とベータ関数の関係"></a>ガンマ関数とベータ関数の関係</h3><p>$$ B(p, q) = \frac{\Gamma(p) \Gamma(q)}{\Gamma(p + q)}, \ (p &gt; 0, q &gt; 0) $$</p>
+]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>数学</category>
+        <category>微积分</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>数学</tag>
+        <tag>微积分</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习笔记2021-5-13-MIT线代</title>
+    <url>/2021/05/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-13-MIT%E7%BA%BF%E4%BB%A3/</url>
+    <content><![CDATA[<h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><p>转置 transpose 転置<br>方阵 squre matrix 正方行列<br>可逆矩阵 invertible matrix 可逆行列<br>非退化矩阵 non-degenerate matrix 正則行列<br>非奇异矩阵 non-singular matrix 非特異行列<br>增广矩阵 augmented matrix 拡大行列<br>秩 rank 階数<br>主元 pivot </p>
+]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
@@ -2300,10 +2325,13 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-5-13-MIT线代</title>
-    <url>/2021/05/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-13-MIT%E7%BA%BF%E4%BB%A3/</url>
-    <content><![CDATA[<h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><p>转置 transpose 転置<br>方阵 squre matrix 正方行列<br>可逆矩阵 invertible matrix 可逆行列<br>非退化矩阵 non-degenerate matrix 正則行列<br>非奇异矩阵 non-singular matrix 非特異行列<br>增广矩阵 augmented matrix 拡大行列<br>秩 rank 階数<br>主元 pivot </p>
-]]></content>
+    <title>学习笔记2021-5-14-MIT线代</title>
+    <url>/2021/05/14/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-14-MIT%E7%BA%BF%E4%BB%A3/</url>
+    <content><![CDATA[<h2 id="Lecture-3-Multiplication-amp-Inverse-matrices"><a href="#Lecture-3-Multiplication-amp-Inverse-matrices" class="headerlink" title="Lecture 3: Multiplication &amp; Inverse matrices"></a>Lecture 3: Multiplication &amp; Inverse matrices</h2><p>Gauss-Jordan Elimination</p>
+<h2 id="Transposes-Permutations-Space-mathbb-R-n"><a href="#Transposes-Permutations-Space-mathbb-R-n" class="headerlink" title="Transposes, Permutations, Space $ \mathbb{R}^n $"></a>Transposes, Permutations, Space $ \mathbb{R}^n $</h2><h3 id="置换-Permutation-順列"><a href="#置换-Permutation-順列" class="headerlink" title="置换 Permutation 順列"></a>置换 Permutation 順列</h3><p>$ P^{-1} = P^T $</p>
+<h3 id="转置-Transpose-転置"><a href="#转置-Transpose-転置" class="headerlink" title="转置 Transpose 転置"></a>转置 Transpose 転置</h3><p>对称矩阵（対称行列） $ A^T = A $<br>任意矩阵$ R $，$ R^TR $一定是对称阵</p>
+<h3 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h3><p>必包含0向量</p>
+<h2 id="Lecture-9-Independence-basis-and-dimention"><a href="#Lecture-9-Independence-basis-and-dimention" class="headerlink" title="Lecture 9: Independence, basis and dimention"></a>Lecture 9: Independence, basis and dimention</h2>]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
@@ -2355,11 +2383,10 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-5-25-Ch3-线性方程组</title>
-    <url>/2021/05/25/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-25-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/</url>
-    <content><![CDATA[<h2 id="1次連立方程式の解の数"><a href="#1次連立方程式の解の数" class="headerlink" title="1次連立方程式の解の数"></a>1次連立方程式の解の数</h2><p>$ n $ は未知数の数<br>$ rank A = rank A|b = n $ ならば解は1組<br>$ rank A = rank A|b &lt; n $ ならば解は無数<br>$ rank A &lt; rank A|b $ ならば解なし</p>
-<h2 id="自明解"><a href="#自明解" class="headerlink" title="自明解"></a>自明解</h2><p>线性齐次方程的零解</p>
-]]></content>
+    <title>学习笔记2021-5-24-Ch3-线性方程组</title>
+    <url>/2021/05/24/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-24-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/</url>
+    <content><![CDATA[<h2 id="クラメールの公式-Cramer’s-Rule-克拉默法则"><a href="#クラメールの公式-Cramer’s-Rule-克拉默法则" class="headerlink" title="クラメールの公式 Cramer’s Rule 克拉默法则"></a>クラメールの公式 Cramer’s Rule 克拉默法则</h2><p>$ |A| \neq 0 $の時<br>n元1次方程式の解は<br>$$ x_i = \frac{|b_1…d…b_n|}{|A|} $$</p>
+<h2 id="Vandermonde-Determinant"><a href="#Vandermonde-Determinant" class="headerlink" title="Vandermonde Determinant"></a>Vandermonde Determinant</h2>]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
@@ -2374,10 +2401,11 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-5-24-Ch3-线性方程组</title>
-    <url>/2021/05/24/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-24-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/</url>
-    <content><![CDATA[<h2 id="クラメールの公式-Cramer’s-Rule-克拉默法则"><a href="#クラメールの公式-Cramer’s-Rule-克拉默法则" class="headerlink" title="クラメールの公式 Cramer’s Rule 克拉默法则"></a>クラメールの公式 Cramer’s Rule 克拉默法则</h2><p>$ |A| \neq 0 $の時<br>n元1次方程式の解は<br>$$ x_i = \frac{|b_1…d…b_n|}{|A|} $$</p>
-<h2 id="Vandermonde-Determinant"><a href="#Vandermonde-Determinant" class="headerlink" title="Vandermonde Determinant"></a>Vandermonde Determinant</h2>]]></content>
+    <title>学习笔记2021-5-25-Ch3-线性方程组</title>
+    <url>/2021/05/25/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-25-Ch3-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/</url>
+    <content><![CDATA[<h2 id="1次連立方程式の解の数"><a href="#1次連立方程式の解の数" class="headerlink" title="1次連立方程式の解の数"></a>1次連立方程式の解の数</h2><p>$ n $ は未知数の数<br>$ rank A = rank A|b = n $ ならば解は1組<br>$ rank A = rank A|b &lt; n $ ならば解は無数<br>$ rank A &lt; rank A|b $ ならば解なし</p>
+<h2 id="自明解"><a href="#自明解" class="headerlink" title="自明解"></a>自明解</h2><p>线性齐次方程的零解</p>
+]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
@@ -2498,15 +2526,16 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-6-18-Ch6-实对称矩阵的对角化与二次型</title>
-    <url>/2021/06/17/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-18-Ch6-%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5%E7%9A%84%E5%AF%B9%E8%A7%92%E5%8C%96%E4%B8%8E%E4%BA%8C%E6%AC%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h2 id="実対称行列の対角化と主軸問題・2次形式"><a href="#実対称行列の対角化と主軸問題・2次形式" class="headerlink" title="実対称行列の対角化と主軸問題・2次形式"></a>実対称行列の対角化と主軸問題・2次形式</h2><h3 id="実対称行列の対角化"><a href="#実対称行列の対角化" class="headerlink" title="実対称行列の対角化"></a>実対称行列の対角化</h3><h4 id="直交行列と正規直交系-Orthogonal-Matrix-amp-Orthonormal-Set"><a href="#直交行列と正規直交系-Orthogonal-Matrix-amp-Orthonormal-Set" class="headerlink" title="直交行列と正規直交系 Orthogonal Matrix &amp; Orthonormal Set"></a>直交行列と正規直交系 Orthogonal Matrix &amp; Orthonormal Set</h4><p>Pが直交行列であるとは<br>Pが実正方行列で，<br>$$ P^T P = E \ or \ P P^T = E $$<br>を満たすこと</p>
-<p>正規直交系であるとは<br>n次の列ベクトル $ \vec{p_1} ~ \vec{p_n} $ が<br>$$ \vec{p_i^T} \vec{p_i} = 1, \vec{p_i^T} \vec{p_j} = 0 (i \neq j) $$<br>を満たすこと</p>
-<h4 id="グラム‐シュミットの直交化法-Gram-Schmidt-Orthogonalization"><a href="#グラム‐シュミットの直交化法-Gram-Schmidt-Orthogonalization" class="headerlink" title="グラム‐シュミットの直交化法 Gram-Schmidt Orthogonalization"></a>グラム‐シュミットの直交化法 Gram-Schmidt Orthogonalization</h4><h4 id="いくつの結論"><a href="#いくつの結論" class="headerlink" title="いくつの結論"></a>いくつの結論</h4><p>実正方行列の固有値がすべて実数であるならば，直交行列より三角化される</p>
-<p>実対称行列の固有値がすべて実数である<br>実対称行列の相異なる固有値に対する固有ベクトルは直交する<br>実正方行列Aが対称行列である $ \Leftrightarrow $ 実正方行列Aが直交行列によって対角化される<br>実対称行列が対角化される</p>
-<h4 id="実対称行列の対角化の手順"><a href="#実対称行列の対角化の手順" class="headerlink" title="実対称行列の対角化の手順"></a>実対称行列の対角化の手順</h4><p>Step 1 固有値<br>Step 2 固有ベクトル<br>Step 3 グラム‐シュミットで正規化する（固有値が一致する固有ベクトルの間ですればよい）*<br>Step 4 $ P = \left [ \vec{a_1}, \vec{a_2}, \vec{a_3}, \vec{a_4} \right ] $<br>*固有値が相異なる固有ベクトルはお互いに直交するから，操作不要</p>
-<h3 id="座標系とその変換"><a href="#座標系とその変換" class="headerlink" title="座標系とその変換"></a>座標系とその変換</h3><h4 id="回転角"><a href="#回転角" class="headerlink" title="回転角"></a>回転角</h4><p>$$<br>\begin{bmatrix}<br>cos\theta &amp; -sin\theta\<br>sin\theta &amp; cos\theta<br>\end{bmatrix}<br>$$</p>
-<h4 id="2次曲線の標準形への道"><a href="#2次曲線の標準形への道" class="headerlink" title="2次曲線の標準形への道"></a>2次曲線の標準形への道</h4><p>行列表示<br>固有値<br>直交行列P<br>回転<br>平行移動<br>座標変換の式</p>
+    <title>学习笔记2021-6-12-Ch5-特征值与标准型</title>
+    <url>/2021/06/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-12-Ch5-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E6%A0%87%E5%87%86%E5%9E%8B/</url>
+    <content><![CDATA[<h2 id="正方行列の固有値と行列の標準形"><a href="#正方行列の固有値と行列の標準形" class="headerlink" title="正方行列の固有値と行列の標準形"></a>正方行列の固有値と行列の標準形</h2><h3 id="同値というのは"><a href="#同値というのは" class="headerlink" title="同値というのは"></a>同値というのは</h3><p>自反性 Reflexive 反射性<br>对称性 Symmetric 対称性<br>传递性 Transitive 推移性</p>
+<h3 id="固有多項式"><a href="#固有多項式" class="headerlink" title="固有多項式"></a>固有多項式</h3><p>3次正方行列Aの固有多項式<br>$$ \phi_A(t) = -t^3 +(a_{11} + a_{12} + a_{13}) t^2 - (A_{11} + A_{22} + A_{33})t + |A| $$</p>
+<h3 id="三角化定理"><a href="#三角化定理" class="headerlink" title="三角化定理"></a>三角化定理</h3><h3 id="哈密尔顿-凯莱定理-Hamilton-Cayley-Theorem-ハミルトン－ケーリーの定理"><a href="#哈密尔顿-凯莱定理-Hamilton-Cayley-Theorem-ハミルトン－ケーリーの定理" class="headerlink" title="哈密尔顿-凯莱定理 Hamilton-Cayley Theorem ハミルトン－ケーリーの定理"></a>哈密尔顿-凯莱定理 Hamilton-Cayley Theorem ハミルトン－ケーリーの定理</h3><p>$ n $ 次正方行列 $ A $ の固有多項式を<br>$$ \phi(\lambda) $$<br>とすると<br>$$ \phi(A) = O $$<br>である</p>
+<h3 id="弗罗贝尼乌斯定理-Frobenius-フロベニウスの定理"><a href="#弗罗贝尼乌斯定理-Frobenius-フロベニウスの定理" class="headerlink" title="弗罗贝尼乌斯定理 Frobenius フロベニウスの定理"></a>弗罗贝尼乌斯定理 Frobenius フロベニウスの定理</h3><p>$ n $ 次正方行列 $ A $ の固有値は $ \lambda_i $ とすると<br>$ f(A) $ の固有値は $ f(\lambda_i) $ である</p>
+<h3 id="固有値の特性の一つ"><a href="#固有値の特性の一つ" class="headerlink" title="固有値の特性の一つ"></a>固有値の特性の一つ</h3><p>$ AB $ と $ BA $ の固有値は同じ</p>
+<h3 id="対角化される条件"><a href="#対角化される条件" class="headerlink" title="対角化される条件"></a>対角化される条件</h3><p>$ n $ 次正方行列 $ A $ の固有値は $ \lambda_i $<br>$ \lambda_i $ に対する固有ベクトル $ x_i $ 同次連立方程式 $ (A - \lambda_i E) x_i $ の解である<br>$ m_i $ は固有値 $ \lambda_i $ の重複度<br>$ n_i $ は $ (A - \lambda_i E) x_i $ の基本解の個数，$ n_i = n - rank(A - \lambda_i E) $<br>$ n $ 次正方行列 $ A $ が対角化される十分必要条件は<br>すべての $ \lambda_i $ に対して，$ n_i = m_i $</p>
+<h3 id="最小多項式の特色"><a href="#最小多項式の特色" class="headerlink" title="最小多項式の特色"></a>最小多項式の特色</h3><p>定義：最高次の係数が1で，f(A) = Oとなる多項式の中で，次数が最小となるもの</p>
+<h3 id="Jordan-Standard-Form"><a href="#Jordan-Standard-Form" class="headerlink" title="Jordan Standard Form"></a>Jordan Standard Form</h3><p>Jordan Cell</p>
 ]]></content>
       <categories>
         <category>修考</category>
@@ -2522,16 +2551,15 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-6-12-Ch5-特征值与标准型</title>
-    <url>/2021/06/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-12-Ch5-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E6%A0%87%E5%87%86%E5%9E%8B/</url>
-    <content><![CDATA[<h2 id="正方行列の固有値と行列の標準形"><a href="#正方行列の固有値と行列の標準形" class="headerlink" title="正方行列の固有値と行列の標準形"></a>正方行列の固有値と行列の標準形</h2><h3 id="同値というのは"><a href="#同値というのは" class="headerlink" title="同値というのは"></a>同値というのは</h3><p>自反性 Reflexive 反射性<br>对称性 Symmetric 対称性<br>传递性 Transitive 推移性</p>
-<h3 id="固有多項式"><a href="#固有多項式" class="headerlink" title="固有多項式"></a>固有多項式</h3><p>3次正方行列Aの固有多項式<br>$$ \phi_A(t) = -t^3 +(a_{11} + a_{12} + a_{13}) t^2 - (A_{11} + A_{22} + A_{33})t + |A| $$</p>
-<h3 id="三角化定理"><a href="#三角化定理" class="headerlink" title="三角化定理"></a>三角化定理</h3><h3 id="哈密尔顿-凯莱定理-Hamilton-Cayley-Theorem-ハミルトン－ケーリーの定理"><a href="#哈密尔顿-凯莱定理-Hamilton-Cayley-Theorem-ハミルトン－ケーリーの定理" class="headerlink" title="哈密尔顿-凯莱定理 Hamilton-Cayley Theorem ハミルトン－ケーリーの定理"></a>哈密尔顿-凯莱定理 Hamilton-Cayley Theorem ハミルトン－ケーリーの定理</h3><p>$ n $ 次正方行列 $ A $ の固有多項式を<br>$$ \phi(\lambda) $$<br>とすると<br>$$ \phi(A) = O $$<br>である</p>
-<h3 id="弗罗贝尼乌斯定理-Frobenius-フロベニウスの定理"><a href="#弗罗贝尼乌斯定理-Frobenius-フロベニウスの定理" class="headerlink" title="弗罗贝尼乌斯定理 Frobenius フロベニウスの定理"></a>弗罗贝尼乌斯定理 Frobenius フロベニウスの定理</h3><p>$ n $ 次正方行列 $ A $ の固有値は $ \lambda_i $ とすると<br>$ f(A) $ の固有値は $ f(\lambda_i) $ である</p>
-<h3 id="固有値の特性の一つ"><a href="#固有値の特性の一つ" class="headerlink" title="固有値の特性の一つ"></a>固有値の特性の一つ</h3><p>$ AB $ と $ BA $ の固有値は同じ</p>
-<h3 id="対角化される条件"><a href="#対角化される条件" class="headerlink" title="対角化される条件"></a>対角化される条件</h3><p>$ n $ 次正方行列 $ A $ の固有値は $ \lambda_i $<br>$ \lambda_i $ に対する固有ベクトル $ x_i $ 同次連立方程式 $ (A - \lambda_i E) x_i $ の解である<br>$ m_i $ は固有値 $ \lambda_i $ の重複度<br>$ n_i $ は $ (A - \lambda_i E) x_i $ の基本解の個数，$ n_i = n - rank(A - \lambda_i E) $<br>$ n $ 次正方行列 $ A $ が対角化される十分必要条件は<br>すべての $ \lambda_i $ に対して，$ n_i = m_i $</p>
-<h3 id="最小多項式の特色"><a href="#最小多項式の特色" class="headerlink" title="最小多項式の特色"></a>最小多項式の特色</h3><p>定義：最高次の係数が1で，f(A) = Oとなる多項式の中で，次数が最小となるもの</p>
-<h3 id="Jordan-Standard-Form"><a href="#Jordan-Standard-Form" class="headerlink" title="Jordan Standard Form"></a>Jordan Standard Form</h3><p>Jordan Cell</p>
+    <title>学习笔记2021-6-18-Ch6-实对称矩阵的对角化与二次型</title>
+    <url>/2021/06/17/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-18-Ch6-%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5%E7%9A%84%E5%AF%B9%E8%A7%92%E5%8C%96%E4%B8%8E%E4%BA%8C%E6%AC%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h2 id="実対称行列の対角化と主軸問題・2次形式"><a href="#実対称行列の対角化と主軸問題・2次形式" class="headerlink" title="実対称行列の対角化と主軸問題・2次形式"></a>実対称行列の対角化と主軸問題・2次形式</h2><h3 id="実対称行列の対角化"><a href="#実対称行列の対角化" class="headerlink" title="実対称行列の対角化"></a>実対称行列の対角化</h3><h4 id="直交行列と正規直交系-Orthogonal-Matrix-amp-Orthonormal-Set"><a href="#直交行列と正規直交系-Orthogonal-Matrix-amp-Orthonormal-Set" class="headerlink" title="直交行列と正規直交系 Orthogonal Matrix &amp; Orthonormal Set"></a>直交行列と正規直交系 Orthogonal Matrix &amp; Orthonormal Set</h4><p>Pが直交行列であるとは<br>Pが実正方行列で，<br>$$ P^T P = E \ or \ P P^T = E $$<br>を満たすこと</p>
+<p>正規直交系であるとは<br>n次の列ベクトル $ \vec{p_1} ~ \vec{p_n} $ が<br>$$ \vec{p_i^T} \vec{p_i} = 1, \vec{p_i^T} \vec{p_j} = 0 (i \neq j) $$<br>を満たすこと</p>
+<h4 id="グラム‐シュミットの直交化法-Gram-Schmidt-Orthogonalization"><a href="#グラム‐シュミットの直交化法-Gram-Schmidt-Orthogonalization" class="headerlink" title="グラム‐シュミットの直交化法 Gram-Schmidt Orthogonalization"></a>グラム‐シュミットの直交化法 Gram-Schmidt Orthogonalization</h4><h4 id="いくつの結論"><a href="#いくつの結論" class="headerlink" title="いくつの結論"></a>いくつの結論</h4><p>実正方行列の固有値がすべて実数であるならば，直交行列より三角化される</p>
+<p>実対称行列の固有値がすべて実数である<br>実対称行列の相異なる固有値に対する固有ベクトルは直交する<br>実正方行列Aが対称行列である $ \Leftrightarrow $ 実正方行列Aが直交行列によって対角化される<br>実対称行列が対角化される</p>
+<h4 id="実対称行列の対角化の手順"><a href="#実対称行列の対角化の手順" class="headerlink" title="実対称行列の対角化の手順"></a>実対称行列の対角化の手順</h4><p>Step 1 固有値<br>Step 2 固有ベクトル<br>Step 3 グラム‐シュミットで正規化する（固有値が一致する固有ベクトルの間ですればよい）*<br>Step 4 $ P = \left [ \vec{a_1}, \vec{a_2}, \vec{a_3}, \vec{a_4} \right ] $<br>*固有値が相異なる固有ベクトルはお互いに直交するから，操作不要</p>
+<h3 id="座標系とその変換"><a href="#座標系とその変換" class="headerlink" title="座標系とその変換"></a>座標系とその変換</h3><h4 id="回転角"><a href="#回転角" class="headerlink" title="回転角"></a>回転角</h4><p>$$<br>\begin{bmatrix}<br>cos\theta &amp; -sin\theta\<br>sin\theta &amp; cos\theta<br>\end{bmatrix}<br>$$</p>
+<h4 id="2次曲線の標準形への道"><a href="#2次曲線の標準形への道" class="headerlink" title="2次曲線の標準形への道"></a>2次曲線の標準形への道</h4><p>行列表示<br>固有値<br>直交行列P<br>回転<br>平行移動<br>座標変換の式</p>
 ]]></content>
       <categories>
         <category>修考</category>
@@ -2650,9 +2678,10 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-7-17-Ch7-確率過程とモデリング</title>
-    <url>/2021/07/17/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-17-Ch7-%E7%A2%BA%E7%8E%87%E9%81%8E%E7%A8%8B%E3%81%A8%E3%83%A2%E3%83%87%E3%83%AA%E3%83%B3%E3%82%B0/</url>
-    <content><![CDATA[<h2 id="Chapter-7-確率過程とモデリング"><a href="#Chapter-7-確率過程とモデリング" class="headerlink" title="Chapter 7 確率過程とモデリング"></a>Chapter 7 確率過程とモデリング</h2>]]></content>
+    <title>学习笔记2021-7-11-Ch6-統計</title>
+    <url>/2021/07/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-11-Ch6-%E7%B5%B1%E8%A8%88/</url>
+    <content><![CDATA[<h2 id="Chapter-6-統計"><a href="#Chapter-6-統計" class="headerlink" title="Chapter 6 統計"></a>Chapter 6 統計</h2><h3 id="64-統計量Ⅰ"><a href="#64-統計量Ⅰ" class="headerlink" title="64 統計量Ⅰ"></a>64 統計量Ⅰ</h3><h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><p>全数調査<br>母集団<br>部分<br>統計量<br>推定量<br>標本平均<br>母平均<br>母分散<br>不偏推定量<br>標本平均は母平均の不偏推定量 $ E(\bar{X}) = \frac{E(X_1) + E(X_2) + … + E(X_n)}{n} = frac{n\mu}{n} = \mu $<br>不偏標本分散 $ \hat(S)^2 = frac{1}{n - 1} \sum_{i = 1}^{n} (X_i - \bar{X})^2 $</p>
+]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
@@ -2667,10 +2696,9 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-7-11-Ch6-統計</title>
-    <url>/2021/07/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-11-Ch6-%E7%B5%B1%E8%A8%88/</url>
-    <content><![CDATA[<h2 id="Chapter-6-統計"><a href="#Chapter-6-統計" class="headerlink" title="Chapter 6 統計"></a>Chapter 6 統計</h2><h3 id="64-統計量Ⅰ"><a href="#64-統計量Ⅰ" class="headerlink" title="64 統計量Ⅰ"></a>64 統計量Ⅰ</h3><h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><p>全数調査<br>母集団<br>部分<br>統計量<br>推定量<br>標本平均<br>母平均<br>母分散<br>不偏推定量<br>標本平均は母平均の不偏推定量 $ E(\bar{X}) = \frac{E(X_1) + E(X_2) + … + E(X_n)}{n} = frac{n\mu}{n} = \mu $<br>不偏標本分散 $ \hat(S)^2 = frac{1}{n - 1} \sum_{i = 1}^{n} (X_i - \bar{X})^2 $</p>
-]]></content>
+    <title>学习笔记2021-7-17-Ch7-確率過程とモデリング</title>
+    <url>/2021/07/17/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-17-Ch7-%E7%A2%BA%E7%8E%87%E9%81%8E%E7%A8%8B%E3%81%A8%E3%83%A2%E3%83%87%E3%83%AA%E3%83%B3%E3%82%B0/</url>
+    <content><![CDATA[<h2 id="Chapter-7-確率過程とモデリング"><a href="#Chapter-7-確率過程とモデリング" class="headerlink" title="Chapter 7 確率過程とモデリング"></a>Chapter 7 確率過程とモデリング</h2>]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
@@ -2711,17 +2739,14 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-7-28-Ch3-積分法とその応用</title>
-    <url>/2021/07/28/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-28-Ch3-%E7%A9%8D%E5%88%86%E6%B3%95%E3%81%A8%E3%81%9D%E3%81%AE%E5%BF%9C%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="Chapter-3-積分法とその応用"><a href="#Chapter-3-積分法とその応用" class="headerlink" title="Chapter 3 積分法とその応用"></a>Chapter 3 積分法とその応用</h2><h3 id="3-1-不定積分"><a href="#3-1-不定積分" class="headerlink" title="3.1 不定積分"></a>3.1 不定積分</h3><h4 id="基本公式"><a href="#基本公式" class="headerlink" title="基本公式"></a>基本公式</h4><p>$$\int \frac{1}{\sqrt{a^2 - x^2}} \mathrm{d} x = \frac{1}{a} \sin^{-1} \frac{x}{a}$$<br>$$\int \frac{1}{\sqrt{x^2 + a}} \mathrm{d} x = \log \left | x + \sqrt{x^2 + a} \right |$$<br>$$\int \sqrt{a^2 - x^2} \mathrm{d} x = \frac{1}{2} ( x \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{x}{a} )$$<br>$$\int \sqrt{x^2 + a} \mathrm{d} x = \frac{1}{2} ( x \sqrt{x^2 + a} + a^2 \log \left | x + \sqrt{x^2 + a} \right | )$$</p>
-<h4 id="有理関数の積分法"><a href="#有理関数の積分法" class="headerlink" title="有理関数の積分法"></a>有理関数の積分法</h4><p>有理関数は部分分数分解より，次の2種類に帰着される<br>$$ \int \frac{A}{(x - a)^n} dx $$<br>$$ \int \frac{Bx + C}{(x^2 + px + q)^n} dx $$<br>後者は変数変換より，次の2種類に帰着される<br>$$ \int \frac{t}{(t^2 + a^2)^n} dt $$<br>$$ \int \frac{1}{(t^2 + a^2)^n} dt = I_n $$<br>$$ I_1 = \frac{1}{a} tan^{-1} \frac{t}{a} $$<br>$$ I_{n + 1} = \frac{1}{a^2} (\frac{t}{2n(t^2 + a^2)^n} + \frac{2n - 1}{2n} I_n) $$</p>
-<h3 id="3-2-三角関数の積分法"><a href="#3-2-三角関数の積分法" class="headerlink" title="3.2 三角関数の積分法"></a>3.2 三角関数の積分法</h3><p>$ f(sinx, cosx) $ が $ g(sin^2x, cos^2x) $ のように書き換えられるときには $ t = tanx $ と置けばよい<br>漸化式<br>$$ I(m, n) = \int (sinx)^m (cosx)^n dx $$<br>について<br>$$ I(m, n) = \frac{(sinx)^{m + 1} (cosx)^{n - 1}}{m + n} + \frac{n - 1}{m + n} I(m, n - 2) $$<br>$$ I(m, n) = -\frac{(sinx)^{m - 1} (cosx)^{n + 1}}{m + n} + \frac{m - 1}{m + n} I(m - 2, n) $$<br>積和変換と和積変換</p>
-<h3 id="3-3-無理関数，指数関数，対数関数の積分法"><a href="#3-3-無理関数，指数関数，対数関数の積分法" class="headerlink" title="3.3 無理関数，指数関数，対数関数の積分法"></a>3.3 無理関数，指数関数，対数関数の積分法</h3><p>略する</p>
-<h3 id="3-4-定積分"><a href="#3-4-定積分" class="headerlink" title="3.4 定積分"></a>3.4 定積分</h3><h3 id="3-5-広義積分"><a href="#3-5-広義積分" class="headerlink" title="3.5 広義積分"></a>3.5 広義積分</h3><h4 id="広義積分の存在"><a href="#広義積分の存在" class="headerlink" title="広義積分の存在"></a>広義積分の存在</h4><p>特異積分の場合：<br>$ f(x) $ は $ (a, b] $ で連続<br>$$ |f(x)| \leq \frac{M}{(x - a)^\lambda} , M &gt; 0, \lambda &lt; 1 $$<br>ならば特異積分 $ \int_a^b f(x) dx $ 存在する<br>無限積分の場合：<br>$ f(x) $ は $ [a, \infty) $ で連続<br>$$ |f(x)| \leq \frac{M}{x^\lambda} , M &gt; 0, \lambda &gt; 1 $$<br>ならば無限積分 $ \int_a^\infty f(x) dx $ 存在する</p>
-<h4 id="ガンマ関数とベータ関数"><a href="#ガンマ関数とベータ関数" class="headerlink" title="ガンマ関数とベータ関数"></a>ガンマ関数とベータ関数</h4><h5 id="ガンマ関数"><a href="#ガンマ関数" class="headerlink" title="ガンマ関数"></a>ガンマ関数</h5><p>定義<br>$$ \Gamma(p) = \int_{0}^{\infty} e^{-x} x^{p - 1} \mathrm{d} x, \ (p &gt; 0) $$<br>性質<br>$$ \Gamma(p + 1) = p \Gamma(p) \ (p &gt; 0) $$<br>$$ \Gamma(1) = 1, \ \Gamma(n + 1) = n! $$</p>
-<h5 id="ベータ関数"><a href="#ベータ関数" class="headerlink" title="ベータ関数"></a>ベータ関数</h5><p>定義<br>$$ B(p, q) = \int_{0}^{1} x^{p - 1} (1 - x)^{q - 1} \mathrm{d} x, \ (p &gt; 0, q &gt; 0) $$<br>性質<br>$$ B(p, q) = B(q, p) $$<br>$$ qB(p + 1, q) = pB(p, q + 1) $$<br>$$ B(m, n) = \frac{(m - 1)!(n - 1)!}{(m + n - 1)!} $$ ただし，m,nは自然数とする</p>
-<h5 id="ガンマ関数とベータ関数の関係"><a href="#ガンマ関数とベータ関数の関係" class="headerlink" title="ガンマ関数とベータ関数の関係"></a>ガンマ関数とベータ関数の関係</h5><p>$$ B(p, q) = \frac{\Gamma(p) \Gamma(q)}{\Gamma(p + q)}, \ (p &gt; 0, q &gt; 0) $$</p>
-<h3 id="3-6-定積分の応用"><a href="#3-6-定積分の応用" class="headerlink" title="3.6 定積分の応用"></a>3.6 定積分の応用</h3>]]></content>
+    <title>学习笔记2021-7-23-Ch2-微分法とその応用</title>
+    <url>/2021/07/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-23-Ch2-%E5%BE%AE%E5%88%86%E6%B3%95%E3%81%A8%E3%81%9D%E3%81%AE%E5%BF%9C%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="Chapter-2-微分法とその応用"><a href="#Chapter-2-微分法とその応用" class="headerlink" title="Chapter 2 微分法とその応用"></a>Chapter 2 微分法とその応用</h2><h3 id="2-1-関数の極限と連続性"><a href="#2-1-関数の極限と連続性" class="headerlink" title="2.1 関数の極限と連続性"></a>2.1 関数の極限と連続性</h3><h4 id="無限小の位数"><a href="#無限小の位数" class="headerlink" title="無限小の位数"></a>無限小の位数</h4><p>$ u $ が $ v $ の $ k $ 位の無限小とは<br>$ lim \frac{u}{v^k} = C, 0 &lt; |C| &lt; \infty $</p>
+<h3 id="2-2-微分法"><a href="#2-2-微分法" class="headerlink" title="2.2 微分法"></a>2.2 微分法</h3><h4 id="媒介変数表示された関数の導関数"><a href="#媒介変数表示された関数の導関数" class="headerlink" title="媒介変数表示された関数の導関数"></a>媒介変数表示された関数の導関数</h4><h4 id="対数微分法"><a href="#対数微分法" class="headerlink" title="対数微分法"></a>対数微分法</h4><h4 id="高次導関数"><a href="#高次導関数" class="headerlink" title="高次導関数"></a>高次導関数</h4><p>ライプニッツの公式<br>$ h(x) = f(x)g(x) $ の $ n $ 次導関数は<br>$$ h^{(n)}(x) = \sum_{k = 0}^{n} \binom{n}{k} f^{(n - k)} g^{(k)} $$</p>
+<h3 id="2-3-導関数の性質とその応用"><a href="#2-3-導関数の性質とその応用" class="headerlink" title="2.3 導関数の性質とその応用"></a>2.3 導関数の性質とその応用</h3><h4 id="ロルの定理"><a href="#ロルの定理" class="headerlink" title="ロルの定理"></a>ロルの定理</h4><h4 id="平均値の定理"><a href="#平均値の定理" class="headerlink" title="平均値の定理"></a>平均値の定理</h4><h4 id="コーシーの平均値の定理"><a href="#コーシーの平均値の定理" class="headerlink" title="コーシーの平均値の定理"></a>コーシーの平均値の定理</h4><h4 id="テイラーの定理"><a href="#テイラーの定理" class="headerlink" title="テイラーの定理"></a>テイラーの定理</h4><h4 id="マクローリンの定理"><a href="#マクローリンの定理" class="headerlink" title="マクローリンの定理"></a>マクローリンの定理</h4><p>テイラーの定理を原点の近くで考えるとマクローリンの定理となる</p>
+<h4 id="テイラー級数"><a href="#テイラー級数" class="headerlink" title="テイラー級数"></a>テイラー級数</h4><p>ここで，マクローリン級数を挙げる<br>$ e^x $<br>$ sinx $<br>$ cosx $<br>$$ log(1 + x) = x - \frac{x^2}{2} + \frac{x^3}{3} - … + (-1)^{n - 1} \frac{x^n}{n} + … = \sum_{n = 1}^{\infty} (-1)^{n - 1} \frac{x^n}{n} $$<br>$ (1 + x)^\alpha $</p>
+<h3 id="2-4-関数のグラフ"><a href="#2-4-関数のグラフ" class="headerlink" title="2.4 関数のグラフ"></a>2.4 関数のグラフ</h3><h4 id="グラフの書き方"><a href="#グラフの書き方" class="headerlink" title="グラフの書き方"></a>グラフの書き方</h4><p>Step 1 定義域<br>Step 2 増減，極値<br>Step 3 凹凸，変曲点<br>Step 4 対称性，周期性<br>Step 5 座標軸との交点<br>Step 6 漸近線<br>Step 7 特殊な点の近くにおける様子</p>
+]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
@@ -2736,14 +2761,17 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-7-23-Ch2-微分法とその応用</title>
-    <url>/2021/07/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-23-Ch2-%E5%BE%AE%E5%88%86%E6%B3%95%E3%81%A8%E3%81%9D%E3%81%AE%E5%BF%9C%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="Chapter-2-微分法とその応用"><a href="#Chapter-2-微分法とその応用" class="headerlink" title="Chapter 2 微分法とその応用"></a>Chapter 2 微分法とその応用</h2><h3 id="2-1-関数の極限と連続性"><a href="#2-1-関数の極限と連続性" class="headerlink" title="2.1 関数の極限と連続性"></a>2.1 関数の極限と連続性</h3><h4 id="無限小の位数"><a href="#無限小の位数" class="headerlink" title="無限小の位数"></a>無限小の位数</h4><p>$ u $ が $ v $ の $ k $ 位の無限小とは<br>$ lim \frac{u}{v^k} = C, 0 &lt; |C| &lt; \infty $</p>
-<h3 id="2-2-微分法"><a href="#2-2-微分法" class="headerlink" title="2.2 微分法"></a>2.2 微分法</h3><h4 id="媒介変数表示された関数の導関数"><a href="#媒介変数表示された関数の導関数" class="headerlink" title="媒介変数表示された関数の導関数"></a>媒介変数表示された関数の導関数</h4><h4 id="対数微分法"><a href="#対数微分法" class="headerlink" title="対数微分法"></a>対数微分法</h4><h4 id="高次導関数"><a href="#高次導関数" class="headerlink" title="高次導関数"></a>高次導関数</h4><p>ライプニッツの公式<br>$ h(x) = f(x)g(x) $ の $ n $ 次導関数は<br>$$ h^{(n)}(x) = \sum_{k = 0}^{n} \binom{n}{k} f^{(n - k)} g^{(k)} $$</p>
-<h3 id="2-3-導関数の性質とその応用"><a href="#2-3-導関数の性質とその応用" class="headerlink" title="2.3 導関数の性質とその応用"></a>2.3 導関数の性質とその応用</h3><h4 id="ロルの定理"><a href="#ロルの定理" class="headerlink" title="ロルの定理"></a>ロルの定理</h4><h4 id="平均値の定理"><a href="#平均値の定理" class="headerlink" title="平均値の定理"></a>平均値の定理</h4><h4 id="コーシーの平均値の定理"><a href="#コーシーの平均値の定理" class="headerlink" title="コーシーの平均値の定理"></a>コーシーの平均値の定理</h4><h4 id="テイラーの定理"><a href="#テイラーの定理" class="headerlink" title="テイラーの定理"></a>テイラーの定理</h4><h4 id="マクローリンの定理"><a href="#マクローリンの定理" class="headerlink" title="マクローリンの定理"></a>マクローリンの定理</h4><p>テイラーの定理を原点の近くで考えるとマクローリンの定理となる</p>
-<h4 id="テイラー級数"><a href="#テイラー級数" class="headerlink" title="テイラー級数"></a>テイラー級数</h4><p>ここで，マクローリン級数を挙げる<br>$ e^x $<br>$ sinx $<br>$ cosx $<br>$$ log(1 + x) = x - \frac{x^2}{2} + \frac{x^3}{3} - … + (-1)^{n - 1} \frac{x^n}{n} + … = \sum_{n = 1}^{\infty} (-1)^{n - 1} \frac{x^n}{n} $$<br>$ (1 + x)^\alpha $</p>
-<h3 id="2-4-関数のグラフ"><a href="#2-4-関数のグラフ" class="headerlink" title="2.4 関数のグラフ"></a>2.4 関数のグラフ</h3><h4 id="グラフの書き方"><a href="#グラフの書き方" class="headerlink" title="グラフの書き方"></a>グラフの書き方</h4><p>Step 1 定義域<br>Step 2 増減，極値<br>Step 3 凹凸，変曲点<br>Step 4 対称性，周期性<br>Step 5 座標軸との交点<br>Step 6 漸近線<br>Step 7 特殊な点の近くにおける様子</p>
-]]></content>
+    <title>学习笔记2021-7-28-Ch3-積分法とその応用</title>
+    <url>/2021/07/28/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-28-Ch3-%E7%A9%8D%E5%88%86%E6%B3%95%E3%81%A8%E3%81%9D%E3%81%AE%E5%BF%9C%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="Chapter-3-積分法とその応用"><a href="#Chapter-3-積分法とその応用" class="headerlink" title="Chapter 3 積分法とその応用"></a>Chapter 3 積分法とその応用</h2><h3 id="3-1-不定積分"><a href="#3-1-不定積分" class="headerlink" title="3.1 不定積分"></a>3.1 不定積分</h3><h4 id="基本公式"><a href="#基本公式" class="headerlink" title="基本公式"></a>基本公式</h4><p>$$\int \frac{1}{\sqrt{a^2 - x^2}} \mathrm{d} x = \frac{1}{a} \sin^{-1} \frac{x}{a}$$<br>$$\int \frac{1}{\sqrt{x^2 + a}} \mathrm{d} x = \log \left | x + \sqrt{x^2 + a} \right |$$<br>$$\int \sqrt{a^2 - x^2} \mathrm{d} x = \frac{1}{2} ( x \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{x}{a} )$$<br>$$\int \sqrt{x^2 + a} \mathrm{d} x = \frac{1}{2} ( x \sqrt{x^2 + a} + a^2 \log \left | x + \sqrt{x^2 + a} \right | )$$</p>
+<h4 id="有理関数の積分法"><a href="#有理関数の積分法" class="headerlink" title="有理関数の積分法"></a>有理関数の積分法</h4><p>有理関数は部分分数分解より，次の2種類に帰着される<br>$$ \int \frac{A}{(x - a)^n} dx $$<br>$$ \int \frac{Bx + C}{(x^2 + px + q)^n} dx $$<br>後者は変数変換より，次の2種類に帰着される<br>$$ \int \frac{t}{(t^2 + a^2)^n} dt $$<br>$$ \int \frac{1}{(t^2 + a^2)^n} dt = I_n $$<br>$$ I_1 = \frac{1}{a} tan^{-1} \frac{t}{a} $$<br>$$ I_{n + 1} = \frac{1}{a^2} (\frac{t}{2n(t^2 + a^2)^n} + \frac{2n - 1}{2n} I_n) $$</p>
+<h3 id="3-2-三角関数の積分法"><a href="#3-2-三角関数の積分法" class="headerlink" title="3.2 三角関数の積分法"></a>3.2 三角関数の積分法</h3><p>$ f(sinx, cosx) $ が $ g(sin^2x, cos^2x) $ のように書き換えられるときには $ t = tanx $ と置けばよい<br>漸化式<br>$$ I(m, n) = \int (sinx)^m (cosx)^n dx $$<br>について<br>$$ I(m, n) = \frac{(sinx)^{m + 1} (cosx)^{n - 1}}{m + n} + \frac{n - 1}{m + n} I(m, n - 2) $$<br>$$ I(m, n) = -\frac{(sinx)^{m - 1} (cosx)^{n + 1}}{m + n} + \frac{m - 1}{m + n} I(m - 2, n) $$<br>積和変換と和積変換</p>
+<h3 id="3-3-無理関数，指数関数，対数関数の積分法"><a href="#3-3-無理関数，指数関数，対数関数の積分法" class="headerlink" title="3.3 無理関数，指数関数，対数関数の積分法"></a>3.3 無理関数，指数関数，対数関数の積分法</h3><p>略する</p>
+<h3 id="3-4-定積分"><a href="#3-4-定積分" class="headerlink" title="3.4 定積分"></a>3.4 定積分</h3><h3 id="3-5-広義積分"><a href="#3-5-広義積分" class="headerlink" title="3.5 広義積分"></a>3.5 広義積分</h3><h4 id="広義積分の存在"><a href="#広義積分の存在" class="headerlink" title="広義積分の存在"></a>広義積分の存在</h4><p>特異積分の場合：<br>$ f(x) $ は $ (a, b] $ で連続<br>$$ |f(x)| \leq \frac{M}{(x - a)^\lambda} , M &gt; 0, \lambda &lt; 1 $$<br>ならば特異積分 $ \int_a^b f(x) dx $ 存在する<br>無限積分の場合：<br>$ f(x) $ は $ [a, \infty) $ で連続<br>$$ |f(x)| \leq \frac{M}{x^\lambda} , M &gt; 0, \lambda &gt; 1 $$<br>ならば無限積分 $ \int_a^\infty f(x) dx $ 存在する</p>
+<h4 id="ガンマ関数とベータ関数"><a href="#ガンマ関数とベータ関数" class="headerlink" title="ガンマ関数とベータ関数"></a>ガンマ関数とベータ関数</h4><h5 id="ガンマ関数"><a href="#ガンマ関数" class="headerlink" title="ガンマ関数"></a>ガンマ関数</h5><p>定義<br>$$ \Gamma(p) = \int_{0}^{\infty} e^{-x} x^{p - 1} \mathrm{d} x, \ (p &gt; 0) $$<br>性質<br>$$ \Gamma(p + 1) = p \Gamma(p) \ (p &gt; 0) $$<br>$$ \Gamma(1) = 1, \ \Gamma(n + 1) = n! $$</p>
+<h5 id="ベータ関数"><a href="#ベータ関数" class="headerlink" title="ベータ関数"></a>ベータ関数</h5><p>定義<br>$$ B(p, q) = \int_{0}^{1} x^{p - 1} (1 - x)^{q - 1} \mathrm{d} x, \ (p &gt; 0, q &gt; 0) $$<br>性質<br>$$ B(p, q) = B(q, p) $$<br>$$ qB(p + 1, q) = pB(p, q + 1) $$<br>$$ B(m, n) = \frac{(m - 1)!(n - 1)!}{(m + n - 1)!} $$ ただし，m,nは自然数とする</p>
+<h5 id="ガンマ関数とベータ関数の関係"><a href="#ガンマ関数とベータ関数の関係" class="headerlink" title="ガンマ関数とベータ関数の関係"></a>ガンマ関数とベータ関数の関係</h5><p>$$ B(p, q) = \frac{\Gamma(p) \Gamma(q)}{\Gamma(p + q)}, \ (p &gt; 0, q &gt; 0) $$</p>
+<h3 id="3-6-定積分の応用"><a href="#3-6-定積分の応用" class="headerlink" title="3.6 定積分の応用"></a>3.6 定積分の応用</h3>]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
@@ -2840,6 +2868,26 @@
       </tags>
   </entry>
   <entry>
+    <title>学习笔记2021-8-1-Ch5-重積分</title>
+    <url>/2021/07/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-8-1-Ch5-%E9%87%8D%E7%A9%8D%E5%88%86/</url>
+    <content><![CDATA[<h2 id="Chapter-5-重積分"><a href="#Chapter-5-重積分" class="headerlink" title="Chapter 5 重積分"></a>Chapter 5 重積分</h2><h3 id="5-1-2重積分"><a href="#5-1-2重積分" class="headerlink" title="5.1 2重積分"></a>5.1 2重積分</h3><p>積分の順序交換，単純な領域のみ</p>
+<h3 id="5-2-2重積分における変数変換と定義の拡張"><a href="#5-2-2重積分における変数変換と定義の拡張" class="headerlink" title="5.2 2重積分における変数変換と定義の拡張"></a>5.2 2重積分における変数変換と定義の拡張</h3><h4 id="5-2-1-変数変換"><a href="#5-2-1-変数変換" class="headerlink" title="5.2.1 変数変換"></a>5.2.1 変数変換</h4><p>Jacobian</p>
+<h4 id="5-2-2-広義の2重積分"><a href="#5-2-2-広義の2重積分" class="headerlink" title="5.2.2 広義の2重積分"></a>5.2.2 広義の2重積分</h4><p>閉領域 $ D $ 上で<br>$$ f(x, y) \geq 0 $$<br>とする<br>点Aを除外する領域 $ D $ 内の1つの近似増加列 $ {D_i} $ に関して<br>$$ \iint_{D_i} f(x, y) dxdy \to I (i \to \infty) $$<br>ならば，他のどんな近似増加列 $ {D_i’} $ についても $ I $ に収束する</p>
+<h3 id="5-3-面積・体積・曲面積および3重積分"><a href="#5-3-面積・体積・曲面積および3重積分" class="headerlink" title="5.3 面積・体積・曲面積および3重積分"></a>5.3 面積・体積・曲面積および3重積分</h3>]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>数学</category>
+        <category>微积分</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>数学</tag>
+        <tag>微积分</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习笔记2021-8-12-Ch9-Fourier Transform Properties</title>
     <url>/2021/08/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-8-12-Ch9-Fourier%20Transform%20Properties/</url>
     <content><![CDATA[<h2 id="Chapter-9-Fourier-Transform-Properties"><a href="#Chapter-9-Fourier-Transform-Properties" class="headerlink" title="Chapter 9 Fourier Transform Properties"></a>Chapter 9 Fourier Transform Properties</h2><h3 id="Symmetric-Relation"><a href="#Symmetric-Relation" class="headerlink" title="Symmetric Relation"></a>Symmetric Relation</h3><p>If $ x(t) $ is real valued<br>then<br>$ X(-\omega) = X^*(\omega) $</p>
@@ -2864,26 +2912,6 @@
         <tag>学习</tag>
         <tag>专业课</tag>
         <tag>信号与系统</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习笔记2021-8-1-Ch5-重積分</title>
-    <url>/2021/07/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-8-1-Ch5-%E9%87%8D%E7%A9%8D%E5%88%86/</url>
-    <content><![CDATA[<h2 id="Chapter-5-重積分"><a href="#Chapter-5-重積分" class="headerlink" title="Chapter 5 重積分"></a>Chapter 5 重積分</h2><h3 id="5-1-2重積分"><a href="#5-1-2重積分" class="headerlink" title="5.1 2重積分"></a>5.1 2重積分</h3><p>積分の順序交換，単純な領域のみ</p>
-<h3 id="5-2-2重積分における変数変換と定義の拡張"><a href="#5-2-2重積分における変数変換と定義の拡張" class="headerlink" title="5.2 2重積分における変数変換と定義の拡張"></a>5.2 2重積分における変数変換と定義の拡張</h3><h4 id="5-2-1-変数変換"><a href="#5-2-1-変数変換" class="headerlink" title="5.2.1 変数変換"></a>5.2.1 変数変換</h4><p>Jacobian</p>
-<h4 id="5-2-2-広義の2重積分"><a href="#5-2-2-広義の2重積分" class="headerlink" title="5.2.2 広義の2重積分"></a>5.2.2 広義の2重積分</h4><p>閉領域 $ D $ 上で<br>$$ f(x, y) \geq 0 $$<br>とする<br>点Aを除外する領域 $ D $ 内の1つの近似増加列 $ {D_i} $ に関して<br>$$ \iint_{D_i} f(x, y) dxdy \to I (i \to \infty) $$<br>ならば，他のどんな近似増加列 $ {D_i’} $ についても $ I $ に収束する</p>
-<h3 id="5-3-面積・体積・曲面積および3重積分"><a href="#5-3-面積・体積・曲面積および3重積分" class="headerlink" title="5.3 面積・体積・曲面積および3重積分"></a>5.3 面積・体積・曲面積および3重積分</h3>]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>数学</category>
-        <category>微积分</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>数学</tag>
-        <tag>微积分</tag>
       </tags>
   </entry>
   <entry>
