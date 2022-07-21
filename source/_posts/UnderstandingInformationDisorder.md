@@ -29,3 +29,19 @@ Conclusion: The threat mainly comes from malinformation.
 There are 7 types of mis-/disinformation: Satire or Parody, False Connection, Misleading Content, False Context, Imposter Content, Manipulated Content, Fabricated Content. This is first published by First Draft in Feb 2017, and it helps people understand the ecosystem.  
 We will go through the 7 types one by one.  
 ### Satire or Parody
+Satire can pass fact checkers and any push back can be dismissed by stating that it was never meant to be serious.  
+Satire is becoming increasingly hateful, polarizing and divisive.  
+Satire is powerful because people cannot understand it as satire when it gets re-shared.  
+On social media, the heuristics are missing because lack of background of a message.  
+There are lots of satirical sites inside and outside Ameirica.  
+In France, satire was used for political attacks.  
+Three steps:  
+- a satirical site said Macron feels dirty after touching poor people's hands.
+- hyper-partisan facebook pages used this to create new reports, including footage showing Macron was wiping his hands during his visit to a factory.  
+- the video went viral and the cycle continued
+This also happen in Brazil and America.  
+Some jokes from Donald Trump are twisted to deliberately decieve readers.  
+It is interesting that although some satire sites claim that they are not telling the truth, even post racist, bigoted, offensive articles, people keep following it.  
+Conclusion:  
+Satire is becoming increasingly hateful, polarizing and divisive, and has become a common category of information disorder.  
+### False Connection
