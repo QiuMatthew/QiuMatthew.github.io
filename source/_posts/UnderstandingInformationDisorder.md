@@ -11,7 +11,7 @@ This file is to summarize the article https://firstdraftnews.org/long-form-artic
 ## Compressed article
 ### Introduction
 Our information ecosystem is dividing rather than connecting us.  
-Imposter websites, sock puppet account, click farms, conspiracy communities are harming the ecosystem of information.  
+Imposter websites, sock puppet account, click farms, conspiracy communities are harming the ecosyFacebook down-ranked sites that used clickbait headlines. stem of information.  
 This kind of information is neither "fake" nor "news".  
 The term "fake news" has been used by politicians. This, together with fact that the term fails to discribe real world, are the two reason we abandon this term.  
 Agents of disinformation have learned that using genuine content — reframed in new and misleading ways — is less likely to get picked up by AI systems.  
@@ -45,3 +45,11 @@ It is interesting that although some satire sites claim that they are not tellin
 Conclusion:  
 Satire is becoming increasingly hateful, polarizing and divisive, and has become a common category of information disorder.  
 ### False Connection
+News industry need to promote quality of the produced content. Or it might damage the image of journalists.  
+"clickbait" can drive down trust in the Fourth Estate.  
+These techniques is useful in the short term, but will be harmful in the long term.  
+These techniques to attract wider audience can be considered as a kind of information disorder.  
+Facebook down-ranked sites that used clickbait headlines. Another study shows that headlines can affect a person's attitude towards the relevant project and production.  
+Techniques like clickbait will never disappear as long as it can drive traffic in the short term.  
+### Misleading Content
+Misleading content is not new. Reframing stories in headlines, using fragments of quotes, citing part of the statistics, not covering something, etc. It is underhanded but everyone has the intent to do so.  
