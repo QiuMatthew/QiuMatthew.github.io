@@ -11,7 +11,8 @@ This file is to summarize the article https://firstdraftnews.org/long-form-artic
 ## Compressed article
 ### Introduction
 Our information ecosystem is dividing rather than connecting us.  
-Imposter websites, sock puppet account, click farms, conspiracy communities are harming the ecosyFacebook down-ranked sites that used clickbait headlines. stem of information.  
+Imposter websites, sock puppet account, click farms, conspiracy communities are harming the ecosystem of information.  
+Facebook down-ranked sites that used clickbait headlines.  
 This kind of information is neither "fake" nor "news".  
 The term "fake news" has been used by politicians. This, together with fact that the term fails to discribe real world, are the two reason we abandon this term.  
 Agents of disinformation have learned that using genuine content — reframed in new and misleading ways — is less likely to get picked up by AI systems.  
