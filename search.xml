@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Cpp-Primer-Plus-Ch2-Start-up</title>
-    <url>/2021/11/19/Cpp-Primer-Plus-Ch2-Start-up/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Conda</title>
     <url>/2021/10/02/Conda/</url>
     <content><![CDATA[<h2 id="Anaconda-amp-Miniconda"><a href="#Anaconda-amp-Miniconda" class="headerlink" title="Anaconda &amp; Miniconda"></a>Anaconda &amp; Miniconda</h2><p>Anaconda is conda with some frequently used(although I disagree) preinstalled packages<br>Miniconda is conda with only base modules, and we have to install every dependencies we need</p>
@@ -35,23 +30,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Cpp-Vector</title>
-    <url>/2021/12/27/Cpp-Vector/</url>
-    <content><![CDATA[<h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &lt;vector&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;int&gt; vec;</span><br></pre></td></tr></table></figure>
-
-<h2 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;vector&lt;int&gt;&gt; vec;</span><br><span class="line">vector&lt;int&gt; vec(N);</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Technol</category>
-        <category>C++</category>
-        <category>STL</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cpp-Primer-Plus-Ch1-Preliminaries</title>
     <url>/2021/11/19/Cpp-Primer-Plus-Ch1-Preliminaries/</url>
     <content><![CDATA[<h2 id="1-4-2-编译和链接"><a href="#1-4-2-编译和链接" class="headerlink" title="1.4.2 编译和链接"></a>1.4.2 编译和链接</h2><h3 id="2-Linux编译和链接"><a href="#2-Linux编译和链接" class="headerlink" title="2 Linux编译和链接"></a>2 Linux编译和链接</h3><p>Linux最常用的编译器：g++<br>下面的命令将生成可执行文件<code>a.out</code></p>
@@ -71,6 +49,11 @@
         <tag>C++</tag>
         <tag>C++ Primer Plus</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Cpp-Primer-Plus-Ch2-Start-up</title>
+    <url>/2021/11/19/Cpp-Primer-Plus-Ch2-Start-up/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>GCL-report</title>
@@ -156,6 +139,23 @@
       <tags>
         <tag>技术</tag>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cpp-Vector</title>
+    <url>/2021/12/27/Cpp-Vector/</url>
+    <content><![CDATA[<h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &lt;vector&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;int&gt; vec;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vector&lt;vector&lt;int&gt;&gt; vec;</span><br><span class="line">vector&lt;int&gt; vec(N);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Technol</category>
+        <category>C++</category>
+        <category>STL</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -760,6 +760,46 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Research Plan</title>
+    <url>/2021/05/31/ResearchPlan/</url>
+    <content><![CDATA[<h2 id="Research-Plan"><a href="#Research-Plan" class="headerlink" title="Research Plan"></a><center>Research Plan</center></h2><h3 id="0-Contents"><a href="#0-Contents" class="headerlink" title="0. Contents"></a>0. Contents</h3><h5 id="1-Research-Theme-and-Applicant-Name"><a href="#1-Research-Theme-and-Applicant-Name" class="headerlink" title="1. Research Theme and Applicant Name"></a>1. Research Theme and Applicant Name</h5><h5 id="2-Background"><a href="#2-Background" class="headerlink" title="2. Background"></a>2. Background</h5><h5 id="3-Related-Works"><a href="#3-Related-Works" class="headerlink" title="3. Related Works"></a>3. Related Works</h5><h5 id="4-Research-Goals"><a href="#4-Research-Goals" class="headerlink" title="4. Research Goals"></a>4. Research Goals</h5><h5 id="5-Research-Plan"><a href="#5-Research-Plan" class="headerlink" title="5. Research Plan"></a>5. Research Plan</h5><h5 id="6-Expected-Results"><a href="#6-Expected-Results" class="headerlink" title="6. Expected Results"></a>6. Expected Results</h5><h5 id="7-References"><a href="#7-References" class="headerlink" title="7. References"></a>7. References</h5><h5 id="8-Reasons-for-my-Choices"><a href="#8-Reasons-for-my-Choices" class="headerlink" title="8. Reasons for my Choices"></a>8. Reasons for my Choices</h5><h3 id="1-Research-Theme-and-Applicant-Name-1"><a href="#1-Research-Theme-and-Applicant-Name-1" class="headerlink" title="1. Research Theme and Applicant Name"></a>1. Research Theme and Applicant Name</h3><ul>
+<li>Theme: Efficient and Noise-resistant Collusion-Secure Digital Fingerprinting System</li>
+<li>Keywords: digital fingerprint, collusion attack, copyright protection</li>
+<li>Applicant Name: Uzen Kyu</li>
+</ul>
+<h3 id="2-Background-1"><a href="#2-Background-1" class="headerlink" title="2. Background"></a>2. Background</h3><p>&nbsp;&nbsp;With rapid development of multimedia and peer-to-peer technology, it has provided convenient and private methods to send and receive multimedia data. But subsequently, illegal distribution of digital content is also becoming a serious problem. To deal with this problem, digital fingerprint technology is put forward. Digital data producers embed some unique information (fingerprint, can be generated by one-way hash function, also known as message digest algorithm) into every copy of the digital content. If an illegal copy appears, the producer can extract that information from that copy and thus can trace back to the individual who illegally distributed it.<br>&nbsp;&nbsp;Digital fingerprint technology has great potential and is an indispensable part of copyright and confidential information protection.<br>Nevertheless, the pirates can still avoid being found by comparing multiple copies and alter the different parts, this is called collusion attack. So, it is obvious that developing collusion-resistant digital fingerprint system is of great importance.<br>&nbsp;&nbsp;Yet, most of current studies are focusing on the accuracy of the scheme and do not care about computational costs. At the same time, the influence of noise during transmission process is not much investigated.</p>
+<h3 id="3-Related-Works-1"><a href="#3-Related-Works-1" class="headerlink" title="3. Related Works"></a>3. Related Works</h3><p>&nbsp;&nbsp;The idea that we can protect digital products by digital fingerprint is proposed by N.R.Wagner<a href="#refer-anchor"><sup>[1]</sup></a>. He expanded the meaning of “fingerprint” and he believe that we can and we should attach a “fingerprint” to all digital objects as long as there is a possibility of illegal use, so that we can find the owner of the misused object. The threat of collusion attack in digital fingerprint system is firstly pointed out by Blakley, et al<a href="#refer-anchor"><sup>[2]</sup></a>. He said that the pirate can compare multiple copies trying to wipe out the “fingerprint” to avoid being found.<br>&nbsp;&nbsp;In 1995, D.Boneh and J.Shaw proposed the first collusion-secure digital fingerprint scheme<a href="#refer-anchor"><sup>[3]</sup></a>. In this scheme, they proposed a coding system (k-secure code) with the code length of $O(k^4log(\frac{n}{\epsilon})log(\frac{1}{\epsilon}))$, where $n$ is the total number of users, $\epsilon$ is the error posibility, $k$ is the maximum number of colluding users. But the code length of the scheme is too long, especially when k is a bit large.<br>&nbsp;&nbsp;In 1998, D.Boneh and J.Shaw proposed a coding scheme called c-secure code(or BS code)<a href="#refer-anchor"><sup>[4]</sup></a>. His scheme is highly probable to trace back to at least one colluding user. However, if the number of colluding users surpassed 3, this scheme will fail. Although there are many improved models of BS code, they all based on “marking assumption”, which means that colluders can only manipulate invisible bits. There are opinions says that error codes caused by noise during the transmission process might be recognized as the result of a collusion attack. Later, some researcher introduced orthogonal code, which reduced computational cost of fingerprint detection.<br>&nbsp;&nbsp;In 2008, Tardos<a href="#refer-anchor"><sup>[5]</sup></a> proposed a fingerprinting scheme based on probability theory, His scheme not only achieved high encoding efficiency, but also vastly shortened the code length. His collusion-secure code length is theoretically shortest ($O(c^2log\frac{n}{\epsilon}$), $c$ is the number of colluding users. But it still has some problems, for instance, we have to generate and save the codeword for every user in advance. Tardos code has the characteristic of high generating efficiency, huge computational cost and huge saving cost. From then on, probabilistic fingerprinting codes have become a hot topic among researchers. Tardos code is based on continuous Gaussian distribution. However, Nuida, et al<a href="#refer-anchor"><sup>[6]</sup></a> used discrete Gauss-Legendre distribution in replace of continuous Guassian distribution without affect the code length. Nuida’s scheme is a fingerprinting code for a fixed number of colluders.<br>&nbsp;&nbsp;In the probabilistic fingerprinting system, we need a detector to find colluders using the pirated codeword and users’ codewords. Furon, et al<a href="#refer-anchor"><sup>[7]</sup></a> proposed an optimal detector utilizing the information of colluding strategy and number of colluders. However, getting these parameters is not an easy task. Therefore, researchers <a href="#refer-anchor"><sup>[8]</sup></a> <a href="#refer-anchor"><sup>[9]</sup></a> <a href="#refer-anchor"><sup>[10]</sup></a> <a href="#refer-anchor"><sup>[11]</sup></a> are trying to get close to the performance of the optimal detector. In 2018, Yasui, et al<a href="#refer-anchor"><sup>[12]</sup></a> proposed an estimator of the parameters using Collusion Strategy Characteristic Vector.</p>
+<h3 id="4-Research-Goals-1"><a href="#4-Research-Goals-1" class="headerlink" title="4. Research Goals"></a>4. Research Goals</h3><ul>
+<li>Find the influence of different noises to the decoding process.</li>
+<li>Propose a noise-resistant defense strategy for fingerprinting code system.</li>
+<li>Compare the computational cost of current schemes.</li>
+<li>Propose a scheme with least computational cost while at the same time be accurate enough.</li>
+</ul>
+<h3 id="5-Research-Plan-1"><a href="#5-Research-Plan-1" class="headerlink" title="5. Research Plan"></a>5. Research Plan</h3><ul>
+<li>Study about the fundamental principles of relevant collusion-secure fingerprinting schemes.</li>
+<li>Investigate more related works about collusion-secure fingerprint encoding schemes.</li>
+<li>Do experiments to find how different kind of noise can affect the fingerprinting code system.</li>
+<li>Try to propose a noise-resistant defense strategy for fingerprinting code system using customized filters or other method.</li>
+<li>Theoretically analyze and do experiments to find out computational costs of current schemes.</li>
+<li>Try to reduce computational costs without losing too much accuracy.</li>
+</ul>
+<h3 id="6-Expected-Results-1"><a href="#6-Expected-Results-1" class="headerlink" title="6. Expected Results"></a>6. Expected Results</h3><p>&nbsp;&nbsp;The most significant drawbacks of probabilistic fingerprinting code are large detecting cost and saving cost. And recent studies often ignored the influence of noise. By making progress in these aspects, collusion-secure fingerprinting system is more suitable for practical use. This will be useful for furthur studies of this topic. In addition, as a technology for copyright protection, fingerprint technology can benefit all the content producers and therefore encourage artistic creation.</p>
+<div id="refer-anchor"></div>
+
+<h3 id="7-References-1"><a href="#7-References-1" class="headerlink" title="7. References"></a>7. References</h3><p>[1] N. R. Wagner, “Fingerprinting,” 1983 IEEE Symposium on Security and Privacy, Oakland, CA, USA, 1983, pp. 18-18, doi: 10.1109/SP.1983.10018.<br>[2] Blakley, G.R., Meadows, C., &amp; Purdy, G. (1985). Fingerprinting Long Forgiving Messages. CRYPTO.<br>[3] Boneh D, Shaw J. Collusion-Secure Fingerprinting for digital data. In: Proceedings of the 15th Annual International Cryptology Conference. Santa Barbara, California. USA, 1995, 452-465<br>[4] Boneh D, Shaw J, Collusion-Secure fingerprinting for digital data. Journal of Information Theory, 1998, 44(5): 1897-1905<br>[5] Gábor Tardos. 2003. Optimal probabilistic fingerprint codes. In Proceedings of the thirty-fifth annual ACM symposium on Theory of computing (STOC ‘03). Association for Computing Machinery, New York, NY, USA, 116–125. DOI:<a href="https://doi.org/10.1145/780542.780561">https://doi.org/10.1145/780542.780561</a><br>[6] K. Nuida, M. Hagiwara, H. Watanabe, and H. Imai, “Optimization of<br>Tardos’s fingerprinting codes in a viewpoint of memory amount,” Proc.<br>IH 2007, LNCS, vol.4567, pp.279–293, Springer, Heidelberg, 2008.<br>[7] Teddy Furon, Luis Pérez-Freire. EM Decoding of Tardos Traitor Tracing Codes. ACM Multimediaand Security, Sep 2009, Princeton, United States. inria-00505875<br>[8] P. Meerwald and T. Furon, “Toward Practical Joint Decoding of Binary Tardos Fingerprinting Codes,” in IEEE Transactions on Information Forensics and Security, vol. 7, no. 4, pp. 1168-1180, Aug. 2012, doi: 10.1109/TIFS.2012.2195655.<br>[9] M. Desoubeaux, C. Herzet, W. Puech and G. Le Guelvouit, “Enhanced blind decoding of tardos codes with new MAP-based functions,” 2013 IEEE 15th International Workshop on Multimedia Signal Processing (MMSP), Pula, 2013, pp. 283-288, doi: 10.1109/MMSP.2013.6659302.<br>[10] J. Oosterwijk, B. Škorić and J. Doumen, “A Capacity-Achieving Simple Decoder for Bias-Based Traitor Tracing Schemes,” in IEEE Transactions on Information Theory, vol. 61, no. 7, pp. 3882-3900, July 2015, doi: 10.1109/TIT.2015.2428250.<br>[11] T. Laarhoven, “Capacities and capacity-achieving decoders for various fingerprinting games”, Proc. 2nd ACM Workshop Inf. Hiding Multimedia Secur., pp. 123-134, 2014.<br>[12] T. Yasui, M. Kuribayashi, N. Funabiki and I. Echizen, “Estimation of collusion attack in bias-based binary fingerprinting code”, Proc. Asia–Pacific Signal Inf. Process. Assoc. Annu. Summit Conf. (APSIPA ASC), pp. 1550-1555, Nov. 2018.</p>
+<h3 id="8-Reasons-for-my-Choices-1"><a href="#8-Reasons-for-my-Choices-1" class="headerlink" title="8. Reasons for my Choices"></a>8. Reasons for my Choices</h3><p>Seen all the changes brought by information technology like face authentication and different kinds of computer attack via the internet, I noticed the importance of information security. After my undergraduate study, I have been attracted by the charm of attack and defense in the information realm, it is a kind of art for me. So I am deeply longing to study and make my own effort on the subject of information security. Artificial intellegence is an interesting topic these days and is widely used in various area, I also wanted to see its developement, especially security aspects. Also, I went to NII for a visit in 2019 and was moved by the research environment. I hope the above reasons explains my choices for research themes and professors.</p>
+]]></content>
+      <categories>
+        <category>修考</category>
+        <category>书类</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>书类</tag>
+        <tag>研究计划书</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Overwatch-Deutsch</title>
     <url>/2021/12/09/Overwatch-Deutsch/</url>
     <content><![CDATA[<h2 id="D-VA"><a href="#D-VA" class="headerlink" title="D.VA"></a>D.VA</h2><h3 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h3><table>
@@ -966,43 +1006,15 @@
       </tags>
   </entry>
   <entry>
-    <title>Research Plan</title>
-    <url>/2021/05/31/ResearchPlan/</url>
-    <content><![CDATA[<h2 id="Research-Plan"><a href="#Research-Plan" class="headerlink" title="Research Plan"></a><center>Research Plan</center></h2><h3 id="0-Contents"><a href="#0-Contents" class="headerlink" title="0. Contents"></a>0. Contents</h3><h5 id="1-Research-Theme-and-Applicant-Name"><a href="#1-Research-Theme-and-Applicant-Name" class="headerlink" title="1. Research Theme and Applicant Name"></a>1. Research Theme and Applicant Name</h5><h5 id="2-Background"><a href="#2-Background" class="headerlink" title="2. Background"></a>2. Background</h5><h5 id="3-Related-Works"><a href="#3-Related-Works" class="headerlink" title="3. Related Works"></a>3. Related Works</h5><h5 id="4-Research-Goals"><a href="#4-Research-Goals" class="headerlink" title="4. Research Goals"></a>4. Research Goals</h5><h5 id="5-Research-Plan"><a href="#5-Research-Plan" class="headerlink" title="5. Research Plan"></a>5. Research Plan</h5><h5 id="6-Expected-Results"><a href="#6-Expected-Results" class="headerlink" title="6. Expected Results"></a>6. Expected Results</h5><h5 id="7-References"><a href="#7-References" class="headerlink" title="7. References"></a>7. References</h5><h5 id="8-Reasons-for-my-Choices"><a href="#8-Reasons-for-my-Choices" class="headerlink" title="8. Reasons for my Choices"></a>8. Reasons for my Choices</h5><h3 id="1-Research-Theme-and-Applicant-Name-1"><a href="#1-Research-Theme-and-Applicant-Name-1" class="headerlink" title="1. Research Theme and Applicant Name"></a>1. Research Theme and Applicant Name</h3><ul>
-<li>Theme: Efficient and Noise-resistant Collusion-Secure Digital Fingerprinting System</li>
-<li>Keywords: digital fingerprint, collusion attack, copyright protection</li>
-<li>Applicant Name: Uzen Kyu</li>
-</ul>
-<h3 id="2-Background-1"><a href="#2-Background-1" class="headerlink" title="2. Background"></a>2. Background</h3><p>&nbsp;&nbsp;With rapid development of multimedia and peer-to-peer technology, it has provided convenient and private methods to send and receive multimedia data. But subsequently, illegal distribution of digital content is also becoming a serious problem. To deal with this problem, digital fingerprint technology is put forward. Digital data producers embed some unique information (fingerprint, can be generated by one-way hash function, also known as message digest algorithm) into every copy of the digital content. If an illegal copy appears, the producer can extract that information from that copy and thus can trace back to the individual who illegally distributed it.<br>&nbsp;&nbsp;Digital fingerprint technology has great potential and is an indispensable part of copyright and confidential information protection.<br>Nevertheless, the pirates can still avoid being found by comparing multiple copies and alter the different parts, this is called collusion attack. So, it is obvious that developing collusion-resistant digital fingerprint system is of great importance.<br>&nbsp;&nbsp;Yet, most of current studies are focusing on the accuracy of the scheme and do not care about computational costs. At the same time, the influence of noise during transmission process is not much investigated.</p>
-<h3 id="3-Related-Works-1"><a href="#3-Related-Works-1" class="headerlink" title="3. Related Works"></a>3. Related Works</h3><p>&nbsp;&nbsp;The idea that we can protect digital products by digital fingerprint is proposed by N.R.Wagner<a href="#refer-anchor"><sup>[1]</sup></a>. He expanded the meaning of “fingerprint” and he believe that we can and we should attach a “fingerprint” to all digital objects as long as there is a possibility of illegal use, so that we can find the owner of the misused object. The threat of collusion attack in digital fingerprint system is firstly pointed out by Blakley, et al<a href="#refer-anchor"><sup>[2]</sup></a>. He said that the pirate can compare multiple copies trying to wipe out the “fingerprint” to avoid being found.<br>&nbsp;&nbsp;In 1995, D.Boneh and J.Shaw proposed the first collusion-secure digital fingerprint scheme<a href="#refer-anchor"><sup>[3]</sup></a>. In this scheme, they proposed a coding system (k-secure code) with the code length of $O(k^4log(\frac{n}{\epsilon})log(\frac{1}{\epsilon}))$, where $n$ is the total number of users, $\epsilon$ is the error posibility, $k$ is the maximum number of colluding users. But the code length of the scheme is too long, especially when k is a bit large.<br>&nbsp;&nbsp;In 1998, D.Boneh and J.Shaw proposed a coding scheme called c-secure code(or BS code)<a href="#refer-anchor"><sup>[4]</sup></a>. His scheme is highly probable to trace back to at least one colluding user. However, if the number of colluding users surpassed 3, this scheme will fail. Although there are many improved models of BS code, they all based on “marking assumption”, which means that colluders can only manipulate invisible bits. There are opinions says that error codes caused by noise during the transmission process might be recognized as the result of a collusion attack. Later, some researcher introduced orthogonal code, which reduced computational cost of fingerprint detection.<br>&nbsp;&nbsp;In 2008, Tardos<a href="#refer-anchor"><sup>[5]</sup></a> proposed a fingerprinting scheme based on probability theory, His scheme not only achieved high encoding efficiency, but also vastly shortened the code length. His collusion-secure code length is theoretically shortest ($O(c^2log\frac{n}{\epsilon}$), $c$ is the number of colluding users. But it still has some problems, for instance, we have to generate and save the codeword for every user in advance. Tardos code has the characteristic of high generating efficiency, huge computational cost and huge saving cost. From then on, probabilistic fingerprinting codes have become a hot topic among researchers. Tardos code is based on continuous Gaussian distribution. However, Nuida, et al<a href="#refer-anchor"><sup>[6]</sup></a> used discrete Gauss-Legendre distribution in replace of continuous Guassian distribution without affect the code length. Nuida’s scheme is a fingerprinting code for a fixed number of colluders.<br>&nbsp;&nbsp;In the probabilistic fingerprinting system, we need a detector to find colluders using the pirated codeword and users’ codewords. Furon, et al<a href="#refer-anchor"><sup>[7]</sup></a> proposed an optimal detector utilizing the information of colluding strategy and number of colluders. However, getting these parameters is not an easy task. Therefore, researchers <a href="#refer-anchor"><sup>[8]</sup></a> <a href="#refer-anchor"><sup>[9]</sup></a> <a href="#refer-anchor"><sup>[10]</sup></a> <a href="#refer-anchor"><sup>[11]</sup></a> are trying to get close to the performance of the optimal detector. In 2018, Yasui, et al<a href="#refer-anchor"><sup>[12]</sup></a> proposed an estimator of the parameters using Collusion Strategy Characteristic Vector.</p>
-<h3 id="4-Research-Goals-1"><a href="#4-Research-Goals-1" class="headerlink" title="4. Research Goals"></a>4. Research Goals</h3><ul>
-<li>Find the influence of different noises to the decoding process.</li>
-<li>Propose a noise-resistant defense strategy for fingerprinting code system.</li>
-<li>Compare the computational cost of current schemes.</li>
-<li>Propose a scheme with least computational cost while at the same time be accurate enough.</li>
-</ul>
-<h3 id="5-Research-Plan-1"><a href="#5-Research-Plan-1" class="headerlink" title="5. Research Plan"></a>5. Research Plan</h3><ul>
-<li>Study about the fundamental principles of relevant collusion-secure fingerprinting schemes.</li>
-<li>Investigate more related works about collusion-secure fingerprint encoding schemes.</li>
-<li>Do experiments to find how different kind of noise can affect the fingerprinting code system.</li>
-<li>Try to propose a noise-resistant defense strategy for fingerprinting code system using customized filters or other method.</li>
-<li>Theoretically analyze and do experiments to find out computational costs of current schemes.</li>
-<li>Try to reduce computational costs without losing too much accuracy.</li>
-</ul>
-<h3 id="6-Expected-Results-1"><a href="#6-Expected-Results-1" class="headerlink" title="6. Expected Results"></a>6. Expected Results</h3><p>&nbsp;&nbsp;The most significant drawbacks of probabilistic fingerprinting code are large detecting cost and saving cost. And recent studies often ignored the influence of noise. By making progress in these aspects, collusion-secure fingerprinting system is more suitable for practical use. This will be useful for furthur studies of this topic. In addition, as a technology for copyright protection, fingerprint technology can benefit all the content producers and therefore encourage artistic creation.</p>
-<div id="refer-anchor"></div>
-
-<h3 id="7-References-1"><a href="#7-References-1" class="headerlink" title="7. References"></a>7. References</h3><p>[1] N. R. Wagner, “Fingerprinting,” 1983 IEEE Symposium on Security and Privacy, Oakland, CA, USA, 1983, pp. 18-18, doi: 10.1109/SP.1983.10018.<br>[2] Blakley, G.R., Meadows, C., &amp; Purdy, G. (1985). Fingerprinting Long Forgiving Messages. CRYPTO.<br>[3] Boneh D, Shaw J. Collusion-Secure Fingerprinting for digital data. In: Proceedings of the 15th Annual International Cryptology Conference. Santa Barbara, California. USA, 1995, 452-465<br>[4] Boneh D, Shaw J, Collusion-Secure fingerprinting for digital data. Journal of Information Theory, 1998, 44(5): 1897-1905<br>[5] Gábor Tardos. 2003. Optimal probabilistic fingerprint codes. In Proceedings of the thirty-fifth annual ACM symposium on Theory of computing (STOC ‘03). Association for Computing Machinery, New York, NY, USA, 116–125. DOI:<a href="https://doi.org/10.1145/780542.780561">https://doi.org/10.1145/780542.780561</a><br>[6] K. Nuida, M. Hagiwara, H. Watanabe, and H. Imai, “Optimization of<br>Tardos’s fingerprinting codes in a viewpoint of memory amount,” Proc.<br>IH 2007, LNCS, vol.4567, pp.279–293, Springer, Heidelberg, 2008.<br>[7] Teddy Furon, Luis Pérez-Freire. EM Decoding of Tardos Traitor Tracing Codes. ACM Multimediaand Security, Sep 2009, Princeton, United States. inria-00505875<br>[8] P. Meerwald and T. Furon, “Toward Practical Joint Decoding of Binary Tardos Fingerprinting Codes,” in IEEE Transactions on Information Forensics and Security, vol. 7, no. 4, pp. 1168-1180, Aug. 2012, doi: 10.1109/TIFS.2012.2195655.<br>[9] M. Desoubeaux, C. Herzet, W. Puech and G. Le Guelvouit, “Enhanced blind decoding of tardos codes with new MAP-based functions,” 2013 IEEE 15th International Workshop on Multimedia Signal Processing (MMSP), Pula, 2013, pp. 283-288, doi: 10.1109/MMSP.2013.6659302.<br>[10] J. Oosterwijk, B. Škorić and J. Doumen, “A Capacity-Achieving Simple Decoder for Bias-Based Traitor Tracing Schemes,” in IEEE Transactions on Information Theory, vol. 61, no. 7, pp. 3882-3900, July 2015, doi: 10.1109/TIT.2015.2428250.<br>[11] T. Laarhoven, “Capacities and capacity-achieving decoders for various fingerprinting games”, Proc. 2nd ACM Workshop Inf. Hiding Multimedia Secur., pp. 123-134, 2014.<br>[12] T. Yasui, M. Kuribayashi, N. Funabiki and I. Echizen, “Estimation of collusion attack in bias-based binary fingerprinting code”, Proc. Asia–Pacific Signal Inf. Process. Assoc. Annu. Summit Conf. (APSIPA ASC), pp. 1550-1555, Nov. 2018.</p>
-<h3 id="8-Reasons-for-my-Choices-1"><a href="#8-Reasons-for-my-Choices-1" class="headerlink" title="8. Reasons for my Choices"></a>8. Reasons for my Choices</h3><p>Seen all the changes brought by information technology like face authentication and different kinds of computer attack via the internet, I noticed the importance of information security. After my undergraduate study, I have been attracted by the charm of attack and defense in the information realm, it is a kind of art for me. So I am deeply longing to study and make my own effort on the subject of information security. Artificial intellegence is an interesting topic these days and is widely used in various area, I also wanted to see its developement, especially security aspects. Also, I went to NII for a visit in 2019 and was moved by the research environment. I hope the above reasons explains my choices for research themes and professors.</p>
+    <title>Test</title>
+    <url>/2021/03/31/test/</url>
+    <content><![CDATA[<p>这个博客用于记录修考的点点滴滴。<br>当前博文仅用于测试系统是否正常运转。</p>
 ]]></content>
       <categories>
-        <category>修考</category>
-        <category>书类</category>
+        <category>测试</category>
       </categories>
       <tags>
-        <tag>修考</tag>
-        <tag>书类</tag>
-        <tag>研究计划书</tag>
+        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -1019,16 +1031,95 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Test</title>
-    <url>/2021/03/31/test/</url>
-    <content><![CDATA[<p>这个博客用于记录修考的点点滴滴。<br>当前博文仅用于测试系统是否正常运转。</p>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
-      </tags>
+    <title>Server-Usage</title>
+    <url>/2022/06/15/Server-Usage/</url>
+    <content><![CDATA[<p>This is a memo for lab GPU cluster usage  </p>
+<h2 id="Self-intro"><a href="#Self-intro" class="headerlink" title="Self-intro"></a>Self-intro</h2><p>Yamagishi Junichi<br>Xin Wang<br>Jian Wang</p>
+<h2 id="Guidance"><a href="#Guidance" class="headerlink" title="Guidance"></a>Guidance</h2><ul>
+<li>Two link in the description of the slack channel<ul>
+<li>One is for IT issues</li>
+<li>The other is a manual</li>
+</ul>
+</li>
+<li>Network Organization<ul>
+<li>Four Layers<ul>
+<li>Internet (home, eduroam)</li>
+<li>NII Network<ul>
+<li>nii-auth wifi</li>
+<li>devices like printer</li>
+</ul>
+</li>
+<li>Lab Network<ul>
+<li>devices like Apple TV etc.</li>
+<li>LAN cable</li>
+<li>Two location, Jinbocho and Kashiwa</li>
+<li>136.187.?.?</li>
+</ul>
+</li>
+<li>Cluster Network<ul>
+<li>Head Node 136.187.108.7<ul>
+<li>All work shall be submitted to this</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Hardware<ul>
+<li>Head node <ul>
+<li>Ubuntu 18.04</li>
+<li>no heavy jobs</li>
+<li><code>$ show_res.sh</code></li>
+</ul>
+</li>
+<li>Network attached storage (NAS)<ul>
+<li>for file management</li>
+<li><code>$ df -h | grep nas</code></li>
+<li>/local/ works as cache</li>
+<li>/home/smg</li>
+</ul>
+</li>
+<li>Software<ul>
+<li>Bright cluster manager</li>
+<li>Slurm</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="SSH-key-generate"><a href="#SSH-key-generate" class="headerlink" title="SSH key generate"></a>SSH key generate</h2><pre><code>generate ssh key and send to Mr.yousuke kosuda
+</code></pre>
+<h2 id="Slurm-commands"><a href="#Slurm-commands" class="headerlink" title="Slurm commands"></a>Slurm commands</h2><ul>
+<li>login_private.sh</li>
+<li>sbatch -p qgpu</li>
+</ul>
+<h2 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h2><ul>
+<li>Do not need GPUs<ul>
+<li>Use CPU Nodes!</li>
+</ul>
+</li>
+<li>Need GPUs<ul>
+<li>Stable Code<ul>
+<li>Submit with sbatch through the head node</li>
+</ul>
+</li>
+<li>Work in progress<ul>
+<li>Test before submit<ul>
+<li>Shortly use public node</li>
+</ul>
+</li>
+<li>Developing<ul>
+<li>Use a private node</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Login-Method"><a href="#Login-Method" class="headerlink" title="Login Method"></a>Login Method</h2><h3 id="sbatch"><a href="#sbatch" class="headerlink" title="sbatch"></a>sbatch</h3><h3 id="public"><a href="#public" class="headerlink" title="public"></a>public</h3><h3 id="private"><a href="#private" class="headerlink" title="private"></a>private</h3>]]></content>
   </entry>
   <entry>
     <title></title>
@@ -2100,6 +2191,27 @@
       </tags>
   </entry>
   <entry>
+    <title>学习笔记2021-4-26-Ch4-常见的组合电路</title>
+    <url>/2021/04/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-26-Ch4-%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF/</url>
+    <content><![CDATA[<h2 id="加算器"><a href="#加算器" class="headerlink" title="加算器"></a>加算器</h2><h3 id="半加算器と全加算器"><a href="#半加算器と全加算器" class="headerlink" title="半加算器と全加算器"></a>半加算器と全加算器</h3><p>半加算器：桁上がり入力のない加算器<br>全加算器：桁上がり入力のある加算器</p>
+<span id="more"></span>
+<h3 id="リプルキャリ型加算器とキャリルックアヘッド型加算器"><a href="#リプルキャリ型加算器とキャリルックアヘッド型加算器" class="headerlink" title="リプルキャリ型加算器とキャリルックアヘッド型加算器"></a>リプルキャリ型加算器とキャリルックアヘッド型加算器</h3><p>リプルキャリ型加算器 ripple carry adder<br>$ N $ に比例した計算時間<br>キャリルックアヘッド型加算器 carry look ahead adder<br>$ log N $ に比例した計算時間</p>
+<h2 id="減算器"><a href="#減算器" class="headerlink" title="減算器"></a>減算器</h2><p>三つの作り方<br>1　2N入力，N+1出力の組合せ回路として設計する<br>2　加算器同様1ビット全減算器を作り，これをNビット分つなげる<br>3　Nビットの加算器を用意し，被減算数はそのまま，減算数は2の補数をとってこれに入力する</p>
+]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>专业课</category>
+        <category>数电</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>专业课</tag>
+        <tag>数电</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习笔记2021-4-24-Ch3-组合电路设计</title>
     <url>/2021/04/24/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-24-Ch3-%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[<h2 id="組合せ回路設計の一般論"><a href="#組合せ回路設計の一般論" class="headerlink" title="組合せ回路設計の一般論"></a>組合せ回路設計の一般論</h2><h3 id="1-定式化"><a href="#1-定式化" class="headerlink" title="1.定式化"></a>1.定式化</h3><p>入力、出力、真理値表を書く</p>
@@ -2142,27 +2254,6 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-4-26-Ch4-常见的组合电路</title>
-    <url>/2021/04/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-26-Ch4-%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF/</url>
-    <content><![CDATA[<h2 id="加算器"><a href="#加算器" class="headerlink" title="加算器"></a>加算器</h2><h3 id="半加算器と全加算器"><a href="#半加算器と全加算器" class="headerlink" title="半加算器と全加算器"></a>半加算器と全加算器</h3><p>半加算器：桁上がり入力のない加算器<br>全加算器：桁上がり入力のある加算器</p>
-<span id="more"></span>
-<h3 id="リプルキャリ型加算器とキャリルックアヘッド型加算器"><a href="#リプルキャリ型加算器とキャリルックアヘッド型加算器" class="headerlink" title="リプルキャリ型加算器とキャリルックアヘッド型加算器"></a>リプルキャリ型加算器とキャリルックアヘッド型加算器</h3><p>リプルキャリ型加算器 ripple carry adder<br>$ N $ に比例した計算時間<br>キャリルックアヘッド型加算器 carry look ahead adder<br>$ log N $ に比例した計算時間</p>
-<h2 id="減算器"><a href="#減算器" class="headerlink" title="減算器"></a>減算器</h2><p>三つの作り方<br>1　2N入力，N+1出力の組合せ回路として設計する<br>2　加算器同様1ビット全減算器を作り，これをNビット分つなげる<br>3　Nビットの加算器を用意し，被減算数はそのまま，減算数は2の補数をとってこれに入力する</p>
-]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>专业课</category>
-        <category>数电</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>专业课</tag>
-        <tag>数电</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学习笔记2021-4-27-Ch4-常见的组合电路</title>
     <url>/2021/04/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-27-Ch4-%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF/</url>
     <content><![CDATA[<h2 id="Nビット加減算器"><a href="#Nビット加減算器" class="headerlink" title="Nビット加減算器"></a>Nビット加減算器</h2><h2 id="ALU-Arithmatic-Logic-Unit，算術論理演算ユニット"><a href="#ALU-Arithmatic-Logic-Unit，算術論理演算ユニット" class="headerlink" title="ALU(Arithmatic Logic Unit，算術論理演算ユニット)"></a>ALU(Arithmatic Logic Unit，算術論理演算ユニット)</h2><h2 id="デコーダ-Decoder，復号器"><a href="#デコーダ-Decoder，復号器" class="headerlink" title="デコーダ(Decoder，復号器)"></a>デコーダ(Decoder，復号器)</h2><h2 id="エンコーダ-Encoder，符号化器"><a href="#エンコーダ-Encoder，符号化器" class="headerlink" title="エンコーダ(Encoder，符号化器)"></a>エンコーダ(Encoder，符号化器)</h2><p>優先度つきエンコーダ</p>
@@ -2181,101 +2272,12 @@
       </tags>
   </entry>
   <entry>
-    <title>Server-Usage</title>
-    <url>/2022/06/15/Server-Usage/</url>
-    <content><![CDATA[<p>This is a memo for lab GPU cluster usage  </p>
-<h2 id="Self-intro"><a href="#Self-intro" class="headerlink" title="Self-intro"></a>Self-intro</h2><p>Yamagishi Junichi<br>Xin Wang<br>Jian Wang</p>
-<h2 id="Guidance"><a href="#Guidance" class="headerlink" title="Guidance"></a>Guidance</h2><ul>
-<li>Two link in the description of the slack channel<ul>
-<li>One is for IT issues</li>
-<li>The other is a manual</li>
-</ul>
-</li>
-<li>Network Organization<ul>
-<li>Four Layers<ul>
-<li>Internet (home, eduroam)</li>
-<li>NII Network<ul>
-<li>nii-auth wifi</li>
-<li>devices like printer</li>
-</ul>
-</li>
-<li>Lab Network<ul>
-<li>devices like Apple TV etc.</li>
-<li>LAN cable</li>
-<li>Two location, Jinbocho and Kashiwa</li>
-<li>136.187.?.?</li>
-</ul>
-</li>
-<li>Cluster Network<ul>
-<li>Head Node 136.187.108.7<ul>
-<li>All work shall be submitted to this</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Hardware<ul>
-<li>Head node <ul>
-<li>Ubuntu 18.04</li>
-<li>no heavy jobs</li>
-<li><code>$ show_res.sh</code></li>
-</ul>
-</li>
-<li>Network attached storage (NAS)<ul>
-<li>for file management</li>
-<li><code>$ df -h | grep nas</code></li>
-<li>/local/ works as cache</li>
-<li>/home/smg</li>
-</ul>
-</li>
-<li>Software<ul>
-<li>Bright cluster manager</li>
-<li>Slurm</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="SSH-key-generate"><a href="#SSH-key-generate" class="headerlink" title="SSH key generate"></a>SSH key generate</h2><pre><code>generate ssh key and send to Mr.yousuke kosuda
-</code></pre>
-<h2 id="Slurm-commands"><a href="#Slurm-commands" class="headerlink" title="Slurm commands"></a>Slurm commands</h2><ul>
-<li>login_private.sh</li>
-<li>sbatch -p qgpu</li>
-</ul>
-<h2 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h2><ul>
-<li>Do not need GPUs<ul>
-<li>Use CPU Nodes!</li>
-</ul>
-</li>
-<li>Need GPUs<ul>
-<li>Stable Code<ul>
-<li>Submit with sbatch through the head node</li>
-</ul>
-</li>
-<li>Work in progress<ul>
-<li>Test before submit<ul>
-<li>Shortly use public node</li>
-</ul>
-</li>
-<li>Developing<ul>
-<li>Use a private node</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="Login-Method"><a href="#Login-Method" class="headerlink" title="Login Method"></a>Login Method</h2><h3 id="sbatch"><a href="#sbatch" class="headerlink" title="sbatch"></a>sbatch</h3><h3 id="public"><a href="#public" class="headerlink" title="public"></a>public</h3><h3 id="private"><a href="#private" class="headerlink" title="private"></a>private</h3>]]></content>
-  </entry>
-  <entry>
-    <title>学习笔记2021-4-9-Ch5-重積分</title>
-    <url>/2021/04/09/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-9-Ch5-%E9%87%8D%E7%A9%8D%E5%88%86/</url>
-    <content><![CDATA[<h2 id="多重積分より体積と曲面積の計算"><a href="#多重積分より体積と曲面積の計算" class="headerlink" title="多重積分より体積と曲面積の計算"></a>多重積分より体積と曲面積の計算</h2><h3 id="体積"><a href="#体積" class="headerlink" title="体積"></a>体積</h3><p>$$ V = \iint_{D} f(x, y) \mathrm{d}x \mathrm{d}y $$</p>
-<h3 id="曲面積"><a href="#曲面積" class="headerlink" title="曲面積"></a>曲面積</h3><p>直交座標<br>$$ S = \iint_{D} \sqrt{1 + f_x^2 + f_y^2} \mathrm{d}x \mathrm{d}y $$<br>極座標<br>$$ S = \iint_{D} \sqrt{r^2 + (r \frac{\partial z}{\partial r})^2 + (\frac{\partial z}{\partial \theta})^2} \mathrm{d}x \mathrm{d}y $$</p>
+    <title>学习笔记2021-4-8-Ch3-積分法とその応用</title>
+    <url>/2021/04/08/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-8-Ch3-%E7%A9%8D%E5%88%86%E6%B3%95%E3%81%A8%E3%81%9D%E3%81%AE%E5%BF%9C%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="積分の基本公式"><a href="#積分の基本公式" class="headerlink" title="積分の基本公式"></a>積分の基本公式</h2><p>$$\int \frac{1}{\sqrt{a^2 - x^2}} \mathrm{d} x = \frac{1}{a} \sin^{-1} \frac{x}{a}$$<br>$$\int \frac{1}{\sqrt{x^2 + a}} \mathrm{d} x = \log \left | x + \sqrt{x^2 + a} \right |$$<br>$$\int \sqrt{a^2 - x^2} \mathrm{d} x = \frac{1}{2} ( x \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{x}{a} )$$<br>$$\int \sqrt{x^2 + a} \mathrm{d} x = \frac{1}{2} ( x \sqrt{x^2 + a} + a^2 \log \left | x + \sqrt{x^2 + a} \right | )$$</p>
+<h2 id="ベータ関数とガンマ関数"><a href="#ベータ関数とガンマ関数" class="headerlink" title="ベータ関数とガンマ関数"></a>ベータ関数とガンマ関数</h2><h3 id="ベータ関数"><a href="#ベータ関数" class="headerlink" title="ベータ関数"></a>ベータ関数</h3><p>定義<br>$$ B(p, q) = \int_{0}^{1} x^{p - 1} (1 - x)^{q - 1} \mathrm{d} x, \ (p &gt; 0, q &gt; 0) $$<br>性質<br>$$ B(p, q) = B(q, p) $$<br>$$ qB(p + 1, q) = pB(p, q + 1) $$<br>$$ B(m, n) = \frac{(m - 1)!(n - 1)!}{(m + n - 1)!} $$ ただし，m,nは自然数とする</p>
+<h3 id="ガンマ関数"><a href="#ガンマ関数" class="headerlink" title="ガンマ関数"></a>ガンマ関数</h3><p>定義<br>$$ \Gamma(p) = \int_{0}^{\infty} e^{-x} x^{p - 1} \mathrm{d} x, \ (p &gt; 0) $$<br>性質<br>$$ \Gamma(p + 1) = p \Gamma(p) \ (p &gt; 0) $$<br>$$ \Gamma(1) = 1, \ \Gamma(n + 1) = n! $$</p>
+<h3 id="ガンマ関数とベータ関数の関係"><a href="#ガンマ関数とベータ関数の関係" class="headerlink" title="ガンマ関数とベータ関数の関係"></a>ガンマ関数とベータ関数の関係</h3><p>$$ B(p, q) = \frac{\Gamma(p) \Gamma(q)}{\Gamma(p + q)}, \ (p &gt; 0, q &gt; 0) $$</p>
 ]]></content>
       <categories>
         <category>修考</category>
@@ -2291,12 +2293,10 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-4-8-Ch3-積分法とその応用</title>
-    <url>/2021/04/08/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-8-Ch3-%E7%A9%8D%E5%88%86%E6%B3%95%E3%81%A8%E3%81%9D%E3%81%AE%E5%BF%9C%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="積分の基本公式"><a href="#積分の基本公式" class="headerlink" title="積分の基本公式"></a>積分の基本公式</h2><p>$$\int \frac{1}{\sqrt{a^2 - x^2}} \mathrm{d} x = \frac{1}{a} \sin^{-1} \frac{x}{a}$$<br>$$\int \frac{1}{\sqrt{x^2 + a}} \mathrm{d} x = \log \left | x + \sqrt{x^2 + a} \right |$$<br>$$\int \sqrt{a^2 - x^2} \mathrm{d} x = \frac{1}{2} ( x \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{x}{a} )$$<br>$$\int \sqrt{x^2 + a} \mathrm{d} x = \frac{1}{2} ( x \sqrt{x^2 + a} + a^2 \log \left | x + \sqrt{x^2 + a} \right | )$$</p>
-<h2 id="ベータ関数とガンマ関数"><a href="#ベータ関数とガンマ関数" class="headerlink" title="ベータ関数とガンマ関数"></a>ベータ関数とガンマ関数</h2><h3 id="ベータ関数"><a href="#ベータ関数" class="headerlink" title="ベータ関数"></a>ベータ関数</h3><p>定義<br>$$ B(p, q) = \int_{0}^{1} x^{p - 1} (1 - x)^{q - 1} \mathrm{d} x, \ (p &gt; 0, q &gt; 0) $$<br>性質<br>$$ B(p, q) = B(q, p) $$<br>$$ qB(p + 1, q) = pB(p, q + 1) $$<br>$$ B(m, n) = \frac{(m - 1)!(n - 1)!}{(m + n - 1)!} $$ ただし，m,nは自然数とする</p>
-<h3 id="ガンマ関数"><a href="#ガンマ関数" class="headerlink" title="ガンマ関数"></a>ガンマ関数</h3><p>定義<br>$$ \Gamma(p) = \int_{0}^{\infty} e^{-x} x^{p - 1} \mathrm{d} x, \ (p &gt; 0) $$<br>性質<br>$$ \Gamma(p + 1) = p \Gamma(p) \ (p &gt; 0) $$<br>$$ \Gamma(1) = 1, \ \Gamma(n + 1) = n! $$</p>
-<h3 id="ガンマ関数とベータ関数の関係"><a href="#ガンマ関数とベータ関数の関係" class="headerlink" title="ガンマ関数とベータ関数の関係"></a>ガンマ関数とベータ関数の関係</h3><p>$$ B(p, q) = \frac{\Gamma(p) \Gamma(q)}{\Gamma(p + q)}, \ (p &gt; 0, q &gt; 0) $$</p>
+    <title>学习笔记2021-4-9-Ch5-重積分</title>
+    <url>/2021/04/09/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-4-9-Ch5-%E9%87%8D%E7%A9%8D%E5%88%86/</url>
+    <content><![CDATA[<h2 id="多重積分より体積と曲面積の計算"><a href="#多重積分より体積と曲面積の計算" class="headerlink" title="多重積分より体積と曲面積の計算"></a>多重積分より体積と曲面積の計算</h2><h3 id="体積"><a href="#体積" class="headerlink" title="体積"></a>体積</h3><p>$$ V = \iint_{D} f(x, y) \mathrm{d}x \mathrm{d}y $$</p>
+<h3 id="曲面積"><a href="#曲面積" class="headerlink" title="曲面積"></a>曲面積</h3><p>直交座標<br>$$ S = \iint_{D} \sqrt{1 + f_x^2 + f_y^2} \mathrm{d}x \mathrm{d}y $$<br>極座標<br>$$ S = \iint_{D} \sqrt{r^2 + (r \frac{\partial z}{\partial r})^2 + (\frac{\partial z}{\partial \theta})^2} \mathrm{d}x \mathrm{d}y $$</p>
 ]]></content>
       <categories>
         <category>修考</category>
@@ -2507,31 +2507,6 @@
       </tags>
   </entry>
   <entry>
-    <title>学习笔记2021-5-7-Ch6-常见的时序电路</title>
-    <url>/2021/05/07/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-7-Ch6-%E5%B8%B8%E8%A7%81%E7%9A%84%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF/</url>
-    <content><![CDATA[<h2 id="基本的な順序回路"><a href="#基本的な順序回路" class="headerlink" title="基本的な順序回路"></a>基本的な順序回路</h2><p>順序回路とは，入力と回路自身の状態によって，一意に出力の決まる回路である。</p>
-<h3 id="非同期カウンタ-asynchronous-counter"><a href="#非同期カウンタ-asynchronous-counter" class="headerlink" title="非同期カウンタ asynchronous counter"></a>非同期カウンタ asynchronous counter</h3><h4 id="基本形"><a href="#基本形" class="headerlink" title="基本形"></a>基本形</h4><p>リプルカウンタ(ripple counter)。最悪の場合，一回の状態遷移で信号伝播が最小の桁から最大の桁まで，この場合に遅延が大きくなってしまう。非同期カウンタの欠点である。</p>
-<h4 id="2べき以外のカウンタ"><a href="#2べき以外のカウンタ" class="headerlink" title="2べき以外のカウンタ"></a>2べき以外のカウンタ</h4><p>Mになったところで全体をクリアする。<br>クリアする前に短い時間で，パルスが生じる。これも非同期カウンタの欠点である。</p>
-<h4 id="ダウンカウンタ，アップダウンカウンタ-down-counter-up-down-counter"><a href="#ダウンカウンタ，アップダウンカウンタ-down-counter-up-down-counter" class="headerlink" title="ダウンカウンタ，アップダウンカウンタ down counter, up-down counter"></a>ダウンカウンタ，アップダウンカウンタ down counter, up-down counter</h4><p>クロック入力が立ち下がりではなく，立ち上がりでとるようにする。</p>
-<h4 id="応用"><a href="#応用" class="headerlink" title="応用"></a>応用</h4><h5 id="4から10まで数えるカウンタ"><a href="#4から10まで数えるカウンタ" class="headerlink" title="4から10まで数えるカウンタ"></a>4から10まで数えるカウンタ</h5><p>(1) プリセット，リセットを使った実現<br>(2) 7進カウンタと加算器を使った実現</p>
-<h5 id="決められた時間だけ1を出力する回路"><a href="#決められた時間だけ1を出力する回路" class="headerlink" title="決められた時間だけ1を出力する回路"></a>決められた時間だけ1を出力する回路</h5><p>初段のクロックをゲートしてやればよい。</p>
-<h3 id="同期カウンタ-synchronous-counter"><a href="#同期カウンタ-synchronous-counter" class="headerlink" title="同期カウンタ synchronous counter"></a>同期カウンタ synchronous counter</h3><h4 id="基本形-1"><a href="#基本形-1" class="headerlink" title="基本形"></a>基本形</h4><p>並列カウンタ(parallel counter)。全段のフリップフロップのクロック入力に，同一のクロックを入れる。また，下位の桁がすべての出力の $ AND $ をとって，$ J $ と $ K $ に入力する。</p>
-<h4 id="2べき以外のカウンタ-1"><a href="#2べき以外のカウンタ-1" class="headerlink" title="2べき以外のカウンタ"></a>2べき以外のカウンタ</h4><p>$ M - 1 $ になった次のクロックエッジで全体をクリアする。値が $ M - 1 $ になったところで，すべてのフリップフロップに $ J = 0, K = 1 $ を入力してやればよい。また，各フリップフロップをそれぞれについて考えてもよい。<br>10進同期カウンタを復習しろ。</p>
-<h3 id="シフトレジスタ-shift-register"><a href="#シフトレジスタ-shift-register" class="headerlink" title="シフトレジスタ shift register"></a>シフトレジスタ shift register</h3><h3 id="リングカウンタ-ring-counter"><a href="#リングカウンタ-ring-counter" class="headerlink" title="リングカウンタ ring counter"></a>リングカウンタ ring counter</h3>]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>专业课</category>
-        <category>数电</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>专业课</tag>
-        <tag>数电</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学习笔记2021-6-12-Ch5-特征值与标准型</title>
     <url>/2021/06/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-12-Ch5-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E6%A0%87%E5%87%86%E5%9E%8B/</url>
     <content><![CDATA[<h2 id="正方行列の固有値と行列の標準形"><a href="#正方行列の固有値と行列の標準形" class="headerlink" title="正方行列の固有値と行列の標準形"></a>正方行列の固有値と行列の標準形</h2><h3 id="同値というのは"><a href="#同値というのは" class="headerlink" title="同値というのは"></a>同値というのは</h3><p>自反性 Reflexive 反射性<br>对称性 Symmetric 対称性<br>传递性 Transitive 推移性</p>
@@ -2554,6 +2529,31 @@
         <tag>学习</tag>
         <tag>数学</tag>
         <tag>线性代数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习笔记2021-5-7-Ch6-常见的时序电路</title>
+    <url>/2021/05/07/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-5-7-Ch6-%E5%B8%B8%E8%A7%81%E7%9A%84%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF/</url>
+    <content><![CDATA[<h2 id="基本的な順序回路"><a href="#基本的な順序回路" class="headerlink" title="基本的な順序回路"></a>基本的な順序回路</h2><p>順序回路とは，入力と回路自身の状態によって，一意に出力の決まる回路である。</p>
+<h3 id="非同期カウンタ-asynchronous-counter"><a href="#非同期カウンタ-asynchronous-counter" class="headerlink" title="非同期カウンタ asynchronous counter"></a>非同期カウンタ asynchronous counter</h3><h4 id="基本形"><a href="#基本形" class="headerlink" title="基本形"></a>基本形</h4><p>リプルカウンタ(ripple counter)。最悪の場合，一回の状態遷移で信号伝播が最小の桁から最大の桁まで，この場合に遅延が大きくなってしまう。非同期カウンタの欠点である。</p>
+<h4 id="2べき以外のカウンタ"><a href="#2べき以外のカウンタ" class="headerlink" title="2べき以外のカウンタ"></a>2べき以外のカウンタ</h4><p>Mになったところで全体をクリアする。<br>クリアする前に短い時間で，パルスが生じる。これも非同期カウンタの欠点である。</p>
+<h4 id="ダウンカウンタ，アップダウンカウンタ-down-counter-up-down-counter"><a href="#ダウンカウンタ，アップダウンカウンタ-down-counter-up-down-counter" class="headerlink" title="ダウンカウンタ，アップダウンカウンタ down counter, up-down counter"></a>ダウンカウンタ，アップダウンカウンタ down counter, up-down counter</h4><p>クロック入力が立ち下がりではなく，立ち上がりでとるようにする。</p>
+<h4 id="応用"><a href="#応用" class="headerlink" title="応用"></a>応用</h4><h5 id="4から10まで数えるカウンタ"><a href="#4から10まで数えるカウンタ" class="headerlink" title="4から10まで数えるカウンタ"></a>4から10まで数えるカウンタ</h5><p>(1) プリセット，リセットを使った実現<br>(2) 7進カウンタと加算器を使った実現</p>
+<h5 id="決められた時間だけ1を出力する回路"><a href="#決められた時間だけ1を出力する回路" class="headerlink" title="決められた時間だけ1を出力する回路"></a>決められた時間だけ1を出力する回路</h5><p>初段のクロックをゲートしてやればよい。</p>
+<h3 id="同期カウンタ-synchronous-counter"><a href="#同期カウンタ-synchronous-counter" class="headerlink" title="同期カウンタ synchronous counter"></a>同期カウンタ synchronous counter</h3><h4 id="基本形-1"><a href="#基本形-1" class="headerlink" title="基本形"></a>基本形</h4><p>並列カウンタ(parallel counter)。全段のフリップフロップのクロック入力に，同一のクロックを入れる。また，下位の桁がすべての出力の $ AND $ をとって，$ J $ と $ K $ に入力する。</p>
+<h4 id="2べき以外のカウンタ-1"><a href="#2べき以外のカウンタ-1" class="headerlink" title="2べき以外のカウンタ"></a>2べき以外のカウンタ</h4><p>$ M - 1 $ になった次のクロックエッジで全体をクリアする。値が $ M - 1 $ になったところで，すべてのフリップフロップに $ J = 0, K = 1 $ を入力してやればよい。また，各フリップフロップをそれぞれについて考えてもよい。<br>10進同期カウンタを復習しろ。</p>
+<h3 id="シフトレジスタ-shift-register"><a href="#シフトレジスタ-shift-register" class="headerlink" title="シフトレジスタ shift register"></a>シフトレジスタ shift register</h3><h3 id="リングカウンタ-ring-counter"><a href="#リングカウンタ-ring-counter" class="headerlink" title="リングカウンタ ring counter"></a>リングカウンタ ring counter</h3>]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>专业课</category>
+        <category>数电</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>专业课</tag>
+        <tag>数电</tag>
       </tags>
   </entry>
   <entry>
@@ -2633,6 +2633,23 @@
       </tags>
   </entry>
   <entry>
+    <title>学习笔记2021-7-10-Ch5-多元概率分布</title>
+    <url>/2021/07/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-10-Ch5-%E5%A4%9A%E5%85%83%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83/</url>
+    <content><![CDATA[<h2 id="Chapter-5-多次元確率分布"><a href="#Chapter-5-多次元確率分布" class="headerlink" title="Chapter 5 多次元確率分布"></a>Chapter 5 多次元確率分布</h2>]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>数学</category>
+        <category>概率论</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>数学</tag>
+        <tag>概率论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习笔记2021-6-26-Ch2-確率空間とその基本概念</title>
     <url>/2021/06/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-6-26-Ch2-%E7%A2%BA%E7%8E%87%E7%A9%BA%E9%96%93%E3%81%A8%E3%81%9D%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
     <content><![CDATA[<h2 id="Chapter-2-確率空間とその基本概念"><a href="#Chapter-2-確率空間とその基本概念" class="headerlink" title="Chapter 2 確率空間とその基本概念"></a>Chapter 2 確率空間とその基本概念</h2><h3 id="12-標本空間・事象・確率-Sample-Space-amp-Event-amp-Probability"><a href="#12-標本空間・事象・確率-Sample-Space-amp-Event-amp-Probability" class="headerlink" title="12 標本空間・事象・確率 Sample Space &amp; Event &amp; Probability"></a>12 標本空間・事象・確率 Sample Space &amp; Event &amp; Probability</h3><h4 id="確率空間とは"><a href="#確率空間とは" class="headerlink" title="確率空間とは"></a>確率空間とは</h4><p>$\Omega$ 標本空間<br>$F$ 事象（じしょう）全体<br>$P$ 根元事象の確率<br>からできている</p>
@@ -2653,23 +2670,6 @@
 <h5 id="性質二"><a href="#性質二" class="headerlink" title="性質二"></a>性質二</h5><p>$ V(aX + bY) = a^2 V(X) + 2ab Cov(X, Y) + b^2 V(Y) $<br>XとYが独立の時<br>$ V(aX + bY) = a^2 V(X) + b^2 V(Y) $<br>特に<br>$ V(X \pm Y) = V(X) + V(Y) $</p>
 <h5 id="性質三"><a href="#性質三" class="headerlink" title="性質三"></a>性質三</h5><p>$ Cov(aX + bY, cZ + dW) = ac Cov(X, Z) + ad Cov(X, W) + bc Cov(Y, Z) + bd Cov(Y, W) $</p>
 ]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>数学</category>
-        <category>概率论</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>数学</tag>
-        <tag>概率论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习笔记2021-7-10-Ch5-多元概率分布</title>
-    <url>/2021/07/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-10-Ch5-%E5%A4%9A%E5%85%83%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83/</url>
-    <content><![CDATA[<h2 id="Chapter-5-多次元確率分布"><a href="#Chapter-5-多次元確率分布" class="headerlink" title="Chapter 5 多次元確率分布"></a>Chapter 5 多次元確率分布</h2>]]></content>
       <categories>
         <category>修考</category>
         <category>笔记</category>
@@ -2792,6 +2792,31 @@
       </tags>
   </entry>
   <entry>
+    <title>学习笔记2021-7-8-Ch3-離散確率分布</title>
+    <url>/2021/07/08/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-8-Ch3-%E9%9B%A2%E6%95%A3%E7%A2%BA%E7%8E%87%E5%88%86%E5%B8%83/</url>
+    <content><![CDATA[<h2 id="Chapter-3-離散確率分布"><a href="#Chapter-3-離散確率分布" class="headerlink" title="Chapter 3 離散確率分布"></a>Chapter 3 離散確率分布</h2><h3 id="19-ベルヌーイ分布-Bernoulli-Distribution-Be-p"><a href="#19-ベルヌーイ分布-Bernoulli-Distribution-Be-p" class="headerlink" title="19 ベルヌーイ分布 Bernoulli Distribution Be(p)"></a>19 ベルヌーイ分布 Bernoulli Distribution Be(p)</h3><p>$ X \sim Be(p) $<br>確率分布<br>$$ P(X = 1) = p $$<br>$$ P(X = 0) = 1 - p $$<br>期待値<br>$$ E(X) = p $$<br>分散<br>$$ V(X) = p(1 - p) $$</p>
+<h3 id="20-二項分布-Binomial-Distribution-B-n-p"><a href="#20-二項分布-Binomial-Distribution-B-n-p" class="headerlink" title="20 二項分布 Binomial Distribution B(n, p)"></a>20 二項分布 Binomial Distribution B(n, p)</h3><p>$ X \sim B(n, p) $<br>確率分布<br>$$ P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k} $$<br>期待値<br>$$ E(X) = np $$<br>分散<br>$$ V(X) = np(1 - p) $$<br>特性<br>独立なベルヌーイ分布の和が二項分布</p>
+<h3 id="21-22-幾何分布・ファストアクセス分布-Geometic-Distribution-amp-First-Access-Distribution-Ge-p-Fs-p"><a href="#21-22-幾何分布・ファストアクセス分布-Geometic-Distribution-amp-First-Access-Distribution-Ge-p-Fs-p" class="headerlink" title="21/22 幾何分布・ファストアクセス分布 Geometic Distribution &amp; First Access Distribution Ge(p) Fs(p)"></a>21/22 幾何分布・ファストアクセス分布 Geometic Distribution &amp; First Access Distribution Ge(p) Fs(p)</h3><p>$ X \sim Ge(p) $<br>確率分布<br>$$ P(X = k) = p(1 - p)^k $$<br>期待値<br>$$ E(X) = \frac{1 - p}{p} $$<br>分散<br>$$ V(X) = \frac{1 - p}{p^2} $$<br>特性<br>無記憶性<br>$$ P(X &gt; k|X &gt; l) = P(X &gt; k - l) $$</p>
+<h3 id="23-負の二項分布-NB-n-p"><a href="#23-負の二項分布-NB-n-p" class="headerlink" title="23 負の二項分布 NB(n, p)"></a>23 負の二項分布 NB(n, p)</h3><p>$ X \sim NB(n, p) $<br>確率分布<br>$$ P(X = k) = \binom{n + k - 1}{k} p^n (1 - p)^k = \binom{-n}{k} p^n (-(1 - p))^k $$<br>期待値<br>$$ E(X) = \frac{n(1 - p)}{p} $$<br>分散<br>$$ V(X) = \frac{n(1 - p)}{p^2} $$<br>特性<br>独立な幾何分布の和が負の二項分布<br>再生性<br>$$ NB(m, p) + NB(n, p) \sim NB(m + n, p) $$<br>注意<br>$$ \sum_{k = 0}^{\infty} \binom{n - k + 1}{k} x^k = \sum_{k = 0}^{\infty} \binom{-n}{k} (-x)^k = (1 - x)^{-n} $$</p>
+<h3 id="24-離散一様分布-Discrete-Uniform-Distribution-DU-1-2-…-n"><a href="#24-離散一様分布-Discrete-Uniform-Distribution-DU-1-2-…-n" class="headerlink" title="24 離散一様分布 Discrete Uniform Distribution DU{1, 2, …, n}"></a>24 離散一様分布 Discrete Uniform Distribution DU{1, 2, …, n}</h3><p>$ X \sim DU{1, 2, …, N} $<br>確率分布<br>$$ P(X = k) = \frac{1}{N} $$<br>期待値<br>$$ E(X) = \frac{N + 1}{2} $$<br>分散<br>$$ V(X) = \frac{(N - 1)(N + 1)}{12} $$<br>特性<br>なし<br>注意<br>なし</p>
+<h3 id="25-26-ポアソン分布-Poisson-Distribution-Po-lambda"><a href="#25-26-ポアソン分布-Poisson-Distribution-Po-lambda" class="headerlink" title="25/26 ポアソン分布 Poisson Distribution $Po(\lambda)$"></a>25/26 ポアソン分布 Poisson Distribution $Po(\lambda)$</h3><p>$ X \sim Po(\lambda) $<br>確率分布<br>$$ P(X = k) = \frac{\lambda^k}{k!} e^{-\lambda} $$<br>期待値<br>$$ E(X) = \lambda $$<br>分散<br>$$ V(X) = \lambda $$<br>特性<br>再生性<br>$$ Po(\lambda_1) + Po(\lambda_2) \sim Po(\lambda_1 + \lambda_2) $$<br>注意<br>なし</p>
+<h3 id="27-超幾何分布-Hyper-Geometrc-Distribution"><a href="#27-超幾何分布-Hyper-Geometrc-Distribution" class="headerlink" title="27 超幾何分布 Hyper Geometrc Distribution"></a>27 超幾何分布 Hyper Geometrc Distribution</h3><p>非復元抽出<br>$ X \sim HG(N, m, n) $<br>確率分布<br>$$ P(X = k) = \frac{\binom{m}{k} \binom{N - m}{n - k}}{\binom{N}{n}} (0 \leq k \leq min(m, n)) $$<br>期待値<br>$$ E(X) = \frac{mn}{N} $$<br>特性<br>一回ごとの試行が独立なら，$ B(n, \frac{m}{N}) $ に近似する<br>注意<br>なし</p>
+<h3 id="28-幾何分布，離散一様分布の発展問題"><a href="#28-幾何分布，離散一様分布の発展問題" class="headerlink" title="28 幾何分布，離散一様分布の発展問題"></a>28 幾何分布，離散一様分布の発展問題</h3><h3 id="29-確率変数の分解の問題"><a href="#29-確率変数の分解の問題" class="headerlink" title="29 確率変数の分解の問題"></a>29 確率変数の分解の問題</h3><h3 id="30-二項分布，幾何分布の復習問題"><a href="#30-二項分布，幾何分布の復習問題" class="headerlink" title="30 二項分布，幾何分布の復習問題"></a>30 二項分布，幾何分布の復習問題</h3><h3 id="31-総合問題"><a href="#31-総合問題" class="headerlink" title="31 総合問題"></a>31 総合問題</h3><p>ポスター集めの問題</p>
+]]></content>
+      <categories>
+        <category>修考</category>
+        <category>笔记</category>
+        <category>数学</category>
+        <category>概率论</category>
+      </categories>
+      <tags>
+        <tag>修考</tag>
+        <tag>学习</tag>
+        <tag>数学</tag>
+        <tag>概率论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习笔记2021-7-31-Ch4-偏微分法</title>
     <url>/2021/07/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-31-Ch4-%E5%81%8F%E5%BE%AE%E5%88%86%E6%B3%95/</url>
     <content><![CDATA[<h2 id="Chapter-4-偏微分法"><a href="#Chapter-4-偏微分法" class="headerlink" title="Chapter 4 偏微分法"></a>Chapter 4 偏微分法</h2><h3 id="4-1-2変数関数とその極限"><a href="#4-1-2変数関数とその極限" class="headerlink" title="4.1 2変数関数とその極限"></a>4.1 2変数関数とその極限</h3><p>普通に，$ x \to 0, y \to 0 $ という条件は $ \sqrt{x^2 + y^2} = r \to 0 $ と置き換えればよい</p>
@@ -2822,31 +2847,6 @@
         <tag>学习</tag>
         <tag>数学</tag>
         <tag>微积分</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习笔记2021-7-8-Ch3-離散確率分布</title>
-    <url>/2021/07/08/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02021-7-8-Ch3-%E9%9B%A2%E6%95%A3%E7%A2%BA%E7%8E%87%E5%88%86%E5%B8%83/</url>
-    <content><![CDATA[<h2 id="Chapter-3-離散確率分布"><a href="#Chapter-3-離散確率分布" class="headerlink" title="Chapter 3 離散確率分布"></a>Chapter 3 離散確率分布</h2><h3 id="19-ベルヌーイ分布-Bernoulli-Distribution-Be-p"><a href="#19-ベルヌーイ分布-Bernoulli-Distribution-Be-p" class="headerlink" title="19 ベルヌーイ分布 Bernoulli Distribution Be(p)"></a>19 ベルヌーイ分布 Bernoulli Distribution Be(p)</h3><p>$ X \sim Be(p) $<br>確率分布<br>$$ P(X = 1) = p $$<br>$$ P(X = 0) = 1 - p $$<br>期待値<br>$$ E(X) = p $$<br>分散<br>$$ V(X) = p(1 - p) $$</p>
-<h3 id="20-二項分布-Binomial-Distribution-B-n-p"><a href="#20-二項分布-Binomial-Distribution-B-n-p" class="headerlink" title="20 二項分布 Binomial Distribution B(n, p)"></a>20 二項分布 Binomial Distribution B(n, p)</h3><p>$ X \sim B(n, p) $<br>確率分布<br>$$ P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k} $$<br>期待値<br>$$ E(X) = np $$<br>分散<br>$$ V(X) = np(1 - p) $$<br>特性<br>独立なベルヌーイ分布の和が二項分布</p>
-<h3 id="21-22-幾何分布・ファストアクセス分布-Geometic-Distribution-amp-First-Access-Distribution-Ge-p-Fs-p"><a href="#21-22-幾何分布・ファストアクセス分布-Geometic-Distribution-amp-First-Access-Distribution-Ge-p-Fs-p" class="headerlink" title="21/22 幾何分布・ファストアクセス分布 Geometic Distribution &amp; First Access Distribution Ge(p) Fs(p)"></a>21/22 幾何分布・ファストアクセス分布 Geometic Distribution &amp; First Access Distribution Ge(p) Fs(p)</h3><p>$ X \sim Ge(p) $<br>確率分布<br>$$ P(X = k) = p(1 - p)^k $$<br>期待値<br>$$ E(X) = \frac{1 - p}{p} $$<br>分散<br>$$ V(X) = \frac{1 - p}{p^2} $$<br>特性<br>無記憶性<br>$$ P(X &gt; k|X &gt; l) = P(X &gt; k - l) $$</p>
-<h3 id="23-負の二項分布-NB-n-p"><a href="#23-負の二項分布-NB-n-p" class="headerlink" title="23 負の二項分布 NB(n, p)"></a>23 負の二項分布 NB(n, p)</h3><p>$ X \sim NB(n, p) $<br>確率分布<br>$$ P(X = k) = \binom{n + k - 1}{k} p^n (1 - p)^k = \binom{-n}{k} p^n (-(1 - p))^k $$<br>期待値<br>$$ E(X) = \frac{n(1 - p)}{p} $$<br>分散<br>$$ V(X) = \frac{n(1 - p)}{p^2} $$<br>特性<br>独立な幾何分布の和が負の二項分布<br>再生性<br>$$ NB(m, p) + NB(n, p) \sim NB(m + n, p) $$<br>注意<br>$$ \sum_{k = 0}^{\infty} \binom{n - k + 1}{k} x^k = \sum_{k = 0}^{\infty} \binom{-n}{k} (-x)^k = (1 - x)^{-n} $$</p>
-<h3 id="24-離散一様分布-Discrete-Uniform-Distribution-DU-1-2-…-n"><a href="#24-離散一様分布-Discrete-Uniform-Distribution-DU-1-2-…-n" class="headerlink" title="24 離散一様分布 Discrete Uniform Distribution DU{1, 2, …, n}"></a>24 離散一様分布 Discrete Uniform Distribution DU{1, 2, …, n}</h3><p>$ X \sim DU{1, 2, …, N} $<br>確率分布<br>$$ P(X = k) = \frac{1}{N} $$<br>期待値<br>$$ E(X) = \frac{N + 1}{2} $$<br>分散<br>$$ V(X) = \frac{(N - 1)(N + 1)}{12} $$<br>特性<br>なし<br>注意<br>なし</p>
-<h3 id="25-26-ポアソン分布-Poisson-Distribution-Po-lambda"><a href="#25-26-ポアソン分布-Poisson-Distribution-Po-lambda" class="headerlink" title="25/26 ポアソン分布 Poisson Distribution $Po(\lambda)$"></a>25/26 ポアソン分布 Poisson Distribution $Po(\lambda)$</h3><p>$ X \sim Po(\lambda) $<br>確率分布<br>$$ P(X = k) = \frac{\lambda^k}{k!} e^{-\lambda} $$<br>期待値<br>$$ E(X) = \lambda $$<br>分散<br>$$ V(X) = \lambda $$<br>特性<br>再生性<br>$$ Po(\lambda_1) + Po(\lambda_2) \sim Po(\lambda_1 + \lambda_2) $$<br>注意<br>なし</p>
-<h3 id="27-超幾何分布-Hyper-Geometrc-Distribution"><a href="#27-超幾何分布-Hyper-Geometrc-Distribution" class="headerlink" title="27 超幾何分布 Hyper Geometrc Distribution"></a>27 超幾何分布 Hyper Geometrc Distribution</h3><p>非復元抽出<br>$ X \sim HG(N, m, n) $<br>確率分布<br>$$ P(X = k) = \frac{\binom{m}{k} \binom{N - m}{n - k}}{\binom{N}{n}} (0 \leq k \leq min(m, n)) $$<br>期待値<br>$$ E(X) = \frac{mn}{N} $$<br>特性<br>一回ごとの試行が独立なら，$ B(n, \frac{m}{N}) $ に近似する<br>注意<br>なし</p>
-<h3 id="28-幾何分布，離散一様分布の発展問題"><a href="#28-幾何分布，離散一様分布の発展問題" class="headerlink" title="28 幾何分布，離散一様分布の発展問題"></a>28 幾何分布，離散一様分布の発展問題</h3><h3 id="29-確率変数の分解の問題"><a href="#29-確率変数の分解の問題" class="headerlink" title="29 確率変数の分解の問題"></a>29 確率変数の分解の問題</h3><h3 id="30-二項分布，幾何分布の復習問題"><a href="#30-二項分布，幾何分布の復習問題" class="headerlink" title="30 二項分布，幾何分布の復習問題"></a>30 二項分布，幾何分布の復習問題</h3><h3 id="31-総合問題"><a href="#31-総合問題" class="headerlink" title="31 総合問題"></a>31 総合問題</h3><p>ポスター集めの問題</p>
-]]></content>
-      <categories>
-        <category>修考</category>
-        <category>笔记</category>
-        <category>数学</category>
-        <category>概率论</category>
-      </categories>
-      <tags>
-        <tag>修考</tag>
-        <tag>学习</tag>
-        <tag>数学</tag>
-        <tag>概率论</tag>
       </tags>
   </entry>
   <entry>
